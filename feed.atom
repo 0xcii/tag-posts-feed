@@ -1,10 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-12-08T09:14:31.412Z</id>
+    <id>urn:2022-12-08T10:16:03.642Z</id>
     <title>web3::cave</title>
-    <updated>2022-12-08T09:14:31.412Z</updated>
+    <updated>2022-12-08T10:16:03.642Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[ZK Rollup能否在比特币上获得成功？]]></title>
+        <id>https://www.web3sj.com/?p=32433</id>
+        <link href="https://www.web3sj.com/news/32433/"/>
+        <updated>2022-12-08T10:14:08.000Z</updated>
+        <summary type="html"><![CDATA[为了得到一个更清晰的概念，从流动性和用户数量方面思考可能会有帮助。数以千计的 Lightning 节点目前在网络上处于活动状态。其中一些是托管的，意味着它们有使用其服务的客户。不过，我们很难说总共有多少用户，这使得我们无法知道在任何时候有多少交易是通过闪电网络进行的。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web3时代的媒体：链上媒体平台、链上自媒体与媒体DAO]]></title>
+        <id>https://www.web3sj.com/?p=32427</id>
+        <link href="https://www.web3sj.com/news/32427/"/>
+        <updated>2022-12-08T10:11:26.000Z</updated>
+        <summary type="html"><![CDATA[依据整体的媒体市场规模迁移可能来看，2022年全球传媒产业产值约为2.3万亿美元，但这不会完整地迁移至Web3.0世界，Web3.0媒体将成为其重要的延伸与子集，如低估Web3.0信息媒体占其比例为10%，也将有约2300亿美元的市场规模。2022年中国泛媒体应用用户规模在网络新闻上约为7.88亿，网民使用率为75%（工信部、CNNIC数据），网络信息媒体从Web2.0向Web3.0迁移的中国潜在用户可观。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[巴比特 | 元宇宙每日必读：机构预测未来5年AR设备出货量将达6000万台，消费级元宇宙被认为是AR最大的市场]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3bc1454</id>
+        <link href="https://www.8btc.com/article/6792486"/>
+        <updated>2022-12-08T10:06:01.000Z</updated>
+        <summary type="html"><![CDATA[从数据分析看，AR 市场当下发展如何？]]></summary>
+        <author>
+            <name>云锦</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[以太坊转POS后，以太坊质押的发展和机遇]]></title>
+        <id>https://www.web3sj.com/?p=32419</id>
+        <link href="https://www.web3sj.com/news/32419/"/>
+        <updated>2022-12-08T10:02:46.000Z</updated>
+        <summary type="html"><![CDATA[以太坊合并之后，ETH 的质押收入短期得到了交易费用和 MEV 收入的补充，质押 ETH 的收益率有所上升；但剔除一些极端情况后，伴随以太坊质押量的持续攀升，以太坊年化质押收益率整体趋于下降。截止 12 月 6 日，据 Oklink 数据显示，以太坊质押年化收益率为 4.06%。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[十余位嘉宾畅聊AIGC，这是新一轮范式转移的开始！丨“2022首届AIGC共创共建论坛”金句集锦]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3bdebec</id>
+        <link href="https://www.8btc.com/article/6792500"/>
+        <updated>2022-12-08T09:54:40.000Z</updated>
+        <summary type="html"><![CDATA[AIGC，新一轮范式转移的开始！]]></summary>
+        <author>
+            <name>王佳健</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[百度App Feed 流业务架构变迁思考和升级实践]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e251</id>
+        <link href="https://www.infoq.cn/article/coiYkGs5vIgrz1XRB8Yp?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[本文整理自百度技术专家、推荐产品研发部架构师李哲浩在 2022 年 8 月 ArchSummit 全球架构师峰会北京站的演讲分享，主题为“百度 App Feed 流业务架构变迁思考和升级实践”。
+
+本次分享主要从五个部分展开：第一部分介绍我们过去架构的概况，第二部分介绍在经历一些环境的变化后，架构上有哪些改变，第三部分介绍我们团队对于架构设计的一些思想和原则，第四部分例举几个架构场景的实例，最后介绍架构维护控制相关的内容。
+
+过去的架构漫步
+
+我们过去一开始的架构是一个个小作坊，比方最开始的时候有一个频道页叫频道 A，然后假设我们突然想做一个进攻的项目，比如想去创建一个垂类频道 B，这时候我们就会把整套代码拷贝过去，因为我们过去采用的是 MVC 架构，如图所示，整个架构都拷贝了一份，架构只剩下了概念，没有实体架子支撑，由于这时往往都是一种“征战”的状态，时间比较紧迫，当时的用例也不多，迭代的深度也不够，觉得还好，可以实现快速开发，基本够用。
+
+
+
+后来我们出现了人手不够的情况，PM 对发版有了更高的要求，不再满足于随版，而希望去“非随”，或者说双端变成单端想加快迭代效率，这种背景下，我们很多频道已经开始采用类似 RN 的方案，或者基于 Hybrid 上 H5 的方案去创建。
+点击查看原文>]]></summary>
+        <author>
+            <name>作者：李哲浩</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不影响开发体验，如何将单体Node.js变成Monorepo]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e24a</id>
+        <link href="https://www.infoq.cn/article/7M0cRaLzGYjUSivqu8Lv?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[将单体拆分成服务会带来维护多个存储库（每个服务一个存储库）的复杂性，每个存储库都有独立（但相互依赖）的构建流程和版本控制历史。Monorepo 已经成为一种降低复杂性的流行解决方案。
+
+尽管 Monorepo 工具开发商有时会提供建议，但在现有代码库中配置 Monorepo 并不容易，尤其是单体代码库。更重要的是，迁移到 Monorepo 可能会给代码库开发团队带来巨大影响。例如，需要将大多数文件移动到子目录中，这会与团队当前正在进行的其他更改产生冲突。
+
+本文将探讨如何平滑地将单体 Node.js 代码库变成 Monorepo，并将可能带来的影响和风险降到最低。
+
+简介：单体代码库
+
+假如存储库包含两个 Node.js API 服务器：api-server 和 back-for-front-server。它们是用 TypeScript 编写的，并转译为 JavaScript 在生产环境中运行。这两个服务器共用一套开发工具（用于检查、测试、构建和部署服务器）和 npm 依赖。它们还共用 Dockerfile 打成一个包，运行哪个 API 服务器要通过指定不同的入口点来选择。
+
+迁移之前的文件结构：
+├─ .github  
+│  └─ workflows  
+│     └─ ci.yml  
+├─ .yarn  
+│  └─ ...  
+├─ node_modules  
+│  └─ ...  
+├─ scripts  
+│  ├─ e2e-tests  
+│  │  └─ e2e-test-setup.sh  
+│  └─ ...  
+├─ src  
+│  ├─ api-server  
+│  │  └─ ...  
+│  ├─ back-for-front-server  
+│  │  └─ ...  
+│  └─ common-utils  
+│     └─ ...  
+├─ .dockerignore  
+├─ .eslintrc.js  
+├─ .prettierrc.js  
+├─ .yarnrc.yml  
+├─ docker-compose.yml  
+├─ Dockerfile  
+├─ package.json  
+├─ README.md  
+├─ tsconfig.json  
+└─ yarn.lock
+
+点击查看原文>]]></summary>
+        <author>
+            <name>作者：Adrien Joly</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SpaceX效应——聊聊宇航巨子背后的企业文化]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e247</id>
+        <link href="https://www.infoq.cn/article/ZCIUqvc0qJpWhAZSsM9l?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[用使命、影响力、高度强调输出的工作环境，“帮助”员工发挥出最大潜能，同时也挤占了他们的生活空间，这些管理文化体现在马斯克的多家公司里：SpaceX、Tesla、OpenAI、Neuralink 和 The Boring Company。
+
+
+
+执行：简化流程，快速行动
+1. 让需求不再那么蠢
+
+首先接受一个观念，“你的很多要求非常愚蠢”。多年之前，马斯克曾专门拿出时间解决Model 3车型的电池组生产问题。当时，玻璃纤维面板成了整个生产流程中的瓶颈。
+
+最终，他问电池安全团队，“这块板子是干啥用的？”团队说它的意义就是减少噪音和振动。于是马斯克又去找噪声振动分析团队，对方给出的解释是“为了防火”。两边相互指指点点，都不承认自己的理解有问题。最终，他们测试了一下声音，发现加不加板子没有任何影响。这就是所谓“非常愚蠢的要求”。
+点击查看原文>]]></summary>
+        <author>
+            <name>Jeff Burke  and  Michael Madrid</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[重写 50 万行代码，从 0 自研的云原生 HSTAP 能否成为数据库的未来？]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e241</id>
+        <link href="https://www.infoq.cn/article/Dm4VbCIzLpDADad7GIPy?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[HTAP，一个为满足实时性业务分析场景而存在的数据库。
+
+从 2005 年被 Gartner 首次提出以来，HTAP 已经历经数十年的发展期。在当下，如果再次提起 HTAP，不免让人觉得它是个既“友好”又“矛盾”的存在。
+
+“友好”在于，HTAP 数据库能够同时支撑业务系统和在离线数据分析系统运行，避免在传统架构中，在线与离线数据库之间大量的数据交互，对简化企业的数据系统的复杂度将起到至关重要的作用；但“矛盾”在于，用户在 AP 场景和 TP 场景负载模型差异很大，对数据库的诉求也完全不同，如何通过技术手段来平衡他们之间的矛盾成为了 HTAP 数据库的核心问题，因此，一定要有东西在这两者之间做桥梁。
+
+至此，问题也就显露出来了。用户如何能在 TP 还是 AP 负载下，随心所欲地去创建各种表，也可以随心所欲地用一个流呢？在超融合趋势的推动之下，HSTAP 的概念呼之欲出，多出来的“S”格外让人好奇到底是不是在造概念。为了深入了解 HSTAP 的技术架构与产品特性，InfoQ 特别采访了矩阵起源技术 VP 秦姝琦。
+技术的发展有迹可循，先谈谈为何提出 HSTAP
+
+要知道，一个技术概念之所以被提出，究其根本还是为了解决某一类痛点问题。比如，近几年 IoT 产业以及 AI 行业的兴起，产生了大量的时序数据以及图数据，在底层数据类型愈发多样的前提下，直接催生出了一批时序数据库和图数据库。
+
+那么，HSTAP 为何会被提出呢？若想真正理解 HSTAP 的内核，不妨先看看它到底要解决业界的哪些问题。
+点击查看原文>]]></summary>
+        <author>
+            <name>郑思宇</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【精彩剧透】PyCon China 2022 邀您共赴技术Party！]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e23b</id>
+        <link href="https://xie.infoq.cn/article/dd8d241f986f599971d096187?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[PyCon China 每年由 PyChina 社区定期举办，现如今已成为中国大型的 Python 技术会议。我们希望汇聚更多的开发者们，一起交流 Python 技术，包括人工智能、Python 特性、网络安全、服务端开发、运维、医疗、金融、开源项目等更多 Python 相关的技术领域。
+点击查看原文>]]></summary>
+        <author>
+            <name>PyChina</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDD与EDA-核心逻辑提炼方法论]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e239</id>
+        <link href="https://xie.infoq.cn/article/4236cf47e09e1cc7d5df316fa?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[领域设计可能需要大家在观念上有所转变，现在大多数开发都属于业务开发，业务开发最重要的不是说对一些基础设施了解的有什么深入，而是应该对你所属的行业了解到一定程度，能够刻画你所属的行业的核心业务逻辑。
+点击查看原文>]]></summary>
+        <author>
+            <name>胖子笑西风</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「Go工具箱」gorilla/sessions包的使用及原理分析]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b8e234</id>
+        <link href="https://xie.infoq.cn/article/53d671122ad09f97080fdab35?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2022-12-08T09:36:10.000Z</updated>
+        <summary type="html"><![CDATA[在web开发中，大家一定会使用到session。那么什么是session，session在服务端是如何存储的，go语言中的session如何实现？本文通过gorilla/sessions包来分析session的实现原理。
+点击查看原文>]]></summary>
+        <author>
+            <name>Go学堂</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[永倍达开启“元宇宙” 布局虚拟零售 - 千龙网]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b980e9</id>
+        <link href="https://news.google.com/__i/rss/rd/articles/CBMiMWh0dHA6Ly9jaGluYS5xaWFubG9uZy5jb20vMjAyMi8xMjA4Lzc4NzcyMzYuc2h0bWzSAQA?oc=5"/>
+        <updated>2022-12-08T09:32:15.000Z</updated>
+        <summary type="html"><![CDATA[永倍达开启“元宇宙” 布局虚拟零售  千龙网]]></summary>
+        <author>
+            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“元宇宙背后和之外”-欢迎参加IEEE全球元宇宙大会系列峰会-面包板社区 - 电子工程专辑]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b980e3</id>
+        <link href="https://news.google.com/__i/rss/rd/articles/CBMiKWh0dHBzOi8vd3d3LmVldC1jaGluYS5jb20vbXAvYTE4MTY5MS5odG1s0gEA?oc=5"/>
+        <updated>2022-12-08T09:32:15.000Z</updated>
+        <summary type="html"><![CDATA[“元宇宙背后和之外”-欢迎参加IEEE全球元宇宙大会系列峰会-面包板社区  电子工程专辑]]></summary>
+        <author>
+            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么标准对元宇宙很重要？-面包板社区 - 电子工程专辑]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b980e1</id>
+        <link href="https://news.google.com/__i/rss/rd/articles/CBMiKWh0dHBzOi8vd3d3LmVldC1jaGluYS5jb20vbXAvYTE4MTY5MC5odG1s0gEA?oc=5"/>
+        <updated>2022-12-08T09:32:15.000Z</updated>
+        <summary type="html"><![CDATA[为什么标准对元宇宙很重要？-面包板社区  电子工程专辑]]></summary>
+        <author>
+            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[城南行动计划助力北京丰台经济发展量质齐升-千龙网·中国首都网 - 千龙网]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b980dc</id>
+        <link href="https://news.google.com/__i/rss/rd/articles/CBMiM2h0dHA6Ly9iZWlqaW5nLnFpYW5sb25nLmNvbS8yMDIyLzEyMDgvNzg3Njg5Ny5zaHRtbNIBAA?oc=5"/>
+        <updated>2022-12-08T09:32:15.000Z</updated>
+        <summary type="html"><![CDATA[城南行动计划助力北京丰台经济发展量质齐升-千龙网·中国首都网  千龙网]]></summary>
+        <author>
+            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT与AIGC“万神殿” - 36kr]]></title>
+        <id>http://www.inoreader.com/article/3a9c6e75f3b980d1</id>
+        <link href="https://news.google.com/__i/rss/rd/articles/CBMiJWh0dHBzOi8vbS4zNmtyLmNvbS9wLzIwMzQ4ODIwNzQ0NzE0MzLSAQA?oc=5"/>
+        <updated>2022-12-08T09:32:15.000Z</updated>
+        <summary type="html"><![CDATA[ChatGPT与AIGC“万神殿”  36kr]]></summary>
+        <author>
+            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[数据：全网合约12小时爆仓约726万美元]]></title>
         <id>https://tokeninsight.com/zh/news/data-total-market-contracts-liquidated-about-7.26-million-in-12-hours?at_medium=RSS</id>
@@ -242,26 +488,6 @@ ApeX Pro 由 StarkEx 提供支持，目前支持以太坊、BNB Chain、Arbitrum
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[日本服装企业HD将与阿里合作，开发网上虚拟空间元宇宙服务 - IT商业新闻网]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3ab188f</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiL2h0dHA6Ly93d3cuaXR4aW53ZW4uY29tL0FJLzIwMjIxMjA4LzEwNjUyNC5odG1s0gEA?oc=5"/>
-        <updated>2022-12-08T07:33:17.000Z</updated>
-        <summary type="html"><![CDATA[日本服装企业HD将与阿里合作，开发网上虚拟空间元宇宙服务  IT商业新闻网]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[“星际广场”正式开放加入超时空派对一起嗨-千龙网·中国首都网 - 千龙网]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3ab1885</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiL2h0dHA6Ly9lbnQucWlhbmxvbmcuY29tLzIwMjIvMTIwOC83ODc2NTI3LnNodG1s0gEA?oc=5"/>
-        <updated>2022-12-08T07:33:17.000Z</updated>
-        <summary type="html"><![CDATA[“星际广场”正式开放加入超时空派对一起嗨-千龙网·中国首都网  千龙网]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Telegram 允许通过匿名区块链号码建立无 SIM 卡账户]]></title>
         <id>https://tokeninsight.com/zh/news/telegram-to-allow-no-sim-accounts-via-anon-blockchain-numbers?at_medium=RSS</id>
         <link href="https://tokeninsight.com/zh/news/telegram-to-allow-no-sim-accounts-via-anon-blockchain-numbers?at_medium=RSS"/>
@@ -374,57 +600,6 @@ DeFi 原语：DeFi 生态系统的构建块，其中每个协议提供特定的�
         <summary type="html"><![CDATA[经济代币的实际购买力需与现实生活中的实际购买力保持相对稳定和平衡的状态。对于用户来讲，经济代币具有交换、投资与套利的机会；对于项目方来讲，经济代币可以润滑应用内的不同模块，追溯不同板块的经济热度，以调整系统内的数值系统。]]></summary>
         <author>
             <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mysql基础超详细讲解]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3931eaa</id>
-        <link href="https://xie.infoq.cn/article/93ec9314ea2e8a83e90893619?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2022-12-08T06:33:47.000Z</updated>
-        <summary type="html"><![CDATA[​以前我们做系统，数据持久化的存储采用的是文件存储。存储到文件中可以达到系统关闭数据不会丢失的效果，当然文件存储也有它的弊端。
-点击查看原文>]]></summary>
-        <author>
-            <name>陈老老老板</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10大元宇宙应用场景及案例盘点 - 千家网]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3932187</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiMmh0dHA6Ly93d3cucWlhbmppYS5jb20vaHRtbC8yMDIyLTEyLzA4XzM5NzM4My5odG1s0gEA?oc=5"/>
-        <updated>2022-12-08T06:33:45.000Z</updated>
-        <summary type="html"><![CDATA[10大元宇宙应用场景及案例盘点  千家网]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【元宇宙之约】叶毓睿：算力提升至少1万倍 才能达到理想的元宇宙_证券要闻 - 证券之星]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f393217b</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiM2h0dHA6Ly9zdG9jay5zdG9ja3N0YXIuY29tL0lHMjAyMjEyMDgwMDAwNDA3OS5zaHRtbNIBAA?oc=5"/>
-        <updated>2022-12-08T06:33:45.000Z</updated>
-        <summary type="html"><![CDATA[【元宇宙之约】叶毓睿：算力提升至少1万倍 才能达到理想的元宇宙_证券要闻  证券之星]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[沙盒游戏母公司收购音乐元宇宙平台Pixelynx的多数股份 - 36kr]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f393216f</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiJ2h0dHBzOi8vd3d3LjM2a3IuY29tL3AvMjAzNDA5NzAwODc2NTk2MNIBAA?oc=5"/>
-        <updated>2022-12-08T06:33:45.000Z</updated>
-        <summary type="html"><![CDATA[沙盒游戏母公司收购音乐元宇宙平台Pixelynx的多数股份  36kr]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「元宇宙+XR」潮流正起，洲明XR虚拟直播间落户亚洲金融大厦！ - 数字标牌网]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3932168</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiM2h0dHA6Ly93d3cuZHMtMzYwLmNvbS9uZXdzLzIwMjIvMTIvMjAyMl8xXzQxNTA4Lmh0bdIBAA?oc=5"/>
-        <updated>2022-12-08T06:33:45.000Z</updated>
-        <summary type="html"><![CDATA[「元宇宙+XR」潮流正起，洲明XR虚拟直播间落户亚洲金融大厦！  数字标牌网]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
         </author>
     </entry>
     <entry>
@@ -547,16 +722,6 @@ If you find submirror valuable, please consider donate to wong2.eth to help cove
         <summary type="html"><![CDATA[华纳将音乐创作者和粉丝带入Web3+元宇宙的世界]]></summary>
         <author>
             <name>区块链骑士</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[“墨叽星人”来了！金茂酒店发布元宇宙IP形象 - TOM热点]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f39a8dd2</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vbmV3cy50b20uY29tLzIwMjIxMi80ODE5MTk3MDQzLmh0bWzSAQA?oc=5"/>
-        <updated>2022-12-08T05:34:05.000Z</updated>
-        <summary type="html"><![CDATA[“墨叽星人”来了！金茂酒店发布元宇宙IP形象  TOM热点]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
         </author>
     </entry>
     <entry>
@@ -769,65 +934,6 @@ Foresight News 注，美国众议院金融服务委员会也将于 12 月 13 日
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[SparkDAO行业观察：数字时尚的新兴领域和新趋势]]></title>
-        <id>https://www.web3sj.com/?p=32317</id>
-        <link href="https://www.web3sj.com/daonews/32317/"/>
-        <updated>2022-12-08T04:44:28.000Z</updated>
-        <summary type="html"><![CDATA[消费者希望与他们购买的品牌互动、归属感、影响力成为他们所购买的品牌的动力。绝大多数消费者在购买之前、期间或之后使用数字渠道了解。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NARS品牌全球玩妆先锋NARS POWER PLAYERS惊艳亮相 - 财经网]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f381a7b8</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiMWh0dHA6Ly90ZWNoLmNhaWppbmcuY29tLmNuLzIwMjIxMjA4LzQ5MDU0Mjguc2h0bWzSAQA?oc=5"/>
-        <updated>2022-12-08T04:33:59.000Z</updated>
-        <summary type="html"><![CDATA[NARS品牌全球玩妆先锋NARS POWER PLAYERS惊艳亮相  财经网]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[传媒行业月报：内容供给侧改善，各地元宇宙支持政策频发_行业研究_研报_股票 - 证券之星]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f381a7ab</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiM2h0dHBzOi8vd2FwLnN0b2Nrc3Rhci5jb20vZGV0YWlsL0pDMjAyMjEyMDgwMDAwMzM3NNIBAA?oc=5"/>
-        <updated>2022-12-08T04:33:59.000Z</updated>
-        <summary type="html"><![CDATA[传媒行业月报：内容供给侧改善，各地元宇宙支持政策频发_行业研究_研报_股票  证券之星]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CNCF 宣布 Argo 正式毕业]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f38205fa</id>
-        <link href="https://www.infoq.cn/article/Y8a0EK2UevjXBm3QGCOX?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2022-12-08T04:30:48.000Z</updated>
-        <summary type="html"><![CDATA[当地时间 12 月 6 日， CNCF（云原生计算基金会） 宣布 Argo 正式毕业，Argo 将与 Kubernetes、Prometheus 和Envoy 等并列到 CNCF 毕业项目行列。
- 
-Argo 项目是一组 Kubernetes 原生工具集合，由 Argo Workflows、Argo Events、Argo CD和Argo Rollouts 四个 Kubernetes 原生子项目组成，用于运行和管理 Kubernetes 上的作业和应用程序。
- 
-其中，Argo Workflows 支持创建复杂的并行工作流作为 Kubernetes 资源，并用于从 CI/CD 流水线到机器学习工作流的许多不同用例中；Argo Events 基于各种事件源，为 Kubernetes 资源（包括 Argo Workflows）提供基于事件的依赖性和触发器的声明式管理；Argo CD 和 Argo Rollouts可以帮助工程师理解、采用和使用 Kubernetes，并使 GitOps最佳实践对想要采用它的团队来说更容易实现。这些工具可以单独使用，但结合使用对大规模创建和运行复杂的应用程序有很大好处。 
- 
-Argo 提供了一种在 Kubernetes 上创建工作和应用程序的三种计算模式——服务模式、工作流模式和基于事件的模式——的简单组合方式。所有的 Argo 工具都实现为控制器和自定义资源。
- 
-据悉，Argo 现在被 350 多个组织应用，该数量比加入 CNCF 孵化器时增加了 250%，其中包括 Adob​​e、Blackrock、Capital One、Google、Intuit、PagerDuty、Peloton、Snyk、Swisscom、Tesla 和 Volvo等企业。最新的 CNCF 在用户调查显示，超过 50% 的受访者表示他们正在生产中运行 Argo，或正对其进行评估。
-点击查看原文>]]></summary>
-        <author>
-            <name>褚杏娟</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MEV给以太坊带来了哪些中心化问题？如何改进？]]></title>
-        <id>https://www.web3sj.com/?p=32303</id>
-        <link href="https://www.web3sj.com/news/32303/"/>
-        <updated>2022-12-08T04:29:32.000Z</updated>
-        <summary type="html"><![CDATA[回想一下，MEV-Boost 背后的最初基本原理是试图减轻大型质押池对 MEV 提取的规模效应，这将不可避免地导致中心化。MEV-Boost 旨在允许任何验证者从他们提议的区块中获得尽可能多的 MEV，这意味着独立质押者获得 MEV 的机会与大型质押池一样，从而保持公平的竞争环境。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[万字长文解读 Web3 身份堆栈：迈向数字主权之路]]></title>
         <id>http://www.inoreader.com/article/3a9c6e75f38dd71e</id>
         <link href="https://www.8btc.com/article/6792392"/>
@@ -861,16 +967,6 @@ Argo 提供了一种在 Kubernetes 上创建工作和应用程序的三种计算
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[资金只够再撑一年半，Sushi如何自救？]]></title>
-        <id>https://www.web3sj.com/?p=32298</id>
-        <link href="https://www.web3sj.com/definews/32298/"/>
-        <updated>2022-12-08T03:50:13.000Z</updated>
-        <summary type="html"><![CDATA[Jared还提到，由于SUSHI代币已接近完全流通，而Sushi财库此前除了代币解锁收入之外仅有通过Kanpai获得的少部分交易费抽成收入，一直未能实现财库储备的资产多样化（可以理解为财库手里基本只有SUSHI），这进一步削弱了Sushi的抗风险能力。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[跨链互操作性网络 Axelar 集成 Arbitrum]]></title>
         <id>https://tokeninsight.com/zh/news/cross-chain-interoperability-network-axelar-integrates-with-arbitrum?at_medium=RSS</id>
         <link href="https://tokeninsight.com/zh/news/cross-chain-interoperability-network-axelar-integrates-with-arbitrum?at_medium=RSS"/>
@@ -878,16 +974,6 @@ Argo 提供了一种在 Kubernetes 上创建工作和应用程序的三种计算
         <summary type="html"><![CDATA[跨链互操作性网络 Axelar 宣布集成 Arbitrum。用户可通过 Axelar 的跨链资产转移应用 Satellite 将资产从其他连接到 Axelar 的区块链转移到 Arbitrum。]]></summary>
         <author>
             <name>Tokeninsight</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[“聚焦全球热点中俄青年动漫诠释多样文明”——2022年中俄“Magika”媒体节成功举办 - China Daily]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75f3887b6b</id>
-        <link href="https://news.google.com/__i/rss/rd/articles/CBMiSGh0dHBzOi8vY24uY2hpbmFkYWlseS5jb20uY24vYS8yMDIyMTIvMDgvV1M2MzkxNDRmY2EzMTAyYWRhOGIyMjVhYTEuaHRtbNIBAA?oc=5"/>
-        <updated>2022-12-08T03:34:04.000Z</updated>
-        <summary type="html"><![CDATA[“聚焦全球热点中俄青年动漫诠释多样文明”——2022年中俄“Magika”媒体节成功举办  China Daily]]></summary>
-        <author>
-            <name>元宇宙与区块链 via shengchao shi on Inoreader</name>
         </author>
     </entry>
     <entry>
@@ -1324,26 +1410,6 @@ Uniswap NFT 市场
         <summary type="html"><![CDATA[Web3 社交在用户体验方面无法与 Web2 社交直接竞争，要想成功，需要提供独特的创新效用]]></summary>
         <author>
             <name>火星财经</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Animoca和Binance一年前推出的2亿美元链游投资计划进展缓慢]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75fcd8df61</id>
-        <link href="https://www.8btc.com/article/6792236"/>
-        <updated>2022-12-07T07:35:02.000Z</updated>
-        <summary type="html"><![CDATA[熊市是该计划启动缓慢的一个潜在原因]]></summary>
-        <author>
-            <name>星球日报</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[10亿元！上海首支元宇宙产业基金启动，全国7地元宇宙产业基金亦在规划推动中]]></title>
-        <id>http://www.inoreader.com/article/3a9c6e75fcc24cce</id>
-        <link href="https://www.8btc.com/article/6792222"/>
-        <updated>2022-12-07T06:23:44.000Z</updated>
-        <summary type="html"><![CDATA[元宇宙基金涌现，行业培育尚待发力]]></summary>
-        <author>
-            <name>元宇宙之道</name>
         </author>
     </entry>
     <entry>
