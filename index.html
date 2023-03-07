@@ -59,8 +59,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-07 datetime="2023-03-07T11:12:37.704Z">2023-03-07</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-07 datetime="2023-03-07T11:12:37.704Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2023-03-07 datetime="2023-03-07T12:29:30.931Z">2023-03-07</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2023-03-07 datetime="2023-03-07T12:29:30.931Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -79,202 +79,41 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500118&amp;idx&#x3D;3&amp;sn&#x3D;30a3f41b958958a1fec5af3172de8b94&amp;chksm&#x3D;fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499249&amp;idx&#x3D;2&amp;sn&#x3D;f35675b2adaba7babeae87889f0fc3af&amp;chksm&#x3D;fa01cad6cd7643c0703749875a969fa985b21683b5d4323f3df4f95059045dbb2065dad36922#rd"
                         open
                       >
-                        <summary class="article-expander__title">▪ 区块链转账是怎么收费的？| 245</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500118&amp;idx&#x3D;3&amp;sn&#x3D;30a3f41b958958a1fec5af3172de8b94&amp;chksm&#x3D;fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd">
+                        <summary class="article-expander__title">▪ 区块高度和记账本那些事儿| 222</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499249&amp;idx&#x3D;2&amp;sn&#x3D;f35675b2adaba7babeae87889f0fc3af&amp;chksm&#x3D;fa01cad6cd7643c0703749875a969fa985b21683b5d4323f3df4f95059045dbb2065dad36922#rd">
                           <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXwHicLOdaLwAOiaABKnDHKHBmaUX3f3oMkmc1a8lWm4NeakY3KPBsygjicp9UWcGdTMYVDkbyThYcg3w/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxyXh4kYdnldpeFiaAV71xtBn2xDQFFVs5RTc5ykMynHfGOZc78Y3KOhR2ht6j5YXvYSzbiaNtafF9A/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
 
-作者 | 听风
+作者 | 宇星
 出品｜白话区块链（ID：hellobtc）
-早年银行间转账都是收手续费的，一般按照转账金额的一定比例收取。而跨国转账，由于货币国与国之间的壁垒及外汇管制等，除了支付以上手续费和支付200元左右的电报费，另外还耗时几个工作日。
-然而，这些壁垒和管制在区块链的世界里都不复存在。你只需要轻轻发送一个转账请求，基本能够实现一小时内到账，那么区块链转账手续费是如何收取的呢？
+在关于区块链的很多文章中，经常会看见区块链在某个区块高度发生分叉，那究竟什么是区块高度，为什么在某个区块高度会发生分叉呢？今天大白就和大家来聊聊区块高度的那些事儿。
 
 
  01 
-比特币网络转账
+区块链与记账本
 
-最早的比特币网络转账是按字节收费的（BTC矿工费&#x3D;Fees（聪/byte） * Site（byte））。比特币转账是从一个比特币地址转移到另一个比特币地址，在实际交易过程中，如果A要转账给B，包含这笔交易的区块向区块链中的所有用户发布广播，矿工平均每隔10分钟会将比特币网络中未被记账的交易打包进一个区块，这就完成了一次确认，经过6次确认后，这笔转账就被认为不能逆转了。
-所以这里转账的手续费实际上是支付给矿工记账的报酬。一笔交易（不分金额）是250字节甚至更多，手续费一般为0.0001-0.0015个比特币。而比特币一个区块的容量就1M，一个区块每秒大约只能处理7笔交易，所以比特币上的交易是非常拥堵缓慢的，为了获得优先记账权，可以多付些手续费。
+
+
+区块高度顾名思义就是区块的高度，准确地说是连接在区块链上的块数。因此想要明白什么是区块高度，我们得首先搞明白什么是区块链。如果说区块链是记账本的话，那么一个区块就像是记账本的每一页一样。
+在记账本的一页页纸中，清清楚楚地记录着每一笔账。而且为了交易不被篡改和保证公开透明性，区块链记账的方式是大家一起记账。
 
 
  02 
-以太坊的转账
-
-以太坊的转账是按消耗Gas（燃料）计算的 （ETH矿工费 &#x3D; Gas Limit * Gas Price） 。与BTC一样，ETH转账也是需要支付区块链矿工费的。
-不同的是，以太坊的转账我们称消耗了Gas（燃料），这个值是由Gas Price（单价）和消耗的 Gas Limit（数量）来确定的，Gas limit的数量一般是根据ETH智能合约内容来决定的，因此发起方设置的Gas Price的价格越高，其发起的交易就能越快被打包。不过ETH的Gas用不完是可以退回的。
-
-
- 03 
-EOS转账
-
-不同于BTC和ETH，EOS转账几乎“免费”。EOS 转账过程中会消耗一定网络带宽资源（NET）、CPU计算资源(CPU)。
-但NET和CPU都是可再生资源，用户可以通过抵押EOS的方式获得，EOS账号信息、智能合约执行信息存储需要消耗运行内存资源（RAM）, RAM是稀缺资源，需要购买，所以说EOS转账是免费的，但是还是需要消耗需要购买的RAM。
-传统的支付转账系统都是依赖于第三方机构作为信用背书，而在区块链的世界里，是点对点的去中心化交易，它速度更快，成本更低，具有更大的优势。
-你认为区块链转账相比传统行业还有哪些优势和弊端呢？欢迎在留言区分享你的观点。
-
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499989&amp;idx&#x3D;2&amp;sn&#x3D;e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm&#x3D;fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 频频出现的Libra和DECP究竟是什么？两者有何关系？|</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499989&amp;idx&#x3D;2&amp;sn&#x3D;e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm&#x3D;fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXwxbDSomHmQibGYNbxZhegaFKnIX4v4AicyYtXh6YwY1fW8XCl7WXh3JI3SI6kC6ebeE6LbvxqaHtWQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 三黎
-出品｜白话区块链（ID：hellobtc）
-自2019年6月18日起，Facebook Libra就成了区块链媒体文章中的常见词汇。而在2019年10月24日刮起了学习区块链的一场大风之后，各种新闻报道和普及文章纷纷来袭。DCEP和Libra更是经常一起出席，今天我们就来了解一下Facebook Libra和DCEP是什么？它们之间有何关联？
-
-
- 01 
-Facebook Libra是什么？
-
-Facebook是美国的一个社交网站 ，创立于2004年2月4日，主要创始人是马克·扎克伯格（Mark Zuckerberg）。2019年6月18日，这个全世界最大的社交网站发布了一个叫做“Libra”的数字货币的白皮书，引得众人关注。
-一个社交网站要发数字货币，这是怎么回事？根据白皮书的定义：
-
-Libra是一个数字货币项目，它的使命是建立一套简单、无国界的货币，并且建立为全球数十亿人服务的金融基础设施。
-
-而Facebook整个生态下将近27亿的用户数量，这可能也是为什么它受到如此广泛的关注的重要原因。据9月24日移动支付网的消息，支付宝宣布全球用户数在年中时也不过12亿，而有将近其两倍用户的Facebook可想而知，一旦货币得到应用将势不可挡。
-那么，Libra和比特币之间有何区别呢？中国人民银行支付结算司副司长穆长春在《科技金融前沿：Libra与数字货币展望》中提到Libra是比比特币更接近支付工具的数字货币。可以类比为数字货币中的稳定币。Libra是一篮子货币的资产储备。这里先对一篮子货币做个解释：
-一篮子货币就是将现有的一组货币按照一定方法组合而成的复合货币。例如，甲乙丙三个王国要物物交换，甲国黄金多、乙国盛产大米、丙国水资源丰富，他…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499540&amp;idx&#x3D;2&amp;sn&#x3D;3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm&#x3D;fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 入行区块链后，你有什么感触？| 231</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499540&amp;idx&#x3D;2&amp;sn&#x3D;3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm&#x3D;fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxSjdUM6nWjetfPAhB4hr5vMQdichESGu7ZyxjZT9WctTIk6t1jxud0Kh0Nobb2bN92Z2FJXZAGycw/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
-
-作者 | Lesley
-出品｜白话区块链（ID：hellobtc）
-比特币诞生已十年有余，无论你是从哪一年接触到它，或是了解到区块链这个行业，现在都应该有自己的一些感触和认识了。
-今天，我们就来聊聊一些入行后的个人感受。
-
-
- 01 
-行业仍在早期阶段，投资逐渐趋于理性
-从 2017 年 7 月至今，行业内基本无明显进展，落地项目寥寥无几，更谈不上项目创造现金流或拥有自我造血能力。行业内倒是热点不断，如 1C0、比特币分叉币、主网上线、交易挖矿、菠菜类 DApp、Staking、平台币等，资金跟随热点轮番炒作。
-今年上半年 BTC 和主流平台币表现亮眼，交易平台是除了挖矿之外能找到为数不多产生现金流的行业，资金重点关注此类项目，说明曾经的火爆场景回归冷静，投资逐渐趋于理性。
-
-
- 02 
-投资周期短，波动幅度大
-“圈内一天，人间一年”，24 小时的全天候交易，赶上一周的股票交易时间。在加密资产投资圈内，周期短，波动幅度大，自然造成了投机氛围重。
+区块高度与记账本页码
+既然区块链是个记账小本本，那么每一页（区块）可以记录的账是有限的，所以为了区分和查找一笔交易到底记录在哪一个区块中，我们很容易会想到给这个本子标明页码。所以，如果说区块链是一个记账的小本本的话，则区块高度就像是这个记账本的页码一样。
+那么大白的思考题来啦，在只有一条最长链的区块链的情况下，假设当前记账本这一页的页码是 3 ，那么这个区块是这条区块链的第多少个区块呢？答案：第 4 个区块。
+有的小伙伴会疑问为什么不是第 3 个区块呢？原因是区块链的还有一个区块高度为 0 的区块，也就是创世区块。它的页码为 0，因此到页码为 3 的区块时，是代表着它的前面有3个区块，也叫做区块的祖先数量。而它自己是这条链的第 4 个区块。
+              
 
 
  03 
-值得规避的常见合约交易错误
-期货合约是非常专业的金融衍生品，作为新手，很容易犯以下错误：
-1、梭哈或重仓
-初生牛犊不怕虎，重仓参与合约交易，把交易成败寄托于一次机会中，不给自己留有余地，这是非常危险的。
-2、高杠杆
-杠杆是把收益放大的同时，也会把风险同比例的放大；再加上加密资产本身波动剧烈，放大效应更为显著，高杠杆交易往往在短期无序波动中快速亏损本金。
-3、逆势开单，或亏损情况下加仓
-在上涨阶段时猜测应该跌了，于是上涨阶段开空单即为逆势开单。与此类似的是在亏损的情况下继续加仓，亏损已经说明了这单交易是错误的，亏损加仓就是错上加错。
-4、每单交易价值不等
-交易获利容易给人带来无往不胜的错觉，情不自禁地加大单笔交易的仓位，殊不知这一次交易和上一次交易毫无联系，即使两次交易盈亏比例相同，但因加大仓位亏损增加，最终仍是亏损的。
-5、频繁开单交易或缺乏止损计划
-每单交易都要交手续费，如果过于频繁开单容易陷入磨损本金、给“交易平台打工”的困境。而止损计划的意义在于让错误或亏损停止，若开单没有止损计划的话，容易造成扛单，扛单则会助推爆仓的发生。
-
-
- 04 
-合约交易正确姿势
-合约交易需要非常多的知识，背后有一套严密的方法论指导。在掌握分析、仓位、风控概念的前提下，寻找具有盈亏比优势的点位开单，并设定止盈止损位至关重要。
-另外，交易心态也需要历练，树立概率和客观的认识，并及时的交易总结和反思，修正自己的交易习惯。
-
-在区块链行业的这么多年，你有什么经验想告诉大家呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
+出块和记账本页码生成
+在搞明白什么是区块高度之后，大白再继续和大家说说区块高度是怎么形成的。在挖矿机制的区块链中，区块链这个记账小本本的页码是矿工竞争得到的。比如当前的区块高度是 3，当幸运的矿工解决…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;32
                                   min&hairsp;)</span>
                             </span>
@@ -368,364 +207,6 @@ Libra是一个数字货币项目，它的使命是建立一套简单、无国界
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500009&amp;idx&#x3D;2&amp;sn&#x3D;aa68710cd3eb1758dff8776bbc1be70e&amp;chksm&#x3D;fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 一文看懂区块链的扩容方案和主要的二层网络（Layer</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500009&amp;idx&#x3D;2&amp;sn&#x3D;aa68710cd3eb1758dff8776bbc1be70e&amp;chksm&#x3D;fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXyJWkPibNyVjwmm8AKOW2OH8z8ibq7F20iaHJNzLFzjlPlB2MFCwrVxD8Kr3XPUTpkWF523ITep43fsQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | JackyLHH
-出品｜白话区块链（ID：hellobtc）
-今年的“双 11”全民购物狂欢节，根据阿里云公布的数据，订单创建峰值创下了新的纪录，达到了每秒 54.4 万笔，远远超过去年的每秒 49.1 万笔，是 2009 年第一次“双11”的 1360 多倍。
-这就是中心化系统的优势。
-相比之下，去中心化的区块链技术，在性能上就相形见绌了：比特币区块链每秒只能处理大约 7 笔交易，以太坊区块链每秒能处理约十几笔交易，当初打着“百万 TPS”旗帜的 EOS 区块链在测试中的最高 TPS 也只有四五千，平时运行时的 TPS 只有两位数。
-EOS 区块链实时 TPS 只有两位数
-来源：eosflare.io
-
-虽然性能并不是区块链技术的优势，但如果成为“短板”，毫无疑问会推迟区块链技术的大规模应用。
-所以近年来，不断有技术开发人员和项目团队提出各种各样的解决方案。这些解决方案，主要可以分为两大类：链上扩容和链下扩容。
-链上扩容，就是直接在区块链上“动手术”——修改规则，包括区块大小、共识机制等等。比如，将比特币区块链的区块大小直接从 1M 扩容到 32M、128M 甚至是 2G（这就是 BTC、BCH 和 BSV 在区块大小上的分歧），再比如现在被给予厚望的、“以太坊 2.0”将会采用的技术方案——分片技术（Sharding）。如果你想了解更多关于分片技术的知识，请阅读白话之前的推文《一文看懂区块链性能解决方案：分片》。
-链下扩容，是指在主链之外建立第二层交易网络，因此链下扩容也被称为“Layer 2”。
-如果将链上扩容类比为道路的拓宽，那么链下扩容就是在旁边新建高架桥、隧道、小路等等。如果你想了解更多关于链上扩容和链下扩容的区别，请阅读白话之前的…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499928&amp;idx&#x3D;2&amp;sn&#x3D;0139f152eb1b17f63e865a77c8e75b79&amp;chksm&#x3D;fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 什么是交易深度？如何衡量交易深度？| 241</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499928&amp;idx&#x3D;2&amp;sn&#x3D;0139f152eb1b17f63e865a77c8e75b79&amp;chksm&#x3D;fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXwETNOwl8n48UaG0IjMewDSHdAErHPXtKk72wseptT6sNOOk1mFE6HYMa6OxFeiaxLR8b4duKfX9icA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者|阿华
-出品|白话区块链（ID：hellobtc）
-我们在选择数字货币交易平台进行交易时，最先要考虑的就是平台的安全性和交易深度了，一般来说，世界排名靠前的交易平台都符合这两个特性，即安全性和深度都好。
-安全性容易理解无需多说，那么什么是交易深度呢？如何衡量交易深度？下面我们一起来探讨下。
-
-
- 01 
-什么是交易深度
-交易深度是指市场在承受大额交易时币价不出现大幅波动的能力。一般在谈论交易深度时，指的是某个币种在某个平台的交易深度。
-我们需要从挂单量和价差两个指标来理解交易深度，挂单数量大、相邻挂单之间的价差小，就说明交易深度好。
-
-
-
-
-
-例如在上图中，左侧是A平台，右侧是B平台，很明显B平台EOS的交易深度好。说明在B平台中，EOS的委托挂单量大，而且相邻挂单间价差也比较小，即挂单比较密集，因此，在B平台买入的时候就不会出现大幅拉盘，卖出的时候也不会出现大幅砸盘，即买的轻松、卖的容易。
-
-
- 02 
-如何衡量交易深度
-衡量平台交易深度好坏一般会用两个指标，一个是价差，另外一个是挂单量。
-价差是指相邻两笔订单之间的价格差距。价差越小，挂单价格越密集，说明买入或卖出的实际价格越接近真实的市场价格。
-挂单量是指每笔委托挂单数量的多少，是市场承载能力的体现，挂单量越大，意味着交易深度越好，越能够满足大单的交易需求。
-
-
- 03 
-交易深度有什么用
-我们在进行数字货币交易时，尽量去交易深度好的平台进行交易，这有两个好处：交易时币价相对更稳定，交易成本也更低。
-1、交易时币价相对更稳定
-下面我们举例说明，如果要购买300个EOS，如下图，分别对比下在A平台和B 平台完成交易后对EOS价格的影响。
-
-在上图中，很明显B平台的交易深度要更好一些。
-如果想要在 A 交易平台快速购买300个EOS，需要吃掉卖1价、卖2价、卖3价等，直到买够300 EOS，由于交易深度不好，完成交易后EOS的价格被推高了；
-而如果在B平台快速购买300个EOS，仅仅使用卖1价2.8209即可成交（因为这个价格的挂单量为303，大于购买量300），完成交易后EOS价格稳定，并没有被推高。
-2、交易成本更低
-举例说明：下图是平台 A 和 平台 B 中卖单的交易深度，假如小明想快速完成2000个EOS的交易，我们对比下在两个平台购买2000个EOS 时的交易成本。
-
-在平台A进行交易：
-小明需要以20的价格购买500个，以21的价格购买500个，以此类推，按照交易深度持续购买。
-小明的总成本为：20500+21500+22500+23500 &#x3D; 43000（比B平台贵了3000）。
-交易完成后，平台A中EOS的价格被推高至23。
-在平台B进行交易：
-小明直接以20的价格购买2000个，小明的总成本就是：20*2000&#x3D;40000。
-交易完成后，平台B中EOS的价格仍然是20。所以，在交易深度好的平台进行交易时，成本会更低。
-总之，我们在进行交易时，尽量选择交易深度好的平台，不但可以快速完成交易，而且成本也低，对市场也不会造成太大的冲击。
-你理解交易深度了吗？你觉得哪些平台的交易深度普遍好？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499875&amp;idx&#x3D;3&amp;sn&#x3D;58bbe9c8792699b2755d8997555c780e&amp;chksm&#x3D;fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 与区块链的诞生息息相关的密码极客和密码朋克？| 2</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499875&amp;idx&#x3D;3&amp;sn&#x3D;58bbe9c8792699b2755d8997555c780e&amp;chksm&#x3D;fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXykJNkEjaJpYcI0mByuvgK3dYoJ6OU0SY8ZkNic2vuasjTG13WveFD1a1rzEVszbhkXo8ZtHKFawRQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 三黎
-出品｜白话区块链（ID：hellobtc）
-时至今日，生活中依赖网络的事情越发增多，互联网里的匿名性逐渐被弱化，隐私需要加密的问题亟待解决。无论是国家还是个人，都把眼光看向了区块链技术，对之寄予厚望。
-在很多区块链密码学的相关文章中，我们经常会看到“密码极客”、“密码朋克”这样的字眼，究竟是什么意思呢？今天，我们就来了解一下这两个小知识。
-
-
- 01 
- 密码极客是什么？
-
-“极客”一词，来自“Geek”的音译，意为智力超群、善于钻研但不懂与人交往的怪才，一般指那些依靠计算机技术连接在一起的社会性人群，他们把大量社交时间花费在电脑上，是一种新的“精英亚文化群”。
-密码极客就是研究与密码相关的人群，而密码学又在区块链、加密资产中必不可少，所以在网络上终日热衷于钻研区块链技术的人，也被称为密码极客。
-区块链行业中的密码极客，最著名的是一群来自前阿里、蚂蚁金服的技术人员与阿里创业帮一起发起的区块链技术创投社群，也是杭州最大的区块链技术创业社群。 
-
-
- 02 
-密码朋克是什么？
-
-提起朋克，就会联想到反抗、自由，在普通的书中还是常见的，因此算不上陌生词汇。它是上世纪六七十年代的一种西方文化思潮，最初是奇装异服、反叛摇滚的象征，指年轻人为了反对而反抗的一种行为，称为朋克精神。
-密码朋克的英文为 Cypherpunk，1993 年首次出现在埃里克·休斯出版的《密码朋克宣言》中，指反对任何国家规则的密码系统，没有正式的领导阶层，一般通过加密邮件列表进行联系的极客群体，中本聪就是其成员之一。
-区块链技术与密码朋克也有一些关联。
-每一种新技术在发展之初甚至萌芽之际，都有一批开拓者为其摇旗呐喊或是默默耕耘，区块链作为一个“信任机器”和“去中心化数据库”，无论是愿景还是技术支撑，“加密”都是其重要组成部分，而这一切都是为了“隐私”而战。
-区块链起源就是从密码朋克运动开始的，中本聪的比特币白皮书最早发布于“密码朋克”邮件列表，并且在比特币出现之前，密码朋克发表有数十种数字货币，大多都已失败告终。
-
-
- 03 
-小结
-总之，密码极客就是研究密码相关行业的天才、怪才，而密码朋克即指因反对任何规则系统而研究密码相关行业的群体。
-尽管今天的比特币等加密资产和区块链技术如火如荼，但密码朋克对于网络隐私权的乌托邦理想可能才是其发展的初衷。
-你知道当时的密码朋克成员，除了中本聪还有些谁吗？欢迎在留言区分享你的观点。
-
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499249&amp;idx&#x3D;2&amp;sn&#x3D;f35675b2adaba7babeae87889f0fc3af&amp;chksm&#x3D;fa01cad6cd7643c0703749875a969fa985b21683b5d4323f3df4f95059045dbb2065dad36922#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 区块高度和记账本那些事儿| 222</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499249&amp;idx&#x3D;2&amp;sn&#x3D;f35675b2adaba7babeae87889f0fc3af&amp;chksm&#x3D;fa01cad6cd7643c0703749875a969fa985b21683b5d4323f3df4f95059045dbb2065dad36922#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxyXh4kYdnldpeFiaAV71xtBn2xDQFFVs5RTc5ykMynHfGOZc78Y3KOhR2ht6j5YXvYSzbiaNtafF9A/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 宇星
-出品｜白话区块链（ID：hellobtc）
-在关于区块链的很多文章中，经常会看见区块链在某个区块高度发生分叉，那究竟什么是区块高度，为什么在某个区块高度会发生分叉呢？今天大白就和大家来聊聊区块高度的那些事儿。
-
-
- 01 
-区块链与记账本
-
-
-
-区块高度顾名思义就是区块的高度，准确地说是连接在区块链上的块数。因此想要明白什么是区块高度，我们得首先搞明白什么是区块链。如果说区块链是记账本的话，那么一个区块就像是记账本的每一页一样。
-在记账本的一页页纸中，清清楚楚地记录着每一笔账。而且为了交易不被篡改和保证公开透明性，区块链记账的方式是大家一起记账。
-
-
- 02 
-区块高度与记账本页码
-既然区块链是个记账小本本，那么每一页（区块）可以记录的账是有限的，所以为了区分和查找一笔交易到底记录在哪一个区块中，我们很容易会想到给这个本子标明页码。所以，如果说区块链是一个记账的小本本的话，则区块高度就像是这个记账本的页码一样。
-那么大白的思考题来啦，在只有一条最长链的区块链的情况下，假设当前记账本这一页的页码是 3 ，那么这个区块是这条区块链的第多少个区块呢？答案：第 4 个区块。
-有的小伙伴会疑问为什么不是第 3 个区块呢？原因是区块链的还有一个区块高度为 0 的区块，也就是创世区块。它的页码为 0，因此到页码为 3 的区块时，是代表着它的前面有3个区块，也叫做区块的祖先数量。而它自己是这条链的第 4 个区块。
-              
-
-
- 03 
-出块和记账本页码生成
-在搞明白什么是区块高度之后，大白再继续和大家说说区块高度是怎么形成的。在挖矿机制的区块链中，区块链这个记账小本本的页码是矿工竞争得到的。比如当前的区块高度是 3，当幸运的矿工解决…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499150&amp;idx&#x3D;3&amp;sn&#x3D;ebc4d730bf6a33e23bfa548f9384c132&amp;chksm&#x3D;fa01caa9cd7643bf282080175f0e7ede3eb128e9fc14688b3bd6ea77ad7240e8d776fa7da751#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 区块链2.0领域的左膀右臂——智能合约 | 220</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499150&amp;idx&#x3D;3&amp;sn&#x3D;ebc4d730bf6a33e23bfa548f9384c132&amp;chksm&#x3D;fa01caa9cd7643bf282080175f0e7ede3eb128e9fc14688b3bd6ea77ad7240e8d776fa7da751#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzD6iaDPQdicsb1rL6YkvPmUOrDzxqIDmKfN8juicRdibRdtdkzHmBwPqXN94rc0eVn8MpeaMoE4FSoDw/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 崔晗
-出品｜白话区块链（ID：hellobtc）
-自区块链的理念提出，其技术水平就一直在迅猛发展，实现了从区块链 1.0 到区块链 2.0、再到 3.0 版本的不断更新。
-大家都知道比特币是区块链 1.0 技术架构下的典型应用，但是对智能合约这一区块链 2.0 架构下的杰出应用又了解多少呢？今天，我们就来好好聊聊“智能合约”。
-
-
- 01 
-什么是智能合约？
-
-“智能合约”这一术语是 1994 年由著名密码学家尼克萨博首次提出的，它是通过编程来准确高效地执行预先设定的合约条款。
-
-详细的解释就是：智能合约其实是一种计算机协议，用一段计算机指令实现自我验证、自动执行，并产生可以验证的证据来证明合约操作的有效性。
-
-当智能合约的双方在区块链上产生资产交易的时候就会自动触发一段代码来自动完成具体的交易流程，这串计算机代码就是智能合约。
-
-
- 02 
-如何实现智能合约呢？
-
-实现智能合约就需要“图灵完备”的计算机编程语言。“图灵完备”这个词大家似乎了解的不多，可以简单地理解为能把世间一切可以计算解决的问题都计算出来的，这样的一种虚拟机或者编程语言就叫图灵完备。
-举一个不太精确但是很容易理解的例子说明一下：比如两口做饭的锅，一口锅可以实现一切的烹饪方法煎、炒、蒸、炖、炸、汆、涮、卤等，而另外的一口锅则只能实现蒸和炖，其他的都不能实现，那么前者就是图灵完备的，后者则不是。
-智能合约之所以可以在以太坊上完美应用，就是因为以太坊在其区块链上提供了一种近乎图灵完备的计算环境。只要是编程语言能够实现的计算，其都能支持，这也为智能合约在更加广泛的环境中得以应用坚实了基础。
-
-
-
- 03 
-为什么要提出智能合约？
-
-对比智能合约和传统合约，我们就能知道智能合约为什么会出现了。随着科技的进步，我们都会有一些通过双方签订合同来约束彼此经济活动的经历，但即使签订合同，我们也无法保证双方都能在规定期限内完整的履行合同规定的内容。
-传统合约受到诸如主客观、经济成本、适用范围、执行力度和执行时间等因素的影响，而智能合约便可以在很大程度上解决这些因素的影响。智能合约的主要特点可以简单地概括为：去中心化、智能高效（自动执行、无人为干预）、准确、低成本。
-众所周知，区块链最大的特质就是去中心化，在不信任中创造出信任。基于区块链的智能合约是将合约以数字化的形式写入到区块链中，在区块链优秀特性的加持下自然的具备了去中心化的特点，合约内容公开透明、条理清晰且不可篡改，编程语言就是规束合约的法律条文，交易双方可完全放心的进行交易。
-
-智能合约的整个产生和执行过程都是可追溯、不可篡改的。一旦触发合约就会立即执行，自动按照合约规范进行操作。整个过程智能高效，短时间快速完成更是体现了它的准确和经济。
-
-
- 04 
-智能合约有哪些应用场景呢？
-
-单说智能合约的应用大家可能不太了解，但大家一定在公共场所、景区和学校校园里不止一次的见过各种样式的自动无人售货机，最初 Nick Szabo 就是根据自动无人售货机提出的智能合约，所以从某种意义上可以说自动售货机是智能合约的第一次大规模应用。
-除此之外，智能合约的应用场景还是非常广泛的，例如用于解决金融借贷领域的 P2P 网络金融雷潮事件；用于社会保障领域养老保险、医疗保险，借助智能合约技术，没有第三方的参与避免了贪污腐败问题的发生；用于物联网环境下供应链查询和物品真伪查询；用于房屋租赁、身份认证、知识产权保护、博彩发行、市场预测等。
-
-
-
-  05 
-小结
-智能合约乘着区块链发展的东风在不断地发展进步，应用的场景范围也在不断地扩展，想必大家通过这些内容对智能合约有了一定的了解，但智能合约它真的智能吗？背地里还藏有哪些应用风险呢？欢迎在留言区分享您的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
                         data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499590&amp;idx&#x3D;2&amp;sn&#x3D;f49b823ac6ef79bbc9778eaa748797cf&amp;chksm&#x3D;fa01c861cd7641779ebf9615c7612c944e283bbfddb29f0a62335b86e390017508403135f968#rd"
                         open
                       >
@@ -773,202 +254,6 @@ EOS 区块链实时 TPS 只有两位数
 看这篇文章的你，在知道了本文举例中的比特币私钥（即数字 1），这意味着我们对这个地址里面的“钱”都拥有控制权。
 在比特币的世界，虽然无法知道地址背后的人是谁，但这个地址历史上所有的交易都是公开的，可以通过区块链浏览器查询。
 区块链行业中，你还想了解什么相关小知识呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499230&amp;idx&#x3D;3&amp;sn&#x3D;3326b4f7764171f3f6b5a16ea3da6d69&amp;chksm&#x3D;fa01caf9cd7643efe73af62766e55142ff4f73617dce64dd182668e4fbd23ab258dd296b2f40#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 为什么会出现分叉，分叉是什么 | 221</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499230&amp;idx&#x3D;3&amp;sn&#x3D;3326b4f7764171f3f6b5a16ea3da6d69&amp;chksm&#x3D;fa01caf9cd7643efe73af62766e55142ff4f73617dce64dd182668e4fbd23ab258dd296b2f40#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzJBuicnfJjj7A2lejAbibevh9RSk3kH8DXtKqUJl6A9WXSDUJr1ZWXTR9GMZO1q3zOYuaRnicdibibWaA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 阿华
-出品｜白话区块链（ID：hellobtc）
-身处区块链行业的你一定听说过「分叉」吧？BTC 分叉、ETH 分叉等等。
-分叉到底是什么呢？它是如何发生的？又有什么影响？下面我们一起聊聊。
-
-
- 01 
-分叉是如何发生的？
-我们以比特币为例，说明分叉是如何发生的，其他加密货币的分叉原理是相同的。在了解分叉前，我们先要了解比特币是如何工作的。
-比特币作为数字货币是通过软件的形式实现的，该软件被称为比特币协议，它确定了针对所有人的规则，包括区块的大小、矿工得到多少奖励等。如果想要使用比特币的话，就得同意这份协议。这就像公司制定的章程，全公司的人都得遵守。
-比特币作为一个软件项目，它总有需要完善的地方，所以它的开发永远都在进行，比特币开发者是通过更新软件（比特币协议）来解决问题或增强功能的。
-在中心化系统中，软件升级十分简单，但是在去中心化系统中，升级并没有那么简单，它需要达成共识（取得各方的同意）。在涉及到一些重大更新时，社区中总会有人反对，如果一群人都不同意，他们可以选择走自己的路，创造他们自己的比特币协议版本和分支区块链，于是分叉也就发生了。
-简单来讲，区块链网络在升级时发生了意见分歧，从而可能导致区块链分叉。
-除了意见分歧外，某些协议的添加、升级，也可能需要通过分叉实现。
-
-
- 02 
-分叉是如何实现的？
-为了理解分叉，我们可以把比特币分为两大块：比特币协议（软件）和存储所有交易数据的区块链。
-
-比特币协议（软件）是完全开源的，如果要创建自己的分支区块链（分叉），首先要把比特币协议（软件代码）复制下来，然后根据自己的需要进行适当的修改。
-最后，通过指定一个区块编号让比特币分叉开始生效，例如可以宣布在区块编号到达 500000 时分叉开始生效，当该区块编号传送到社区时会分成两部分，有些人决定支持原协议，而有些人则支持分叉协议，然后每个组开始添加新的区块到他们想要支持的那一条区块链。
-
-
-
- 03 
-硬分叉和软分叉
-上述所指的分叉多指硬分叉，硬分叉是指比特币共识机制发生改变时，与原生协议不相容，部分没有升级的节点无法验证已经升级的节点产生的区块，然后大家各自延续自己认为正确的链，所以分成了两条链。
-除了硬分叉，还有一种分叉叫软分叉，它是指区块链网络系统版本或协议升级后，与原生协议兼容，旧的节点继续接受由新节点创造的区块，新老节点始终还是在同一条链上工作，并没有新链产生。
-软分叉与硬分叉最大的区别就是有没有新链产生，硬分叉是有新链产生的，而软分叉并没有产生新的链。
-
-
- 04 
-分叉有什么影响？
-对于数字货币持有者来说，硬分叉会让他们额外增加一笔财富（分叉链 Token），BTC 的持有者就曾经获得过许多不同的 BTC 分叉链 Token。
-对项目本身来说，分叉未必是坏事。区块链作为一个复杂的去中心化系统，社区的意见难免会出现较大的分歧，与其妥协出一个折衷的但可能是行不通的方案，还不如分叉出来各自独立、各走各的路，这样项目的胜算会更大一些，对项目方也许是好事。
-对于一个有分歧的项目而言，你觉得分叉是件好事吗？为什么？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499736&amp;idx&#x3D;2&amp;sn&#x3D;9a530780447f906b072c3c3deaf08954&amp;chksm&#x3D;fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 如何完成大额交易又不过度影响市场价格？| 236</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499736&amp;idx&#x3D;2&amp;sn&#x3D;9a530780447f906b072c3c3deaf08954&amp;chksm&#x3D;fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzzTCaxib7Xv0zbMGYXSq9adAcUrBoUSlByoQ4eTLoXDhSQesKHEiaH4SfpGRzFZKe3xnlvECDVjaqQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 阿华
-出品｜白话区块链（ID：hellobtc）
-在进行数字资产的大额买卖时，可能会因为交易数额巨大而影响市场价格，尤其是对于流动性比较差的数字资产，一个大额买单就可以拉盘。
-同样，一个大额卖单就可以砸盘。那么，有没方法既可以完成大额交易又不过度影响市场价格呢？其实，在进行交易时选择冰山委托就可以实现。
-
-
- 01 
-什么是冰山委托
-
-冰山委托是订单类型中的一种，指的是投资者在进行大额交易时，为避免对市场造成过大冲击，将大额买单/卖单拆分为多个小额买单/卖单，并且根据市场最新价格波动调整委托价格，通过连续小单委托减少大额订单对市场价格的影响。
-用白话解释就是：把大额买单或卖单拆分成多个小单进行分批交易，这样可以减少对市场造成的价格冲击。不过，并不需要手工拆分，当设置了冰山委托订单类型后，拆分过程是自动进行的。
-
-
-
- 02 
-
-冰山委托的适用范围
-
-冰山委托作为订单类型中的一种，它适用于对大额订单进行拆分交易，从而减少了对市场价格造成的影响。
-例如，在进行数字货币的大额卖出交易时，订单类型设置为冰山委托可以减少大额卖单对市场价格的影响；同样的，在进行数字货币的大额买入交易时，可以防止因大额买单造成价格提升而增加了自己的买入成本。
-目前，许多交易平台的订单类型中都有冰山委托。
-
-
- 03 
-
-冰山委托举例
-下面以某平台的冰山委托-买入为例进行说明。
-小王希望购买总量为 80万 USDT 的 BTC，但不希望由于挂单数量较大而过于影响盘面，从而增加自己的买入成本，此时他就可以把订单类型设置为冰山委托。
-小王设置买入委托的总量为 80万个 USDT；每次下单购买的平均数量可以设置为 8000个 USDT（实际每次下单数量会在 90%~110% 之间浮动）；使用委托深度控制委托单在订单簿交易深度中的位置；设置最高买入价格：8100 USDT，以控制买入价格上限。
-于是，小王的冰山委托设置如下：
-总金额：80000 USDT；
-单笔金额：8000 USDT；
-委托深度：0.1%；
-最高买入价：8000 USDT。
-
-
-
-
-
-这笔冰山委托代表什么含义呢？
-小王要买入 80 万 USDT  的 BTC，为了不过于影响盘面价格，于是使用冰山委托订单类型进行小额分批交易；每批次委托买入 8000 USDT（实际下单会在 90% ~ 110% 浮动）的 BTC；而委托买入价为：最新买1价 * (1 - 0.1%)；而且还设置了最高买入价：8100 USDT，表示买入价不会高于 8100 USDT。
-设置好以后，点击”买入”按钮，系统将为小王进行冰山委托，并按照上面设置的规则，成交一笔，再委托下一笔。
-当”最新成交价”与委托价格偏离过大时，自动撤单并重新进行委托；
-当”最新成交价”高于小王设置的”最高买入价”时，停止委托，待最新成交价低于其设置的最高买入价时恢复；
-当该委托的“总成交量”等于“委托总量”时，委托就会自动停止。
-该过程用图形表示如下：
-
-
-
-
-
-如上图所示，当最新成交价低于小王设置的”最高买入价” 8100 USDT 时，系统就会进行连续委托，当最新成交价高于小王设置的”最高买入价” 8100 USDT 时，系统就会停止委托。
-上面是冰山委托-买入，如果要进行数字货币的大额卖出交易，也可以设置冰山委托，原理和过程和上面的例子一样，这里就不赘述了。
-总之，如果要进行数字资产的大额交易又不想过于影响市场价格，订单类型选择冰山委托就可以了。
-你使用过冰山委托吗？体验怎样？欢迎在留言区分享你的观点。
 
 「白话区块链入门系列」互动有奖
 
@@ -1094,28 +379,29 @@ EOS 区块链实时 TPS 只有两位数
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499282&amp;idx&#x3D;2&amp;sn&#x3D;aede7af4ddd72536c6f98bbe279e4f28&amp;chksm&#x3D;fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500009&amp;idx&#x3D;2&amp;sn&#x3D;aa68710cd3eb1758dff8776bbc1be70e&amp;chksm&#x3D;fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd"
                         open
                       >
-                        <summary class="article-expander__title">▪ 为什么 DApp 经常会遭遇随机数攻击？| 224</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499282&amp;idx&#x3D;2&amp;sn&#x3D;aede7af4ddd72536c6f98bbe279e4f28&amp;chksm&#x3D;fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd">
+                        <summary class="article-expander__title">▪ 一文看懂区块链的扩容方案和主要的二层网络（Layer</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500009&amp;idx&#x3D;2&amp;sn&#x3D;aa68710cd3eb1758dff8776bbc1be70e&amp;chksm&#x3D;fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd">
                           <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxguxC5pJDpIZD1vxLC2nu2PubYqeuQJkamIhNYYicEUT6p1AEOurzJ8b8MbOMicicIQN0VHFKlacNGQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXyJWkPibNyVjwmm8AKOW2OH8z8ibq7F20iaHJNzLFzjlPlB2MFCwrVxD8Kr3XPUTpkWF523ITep43fsQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
 
-作者 | 李火华
+作者 | JackyLHH
 出品｜白话区块链（ID：hellobtc）
-9 月 14 日，一款名为“EOSPlay”的 DApp 游戏遭遇了新型随机数攻击，一共损失了数万个 EOS。
-或许很多人对「随机数攻击」这个词已经司空见惯了，因为在 DApp 遭遇黑客攻击的事件中，随机数攻击占了很大一部分，很多 DApp 的随机数被黑客破解了。
-你或许会问，随机数不是随机的吗？随机意味着不可预测，为什么还会被黑客破解呢？
-这还得从随机数说起。
-随机数可以分为真随机数和伪随机数。真随机数需要同时满足随机性、不可预测性、不可重现性，而伪随机数只需要满足随机性，或者是随机性和不可预测性即可。
-真随机数只存在于物理世界中，一般需要通过物理手段（包括量子过程）获得，比如我们日常见到的抛硬币、掷骰子，生成的随机数就是真随机数。但是，抛硬币、掷骰子这种随机数生成方法的缺点非常明显，那就是耗时、耗力，而且也无法满足现代的计算机世界对随机数的需求。
-因为效率的缘故，现代的计算机软件主要依赖伪随机数。最早的伪随机数生成器由 20 世纪最重要的数学家之一冯·诺依曼创造，通过一个确定的随机数种子，由确定的算法生成伪随机数序列。现在的主流计算机编程语言，默认的是将 1997 年发明的梅森旋转算法作为生成伪随机数的方法。
-伪随机数最大的缺陷是，只要种子不变，生成的伪随机数序列也不会变。换句话说，只要你能拿到种子，你就可以破解随机数。
-计算机生成伪随机数的过程，或多或少与这台计算机的物理状态或运算状态有关。也就是说，同一套随机数算法，不同的计算机，或是同一台计算机在不同的时刻，生成的随机数是不一样的。
-然而，这种传统的计算机伪随机数生成方法虽然足够安全，却并不适用于区块链。区块链是一个分布式的系统，同一…</span>
+今年的“双 11”全民购物狂欢节，根据阿里云公布的数据，订单创建峰值创下了新的纪录，达到了每秒 54.4 万笔，远远超过去年的每秒 49.1 万笔，是 2009 年第一次“双11”的 1360 多倍。
+这就是中心化系统的优势。
+相比之下，去中心化的区块链技术，在性能上就相形见绌了：比特币区块链每秒只能处理大约 7 笔交易，以太坊区块链每秒能处理约十几笔交易，当初打着“百万 TPS”旗帜的 EOS 区块链在测试中的最高 TPS 也只有四五千，平时运行时的 TPS 只有两位数。
+EOS 区块链实时 TPS 只有两位数
+来源：eosflare.io
+
+虽然性能并不是区块链技术的优势，但如果成为“短板”，毫无疑问会推迟区块链技术的大规模应用。
+所以近年来，不断有技术开发人员和项目团队提出各种各样的解决方案。这些解决方案，主要可以分为两大类：链上扩容和链下扩容。
+链上扩容，就是直接在区块链上“动手术”——修改规则，包括区块大小、共识机制等等。比如，将比特币区块链的区块大小直接从 1M 扩容到 32M、128M 甚至是 2G（这就是 BTC、BCH 和 BSV 在区块大小上的分歧），再比如现在被给予厚望的、“以太坊 2.0”将会采用的技术方案——分片技术（Sharding）。如果你想了解更多关于分片技术的知识，请阅读白话之前的推文《一文看懂区块链性能解决方案：分片》。
+链下扩容，是指在主链之外建立第二层交易网络，因此链下扩容也被称为“Layer 2”。
+如果将链上扩容类比为道路的拓宽，那么链下扩容就是在旁边新建高架桥、隧道、小路等等。如果你想了解更多关于链上扩容和链下扩容的区别，请阅读白话之前的…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;32
                                   min&hairsp;)</span>
                             </span>
@@ -1127,56 +413,53 @@ EOS 区块链实时 TPS 只有两位数
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499439&amp;idx&#x3D;3&amp;sn&#x3D;10b7df1a67254fefbccff4c016f51bec&amp;chksm&#x3D;fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499230&amp;idx&#x3D;3&amp;sn&#x3D;3326b4f7764171f3f6b5a16ea3da6d69&amp;chksm&#x3D;fa01caf9cd7643efe73af62766e55142ff4f73617dce64dd182668e4fbd23ab258dd296b2f40#rd"
                         open
                       >
-                        <summary class="article-expander__title">▪ 什么是区块链预言机，能预测币价涨跌吗？| 229</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499439&amp;idx&#x3D;3&amp;sn&#x3D;10b7df1a67254fefbccff4c016f51bec&amp;chksm&#x3D;fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd">
+                        <summary class="article-expander__title">▪ 为什么会出现分叉，分叉是什么 | 221</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499230&amp;idx&#x3D;3&amp;sn&#x3D;3326b4f7764171f3f6b5a16ea3da6d69&amp;chksm&#x3D;fa01caf9cd7643efe73af62766e55142ff4f73617dce64dd182668e4fbd23ab258dd296b2f40#rd">
                           <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzEtfPzSUYLvfID5FgyB3gcd8g0Sg3L3YhW6ics0l91ZsrK5ckUNclq6LYopxhjJoYDxBU95h99ocg/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzJBuicnfJjj7A2lejAbibevh9RSk3kH8DXtKqUJl6A9WXSDUJr1ZWXTR9GMZO1q3zOYuaRnicdibibWaA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
 
-作者 | 易妙萍
+作者 | 阿华
 出品｜白话区块链（ID：hellobtc）
-10 月 1 日，白话区块链发文《比特币出现神预测，这事靠谱么》，文中谈及了一个有关比特币价格预测图的可靠性。那张图的前两个预测都是对，那么，第三个预测还会正确吗？
-
-这让人联想到了区块链预言机，它能预测加密资产的价格涨跌吗？
+身处区块链行业的你一定听说过「分叉」吧？BTC 分叉、ETH 分叉等等。
+分叉到底是什么呢？它是如何发生的？又有什么影响？下面我们一起聊聊。
 
 
  01 
-什么是预言机？
-与这个有点“不觉明厉”的名字不太相符的是，区块链预言机是第三方信息源，其唯一功能是向区块链提供数据，从而使创建智能合约成为可能。
-从根本上讲，智能合约只是一个自我执行的代码。智能合约会评估来自预言机的传入数据，并根据收到的信息启动执行流程。
-让我们举一个例子，比如说张三和李四对这个星期六的比特币价格进行下注。张三认为比特币的价格将在 8500 美元或更高，相反，小黑认为在 8000 美元或更低。于是，他们设计了一个智能合约（双方都会向其发送资金），谁预测的价格更靠近实际价格，谁就赢得了资金。
-为了使智能合约确定比特币的价格，从而向赢家付款，它必须通过预言机来查询这个星期六比特币的价格。当查询到比特币价格数据后，比如返回的值是周六比特币价格为 8600 美元，然后，智能合约将根据其条件执行并将所有资金发送给张三。
+分叉是如何发生的？
+我们以比特币为例，说明分叉是如何发生的，其他加密货币的分叉原理是相同的。在了解分叉前，我们先要了解比特币是如何工作的。
+比特币作为数字货币是通过软件的形式实现的，该软件被称为比特币协议，它确定了针对所有人的规则，包括区块的大小、矿工得到多少奖励等。如果想要使用比特币的话，就得同意这份协议。这就像公司制定的章程，全公司的人都得遵守。
+比特币作为一个软件项目，它总有需要完善的地方，所以它的开发永远都在进行，比特币开发者是通过更新软件（比特币协议）来解决问题或增强功能的。
+在中心化系统中，软件升级十分简单，但是在去中心化系统中，升级并没有那么简单，它需要达成共识（取得各方的同意）。在涉及到一些重大更新时，社区中总会有人反对，如果一群人都不同意，他们可以选择走自己的路，创造他们自己的比特币协议版本和分支区块链，于是分叉也就发生了。
+简单来讲，区块链网络在升级时发生了意见分歧，从而可能导致区块链分叉。
+除了意见分歧外，某些协议的添加、升级，也可能需要通过分叉实现。
 
 
  02 
-预言机的类型
-预言机通过为智能合约提供了一种在去中心化区块链网络之外进行通信的方式，为智能合约提供了附加功能。
-区块链预言机可以采用多种形式，包括但不限于：
-1、软件预言机
-这种形式的预言机通常包括易于访问的在线信息源，例如网站和公共数据库。它们通常提供以下信息：温度读数，公共交通信息以及各种金融资产的当前价格。
-软件预言机可能是目前最强大的预言机类型，因为它们与互联网具有固有的互连性。这种连接允许软件预言机向智能合约提供最新信息。
-2、硬件预言机
-这种形式的预言机通常负责物理世界中发生的事件，并将数据发送到智能合约上。例如，在供应链管理中，如果带有 RFID 标签的物体要到达特定的仓库，则可以将该数据发送到智能合约，硬件预言机系统可以在整个供应链中进行货物跟踪。
-3、输入式预言机
-这种形式的预告机具有简单地向智能合约提供数据的功能。所提供的数据在智能合约的外部，并且在接收信息后开始执行。上面示例中提供比特币价格的新闻网站，可以被归入为输入式预言机。
-4、输出式预言机
-这些预言机将智能合约数据传送到外部源。就上面的例子而言，一旦张三被确定为赢家，智能合约便可以将此信息传达给钱包提供商，以便自动更新其余额以反映资金的增加。
-在这种情况下，智能合约本身就可以作为输出式预言机运作。
-5、基于共识的预言机
-这种预言机的功能是查询多个信息源，并根据它们的共识得出结果。例如，上面的例子也可以使用 4 个网站来查询比特币的价格。如果所有预言源（网站）返回的值都相同，则智能合约可以成功执行。
+分叉是如何实现的？
+为了理解分叉，我们可以把比特币分为两大块：比特币协议（软件）和存储所有交易数据的区块链。
+
+比特币协议（软件）是完全开源的，如果要创建自己的分支区块链（分叉），首先要把比特币协议（软件代码）复制下来，然后根据自己的需要进行适当的修改。
+最后，通过指定一个区块编号让比特币分叉开始生效，例如可以宣布在区块编号到达 500000 时分叉开始生效，当该区块编号传送到社区时会分成两部分，有些人决定支持原协议，而有些人则支持分叉协议，然后每个组开始添加新的区块到他们想要支持的那一条区块链。
+
 
 
  03 
-预言机需要信任
-虽然预言机的优势非常明显，但它存在一个缺点：预言机需要信任。
-预言机用来获取信息并将信息传输到智能合约的数据源，必须被视为可信的。还是上文的例子，如果张三能够以某种方式控制那个比特币价格网站，那么就可以轻而易举地让返回的比特币价格为 8600 美元，从而使自己赢得比赛。
-所以，如果由预言机提供给智能合约的数据被证明是错误的，则存在安全问题。针对此问题，一种可能的补救方法是从多个预言机数据库请求数据，而不是单个预言机数据库。
-比如说，如果一个预言机返回的比特币价格为 8600 美元，而其他 4 个预言机返回的价格是 8000 美元，则可以将其他条件编程到智能合约中以解决冲突。智能合约可以选择仅接受多数值，在这种情况下，李四成为胜利者。
-你觉得在哪些情境下，需要用到预言机？欢迎在评论区留言分享。
+硬分叉和软分叉
+上述所指的分叉多指硬分叉，硬分叉是指比特币共识机制发生改变时，与原生协议不相容，部分没有升级的节点无法验证已经升级的节点产生的区块，然后大家各自延续自己认为正确的链，所以分成了两条链。
+除了硬分叉，还有一种分叉叫软分叉，它是指区块链网络系统版本或协议升级后，与原生协议兼容，旧的节点继续接受由新节点创造的区块，新老节点始终还是在同一条链上工作，并没有新链产生。
+软分叉与硬分叉最大的区别就是有没有新链产生，硬分叉是有新链产生的，而软分叉并没有产生新的链。
+
+
+ 04 
+分叉有什么影响？
+对于数字货币持有者来说，硬分叉会让他们额外增加一笔财富（分叉链 Token），BTC 的持有者就曾经获得过许多不同的 BTC 分叉链 Token。
+对项目本身来说，分叉未必是坏事。区块链作为一个复杂的去中心化系统，社区的意见难免会出现较大的分歧，与其妥协出一个折衷的但可能是行不通的方案，还不如分叉出来各自独立、各走各的路，这样项目的胜算会更大一些，对项目方也许是好事。
+对于一个有分歧的项目而言，你觉得分叉是件好事吗？为什么？欢迎在留言区分享你的观点。
 
 「白话区块链入门系列」互动有奖
 
@@ -1219,157 +502,32 @@ EOS 区块链实时 TPS 只有两位数
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499559&amp;idx&#x3D;2&amp;sn&#x3D;a927a16664842d727e06b5bc420c2a58&amp;chksm&#x3D;fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499989&amp;idx&#x3D;2&amp;sn&#x3D;e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm&#x3D;fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd"
                         open
                       >
-                        <summary class="article-expander__title">▪ 什么是加密货币ETP、 ETF？两者有什么区别？| 232</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499559&amp;idx&#x3D;2&amp;sn&#x3D;a927a16664842d727e06b5bc420c2a58&amp;chksm&#x3D;fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd">
+                        <summary class="article-expander__title">▪ 频频出现的Libra和DECP究竟是什么？两者有何关系？|</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499989&amp;idx&#x3D;2&amp;sn&#x3D;e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm&#x3D;fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd">
                           <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxSjdUM6nWjetfPAhB4hr5vu7zKO7C2ibzeHYSzjr5kn0ubGCJWWjEZRxD36mRpl9ftg1E24GH0vog/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：进入科普目录从0开始学习噢！扫描文末二维码，新入门的小伙伴可以看200多期入门连载哦！公众号回复 福利 获取学习礼包~
-
-作者 | Wayne
-出品｜白话区块链（ID：hellobtc）
-就在美国证监会（SEC）拒绝了 Bitwise 提交的比特币 ETF 之际，币安对外宣布称已携手 Amun 在瑞士证券交易平台推出了 BNB ETP。
-很多人看不明白，ETF 与 ETP 有什么区别呢？为什么 ETF 被拒，ETP 却可以通过呢？今天，我们就来看下两者的区别。
-
-
- 01 
-比特币ETF
-
-ETF 的全文是 Exchange Traded Funds，即交易平台交易基金。按字面理解，就是可以在交易平台交易的基金，简单说就是追踪大盘走势的一篮子标的。
-你可以把 ETF 当作是一篮子股票，它们是根据一些指示股票走势的指数选的，比如标普 500，它记录了 500 家公司股票的整体走势。那么，ETF 里的一篮子股票就是这 500 家公司的股票。
-需要提出的一点是，你实际上并不直接拥有那 500 只股票， 你拥有的是一个凭证，来证明你拥有这个 ETF。最著名的 ETF 是 SPY ETF，它是全球最大的交易平台交易基金，跟踪的就是标准普尔 500 股市指数的总体水平。
-比特币 ETF 就是基于比特币的 ETF。如果你购买了比特币 ETF，你就相当于间接投资了比特币，拥有的是可以交易的比特币基金，而并非直接拥有比特币。但是，你买比特币 ETF 和直接买比特币，在收益上没有任何区别，因为比特币 ETF 追踪的就是比特币的价格，比特币涨了，这个 ETF 也就涨了，反之亦然。
-ETF 不过就是换了一种投资比特币的方式而已。唯一的区别是我们不用再去担心比特币会不会被盗了，不再担心把比特币存放在哪里了，也无需走繁琐的程序。
-
-
- 02 
-ETP
-
-ETP 的全文是 Exchange T…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500193&amp;idx&#x3D;2&amp;sn&#x3D;7004871802ef941df299e617811cfa55&amp;chksm&#x3D;fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 矿池和矿场有何区别？| 247</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500193&amp;idx&#x3D;2&amp;sn&#x3D;7004871802ef941df299e617811cfa55&amp;chksm&#x3D;fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXzqSvcAnGf3yAibrjziarGuDKR5ycDFmhAbCxueC56xSA8zia39GkG4YxibTgZENrAjpGF9DUwcw3OicIg/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXwxbDSomHmQibGYNbxZhegaFKnIX4v4AicyYtXh6YwY1fW8XCl7WXh3JI3SI6kC6ebeE6LbvxqaHtWQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
 
-作者 |宇星
+作者 | 三黎
 出品｜白话区块链（ID：hellobtc）
-大白有个朋友看见比特币价值不菲，而且听说比特币是挖出来的，就两眼发光，兴致勃勃地也想去挖矿。但无奈入矿圈没那么容易，有许多知识需要了解。今天就让大白来介绍一下什么是挖矿，以及矿池和矿场的区别到底是什么？
-
- 01 
-挖矿
-在《比特币的矿工和挖矿是什么意思？》一文中谈到，在比特币世界中，比特币就好比是“数字黄金”，像黄金是从金矿里面挖出来那样，我们想把比特币从数字里面“挖”出来以此来获得比特币奖励，而挖矿的过程实则就是解决计算难题的过程。而挖矿的实施者则称为矿工。
-挖矿再详细点其实就是不停地进行哈希运算，直到得到的哈希运算后的结果比目标值小。这里看不懂，先别慌，请继续听着大白往下讲。
-
-其实这挖矿的过程就和掷色子类似，比如，游戏规则是让大白同时扔3个色子，扔出的数字序列小于112算胜利，假设大白某一次扔出的色子序列为111（第一个色子正面向上的数字是1，第二个色子是1，第三个色子是1），那么就表示胜利，并获得游戏奖励。
-在比特币世界中，我们把“掷色子”的这个过程交给了我们的一些计算能力的机器（矿机）去做。上面的例子是3个色子同时扔，而我们的比特币中的哈希值是256位，也就是说相当于同时扔256个色子，而且上面的例子中一个色子只有6面，也就6种可能，但是比特币世界中的一个”色子“相当于硬币有2面（一面是0，一面为1），因此会有10的77次方以上的可能情况产生。因此如果一个矿机挖矿的话，挖到的概率还是非常小的。
-在比特币世界中，计算机会不断地“掷色子”，直到得到的色子序列比目标值小时，就会出一个区块，而且第一个计算出这个结果的矿工将会获得一定的奖励。这也是激励矿工去挖矿的一种的机制。
-
-
- 02 
-矿池…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;32
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499359&amp;idx&#x3D;2&amp;sn&#x3D;2afe6ad2a38b55c97001422ed03885c6&amp;chksm&#x3D;fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd"
-                        open
-                      >
-                        <summary class="article-expander__title">▪ 加密货币的投资和投机有何区别？如何做到鱼和熊掌</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499359&amp;idx&#x3D;2&amp;sn&#x3D;2afe6ad2a38b55c97001422ed03885c6&amp;chksm&#x3D;fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXy7EKPQRRibw4ybejBGdia2zf99ibaoYdkt475iav1PwrSpPia1lvheomV8fmzWpib7cEfKlp4FVr2PnQLA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>友情提示：国庆期间小伙伴投稿中奖的文章，会在本周陆续推出，非常感谢大家的积极支持。另外，在此期间，我们依旧对外征稿，欢迎大家踊跃参与。
-
-作者 | Wayne
-出品｜白话区块链（ID：hellobtc）
-一些金融专家认为，加密货币将成为我们时代最重要的资产类别。就是说，尽管关于区块链和哈希的讨论似乎还都是不着边际，但很多人仍可能想调查一下加密货币是否是最佳投资机会。
-毕竟，最好的投资是您可以放心管理的投资，而信心来自了解。那么，在区块链和加密货币领域的投资和投机有何差异？
+自2019年6月18日起，Facebook Libra就成了区块链媒体文章中的常见词汇。而在2019年10月24日刮起了学习区块链的一场大风之后，各种新闻报道和普及文章纷纷来袭。DCEP和Libra更是经常一起出席，今天我们就来了解一下Facebook Libra和DCEP是什么？它们之间有何关联？
 
 
  01 
-投资
+Facebook Libra是什么？
 
+Facebook是美国的一个社交网站 ，创立于2004年2月4日，主要创始人是马克·扎克伯格（Mark Zuckerberg）。2019年6月18日，这个全世界最大的社交网站发布了一个叫做“Libra”的数字货币的白皮书，引得众人关注。
+一个社交网站要发数字货币，这是怎么回事？根据白皮书的定义：
 
-对于大多数人来说，投资和投机之间的区别归结为风险、回报和时间长度。牛津词典对投资的定义是：“将钱投入财务计划、股票、房地产和商业企业，以期获得利润。”
-投资者通常会长期参与其中，因此，投资者决定将其资金投入公司之前，需要花费大量时间进行研究和分析，必须确保它是安全可靠的，并且可能的回报值得承担风险。
-通常，投资者会将钱投入到较低风险的投资中，这些投资自然会在较长的时间内带来较低的回报。本杰明·格雷厄姆在他的《聪明的投资者》一书中将这些列为投资规则：在购买股票之前，您必须彻底分析一家公司及其基础业务的健康性。您必须有意保护自己免受严重损失。您必须追求足够的表现，而不是非凡的表现。
-如果我们将其分解，可以看到格雷厄姆倡导在购买股票之前进行全面的分析和尽职调查。对于股票，这通常涉及基本面分析、定量分析、定性分析和内在价值检验。格雷厄姆还重视谦卑和深思熟虑，这意味着不要承担过多的风险，并要获得可观的回报。
+Libra是一个数字货币项目，它的使命是建立一套简单、无国界的货币，并且建立为全球数十亿人服务的金融基础设施。
 
- 02 
-投机
-
-相比之下，投机通常会在较短的时间框架内带来更高的风险和回报。对投机的定义是“投资股票、房地产或其他企业，以期获得收益，但有亏损的风险。”如果我们从更广泛的非财务角度来看是：“在没有确凿证据的情况下形成理论或对某个主题进行猜想。”
-显然，这适用于许多加密货币领域，那里有无数的交易者根本没有研究基本面就梭哈，而坐在家里的无数“投资者“则把钱投向任何一个外表光鲜的币种。
-但是投机不仅限于加密货币。
-世界上最大的货币和股票市场上的日间交易员都是投机者，他们每天都在利用市场效率低下和波动来努力赚取很少的一部分收益。小型矿业公司中的“投资者”也是投机者，他们把赌注押在一个新发现的油田上，而该油田几乎不能保证会有足够的产量或回报。
-
-
- 03 
-投资者与投机者
-
-在加密货币市场进行投资和投机都是可能的，它只是取决于在考虑向市场投入资金时所采用的方法。投资者可能会发现一个可靠的加密货币项目，该项目符合他们调研中的所有要求，并且似乎被低估了，他们购买的目的是长期持有。这些类型的项目将塑造未来，可能成为下一个苹果、亚马逊、甚至是互联网3.0。这类投资者会尽职调查，并且会长期参与其中。
-投资组合分为投资和投机两大块仍然可以进行尽职调查，并在长期持有时继续进行单个项目的研究，同时将一小部分投资组合放在一边进行投机。
-您可以资金的 80–90％ 用于投资，在此投资组合中，您可以通过将资金分配给 5 个、10 个、或者 20 个项目，以进行分散投资，但是您需要对每个项目进行深入研究。用 10％至 20％的资金进行投机。在这个投资组合中，您仍然可以通过将资金分成 10 个分配来进行分散投资。
-通过这样做，我们的目标是：投资：选择长期受益，而忽略市场波动。这些项目将有好有坏的日子，但这并不重要，因为您是 HODLer；投机：对小额收益见好就收，充分利用加密货币市场波动赚钱。
-降低任何投资风险的方法是通过多元化，通过采用同时利用投资和投机的策略，您可以在牛市期间大赚，在熊市期间少赔。最后还是一句老话：“投机金额不要超过您愿意承受的金额。”
-在购买加密货币时，你通常会考虑投资还是投机呢，它们之间最大的区别是什么呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-亲，据说99.9%有品位的人都点了「在看」👇</span>
+而Facebook整个生态下将近27亿的用户数量，这可能也是为什么它受到如此广泛的关注的重要原因。据9月24日移动支付网的消息，支付宝宣布全球用户数在年中时也不过12亿，而有将近其两倍用户的Facebook可想而知，一旦货币得到应用将势不可挡。
+那么，Libra和比特币之间有何区别呢？中国人民银行支付结算司副司长穆长春在《科技金融前沿：Libra与数字货币展望》中提到Libra是比比特币更接近支付工具的数字货币。可以类比为数字货币中的稳定币。Libra是一篮子货币的资产储备。这里先对一篮子货币做个解释：
+一篮子货币就是将现有的一组货币按照一定方法组合而成的复合货币。例如，甲乙丙三个王国要物物交换，甲国黄金多、乙国盛产大米、丙国水资源丰富，他…</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;32
                                   min&hairsp;)</span>
                             </span>
@@ -1556,6 +714,1062 @@ ETP 的全文是 Exchange T…</span>
                         </a>
                       </details>
                     </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499359&amp;idx&#x3D;2&amp;sn&#x3D;2afe6ad2a38b55c97001422ed03885c6&amp;chksm&#x3D;fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 加密货币的投资和投机有何区别？如何做到鱼和熊掌</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499359&amp;idx&#x3D;2&amp;sn&#x3D;2afe6ad2a38b55c97001422ed03885c6&amp;chksm&#x3D;fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXy7EKPQRRibw4ybejBGdia2zf99ibaoYdkt475iav1PwrSpPia1lvheomV8fmzWpib7cEfKlp4FVr2PnQLA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：国庆期间小伙伴投稿中奖的文章，会在本周陆续推出，非常感谢大家的积极支持。另外，在此期间，我们依旧对外征稿，欢迎大家踊跃参与。
+
+作者 | Wayne
+出品｜白话区块链（ID：hellobtc）
+一些金融专家认为，加密货币将成为我们时代最重要的资产类别。就是说，尽管关于区块链和哈希的讨论似乎还都是不着边际，但很多人仍可能想调查一下加密货币是否是最佳投资机会。
+毕竟，最好的投资是您可以放心管理的投资，而信心来自了解。那么，在区块链和加密货币领域的投资和投机有何差异？
+
+
+ 01 
+投资
+
+
+对于大多数人来说，投资和投机之间的区别归结为风险、回报和时间长度。牛津词典对投资的定义是：“将钱投入财务计划、股票、房地产和商业企业，以期获得利润。”
+投资者通常会长期参与其中，因此，投资者决定将其资金投入公司之前，需要花费大量时间进行研究和分析，必须确保它是安全可靠的，并且可能的回报值得承担风险。
+通常，投资者会将钱投入到较低风险的投资中，这些投资自然会在较长的时间内带来较低的回报。本杰明·格雷厄姆在他的《聪明的投资者》一书中将这些列为投资规则：在购买股票之前，您必须彻底分析一家公司及其基础业务的健康性。您必须有意保护自己免受严重损失。您必须追求足够的表现，而不是非凡的表现。
+如果我们将其分解，可以看到格雷厄姆倡导在购买股票之前进行全面的分析和尽职调查。对于股票，这通常涉及基本面分析、定量分析、定性分析和内在价值检验。格雷厄姆还重视谦卑和深思熟虑，这意味着不要承担过多的风险，并要获得可观的回报。
+
+ 02 
+投机
+
+相比之下，投机通常会在较短的时间框架内带来更高的风险和回报。对投机的定义是“投资股票、房地产或其他企业，以期获得收益，但有亏损的风险。”如果我们从更广泛的非财务角度来看是：“在没有确凿证据的情况下形成理论或对某个主题进行猜想。”
+显然，这适用于许多加密货币领域，那里有无数的交易者根本没有研究基本面就梭哈，而坐在家里的无数“投资者“则把钱投向任何一个外表光鲜的币种。
+但是投机不仅限于加密货币。
+世界上最大的货币和股票市场上的日间交易员都是投机者，他们每天都在利用市场效率低下和波动来努力赚取很少的一部分收益。小型矿业公司中的“投资者”也是投机者，他们把赌注押在一个新发现的油田上，而该油田几乎不能保证会有足够的产量或回报。
+
+
+ 03 
+投资者与投机者
+
+在加密货币市场进行投资和投机都是可能的，它只是取决于在考虑向市场投入资金时所采用的方法。投资者可能会发现一个可靠的加密货币项目，该项目符合他们调研中的所有要求，并且似乎被低估了，他们购买的目的是长期持有。这些类型的项目将塑造未来，可能成为下一个苹果、亚马逊、甚至是互联网3.0。这类投资者会尽职调查，并且会长期参与其中。
+投资组合分为投资和投机两大块仍然可以进行尽职调查，并在长期持有时继续进行单个项目的研究，同时将一小部分投资组合放在一边进行投机。
+您可以资金的 80–90％ 用于投资，在此投资组合中，您可以通过将资金分配给 5 个、10 个、或者 20 个项目，以进行分散投资，但是您需要对每个项目进行深入研究。用 10％至 20％的资金进行投机。在这个投资组合中，您仍然可以通过将资金分成 10 个分配来进行分散投资。
+通过这样做，我们的目标是：投资：选择长期受益，而忽略市场波动。这些项目将有好有坏的日子，但这并不重要，因为您是 HODLer；投机：对小额收益见好就收，充分利用加密货币市场波动赚钱。
+降低任何投资风险的方法是通过多元化，通过采用同时利用投资和投机的策略，您可以在牛市期间大赚，在熊市期间少赔。最后还是一句老话：“投机金额不要超过您愿意承受的金额。”
+在购买加密货币时，你通常会考虑投资还是投机呢，它们之间最大的区别是什么呢？欢迎在留言区分享你的观点。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499928&amp;idx&#x3D;2&amp;sn&#x3D;0139f152eb1b17f63e865a77c8e75b79&amp;chksm&#x3D;fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 什么是交易深度？如何衡量交易深度？| 241</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499928&amp;idx&#x3D;2&amp;sn&#x3D;0139f152eb1b17f63e865a77c8e75b79&amp;chksm&#x3D;fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXwETNOwl8n48UaG0IjMewDSHdAErHPXtKk72wseptT6sNOOk1mFE6HYMa6OxFeiaxLR8b4duKfX9icA/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者|阿华
+出品|白话区块链（ID：hellobtc）
+我们在选择数字货币交易平台进行交易时，最先要考虑的就是平台的安全性和交易深度了，一般来说，世界排名靠前的交易平台都符合这两个特性，即安全性和深度都好。
+安全性容易理解无需多说，那么什么是交易深度呢？如何衡量交易深度？下面我们一起来探讨下。
+
+
+ 01 
+什么是交易深度
+交易深度是指市场在承受大额交易时币价不出现大幅波动的能力。一般在谈论交易深度时，指的是某个币种在某个平台的交易深度。
+我们需要从挂单量和价差两个指标来理解交易深度，挂单数量大、相邻挂单之间的价差小，就说明交易深度好。
+
+
+
+
+
+例如在上图中，左侧是A平台，右侧是B平台，很明显B平台EOS的交易深度好。说明在B平台中，EOS的委托挂单量大，而且相邻挂单间价差也比较小，即挂单比较密集，因此，在B平台买入的时候就不会出现大幅拉盘，卖出的时候也不会出现大幅砸盘，即买的轻松、卖的容易。
+
+
+ 02 
+如何衡量交易深度
+衡量平台交易深度好坏一般会用两个指标，一个是价差，另外一个是挂单量。
+价差是指相邻两笔订单之间的价格差距。价差越小，挂单价格越密集，说明买入或卖出的实际价格越接近真实的市场价格。
+挂单量是指每笔委托挂单数量的多少，是市场承载能力的体现，挂单量越大，意味着交易深度越好，越能够满足大单的交易需求。
+
+
+ 03 
+交易深度有什么用
+我们在进行数字货币交易时，尽量去交易深度好的平台进行交易，这有两个好处：交易时币价相对更稳定，交易成本也更低。
+1、交易时币价相对更稳定
+下面我们举例说明，如果要购买300个EOS，如下图，分别对比下在A平台和B 平台完成交易后对EOS价格的影响。
+
+在上图中，很明显B平台的交易深度要更好一些。
+如果想要在 A 交易平台快速购买300个EOS，需要吃掉卖1价、卖2价、卖3价等，直到买够300 EOS，由于交易深度不好，完成交易后EOS的价格被推高了；
+而如果在B平台快速购买300个EOS，仅仅使用卖1价2.8209即可成交（因为这个价格的挂单量为303，大于购买量300），完成交易后EOS价格稳定，并没有被推高。
+2、交易成本更低
+举例说明：下图是平台 A 和 平台 B 中卖单的交易深度，假如小明想快速完成2000个EOS的交易，我们对比下在两个平台购买2000个EOS 时的交易成本。
+
+在平台A进行交易：
+小明需要以20的价格购买500个，以21的价格购买500个，以此类推，按照交易深度持续购买。
+小明的总成本为：20500+21500+22500+23500 &#x3D; 43000（比B平台贵了3000）。
+交易完成后，平台A中EOS的价格被推高至23。
+在平台B进行交易：
+小明直接以20的价格购买2000个，小明的总成本就是：20*2000&#x3D;40000。
+交易完成后，平台B中EOS的价格仍然是20。所以，在交易深度好的平台进行交易时，成本会更低。
+总之，我们在进行交易时，尽量选择交易深度好的平台，不但可以快速完成交易，而且成本也低，对市场也不会造成太大的冲击。
+你理解交易深度了吗？你觉得哪些平台的交易深度普遍好？欢迎在留言区分享你的观点。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500193&amp;idx&#x3D;2&amp;sn&#x3D;7004871802ef941df299e617811cfa55&amp;chksm&#x3D;fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 矿池和矿场有何区别？| 247</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500193&amp;idx&#x3D;2&amp;sn&#x3D;7004871802ef941df299e617811cfa55&amp;chksm&#x3D;fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXzqSvcAnGf3yAibrjziarGuDKR5ycDFmhAbCxueC56xSA8zia39GkG4YxibTgZENrAjpGF9DUwcw3OicIg/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 |宇星
+出品｜白话区块链（ID：hellobtc）
+大白有个朋友看见比特币价值不菲，而且听说比特币是挖出来的，就两眼发光，兴致勃勃地也想去挖矿。但无奈入矿圈没那么容易，有许多知识需要了解。今天就让大白来介绍一下什么是挖矿，以及矿池和矿场的区别到底是什么？
+
+ 01 
+挖矿
+在《比特币的矿工和挖矿是什么意思？》一文中谈到，在比特币世界中，比特币就好比是“数字黄金”，像黄金是从金矿里面挖出来那样，我们想把比特币从数字里面“挖”出来以此来获得比特币奖励，而挖矿的过程实则就是解决计算难题的过程。而挖矿的实施者则称为矿工。
+挖矿再详细点其实就是不停地进行哈希运算，直到得到的哈希运算后的结果比目标值小。这里看不懂，先别慌，请继续听着大白往下讲。
+
+其实这挖矿的过程就和掷色子类似，比如，游戏规则是让大白同时扔3个色子，扔出的数字序列小于112算胜利，假设大白某一次扔出的色子序列为111（第一个色子正面向上的数字是1，第二个色子是1，第三个色子是1），那么就表示胜利，并获得游戏奖励。
+在比特币世界中，我们把“掷色子”的这个过程交给了我们的一些计算能力的机器（矿机）去做。上面的例子是3个色子同时扔，而我们的比特币中的哈希值是256位，也就是说相当于同时扔256个色子，而且上面的例子中一个色子只有6面，也就6种可能，但是比特币世界中的一个”色子“相当于硬币有2面（一面是0，一面为1），因此会有10的77次方以上的可能情况产生。因此如果一个矿机挖矿的话，挖到的概率还是非常小的。
+在比特币世界中，计算机会不断地“掷色子”，直到得到的色子序列比目标值小时，就会出一个区块，而且第一个计算出这个结果的矿工将会获得一定的奖励。这也是激励矿工去挖矿的一种的机制。
+
+
+ 02 
+矿池…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499875&amp;idx&#x3D;3&amp;sn&#x3D;58bbe9c8792699b2755d8997555c780e&amp;chksm&#x3D;fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 与区块链的诞生息息相关的密码极客和密码朋克？| 2</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499875&amp;idx&#x3D;3&amp;sn&#x3D;58bbe9c8792699b2755d8997555c780e&amp;chksm&#x3D;fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXykJNkEjaJpYcI0mByuvgK3dYoJ6OU0SY8ZkNic2vuasjTG13WveFD1a1rzEVszbhkXo8ZtHKFawRQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 | 三黎
+出品｜白话区块链（ID：hellobtc）
+时至今日，生活中依赖网络的事情越发增多，互联网里的匿名性逐渐被弱化，隐私需要加密的问题亟待解决。无论是国家还是个人，都把眼光看向了区块链技术，对之寄予厚望。
+在很多区块链密码学的相关文章中，我们经常会看到“密码极客”、“密码朋克”这样的字眼，究竟是什么意思呢？今天，我们就来了解一下这两个小知识。
+
+
+ 01 
+ 密码极客是什么？
+
+“极客”一词，来自“Geek”的音译，意为智力超群、善于钻研但不懂与人交往的怪才，一般指那些依靠计算机技术连接在一起的社会性人群，他们把大量社交时间花费在电脑上，是一种新的“精英亚文化群”。
+密码极客就是研究与密码相关的人群，而密码学又在区块链、加密资产中必不可少，所以在网络上终日热衷于钻研区块链技术的人，也被称为密码极客。
+区块链行业中的密码极客，最著名的是一群来自前阿里、蚂蚁金服的技术人员与阿里创业帮一起发起的区块链技术创投社群，也是杭州最大的区块链技术创业社群。 
+
+
+ 02 
+密码朋克是什么？
+
+提起朋克，就会联想到反抗、自由，在普通的书中还是常见的，因此算不上陌生词汇。它是上世纪六七十年代的一种西方文化思潮，最初是奇装异服、反叛摇滚的象征，指年轻人为了反对而反抗的一种行为，称为朋克精神。
+密码朋克的英文为 Cypherpunk，1993 年首次出现在埃里克·休斯出版的《密码朋克宣言》中，指反对任何国家规则的密码系统，没有正式的领导阶层，一般通过加密邮件列表进行联系的极客群体，中本聪就是其成员之一。
+区块链技术与密码朋克也有一些关联。
+每一种新技术在发展之初甚至萌芽之际，都有一批开拓者为其摇旗呐喊或是默默耕耘，区块链作为一个“信任机器”和“去中心化数据库”，无论是愿景还是技术支撑，“加密”都是其重要组成部分，而这一切都是为了“隐私”而战。
+区块链起源就是从密码朋克运动开始的，中本聪的比特币白皮书最早发布于“密码朋克”邮件列表，并且在比特币出现之前，密码朋克发表有数十种数字货币，大多都已失败告终。
+
+
+ 03 
+小结
+总之，密码极客就是研究密码相关行业的天才、怪才，而密码朋克即指因反对任何规则系统而研究密码相关行业的群体。
+尽管今天的比特币等加密资产和区块链技术如火如荼，但密码朋克对于网络隐私权的乌托邦理想可能才是其发展的初衷。
+你知道当时的密码朋克成员，除了中本聪还有些谁吗？欢迎在留言区分享你的观点。
+
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499282&amp;idx&#x3D;2&amp;sn&#x3D;aede7af4ddd72536c6f98bbe279e4f28&amp;chksm&#x3D;fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 为什么 DApp 经常会遭遇随机数攻击？| 224</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499282&amp;idx&#x3D;2&amp;sn&#x3D;aede7af4ddd72536c6f98bbe279e4f28&amp;chksm&#x3D;fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxguxC5pJDpIZD1vxLC2nu2PubYqeuQJkamIhNYYicEUT6p1AEOurzJ8b8MbOMicicIQN0VHFKlacNGQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 | 李火华
+出品｜白话区块链（ID：hellobtc）
+9 月 14 日，一款名为“EOSPlay”的 DApp 游戏遭遇了新型随机数攻击，一共损失了数万个 EOS。
+或许很多人对「随机数攻击」这个词已经司空见惯了，因为在 DApp 遭遇黑客攻击的事件中，随机数攻击占了很大一部分，很多 DApp 的随机数被黑客破解了。
+你或许会问，随机数不是随机的吗？随机意味着不可预测，为什么还会被黑客破解呢？
+这还得从随机数说起。
+随机数可以分为真随机数和伪随机数。真随机数需要同时满足随机性、不可预测性、不可重现性，而伪随机数只需要满足随机性，或者是随机性和不可预测性即可。
+真随机数只存在于物理世界中，一般需要通过物理手段（包括量子过程）获得，比如我们日常见到的抛硬币、掷骰子，生成的随机数就是真随机数。但是，抛硬币、掷骰子这种随机数生成方法的缺点非常明显，那就是耗时、耗力，而且也无法满足现代的计算机世界对随机数的需求。
+因为效率的缘故，现代的计算机软件主要依赖伪随机数。最早的伪随机数生成器由 20 世纪最重要的数学家之一冯·诺依曼创造，通过一个确定的随机数种子，由确定的算法生成伪随机数序列。现在的主流计算机编程语言，默认的是将 1997 年发明的梅森旋转算法作为生成伪随机数的方法。
+伪随机数最大的缺陷是，只要种子不变，生成的伪随机数序列也不会变。换句话说，只要你能拿到种子，你就可以破解随机数。
+计算机生成伪随机数的过程，或多或少与这台计算机的物理状态或运算状态有关。也就是说，同一套随机数算法，不同的计算机，或是同一台计算机在不同的时刻，生成的随机数是不一样的。
+然而，这种传统的计算机伪随机数生成方法虽然足够安全，却并不适用于区块链。区块链是一个分布式的系统，同一…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499559&amp;idx&#x3D;2&amp;sn&#x3D;a927a16664842d727e06b5bc420c2a58&amp;chksm&#x3D;fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 什么是加密货币ETP、 ETF？两者有什么区别？| 232</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499559&amp;idx&#x3D;2&amp;sn&#x3D;a927a16664842d727e06b5bc420c2a58&amp;chksm&#x3D;fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxSjdUM6nWjetfPAhB4hr5vu7zKO7C2ibzeHYSzjr5kn0ubGCJWWjEZRxD36mRpl9ftg1E24GH0vog/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：进入科普目录从0开始学习噢！扫描文末二维码，新入门的小伙伴可以看200多期入门连载哦！公众号回复 福利 获取学习礼包~
+
+作者 | Wayne
+出品｜白话区块链（ID：hellobtc）
+就在美国证监会（SEC）拒绝了 Bitwise 提交的比特币 ETF 之际，币安对外宣布称已携手 Amun 在瑞士证券交易平台推出了 BNB ETP。
+很多人看不明白，ETF 与 ETP 有什么区别呢？为什么 ETF 被拒，ETP 却可以通过呢？今天，我们就来看下两者的区别。
+
+
+ 01 
+比特币ETF
+
+ETF 的全文是 Exchange Traded Funds，即交易平台交易基金。按字面理解，就是可以在交易平台交易的基金，简单说就是追踪大盘走势的一篮子标的。
+你可以把 ETF 当作是一篮子股票，它们是根据一些指示股票走势的指数选的，比如标普 500，它记录了 500 家公司股票的整体走势。那么，ETF 里的一篮子股票就是这 500 家公司的股票。
+需要提出的一点是，你实际上并不直接拥有那 500 只股票， 你拥有的是一个凭证，来证明你拥有这个 ETF。最著名的 ETF 是 SPY ETF，它是全球最大的交易平台交易基金，跟踪的就是标准普尔 500 股市指数的总体水平。
+比特币 ETF 就是基于比特币的 ETF。如果你购买了比特币 ETF，你就相当于间接投资了比特币，拥有的是可以交易的比特币基金，而并非直接拥有比特币。但是，你买比特币 ETF 和直接买比特币，在收益上没有任何区别，因为比特币 ETF 追踪的就是比特币的价格，比特币涨了，这个 ETF 也就涨了，反之亦然。
+ETF 不过就是换了一种投资比特币的方式而已。唯一的区别是我们不用再去担心比特币会不会被盗了，不再担心把比特币存放在哪里了，也无需走繁琐的程序。
+
+
+ 02 
+ETP
+
+ETP 的全文是 Exchange T…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499150&amp;idx&#x3D;3&amp;sn&#x3D;ebc4d730bf6a33e23bfa548f9384c132&amp;chksm&#x3D;fa01caa9cd7643bf282080175f0e7ede3eb128e9fc14688b3bd6ea77ad7240e8d776fa7da751#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 区块链2.0领域的左膀右臂——智能合约 | 220</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499150&amp;idx&#x3D;3&amp;sn&#x3D;ebc4d730bf6a33e23bfa548f9384c132&amp;chksm&#x3D;fa01caa9cd7643bf282080175f0e7ede3eb128e9fc14688b3bd6ea77ad7240e8d776fa7da751#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzD6iaDPQdicsb1rL6YkvPmUOrDzxqIDmKfN8juicRdibRdtdkzHmBwPqXN94rc0eVn8MpeaMoE4FSoDw/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 | 崔晗
+出品｜白话区块链（ID：hellobtc）
+自区块链的理念提出，其技术水平就一直在迅猛发展，实现了从区块链 1.0 到区块链 2.0、再到 3.0 版本的不断更新。
+大家都知道比特币是区块链 1.0 技术架构下的典型应用，但是对智能合约这一区块链 2.0 架构下的杰出应用又了解多少呢？今天，我们就来好好聊聊“智能合约”。
+
+
+ 01 
+什么是智能合约？
+
+“智能合约”这一术语是 1994 年由著名密码学家尼克萨博首次提出的，它是通过编程来准确高效地执行预先设定的合约条款。
+
+详细的解释就是：智能合约其实是一种计算机协议，用一段计算机指令实现自我验证、自动执行，并产生可以验证的证据来证明合约操作的有效性。
+
+当智能合约的双方在区块链上产生资产交易的时候就会自动触发一段代码来自动完成具体的交易流程，这串计算机代码就是智能合约。
+
+
+ 02 
+如何实现智能合约呢？
+
+实现智能合约就需要“图灵完备”的计算机编程语言。“图灵完备”这个词大家似乎了解的不多，可以简单地理解为能把世间一切可以计算解决的问题都计算出来的，这样的一种虚拟机或者编程语言就叫图灵完备。
+举一个不太精确但是很容易理解的例子说明一下：比如两口做饭的锅，一口锅可以实现一切的烹饪方法煎、炒、蒸、炖、炸、汆、涮、卤等，而另外的一口锅则只能实现蒸和炖，其他的都不能实现，那么前者就是图灵完备的，后者则不是。
+智能合约之所以可以在以太坊上完美应用，就是因为以太坊在其区块链上提供了一种近乎图灵完备的计算环境。只要是编程语言能够实现的计算，其都能支持，这也为智能合约在更加广泛的环境中得以应用坚实了基础。
+
+
+
+ 03 
+为什么要提出智能合约？
+
+对比智能合约和传统合约，我们就能知道智能合约为什么会出现了。随着科技的进步，我们都会有一些通过双方签订合同来约束彼此经济活动的经历，但即使签订合同，我们也无法保证双方都能在规定期限内完整的履行合同规定的内容。
+传统合约受到诸如主客观、经济成本、适用范围、执行力度和执行时间等因素的影响，而智能合约便可以在很大程度上解决这些因素的影响。智能合约的主要特点可以简单地概括为：去中心化、智能高效（自动执行、无人为干预）、准确、低成本。
+众所周知，区块链最大的特质就是去中心化，在不信任中创造出信任。基于区块链的智能合约是将合约以数字化的形式写入到区块链中，在区块链优秀特性的加持下自然的具备了去中心化的特点，合约内容公开透明、条理清晰且不可篡改，编程语言就是规束合约的法律条文，交易双方可完全放心的进行交易。
+
+智能合约的整个产生和执行过程都是可追溯、不可篡改的。一旦触发合约就会立即执行，自动按照合约规范进行操作。整个过程智能高效，短时间快速完成更是体现了它的准确和经济。
+
+
+ 04 
+智能合约有哪些应用场景呢？
+
+单说智能合约的应用大家可能不太了解，但大家一定在公共场所、景区和学校校园里不止一次的见过各种样式的自动无人售货机，最初 Nick Szabo 就是根据自动无人售货机提出的智能合约，所以从某种意义上可以说自动售货机是智能合约的第一次大规模应用。
+除此之外，智能合约的应用场景还是非常广泛的，例如用于解决金融借贷领域的 P2P 网络金融雷潮事件；用于社会保障领域养老保险、医疗保险，借助智能合约技术，没有第三方的参与避免了贪污腐败问题的发生；用于物联网环境下供应链查询和物品真伪查询；用于房屋租赁、身份认证、知识产权保护、博彩发行、市场预测等。
+
+
+
+  05 
+小结
+智能合约乘着区块链发展的东风在不断地发展进步，应用的场景范围也在不断地扩展，想必大家通过这些内容对智能合约有了一定的了解，但智能合约它真的智能吗？背地里还藏有哪些应用风险呢？欢迎在留言区分享您的观点。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499540&amp;idx&#x3D;2&amp;sn&#x3D;3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm&#x3D;fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 入行区块链后，你有什么感触？| 231</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499540&amp;idx&#x3D;2&amp;sn&#x3D;3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm&#x3D;fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXxSjdUM6nWjetfPAhB4hr5vMQdichESGu7ZyxjZT9WctTIk6t1jxud0Kh0Nobb2bN92Z2FJXZAGycw/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
+
+作者 | Lesley
+出品｜白话区块链（ID：hellobtc）
+比特币诞生已十年有余，无论你是从哪一年接触到它，或是了解到区块链这个行业，现在都应该有自己的一些感触和认识了。
+今天，我们就来聊聊一些入行后的个人感受。
+
+
+ 01 
+行业仍在早期阶段，投资逐渐趋于理性
+从 2017 年 7 月至今，行业内基本无明显进展，落地项目寥寥无几，更谈不上项目创造现金流或拥有自我造血能力。行业内倒是热点不断，如 1C0、比特币分叉币、主网上线、交易挖矿、菠菜类 DApp、Staking、平台币等，资金跟随热点轮番炒作。
+今年上半年 BTC 和主流平台币表现亮眼，交易平台是除了挖矿之外能找到为数不多产生现金流的行业，资金重点关注此类项目，说明曾经的火爆场景回归冷静，投资逐渐趋于理性。
+
+
+ 02 
+投资周期短，波动幅度大
+“圈内一天，人间一年”，24 小时的全天候交易，赶上一周的股票交易时间。在加密资产投资圈内，周期短，波动幅度大，自然造成了投机氛围重。
+
+
+ 03 
+值得规避的常见合约交易错误
+期货合约是非常专业的金融衍生品，作为新手，很容易犯以下错误：
+1、梭哈或重仓
+初生牛犊不怕虎，重仓参与合约交易，把交易成败寄托于一次机会中，不给自己留有余地，这是非常危险的。
+2、高杠杆
+杠杆是把收益放大的同时，也会把风险同比例的放大；再加上加密资产本身波动剧烈，放大效应更为显著，高杠杆交易往往在短期无序波动中快速亏损本金。
+3、逆势开单，或亏损情况下加仓
+在上涨阶段时猜测应该跌了，于是上涨阶段开空单即为逆势开单。与此类似的是在亏损的情况下继续加仓，亏损已经说明了这单交易是错误的，亏损加仓就是错上加错。
+4、每单交易价值不等
+交易获利容易给人带来无往不胜的错觉，情不自禁地加大单笔交易的仓位，殊不知这一次交易和上一次交易毫无联系，即使两次交易盈亏比例相同，但因加大仓位亏损增加，最终仍是亏损的。
+5、频繁开单交易或缺乏止损计划
+每单交易都要交手续费，如果过于频繁开单容易陷入磨损本金、给“交易平台打工”的困境。而止损计划的意义在于让错误或亏损停止，若开单没有止损计划的话，容易造成扛单，扛单则会助推爆仓的发生。
+
+
+ 04 
+合约交易正确姿势
+合约交易需要非常多的知识，背后有一套严密的方法论指导。在掌握分析、仓位、风控概念的前提下，寻找具有盈亏比优势的点位开单，并设定止盈止损位至关重要。
+另外，交易心态也需要历练，树立概率和客观的认识，并及时的交易总结和反思，修正自己的交易习惯。
+
+在区块链行业的这么多年，你有什么经验想告诉大家呢？欢迎在留言区分享你的观点。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499439&amp;idx&#x3D;3&amp;sn&#x3D;10b7df1a67254fefbccff4c016f51bec&amp;chksm&#x3D;fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 什么是区块链预言机，能预测币价涨跌吗？| 229</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499439&amp;idx&#x3D;3&amp;sn&#x3D;10b7df1a67254fefbccff4c016f51bec&amp;chksm&#x3D;fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzEtfPzSUYLvfID5FgyB3gcd8g0Sg3L3YhW6ics0l91ZsrK5ckUNclq6LYopxhjJoYDxBU95h99ocg/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
+
+作者 | 易妙萍
+出品｜白话区块链（ID：hellobtc）
+10 月 1 日，白话区块链发文《比特币出现神预测，这事靠谱么》，文中谈及了一个有关比特币价格预测图的可靠性。那张图的前两个预测都是对，那么，第三个预测还会正确吗？
+
+这让人联想到了区块链预言机，它能预测加密资产的价格涨跌吗？
+
+
+ 01 
+什么是预言机？
+与这个有点“不觉明厉”的名字不太相符的是，区块链预言机是第三方信息源，其唯一功能是向区块链提供数据，从而使创建智能合约成为可能。
+从根本上讲，智能合约只是一个自我执行的代码。智能合约会评估来自预言机的传入数据，并根据收到的信息启动执行流程。
+让我们举一个例子，比如说张三和李四对这个星期六的比特币价格进行下注。张三认为比特币的价格将在 8500 美元或更高，相反，小黑认为在 8000 美元或更低。于是，他们设计了一个智能合约（双方都会向其发送资金），谁预测的价格更靠近实际价格，谁就赢得了资金。
+为了使智能合约确定比特币的价格，从而向赢家付款，它必须通过预言机来查询这个星期六比特币的价格。当查询到比特币价格数据后，比如返回的值是周六比特币价格为 8600 美元，然后，智能合约将根据其条件执行并将所有资金发送给张三。
+
+
+ 02 
+预言机的类型
+预言机通过为智能合约提供了一种在去中心化区块链网络之外进行通信的方式，为智能合约提供了附加功能。
+区块链预言机可以采用多种形式，包括但不限于：
+1、软件预言机
+这种形式的预言机通常包括易于访问的在线信息源，例如网站和公共数据库。它们通常提供以下信息：温度读数，公共交通信息以及各种金融资产的当前价格。
+软件预言机可能是目前最强大的预言机类型，因为它们与互联网具有固有的互连性。这种连接允许软件预言机向智能合约提供最新信息。
+2、硬件预言机
+这种形式的预言机通常负责物理世界中发生的事件，并将数据发送到智能合约上。例如，在供应链管理中，如果带有 RFID 标签的物体要到达特定的仓库，则可以将该数据发送到智能合约，硬件预言机系统可以在整个供应链中进行货物跟踪。
+3、输入式预言机
+这种形式的预告机具有简单地向智能合约提供数据的功能。所提供的数据在智能合约的外部，并且在接收信息后开始执行。上面示例中提供比特币价格的新闻网站，可以被归入为输入式预言机。
+4、输出式预言机
+这些预言机将智能合约数据传送到外部源。就上面的例子而言，一旦张三被确定为赢家，智能合约便可以将此信息传达给钱包提供商，以便自动更新其余额以反映资金的增加。
+在这种情况下，智能合约本身就可以作为输出式预言机运作。
+5、基于共识的预言机
+这种预言机的功能是查询多个信息源，并根据它们的共识得出结果。例如，上面的例子也可以使用 4 个网站来查询比特币的价格。如果所有预言源（网站）返回的值都相同，则智能合约可以成功执行。
+
+
+ 03 
+预言机需要信任
+虽然预言机的优势非常明显，但它存在一个缺点：预言机需要信任。
+预言机用来获取信息并将信息传输到智能合约的数据源，必须被视为可信的。还是上文的例子，如果张三能够以某种方式控制那个比特币价格网站，那么就可以轻而易举地让返回的比特币价格为 8600 美元，从而使自己赢得比赛。
+所以，如果由预言机提供给智能合约的数据被证明是错误的，则存在安全问题。针对此问题，一种可能的补救方法是从多个预言机数据库请求数据，而不是单个预言机数据库。
+比如说，如果一个预言机返回的比特币价格为 8600 美元，而其他 4 个预言机返回的价格是 8000 美元，则可以将其他条件编程到智能合约中以解决冲突。智能合约可以选择仅接受多数值，在这种情况下，李四成为胜利者。
+你觉得在哪些情境下，需要用到预言机？欢迎在评论区留言分享。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499736&amp;idx&#x3D;2&amp;sn&#x3D;9a530780447f906b072c3c3deaf08954&amp;chksm&#x3D;fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 如何完成大额交易又不过度影响市场价格？| 236</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247499736&amp;idx&#x3D;2&amp;sn&#x3D;9a530780447f906b072c3c3deaf08954&amp;chksm&#x3D;fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/mmbiz_jpg/VBPpJdUKSXzzTCaxib7Xv0zbMGYXSq9adAcUrBoUSlByoQ4eTLoXDhSQesKHEiaH4SfpGRzFZKe3xnlvECDVjaqQ/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 | 阿华
+出品｜白话区块链（ID：hellobtc）
+在进行数字资产的大额买卖时，可能会因为交易数额巨大而影响市场价格，尤其是对于流动性比较差的数字资产，一个大额买单就可以拉盘。
+同样，一个大额卖单就可以砸盘。那么，有没方法既可以完成大额交易又不过度影响市场价格呢？其实，在进行交易时选择冰山委托就可以实现。
+
+
+ 01 
+什么是冰山委托
+
+冰山委托是订单类型中的一种，指的是投资者在进行大额交易时，为避免对市场造成过大冲击，将大额买单/卖单拆分为多个小额买单/卖单，并且根据市场最新价格波动调整委托价格，通过连续小单委托减少大额订单对市场价格的影响。
+用白话解释就是：把大额买单或卖单拆分成多个小单进行分批交易，这样可以减少对市场造成的价格冲击。不过，并不需要手工拆分，当设置了冰山委托订单类型后，拆分过程是自动进行的。
+
+
+
+ 02 
+
+冰山委托的适用范围
+
+冰山委托作为订单类型中的一种，它适用于对大额订单进行拆分交易，从而减少了对市场价格造成的影响。
+例如，在进行数字货币的大额卖出交易时，订单类型设置为冰山委托可以减少大额卖单对市场价格的影响；同样的，在进行数字货币的大额买入交易时，可以防止因大额买单造成价格提升而增加了自己的买入成本。
+目前，许多交易平台的订单类型中都有冰山委托。
+
+
+ 03 
+
+冰山委托举例
+下面以某平台的冰山委托-买入为例进行说明。
+小王希望购买总量为 80万 USDT 的 BTC，但不希望由于挂单数量较大而过于影响盘面，从而增加自己的买入成本，此时他就可以把订单类型设置为冰山委托。
+小王设置买入委托的总量为 80万个 USDT；每次下单购买的平均数量可以设置为 8000个 USDT（实际每次下单数量会在 90%~110% 之间浮动）；使用委托深度控制委托单在订单簿交易深度中的位置；设置最高买入价格：8100 USDT，以控制买入价格上限。
+于是，小王的冰山委托设置如下：
+总金额：80000 USDT；
+单笔金额：8000 USDT；
+委托深度：0.1%；
+最高买入价：8000 USDT。
+
+
+
+
+
+这笔冰山委托代表什么含义呢？
+小王要买入 80 万 USDT  的 BTC，为了不过于影响盘面价格，于是使用冰山委托订单类型进行小额分批交易；每批次委托买入 8000 USDT（实际下单会在 90% ~ 110% 浮动）的 BTC；而委托买入价为：最新买1价 * (1 - 0.1%)；而且还设置了最高买入价：8100 USDT，表示买入价不会高于 8100 USDT。
+设置好以后，点击”买入”按钮，系统将为小王进行冰山委托，并按照上面设置的规则，成交一笔，再委托下一笔。
+当”最新成交价”与委托价格偏离过大时，自动撤单并重新进行委托；
+当”最新成交价”高于小王设置的”最高买入价”时，停止委托，待最新成交价低于其设置的最高买入价时恢复；
+当该委托的“总成交量”等于“委托总量”时，委托就会自动停止。
+该过程用图形表示如下：
+
+
+
+
+
+如上图所示，当最新成交价低于小王设置的”最高买入价” 8100 USDT 时，系统就会进行连续委托，当最新成交价高于小王设置的”最高买入价” 8100 USDT 时，系统就会停止委托。
+上面是冰山委托-买入，如果要进行数字货币的大额卖出交易，也可以设置冰山委托，原理和过程和上面的例子一样，这里就不赘述了。
+总之，如果要进行数字资产的大额交易又不想过于影响市场价格，订单类型选择冰山委托就可以了。
+你使用过冰山委托吗？体验怎样？欢迎在留言区分享你的观点。
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500118&amp;idx&#x3D;3&amp;sn&#x3D;30a3f41b958958a1fec5af3172de8b94&amp;chksm&#x3D;fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd"
+                        open
+                      >
+                        <summary class="article-expander__title">▪ 区块链转账是怎么收费的？| 245</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="http://mp.weixin.qq.com/s?__biz&#x3D;MzUyNzE4MDM2MA&#x3D;&#x3D;&amp;mid&#x3D;2247500118&amp;idx&#x3D;3&amp;sn&#x3D;30a3f41b958958a1fec5af3172de8b94&amp;chksm&#x3D;fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://mmbiz.qpic.cn/sz_mmbiz_jpg/VBPpJdUKSXwHicLOdaLwAOiaABKnDHKHBmaUX3f3oMkmc1a8lWm4NeakY3KPBsygjicp9UWcGdTMYVDkbyThYcg3w/0?wx_fmt&#x3D;jpeg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+
+作者 | 听风
+出品｜白话区块链（ID：hellobtc）
+早年银行间转账都是收手续费的，一般按照转账金额的一定比例收取。而跨国转账，由于货币国与国之间的壁垒及外汇管制等，除了支付以上手续费和支付200元左右的电报费，另外还耗时几个工作日。
+然而，这些壁垒和管制在区块链的世界里都不复存在。你只需要轻轻发送一个转账请求，基本能够实现一小时内到账，那么区块链转账手续费是如何收取的呢？
+
+
+ 01 
+比特币网络转账
+
+最早的比特币网络转账是按字节收费的（BTC矿工费&#x3D;Fees（聪/byte） * Site（byte））。比特币转账是从一个比特币地址转移到另一个比特币地址，在实际交易过程中，如果A要转账给B，包含这笔交易的区块向区块链中的所有用户发布广播，矿工平均每隔10分钟会将比特币网络中未被记账的交易打包进一个区块，这就完成了一次确认，经过6次确认后，这笔转账就被认为不能逆转了。
+所以这里转账的手续费实际上是支付给矿工记账的报酬。一笔交易（不分金额）是250字节甚至更多，手续费一般为0.0001-0.0015个比特币。而比特币一个区块的容量就1M，一个区块每秒大约只能处理7笔交易，所以比特币上的交易是非常拥堵缓慢的，为了获得优先记账权，可以多付些手续费。
+
+
+ 02 
+以太坊的转账
+
+以太坊的转账是按消耗Gas（燃料）计算的 （ETH矿工费 &#x3D; Gas Limit * Gas Price） 。与BTC一样，ETH转账也是需要支付区块链矿工费的。
+不同的是，以太坊的转账我们称消耗了Gas（燃料），这个值是由Gas Price（单价）和消耗的 Gas Limit（数量）来确定的，Gas limit的数量一般是根据ETH智能合约内容来决定的，因此发起方设置的Gas Price的价格越高，其发起的交易就能越快被打包。不过ETH的Gas用不完是可以退回的。
+
+
+ 03 
+EOS转账
+
+不同于BTC和ETH，EOS转账几乎“免费”。EOS 转账过程中会消耗一定网络带宽资源（NET）、CPU计算资源(CPU)。
+但NET和CPU都是可再生资源，用户可以通过抵押EOS的方式获得，EOS账号信息、智能合约执行信息存储需要消耗运行内存资源（RAM）, RAM是稀缺资源，需要购买，所以说EOS转账是免费的，但是还是需要消耗需要购买的RAM。
+传统的支付转账系统都是依赖于第三方机构作为信用背书，而在区块链的世界里，是点对点的去中心化交易，它速度更快，成本更低，具有更大的优势。
+你认为区块链转账相比传统行业还有哪些优势和弊端呢？欢迎在留言区分享你的观点。
+
+
+「白话区块链入门系列」互动有奖
+
+本文发布24小时后，将精选一名留言者，奖励8.8元红包；
+
+指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
+
+本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+
+
+
+
+
+往期内容精选
+♢006 比特币的矿工和挖矿是什么意思？
+♢014 虚拟货币价值的本质是什么？
+♢015 神奇而有趣的比特币
+♢018 被称为“区块链2.0”的以太坊是什么？
+♢021 被称为“区块链3.0”的EOS是什么？
+★后台回复「入门」获取完整目录！★
+
+
+
+
+——End——
+
+
+『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
+
+
+亲，据说99.9%有品位的人都点了「在看」👇</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;32
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Web3.0世界</button>
+                  <a class="source-heading__link" href="https://www.web3sj.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49065"
+                        open
+                      >
+                        <summary class="article-expander__title">Web3.0世界日报（2023-3.7）</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49065/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/2023030712090860.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>消息人士：亚马逊NFT将与真实资产挂钩，或于自研私链上发行。体育NFT平台Blockasset将从Solana转移至Chiliz Chain 2.0。阿迪达斯将于3月25日在德国柏林举办Into the Metaverse活动。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49062"
+                        open
+                      >
+                        <summary class="article-expander__title">Vitalik看好的ERC-4337即将上线，都有什么新特性？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49062/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678189980599.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>ERC-4337 是由以太坊创始人 Vitalik Buterin 联合 Yoav Weis、Dror Tirosh 等人发布的账户抽象提案。该提案旨在使以太坊钱包更加友好（对用户），并防止任何密钥丢失。Vitalik 和他的团队提议将用户的外部拥有账户（EOA）变成智能合约账户（CA），这将允许使用户保持对他们的加密货币访问的内置机制。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49056"
+                        open
+                      >
+                        <summary class="article-expander__title">「Iron Bank 手撕 Alpha Homora」事件的来龙去脉</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49056/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678188843822.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Iron Bank 是的前身是 Cream v2，这是由 Cream Finance 和 Yearn Finance 联合推出的一个支持部分抵押（甚至无抵押）的借贷市场，而 Alpha Homora 则是一家旨在提供收益耕作效率的杠杆协议。2021 年初，Alpha Homora 推出 v2 版本，开始利用 Cream v2 的流动性为用户提供杠杆服务。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49051"
+                        open
+                      >
+                        <summary class="article-expander__title">Cosmos LSD简史：研究多，产品少</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49051/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678188767355.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>我觉得目前看到的 LSD 大规模应用还是在 DeFi 上，比如循环抵押这种地方，总之要 DeFi 发达的地方 LSD 才有需求。Cosmos 长期以来大多数币比如 ATOM 都只能投票，直到 2022 年 Cosmos（不看 Terra）才有了一些成熟的 dex，比如 Osmosis 和 Crescent，但是借贷依然很早期，直到最近 2023 年初借贷才慢慢成熟（umee 和 mars 到了能用的状态），所以以前 Cosmos 对 LSD 需求很低。只有在 Terra 这种 DeFi 发达的地方，LSD 才发达。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;4
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49022"
+                        open
+                      >
+                        <summary class="article-expander__title">一文详解Arbitrum最新「X to Earn」项目GoSleep：睡觉即赚钱</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/gamefinews/49022/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678179443191.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>GoSleep 团队在深刻理解睡眠问题的基础上，为用户提供了一个基于个人睡眠数据的科学专业的睡眠助手，该睡眠助手基于真实的个人健康数据（从设备收集）、大数据和专业数据来支持 GoSleep 用户的睡眠问题解决旅程。用户可以很容易地理解他们遇到的问题，并与遇到同样睡眠问题伙伴以及 GoSleep 团队一起解决问题。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;4
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49001"
+                        open
+                      >
+                        <summary class="article-expander__title">便宜顺畅、中文友好……自打用上Notion AI，ChatGPT都不香了！</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49001/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678178202828.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Notion 忽然毫无征兆地宣布全面开放了 AI 产品服务，也就是说，现在每个用户都可以在自己的 Notion 页面里随时调用 AI 功能。一时间，用 Notion AI 来写文案的、写策划的、写表格的、写视频脚本的、帮忙读论文做总结等各种各样的用例开始涌现。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48972"
+                        open
+                      >
+                        <summary class="article-expander__title">IOSG：GMX全链乐高会挑战dYdX龙头地位吗？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/definews/48972/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678176447557.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>加密货币衍生品交易量一直超过现货市场，这种趋势并没有减缓的迹象。2022 年，前 10 家衍生品集中交易所（CEX）的日均交易量约为 950 亿美元，而前 10 家现货 CEX 的交易量约为 310 亿美元。随着行业的不断成熟，我们可以预期衍生品与现货交易量的比例将达到类似传统资产类别的水平。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48969"
+                        open
+                      >
+                        <summary class="article-expander__title">刚结束的ETHDenver，都有啥值得关注的趋势或项目？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/48969/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678173598851.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>主题包括且不限于 L2 扩展、加密货币与真实世界连接、去中心化和监管挑战、如何实现链游、重新思考 veToken 模型、LSD 发展的催化剂 DVT、零知识密码学公开可验证选举、零知识技术将如何彻底改变 Web3 之类。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;2
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48959"
+                        open
+                      >
+                        <summary class="article-expander__title">Blur投资漫谈：挑战、机遇与潜在投资机会</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/nftnews/48959/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678173553137.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>投资最终都归为对人性的理解和洞察，Blur 的运营模式让我想起了微信当年改变我们沟通联系的那段历史。我看到 Blur 在产品细节上体现出用户需求的深刻认知，也看到它在颠覆原有 NFT 交易范式的道路上一路前行。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;5
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48939"
+                        open
+                      >
+                        <summary class="article-expander__title">一文详解Velodrome：Optimism的DeFi发动机</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/definews/48939/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678172882375.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>L2 赛道内的竞争已经接近白热化，Arbitrum 在启动初期积累了较大的优势，而 OP 通过发 token 正在追赶 Arbitrum 的步伐。目前在 TVL、转账笔数和活跃地址数上，Arbitrum 较 Optimism 都有 1 倍左右的领先优势。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;4
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                 </section>
               </section>
             </li>
@@ -1570,6 +1784,51 @@ ETP 的全文是 Exchange T…</span>
                   <a class="source-heading__link" href="https://www.tokeninsight.com/en/news">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://tokeninsight.com/zh/news/sui-developer-mysten-labs-announces-collaboration-with-alibaba-cloud?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;"
+                        open
+                      >
+                        <summary class="article-expander__title">Sui 开发公司 Mysten Labs 宣布与阿里云达成合作</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://tokeninsight.com/zh/news/sui-developer-mysten-labs-announces-collaboration-with-alibaba-cloud?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://s2.tokeninsight.com/static/news/cover/img/cover_(6).jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Layer1 区块链 Sui 的开发公司 Mysten Labs 宣布其已于昨天与阿里云正式签署合作协议，将在 Sui 上开发可持续的 Web3 生态系统。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://tokeninsight.com/zh/news/avalanche-based-dex-trader-joe-live-on-bnb-chain?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;"
+                        open
+                      >
+                        <summary class="article-expander__title">Avalanche 生态 DEX Trader Joe 上线 BNB Chain</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://tokeninsight.com/zh/news/avalanche-based-dex-trader-joe-live-on-bnb-chain?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://s2.tokeninsight.com/static/news/cover/img/cover_(5).jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Avalanche 生态去中心化交易平台 Trader Joe 宣布正式上线 BNB Chain，并将其创新 AMM Liquidity Book 引入 BNB 生态。
+Liquidity Book 旨在降低交易费用、降低滑点并增加流动性提供者的收益，允许用户部署各种策略来监控和管理头寸。上线伊始，BNB Chain 上的 Trader Joe 市场包括 $BUSD、$USDT、$USDC、$BNB、$ETH 和 $JOE 等。此外，Trader Joe V1 AMM 也同时上线 BNB Chain。
+
+此前，Trader Joe 旗下 NFT 市场 Joepegs 已经上线 BNB Chain。除 Avalanche 和 BNB Chain 外，Trader Joe 还于去年12月部署至 Arbitrum。
+ 
+TokenInsight 致力于报道加密行业最有价值的新闻。如果您有信息想与我们分享，请联系邮箱地址 news@tokeninsight.com。我们将充分重视您的声音。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1853,703 +2112,132 @@ Grayscale 称该诉讼是 &quot;误导 &quot;的，并补充说他们在努力�
                     class="source-heading__name"
                     data-action="toggle-accordions"
                     title="Click to toggle the source, Ctrl + click to toggle all."
-                  >深潮TechFlow</button>
-                  <a class="source-heading__link" href="https://www.techflowpost.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2198"
-                        open
-                      >
-                        <summary class="article-expander__title">1700 万枚 ETH（280 亿美元）会在上海升级后解除质押吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2198">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/89b037f7d0ff411a8b52e5ef76cb12cb.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰写：Salazar.eth 
- 
-编译：深潮 TechFlow
- 
-随着以太坊网络的不断发展，在信标链上实施质押为投资者创造了赚取收益和支持网络的新机会。目前有超过 1700 万枚 ETH 被质押，而提款对市场的影响仍然是一个令人感兴趣的话题。在本文中，我们将探讨影响退出决策的因素、流动性质押在市场中的作用，以及即将到来的上海升级的潜在影响。
- 
-媒体和 Fudder 告诉你，1700 万枚 ETH（价值约 280 亿美元）将在上海升级期间取消质押，但真的会是这样吗？我来通过数据给你们真相。
- 
-
- 
-上海升级是 ETH 的 EL（执行层）的升级，而 Capella 是 CL (共识层) 或信标链的升级。然而，由于这些升级将同时发生，上海指的是两者。虽然上海还有其他 EIP，但最重要的是 ETH 提款。自 2020 年 12 月信标链上线以来，验证者可以质押 ETH，但无法发起提现，这给 EF 开发者带来了社会压力。
- 
-在去年 12 月例行的全核心开发者电话会议 (ACDC) 之后，原定于 2023 年 3 月进行 ETH 提款。但是，目前已推迟到 4 月。现在，让我们深入研究细节。
- 
-由于合并的设计以及信标链与 ETH 的融合，所有验证器都需要将其提款凭据更新为 0x01 格式才能进行提款操作。根据 ETH 代码开发人员 Benjaminion 的说法，目前有约 302,154 个验证器具有 0x00 凭据，而 186,722 个验证器具有 0x01 凭据。
- 
-一旦上海升级实施，ETH 网络将在每个区块上处理 16 个完整或部分的提款，而每个区块的产生时间为 12 秒。这意味着网络需要约 104 个小时才能处理信标链上的约 500,000 个验证器的所有提款。需要注意的是，验证器的凭据必须为 0x01 才能进行提款操作。
- 
-
- 
-
- 
-
- 
-没错，1720 万个 ETH，但我要补充一点。根据 Defillama 的数据，LSD 抵押了 760 万个 ETH。也就是说 760 万个 ETH 一直处于不流动状态。现在，让我们做一些简单的数学计算：1720 万 ETH - 760 万 ETH &#x3D; 960 万 ETH。
- 
-
- 
-
- 
-
- 
-问题是，这 960 万个 ETH 会被提取吗？
- 
-让我们回到过去。根据通过 Etherscan 获得的信标链合约数据，去年 12 月份质押的 ETH 总数为 140 万个。
- 
-
- 
-根据 CoinGecko 的数据，在 Beacon 链启动的 2020 年 12 月 1 日至 12 月 31 日期间，ETH 的平均价格为 681.10 美元。
- 
-目前 ETH 的价格为 1570 美元，去年 12 月份质押的全部 140 万个 ETH 都处于盈利状态。
- 
-
- 
-问题仍然是：这 140 万 ETH 会被提取吗？截至目前，已有 1,084 个验证者退出了信标链。
- 
-一旦上海再次启动，34,688 ETH（1,084 个验证者）将自动被取消质押。在 1,084 个验证者中，有 864 个自愿退出，而 220 个被处罚退出。
- 
-从这些数据可以看出，仅有一小部分验证者（50 万个验证者中的 884 个）是自愿退出的，而其余验证者可能长期看涨并享受收益。
- 
-在 2020 年 12 月信标链质押推出时，没有任何提款的消息或对 ETH 的担忧。根据心理分析，许多质押者长期看涨以太币，并寻求累积更多资产。
- 
-现在，随着质押池和中心化交易所（CEXs）的介入，情况变得更加有趣。通过我的研究，我发现 Defillama 和 Etherscan 在流动质押方面存在冲突。
- 
-我发现 Defillama 认为 Coinbase 是流动质押，这是正确的。中心化交易所（CEXs）：一些 CEX 使用流动性 ETH，而其他一些则采用与质押池相同的设计，质押者不会立即获得提款，并且存在锁定的质押等。
- 
-
- 
-目前没有人知道有多少 ETH 将取消质押，也没有人能够预测。但是，根据现有的数据和分析，我们可以推断出，虽然一些代币可能会取消质押，但总的来说，由于许多验证者看好 ETH 的长期前景，他们将继续持有和积累 ETH，因此卖压将会减少。
- 
-
- 
-根据这张图片，我们可以看到流动性质押、中心化交易所和质押池的总比例为 69.6%。那是 1700 万的 69.6%，也就是 1190 万 ETH 将被纳入这些机构的管理范围。
- 
-如果我们从 1720 万中减去 1190 万，我们还剩下 530 万 ETH 给鲸鱼和其他人。鲸鱼质押了大量 ETH，因此它们是长期持有者并且非常看好市场，当然有些会卖出。
- 
-有多少 ETH 将被提取？没有人知道，也无法预测。
- 
-原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2197"
-                        open
-                      >
-                        <summary class="article-expander__title">专访以太坊基金会研究员：Rollup、社交和游戏板块最终会从Danksharding获益</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2197">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/e8e7c19bf91b40ea9957b55332cd0d52.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰写：Rose
- 
-编译：深潮 TechFlow
- 
-这期 Kernel Talk 邀请到了以太坊基金会的研究员 Dankrad Feist。作为提出新的分片设计和 Danksharding 概念的人，Dankrad 在本次采访中分享了 Danksharding 的下一步计划、价值以及 Proto-Danksharding 所带来的新用例。Kernel Ventures 作为一家专注于支持开发者社区和支持世界上最有创意创新者的加密货币风投基金，对于以太坊和 Danksharding 的未来发展充满期待。
- 
-1. 在 Proto-Danksharding 之后，Danksharding 的下一步是什么？
- 
-Proto-Danksharding 的设计目标是为了使其升级变得非常容易，因此它基本上已经使用了我们需要进行分片的所有密码学和基本组件。这意味着我们可以逐步升级，而不需要再次进行硬分叉以太坊。因此，所有下一步计划都将是我们可以在网络层面上进行的事情。而且我们可能很快就可以实现一些计划。
- 
-例如，我们可以进行一些优化以更有效地在网络上传输 blob，这将可能进行少量扩展，可能是我们可以允许的承诺数量的两倍或四倍。这可能会在首次实现后的半年到一年内实现。
- 
-2. Danksharding 带来的最大增值是什么？Danksharding 的实施是否使某种新应用程序的出现成为可能，我们还能期待什么？
- 
-Danksharding 最大的增值是提供了可扩展的数据可用性层。在 Rollups 上，可以处理大量的交易，这意味着交易会更便宜。对我来说，这意味着我们终于准备好了去实现加密货币的全部潜力。就像人们在 2014 年、2015 年早期设计和构建以太坊时所想象的那样，这不仅可以被实现，而且还可以被大量用户使用。我认为可能性是无限的，我们将会看到很多。即使是基本的应用，如支付，在我们终于使它变得便宜和可扩展之后，也是一个巨大的应用。
- 
-3. Optimistic Rollup 和 zk-Rollup 从 Proto-Danksharding 和 Danksharding 中获得同样的好处吗？
- 
-大体上是的，对于 Optimistic Rollup 和 zk-Rollup 来说，它们需要的是一个数据可用性层，以便具有便宜的交易和可扩展性。这为它们带来了比现在以太坊上的核心数据更多的数据。它们可以以相同的方式从中受益，只是在实现区块链的具体细节方面可能略有不同。
- 
-4. 您对以太坊分片后的存储有何看法？你看到有任何项目在做这件事吗？
- 
-基本上，以太坊不会负责 Rollups 的状态。如果以太坊负责发布更新状态所需的所有数据，但状态本身，Rollups 将不得不想办法如何维护它并潜在地如何激励它的维护。这在某种程度上是由它们决定的。我认为已经有一些想法和解决方案正在出现。但这取决于 Rollup 的大小，对于我们现在看到的 Rollup，我不认为这是一个主要问题，因为状态还是足够小的，即使没有特定的激励，它也不会丢失，而是会一直存在。但如果你想设计具有更大状态的 Rollup，我认为人们绝对应该这样做，那么值得考虑的是如何激励它。
- 
-5. 您是否看到任何由 Proto-Danksharding 启用的新用例，例如社交或游戏？您期待哪些新的或令人兴奋的用例？
- 
-当然，正如您所提到的，社交和游戏最终会从拥有更便宜的交易中受益。对于社交应用程序，我发现这非常有趣，因为这是一种不一定依赖于任何现实世界桥梁的应用程序，比如金融应用程序，如果你可以在以太坊上获得安全性，这显然是从监管的角度来看，这是一个相当棘手的问题。但在社交和游戏中，我们可以做很多事情而不必一定需要这个。因此，我绝对期待看到这一点。我认为所有这些都将由于拥有可扩展的基础层而得以实现。
- 
-原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2196"
-                        open
-                      >
-                        <summary class="article-expander__title">如何通过数据指标来判断项目预售是否会成功？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2196">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/479baf1c9ff04dd4b2ff2139b59a66f4.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰写：Crypto Nova
- 
-编译：深潮 TechFlow
- 
-在加密货币市场中，参与项目的预售成为了获取高收益的一种常见方式。然而，要想预测一个项目的真实潜力需要耗费大量时间和精力，需要进行多个步骤的分析。但是，加密分析师 Crypto Nova 有一种更高效和有效的预测方法，只需要两个步骤。
- 
-本文将深入探讨这两个步骤的重要性和如何进行分析，帮助您更准确地评估一个项目的成功概率。
- 
-每当您发现一个新的预售项目时，您只需要关注这两个方面：
- 
-• 社交媒体参与度；
- 
-• 代币经济学；
- 
-社交媒体参与度
- 
-社交媒体参与度与项目在市场上推出的表现之间有着巨大的相关性。项目官方社交媒体页面上的良好关注度是需求的一个表现指标。
- 
-良好的互动&#x3D;强劲表现。（但要注意虚假数据。）
- 
-你需要的是真正的互动。在这个领域里，经常会看到一个账户有 10 万个关注者，但只有 10 个人点赞他们的推文……这意味着完全没有任何曝光，你在看虚假的数据，他们买了机器人。
- 
-人们很容易买关注数，很容易买一条推文，但很难在每一条推文上都做假。以下是一个例子：
- 
-一个 40k 粉丝的帐户平均应该有 5-10k 的推文浏览量。而拥有 100k 粉丝的账户，一般的推文应该有 10k 到 20k 次浏览量。虽然这些只是平均数，并不适用于每条推文，但你应该期望总浏览量占总粉丝数的 10%-20%。
- 
-健康的数字&#x3D;强劲的需求。
- 
-代币经济学
- 
-现在，我们已经看到了是否有充足的需求，接下来要确定代币锁定期。需求来来去去，有时会保持不变，但很多时候在预售之后就消失了。公众的优势之一是我们的代币锁定期。
- 
-你需要找出你何时可以获得所有代币的访问权。最好是在发行时完全解锁，或者每个月解锁一部分，持续时间不超过 6 个月。
- 
-
- 
-最后要知道的是你投资的价格。有些项目的估值模型非常疯狂：
- 
-• 代币价格：0.12美元
- 
-• 总供应量：80亿
- 
-• 市值&#x3D;代币价格x供应量
- 
-• 市值&#x3D;0.12x80亿
- 
-预售市值达 9.6 亿美元。
- 
-结论
- 
-实际上只有 2 个主要指标对预售的表现影响最大：
- 
-• 社交媒体互动；
- 
-• 代币经济学（代币释放和市值）；
- 
-一旦你掌握了这两个方面的技能，寻找高质量的预售项目就会变得轻而易举。
- 
-原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2195"
-                        open
-                      >
-                        <summary class="article-expander__title">前Riot Games总经理：区块链如何让游戏变得更加有趣？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2195">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/b17bf38606fd429a9594993cb29650cb.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰写：Overpriced JPEGs
- 
-编译：深潮 TechFlow
- 
-随着 Web3 的普及，游戏开发者拥有了一些新的工具和能力，使他们能够创造更加有趣和吸引人的游戏体验。这篇文章将探讨如何利用这些新工具和能力来设计更好玩的游戏，并邀请到了 Justin Hulog，他是 Immutable 的首席工作室官员，负责监督 Immutable 游戏的出版和开发，包括 Gods Unchained，Guild of Guardians 和其他即将公布的游戏。在转向 Web3 游戏之前，Justin 曾是 Riot Games 东南亚区总经理。
- 
-
- 
-Web3 游戏一直在等待时机。从 DookeyDash 的巨大成功——最高得分的玩家是 Fortnite 的职业玩家 Kyle Jackson，也被称为 Mongraal，他以160万美元的高价出售了战利品 Golden Key——到 Unity 集成 MetaMask 和其他 Web3 工具，似乎 Web3 游戏终于开始要跨入到主流。
- 
-在 Immutable，我们也看到了过去一年玩家活动和兴趣的激增。看看这些熊市统计数据：
- 
- 
- 
- Gods Unchained 的游戏数量和游戏总时长几乎增长了三倍。
-  
- 
- 我们有超过 100 万的 Guild of Guardians 预注册。
-  
- 
- Illuvium 的土地销售是历史上最成功的 NFT 销售之一，72 小时内售出了价值 7200 万美元的土地。
-  
- 
-作为 Web3 游戏开发者，我们瞄准的市场是巨大的。游戏产业已经比电影、电视和音乐产业的总和更大。然而我们还没有见识到 Web3 的杀手级功能：让玩家真正获得游戏资产的所有权。问问那些坐拥大量无法交易的游戏皮肤或物品的人，你会发现玩家能够随心所欲地处理他们的数字资产将推动游戏迎来指数级增长的下一个…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2194"
-                        open
-                      >
-                        <summary class="article-expander__title">ETHDenver 参会总结：我们看到了哪些趋势？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2194">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/c2cd11060c3b43b2bd0dab26edeb6ac8.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>刚从Denver回来，过去的一周精彩不已。分享一下个人感受，和整个会议传递的新趋势。
- 
-整体而言，EthDenver整体感受非常好，远胜Consensus，Token2049。
- 
-1. 全球性开发者文化
- 
-据说整个ETHDenver来了35000人，7500 hackers。我住的酒店离downtown开车要15分钟，但是基本每天电梯里都能见到参会者，大家一看胸牌，互相一秒熟络。从业者里，项目方：VC约5:1。项目方颇具全球性，除了美国本土，中国，加拿大，英国，新加坡，欧洲是最大的集合。和ArkStream好几个北美欧洲的portfolio，终于见上了。VC领域，大部分活跃的一二线基金都有来人，尤其是过去很少出现的一些欧洲地区资本。
- 与Consensus不同，ETHdenver的开发者文化使得整个活动都非常加密原生。与项目方见面基本都是直接坐下，当场电脑展示demo，30分钟就把产品给聊得很透彻。这点我非常喜欢，仿佛回到了2017年刚入行时的感觉。
- 
-
- 
-随处可见的hacker
- 
-2. 参会指南
- 
-ArkStream作为VC，我们最重要的还是source项目。因为活动太多，最高效的方式依然是小型活动+定向搜索。
- 
-小型活动一般以20-100人的brunch，seminar和party组成。这次参与的几个好的活动有Meet the VC Brekky, Brunch party with Fabric/SevenX, zkNight Afterparty, MIT Alumni founder’s lunch, Cosmos on Tap, IOSG old friend Reunion, Founders Club启动仪式，收获了很多高效对话，和重要连接。
- 
-定向搜索则是我们过去5年认为的最高效的crypto社交方式。在参会前团队花了两天把几个分会场如Z…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2193"
-                        open
-                      >
-                        <summary class="article-expander__title">ETHDenver 有哪些新现象和趋势，参会者这样说</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2193">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/cc6ff4c6686e431cbbe4b0e40d8faabe.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>采访：Will
- 
-整理：Claudia
- 
- 
- 
-“这边（ETHDenver）氛围真的 TM 好，真 TM 不想走”
- 
- 
-参加完 ETHDenver 的 Will 老师发出如此感叹，作为资深加密资料收集整理控，勤奋的 Will 老师再次卷了起来，在活动期间采访了 75 位参会者，试图群描 Denver 现场新鲜出炉的参会感想。
- 
-对于开发者和大部分 Builder 来说，整个会场一洗牛市的低沉，能量和生机在交谈中不断熵增，对于入圈不久的新人和学生来说，现场的氛围打开了眼界；更有乐观者对于「中国崛起」的叙事有了百分之百的预期，很多项目有大量华人的身影，分布在项目的各个环节；但对于很多投资人来说，新的玩法叙事，包括技术突破都尚未涌现。
- 
-不论如何，大多数参与者仍然对新项目有着积极的预期，AI，ZK 等宠儿仍然占据了较大的视线。不管新的叙事有没有出现，ETHDenver 中涌现的对于行业的热情和能量已经重于黄金。深潮 TechFlow 综合 Will 老师的采访，整理出以下内容，一起跨越时空，回归 Denver 现场的汹涌。
- 
-初夏虎
- 
-参加 Denver 大会活动感受：挺好的，一起来逛的老婆说：这生态，已经大到灭不掉了。我不太看好那些依赖技术的东西，其中大多数 95% 的东西都会失败，只有 5% 的东西有可能成功，但我们无法确定哪些是那 5%，只能一个一个地了解，判断它们属于以下三类：
- 
-1）金融服务，比如 LSD 借贷等；
- 
-2）数据服务，例如 API 方式和开发工具；
- 
-3）游戏。
- 
-我最看好金融领域，数据也有一些机会，但数量有限。对游戏则持悲观态度，Web2 进去是天方夜谭。
- 
-匿名 Z 某基金投资人 
- 
-1）对个体来说，除非和项目方或创始人关系特别好，否则信息差太大了。因此，如果只从事一级市场，那样就太不划算了，除非你具备非常优秀的美国本科计…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;78
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2191"
-                        open
-                      >
-                        <summary class="article-expander__title">ETHDenver 黑客松评委：如何打好一场黑客松？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2191">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/2b0354515d7948b99288c24c3b7bea58.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰文：ZainanZhou
- 
-作者简介：ZainanZhou 为现任EIP Editor六人之一，也是以太坊社区第一位华人 EIP Editor。EIP Editor 负责审核所有提交 ETH 社区 EIP 协议，对以太坊社区生态发展至关重要。Victor Zhou 也是 ERC1202，ERC5750 等协议作者，为以太坊 DAO 投票治理相关协议作出过重大贡献。
- 
-作为今年的评委之一，深感一些 Builder 也非常优秀，但是因为参赛技巧与大家失之交臂，非常可惜。因为这类国际赛华人评委少，中文圈对参赛经验鲜有讨论，所以分享一点当评委视角体悟，希望帮到未来者。也促进华文圈更多讨论共进:
- 
-1.Hackathon 的展示只有 90 秒，非常短所以必须精炼。一个项目最好只突出一两个产品和技术亮点来讲解，其他可以略去。部分优秀项目做了很多功能，讲解的时候流水账，令评委们难以捕捉最重要的地方，非常可惜；
- 
-2.如果有 Demo，一定要展示 demo，哪怕是只有 10 秒一扫而过，也能体现项目的完成度。我自己和其他评委都很注重完成度这一项评价。有的项目明明做好了，时间短选择不 demo，我们评委需要主动询问才 demo，差点失去机会。
- 
-3.Demo 也区分 deployed demo,local demo 和 design demo，完成度各不相同，打分差距也很多。所以如果做到差不多了， deploy 到@vercel 或者@Netlify 让评委可以打开会非常有用。可以 deploy 而没有 deploy 非常可惜。
- 
-4.选题要注重新颖性，不新颖等于白做。评委多数都见过很多产品，项目以及以前的 hackathon。相似的项目，很容易被打低分。建议提前调研避免雷同。
- 
-5.视觉效果重要也不重要，太难看确实会影响观感，少了 impress 评委的机会。visual 好到像一个普通产品，基本上就够了，在这以上再好的 visual 也没有额外加分了。
- 
-6.准备好回答评委一些非常尖锐的问题，比如:这个系统里面哪个地方是中心化的?一个参赛队被这个问题问懵了，评委们纷纷扣了印象分。另一个参赛队回答的很好，虽然有中心化部分，反而因为对技术理解透彻，被加分。
- 
-7.回答好“这个项目哪些部分是参赛期间做的”。对于 EthereumDenver 来说这点非常重要，抢跑或者用旧项目参赛会被取消资格。有个参赛队穿了个本队 logo 的 T-short 被问：你们 T-shirt 什么时候做的。
- 
-8.熟用巧用已有模版。一些 web frontend 模版能够大大提高 prototype 的效率和的 deploy 的便利，视觉效果也吊打 from scratch 的项目。
- 
-9.作为区块链黑客松，选题的时候要回答“为什么这个问题需要区块链来解决。”很多项目本身做得很用心，但是出发点就把区块链用在了用数据库可以解决的问题。这种情况发生过几次，我抬起头看其他评委，能很敏锐感觉到其他评委的兴趣陡然下降。
- 
-10.最后一个小安慰：黑客松裁判其实随机性蛮大的，跟得奖失之交臂有时候只是运气不好。
- 
-在黑客松中学到知识，认识一群好朋友，是最大的收获。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.techflowpost.com/article/2190"
-                        open
-                      >
-                        <summary class="article-expander__title">$EQUAL如何在$FTM生态系统中利用fUSD v2催化剂实现增长？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2190">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://assets.techflowpost.com/20230207/5005359c9697476cba7e8eba6bfde4bf.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>撰写：Gains Goblin 
- 
-编译：深潮 TechFlow
- 
-fUSD v2 是$FTM 独有的一种革命性稳定币。作为 L1 原生的稳定币，它允许用户使用稳定币在链上支付交易费用。这为许多新产品和生态系统的增长打开了大门。本文是 Equalizer 团队成员 levy 以 Equalizer 为例，设想了 fUSD 将如何与生态项目结合，发挥该催化剂的所有潜力。
- 
-
- 
-fUSD 的一个关键特点是，它可以使用$wFTM 和$sFTM 进行铸造。这个特点非常重要的原因是目前已经质押了超过 14 亿个 FTM（价值约 5.8 亿美元）。这意味着有价值 5.8 亿美元的资产可以在抵押率为 300%的情况下用来铸造价值 2 亿美元的 fUSD。
- 
-
- 
-考虑到目前 FTM 的总锁定价值 (TVL) 仅为 4.58 亿美元，向生态系统注入 2 亿美元的 fUSD 将代表 43% 的显着增长。我坚信这将成为 $FTM 的 DeFi 生态系统的重要催化剂。
- 
-
- 
-此外，该计算甚至没有考虑使用 wFTM 铸造 fUSD，也没有考虑 $FTM 的潜在价格增长。假设每 $FTM 的价格为 1 美元，则有可能铸造超过 4.6 亿美元的 fUSD。
- 
-现在，让我们讨论 $EQUAL 如何利用这个机会。想法很简单：我坚信 $EQUAL 及其投票托管飞轮将继续吸收 TVL 并成为 $FTM 上的领先 DEX。
- 
-
- 
-作为一个以生态系统为中心的平台，$EQUAL 可以从 fUSD 的铸造中获得几乎所有的好处：
- 
- 
- 
-fUSD 用于购买项目代币？
- 
- 
-$EQUAL 促进交易，获得费用，并从生态系统项目价格上涨中受益。
- 
- 
- 
-fUSD 用于流动性挖矿？
- 
- 
-由于拥有最高的流动性挖矿收益率，TVL 将流入$EQUAL。也许他们会使用类似于 Beefyfinance 或 Reaper Farm 的保险库，以便将资金路由到$EQUAL。
- 
- 
- 
-fUSD 用于 dApps？（永续交易、质押等）
- 
- 
-Equal 将从合作项目的增长中受益。（增加交易量等）
- 
- 
- 
-fUSD 用于借贷？
- 
- 
-借款人将会在项目 1、2 或 3 中有效地使用资金。也许他们会在 TarotFinance 上利用 LP。
- 
-在几乎所有方面，我都认为$EQUAL 是生态系统的基石，它将利用$FTM 的增长，特别是 fUSD V2 带来的催化效应，实现自己的经济飞轮。
- 
-原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Web3.0世界</button>
-                  <a class="source-heading__link" href="https://www.web3sj.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49022"
-                        open
-                      >
-                        <summary class="article-expander__title">一文详解Arbitrum最新「X to Earn」项目GoSleep：睡觉即赚钱</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/gamefinews/49022/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678179443191.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>GoSleep 团队在深刻理解睡眠问题的基础上，为用户提供了一个基于个人睡眠数据的科学专业的睡眠助手，该睡眠助手基于真实的个人健康数据（从设备收集）、大数据和专业数据来支持 GoSleep 用户的睡眠问题解决旅程。用户可以很容易地理解他们遇到的问题，并与遇到同样睡眠问题伙伴以及 GoSleep 团队一起解决问题。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;4
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;49001"
-                        open
-                      >
-                        <summary class="article-expander__title">便宜顺畅、中文友好……自打用上Notion AI，ChatGPT都不香了！</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/49001/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678178202828.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Notion 忽然毫无征兆地宣布全面开放了 AI 产品服务，也就是说，现在每个用户都可以在自己的 Notion 页面里随时调用 AI 功能。一时间，用 Notion AI 来写文案的、写策划的、写表格的、写视频脚本的、帮忙读论文做总结等各种各样的用例开始涌现。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48972"
-                        open
-                      >
-                        <summary class="article-expander__title">IOSG：GMX全链乐高会挑战dYdX龙头地位吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/definews/48972/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678176447557.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>加密货币衍生品交易量一直超过现货市场，这种趋势并没有减缓的迹象。2022 年，前 10 家衍生品集中交易所（CEX）的日均交易量约为 950 亿美元，而前 10 家现货 CEX 的交易量约为 310 亿美元。随着行业的不断成熟，我们可以预期衍生品与现货交易量的比例将达到类似传统资产类别的水平。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48969"
-                        open
-                      >
-                        <summary class="article-expander__title">刚结束的ETHDenver，都有啥值得关注的趋势或项目？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/48969/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678173598851.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>主题包括且不限于 L2 扩展、加密货币与真实世界连接、去中心化和监管挑战、如何实现链游、重新思考 veToken 模型、LSD 发展的催化剂 DVT、零知识密码学公开可验证选举、零知识技术将如何彻底改变 Web3 之类。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48959"
-                        open
-                      >
-                        <summary class="article-expander__title">Blur投资漫谈：挑战、机遇与潜在投资机会</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/nftnews/48959/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678173553137.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>投资最终都归为对人性的理解和洞察，Blur 的运营模式让我想起了微信当年改变我们沟通联系的那段历史。我看到 Blur 在产品细节上体现出用户需求的深刻认知，也看到它在颠覆原有 NFT 交易范式的道路上一路前行。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;5
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48939"
-                        open
-                      >
-                        <summary class="article-expander__title">一文详解Velodrome：Optimism的DeFi发动机</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/definews/48939/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678172882375.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>L2 赛道内的竞争已经接近白热化，Arbitrum 在启动初期积累了较大的优势，而 OP 通过发 token 正在追赶 Arbitrum 的步伐。目前在 TVL、转账笔数和活跃地址数上，Arbitrum 较 Optimism 都有 1 倍左右的领先优势。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;4
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48933"
-                        open
-                      >
-                        <summary class="article-expander__title">获a16z领投1100万美元的Alongside究竟有何魅力？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/48933/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678170203816.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Alongside 是一个加密指数平台，允许投资者通过指数投资加密货币。 2023 年 1 月 12 日，Alongside 发行了第一款指数产品——Alongside Crypto Market Index（$AMKT），即以 ERC-20 的形式呈现的 Alongside 旗舰指数代币。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48906"
-                        open
-                      >
-                        <summary class="article-expander__title">SignalPlus每日宏观经济报道（2023-3-7）</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/48906/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678168081636.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>美股昨天在开盘时受技术面轧空拉抬反弹，涨幅一度来到 0.8%，S&amp;P 500 守住通道支撑线和 200 日均线，不过最终回落收平。美债收益率也持平于 3.96% 左右，不过 2/10 收益率曲线倒挂又进一步加剧至 -93.5 个基点，风险情绪有所改善，市场投资人买入久期资产/股票/信用债券/美元以外外汇，唯独落下短天期债券，因为市场对于美联储“利率升至更高维持更久”的信息充分警觉，而主席 Powell 将在今天和周三分别向参议院小组及众议院委员会进行半年一度的国会作证。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48889"
-                        open
-                      >
-                        <summary class="article-expander__title">ETHDenver进入决赛圈的18个新项目一览</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/news/48889/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678167845210.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>根据《纽约时报》的 Mike Stepanovic 分享的项目名单，BlockBeats 根据现有信息对这 18 个项目进行简单整理如下。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.web3sj.com/?p&#x3D;48884"
-                        open
-                      >
-                        <summary class="article-expander__title">三分钟了解Pendle：下轮牛市中的「收益飞轮」</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.web3sj.com/definews/48884/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://www.web3sj.com/wp-content/uploads/2023/03/1678169130596.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>DeFi 是一个复杂的生态系统，由于其技术性质，进入门槛很高。我最喜欢 Pendle 的地方在于，我可以在一个小时内阅读白皮书并了解产品。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
                   >最新 - Odaily星球日报</button>
                   <a class="source-heading__link" href="https://www.odaily.news">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.odaily.news/post/5185564"
+                        open
+                      >
+                        <summary class="article-expander__title">盘点3月即将首发上线的6个热门项目（第二弹）</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185564">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>上周我们盘点了 8 个即将首发上线的项目，有些项目表现亮眼。比如，HALO 在 Bitget IEO 价格为 0.02 美元，上线后一度飙升至 1.5 美元，目前稳定在 0.3 美元，较 IEO 价上涨 1500% 。本周，我们继续整理了 6 个项目以供参考。详情如下：
+
+
+项目名：LimeWire 
+
+官网：https://limewire.com/
+简介：Lime Wire 最初是一个点对点文件共享平台；去年 3 月宣布将作为艺术、娱乐和音乐的 NFT 市场重新推出，并通过 Algorand 发行 NFT 与代币。成立初期，该平台与环球音乐集团（UMG）签署一项内容许可协议，向环球音乐集团旗下的所有艺术家开放 Lime Wire 收藏品市场，与 UMG 签约的艺术家可以在 LimeWire 市场上发布 NFT 形式的收藏品，并能够将其直接出售给粉丝和收藏家。
+融资方面，去年 4 月 LimeWire 宣布在 LMWR 私募代币销售中筹集到逾 1000 万美元，Kraken Ventures、Arrington Capital 和 GSR 领投。
+公募详情：LimeWire 计划 3 月 7 日-10 日在 Tokensoft 进行 IDO，出售 250 万个代币，单价 0.16 美元，计划募资 40 万美元。详情点击：https://twitter.com/limewire/status/1629464916460462080 
+
+项目名：Equilibrium
+官网：https://equilibrium.io/
+简介：Equilibrium 是 Polkadot 上的一站式 DeFi 平台，可以在交易和借贷数字资产时使用高杠杆。它有三个主要产品： 1 ）EQD：一个由一个资产组合支持的去中心化与美元挂钩的稳定币。它可以通过跨共识信息传递（XCM）无缝和无信任地转移到…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.odaily.news/post/5185561"
+                        open
+                      >
+                        <summary class="article-expander__title">简析美两州监管法案异同：DAO监管拐点出现？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185561">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>原文标题：《DAO 监管拐点出现？美两州法案出台引争议》
+原文来源：肖飒 lawyer
+2023 年 2 月，犹他州发布了最新DAO监管法案，与 2021 怀俄明州 DAO 法案相比，新法在法人资格和有限责任方面更进一步，主要看点如下：
+犹他州 DAO 法案亮点概览
+1.  法案赋予了 DAO 一种独有的、新型的法律认可形式。犹他州决定不采取怀俄明州“旧瓶装新酒”的监管思路套用有限责任公司（limited liability company，LLC）模式对 DAO 进行监管，而是将 DAO 和 LLC 做明确区分，以具有开创性的立法思路为 DAO 单独创造了一种新型法人实体；
+2. 法案明确 DAO 组织为有限责任制，解决了在 2022 年美国商品期货交易委员会（CFTC）诉bZx DAO（后改名为 Ooki DAO）案中关于 DAO 成员是否需以个人资产对外承担无限连带责任的争议；
+3. 建立了 DAO 的税收制度；
+4. 明确 DAO 参与者没有隐含的信托责任，除非已明确声明这些义务适用于参与者；
+5. 保护 DAO 参与者的匿名性；
+6. 纳入“技术把关”措施以确保 DAO 实质上是一个 DAO。
+一、犹他州 DAO 法案概述
+关于什么是 DAO 飒姐团队已经进行过系统的介绍，感兴趣的伙伴们可以参考：《原创 | DAO，会是未来的新型“公司”吗？》今天我们就不再赘述。DAO 作为一种近些年来刚刚出现的新型商业实体，在人员组成、运营管理、收益分配和税收等多种层面上与现有的商业架构存在明显的区别，因此一直以来对 DAO 的法律性质和监管措施都存在争议，各国虽然已经有了许多 DAO 的实案例，但这些 DAO 在监管措施和法律性质上依然处于“旧瓶装新酒”的状态。这一现状的产生，主要是因为怀俄明州在 2021 年发布的 DAO 法案中开了一个先例：将 DAO 与现实世界中较为相…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.odaily.news/post/5185562"
+                        open
+                      >
+                        <summary class="article-expander__title">美SEC主席Gary Gensler，正成为加密监管界“教父”</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185562">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>本文来自 Cointelgraph，原文作者：JACK SOLOWEY &amp; JENNIFER SCHULP
+Odaily 星球日报译者 | Moni
+
+
+电影《教父》里有这样的一个镜头：迈克尔·柯里昂下令打击敌对头目唐·库尼奥，他选择先把唐·库尼奥锁在一扇旋转门内然后再开枪射击。如果我们看看最近美国证券交易委员会（SEC）主席 Gary Gensler 打击加密项目的操作，会发现他似乎和迈克尔·柯里昂这种“关门打狗”的手段如出一辙。
+Gary Gensler 的“黑帮手段”
+2 月 9 日，全球最大的加密货币交易所之一 Kraken 卷入了美 SEC 的调查，调查内容是该交易所是否违反了与向美国客户发行某些产品相关的证券规定，之后宣布将“立即”结束向美国客户提供的质押即服务（staking-as-a-service）平台服务，并将向 SEC 支付 3000 万美元罚款，以解决针对其提供未注册证券的指控。
+2 月 13 日，稳定币发行商 Paxos 因 BUSD 相关问题将面临美 SEC 的诉讼，执法人员向 Paxos 发布“韦尔斯通知（Wells notice）”告知可能的执法行动并表示其发行的美元稳定币 BUSD 是一种未注册的证券，计划起诉 Paxos 违反投资者保护法，并可能采取强制行动。
+2 月 23 日，Gary Gensler 在接受《纽约杂志》采访时讨论了加密货币，他声称“除比特币以外的一切（加密货币）”都属于美 SEC 的职权范围和监管目标。
+真正令人不安的是，Gary Gensler似乎在暗示那些高度去中心化的加密货币——比如以太坊——也将被划分为证券，这与此前监管机构声称去中心化软件协议不属于证券的口径背道而驰。此外，即使假设特定加密货币或服务属于证券，仍然存在注册问题——而这，其实就是美 SEC 看起来像黑帮的地方。
+当 Gary Gensler 宣布注册加密证券的过程“只是我们网站上的一种形式”时，完全是虚伪的说辞，如果套用迈克尔·柯里昂的话，Gary Gensler“简直侮辱了我的智商，让我非常生气” ，就连他的同僚、美 SEC 专员 Hester Peirce 都表达了不满，声称“在当前监管环境下，与加密货币相关的产品在美 SEC 根本没有注册渠道。”
+Gary Gensler 的“肮脏战争”
+坦率地说，Gary Gensler 领导的美 SEC 正在对加密货币发动一场无人监督的肮脏战争，美国执法者需要捍卫自身监督权力，并为加密货币开发者、企业家和用户提供一条合法开展业务的明确途径，否则 Gary Gensler 就会用手中的权力屠杀所有“加密家族企业”，这样的执法行为和《教父》黑帮有什么区别呢？
+美 SEC 宣称当前的执法行为“只是在对其视为证券的加密代币和服务执行现有的注册和披露要求”，但这种说辞其实存在误导性，原因有二：
+第一，如果 Gary Gensler 认为除比特币以外的每个加密货币都会被视为证券，那么美国证券法对相关项目的适用性至少是有争议的，包括 Kraken 的质押服务和 Paxos 的 BUSD 稳定币。对于 Kraken，美 SEC 声称其质押服务涉及一种称为投资合约的证券，概括地说，这些证券涵盖了基于他人的管理或创业努力而预期获利的投资。Kraken 的服务是否确实属于这一范畴值得商榷。而对于 Paxos，我们还不知道美 SEC 会认为哪种类型的证券能够覆盖 BUSD 稳定币。
+第二，如果美 SEC“为了消费者好”，而要求包括稳定币在内的产品做好信息披露，那么就必须提供明确的指导，但至少到目前位置，他们还没有。 
+加密货币行业其实也想拥抱监管，但美 SEC 不应该躲在阴影中试图扼杀新技术研究和获取。正如美国众议院金融服务委员会主席帕特里克·麦克亨利所说，“数字资产的未来是一个重大经济问题”，这个新兴行业不能被一个《教父》式人物扼杀。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.odaily.news/post/5185560"
+                        open
+                      >
+                        <summary class="article-expander__title">即将上线的新标准ERC-4337，都有哪些功能特性？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185560">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>对于加密原住民来说，钱包安全一直是令人头疼的问题，丢失私钥、助记词，丢失资产，无法授权等都会导致用户失去对自己资产的所有权；而对于加密新人来说，很难同时弄清这些不同的概念，且交易期间频繁地授权批准也会使加密新人感到复杂。这间接地提高了进入 Web 3 的门槛，而即将到来的 ERC-4337 标准的诸多特性正是可以帮助用户解决这些问题的新标准，也是可以普及加密的必要之路。
+以太坊希望推出的新 ERC-4337 标准是什么？它的提出者是谁？
+以太坊作为开发人员最受欢迎的基于区块链的计算平台，供开发人员基于其构建和部署去中心化应用，此前宣布将推出一个名为 ERC-4337 的新标准，该标准旨在善用户体验，防止私钥丢失，优化交易流程等。
+ERC-4337 是由以太坊创始人 Vitalik Buterin 联合 Yoav Weis、Dror Tirosh 等人发布的账户抽象提案。该提案旨在使以太坊钱包更加友好（对用户），并防止任何密钥丢失。Vitalik 和他的团队提议将用户的外部拥有账户（EOA）变成智能合约账户（CA），这将允许使用户保持对他们的加密货币访问的内置机制。
+通俗地讲，ERC-4337 标准旨在使以太坊钱包更易于使用，并帮助防止用户失去对加密货币的访问权。为实现这一点，以太坊的创建者提议将钱包变成智能合约。智能合约具有内置机制，可以帮助用户保护其加密货币的安全，即使他们忘记密码或丢失私钥，这一关键功能包括要求多人批准交易的选项，以及一个系统，其中多个用户可以在有人丢失其私钥时帮助恢复其对帐户的访问。
+EOA 与 CA 的不同
+以太坊有两种不同类型的账户，外部拥有账户（EOA）与合约账户（CA），简单来说，EOA 由公钥和私钥组成，就像 MetaMask，通过助记词、私钥，用户可以对账户进行交易、访问。
+而对于 CA 来说，合约账户是没有私钥，智能合约是由其中的代码逻辑…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;6
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -2716,18 +2404,18 @@ ETHx 质押将推动对 SD 代币的需求，因为它是运行节点的要求�
                               <span>域名是互联网的重要组成部分，为网站和在线服务提供唯一凭证。然而传统的域名系统存在一些限制，例如中心化，并且限制域名所有者的控制权。此类痛点也是Web3.com希望进行突破的领域。
 什么是Web3.com?
 Web3.com是一个集成了用户身份与生态信息探索的一站式平台，致力于服务并带领Web3用户群体共同探索更符合Web3范式与精神的网络形态，引导新用户进入Web3。基于这样的目标，Web3.com现已推出一个新的产品概念
-—— Web3 ite Pass (Web3领域的终极凭证)
-Web3 ite Pass独特的品牌价值之一在于拥有&quot;Web3.com&quot;后缀的域名。Web3 ite Pass是在以太坊主网上发行的NFT，设计为将Web2和Web3世界连接起来的生态凭证。每个NFT对应一个以&quot;web3.com&quot;结尾的域名。用户可以使用加密钱包在以太坊上注册名为&quot;job&quot;的Web3 ite Pass NFT。该NFT对应于域名&quot;job.web3.com&quot;。作为该域名的所有者，个人或组织可以编辑和创建一个独特的、定制化的数字名片，易于记忆并脱颖而出。
+—— Web3ite Pass (Web3领域的终极凭证)
+Web3ite Pass独特的品牌价值之一在于拥有&quot;Web3.com&quot;后缀的域名。Web3ite Pass是在以太坊主网上发行的NFT，设计为将Web2和Web3世界连接起来的生态凭证。每个NFT对应一个以&quot;web3.com&quot;结尾的域名。用户可以使用加密钱包在以太坊上注册名为&quot;job&quot;的Web3ite Pass NFT。该NFT对应于域名&quot;job.web3.com&quot;。作为该域名的所有者，个人或组织可以编辑和创建一个独特的、定制化的数字名片，易于记忆并脱颖而出。
 
 核心目标用户
 在目前的冷启动阶段，我们的目标核心用户群可分为两类：
 1. 深耕Web3的企业，以及项目方，或者有意向Web3转型的Web2企业
 2. Web3从业者 - 开发者、创作者、创业者，可以高效的展示自己的核心价值
 Web3.com核心价值点 - From Web2 to Web3
-跟传统的web2互联网域名非常不同的是，Web3 ite Pass借助NFT这一形式为传统域名带来了更多的玩法，带来了链上与链下信息的有机连接，从而呈现出传统互联网域名完全不具备的核心价值点。
+跟传统的web2互联网域名非常不同的是，Web3ite Pass借助NFT这一形式为传统域名带来了更多的玩法，带来了链上与链下信息的有机连接，从而呈现出传统互联网域名完全不具备的核心价值点。
 
 1. NFT赋能 —— 给使用者域名的拥有和控制权
-Web3 ite Pass是一张在以太坊主网上发行的ERC-721 标准的NFT域名，NFT象征了对这一域名的所有权，可作为编辑展示名片的钥匙。
+Web3ite Pass是一张在以太坊主网上发行的ERC-721 标准的NFT域名，NFT象征了对这一域名的所有权，可作为编辑展示名片的钥匙。
 2. 流动性价值
 同时，NFT具有较好的流通能力，对于一些比较有价值的域名，用户也可以便捷地进行交易，获得品牌溢价红利。
 3. 识别性高
@@ -2735,7 +2423,7 @@ Web3 ite Pass是一张在以太坊主网上发行的ERC-721 标准的NFT域名
 4. 安全性高
 链上与链下便捷联通，用户在链上看到.web3.com的域名后可以很便捷直接地访问链下展示页，从而可以很便捷的让链下认证信息和链上信息关联起来，并通过展示页中绑定的社媒平台、官方认证等信息确认合约地址的真实性。用户可以避免钓鱼合约，进而导致各种黑客攻击和意外操作。
 未来前景 &amp; 路线图
-Web3 ite Pass仅仅是个开始。我们将继续探索和开发新的产品形式，后续计划有基于Web3 ite Pass内容的信息导览服务，为域名带来更多的流量与曝光；Web3邮箱服务，运营营销工具等，为您的Web3 ite Pass带来更多的价值。</span>
+Web3ite Pass 仅仅是个开始。我们将继续探索和开发新的产品形式，后续计划有基于Web3ite Pass 内容的信息导览服务，为域名带来更多的流量与曝光；Web3 邮箱服务，运营营销工具等，为您的Web3ite Pass 带来更多的价值。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;5
                                   min&hairsp;)</span>
                             </span>
@@ -2977,39 +2665,102 @@ CertiK 的审计过程全面且彻底，我们的安全专家会细致检查项
                         </a>
                       </details>
                     </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >深潮TechFlow</button>
+                  <a class="source-heading__link" href="https://www.techflowpost.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
                     <article>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.odaily.news/post/5185545"
+                        data-accordion-key="https://www.techflowpost.com/article/2198"
                         open
                       >
-                        <summary class="article-expander__title">「后FTX时代」的DEX衍生品市场：GMX全链乐高挑战dYdX龙头地位？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185545">
+                        <summary class="article-expander__title">1700 万枚 ETH（280 亿美元）会在上海升级后解除质押吗？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2198">
                           <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/89b037f7d0ff411a8b52e5ef76cb12cb.png" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>原文作者在：Momir Amidzic, IOSG Ventures
-TL;DR 
+                              <span>撰写：Salazar.eth 
+ 
+编译：深潮 TechFlow
+ 
+随着以太坊网络的不断发展，在信标链上实施质押为投资者创造了赚取收益和支持网络的新机会。目前有超过 1700 万枚 ETH 被质押，而提款对市场的影响仍然是一个令人感兴趣的话题。在本文中，我们将探讨影响退出决策的因素、流动性质押在市场中的作用，以及即将到来的上海升级的潜在影响。
+ 
+媒体和 Fudder 告诉你，1700 万枚 ETH（价值约 280 亿美元）将在上海升级期间取消质押，但真的会是这样吗？我来通过数据给你们真相。
+ 
 
-本文讨论了后 FTX 时代 DEX 衍生品市场的状况。
+ 
+上海升级是 ETH 的 EL（执行层）的升级，而 Capella 是 CL (共识层) 或信标链的升级。然而，由于这些升级将同时发生，上海指的是两者。虽然上海还有其他 EIP，但最重要的是 ETH 提款。自 2020 年 12 月信标链上线以来，验证者可以质押 ETH，但无法发起提现，这给 EF 开发者带来了社会压力。
+ 
+在去年 12 月例行的全核心开发者电话会议 (ACDC) 之后，原定于 2023 年 3 月进行 ETH 提款。但是，目前已推迟到 4 月。现在，让我们深入研究细节。
+ 
+由于合并的设计以及信标链与 ETH 的融合，所有验证器都需要将其提款凭据更新为 0x01 格式才能进行提款操作。根据 ETH 代码开发人员 Benjaminion 的说法，目前有约 302,154 个验证器具有 0x00 凭据，而 186,722 个验证器具有 0x01 凭据。
+ 
+一旦上海升级实施，ETH 网络将在每个区块上处理 16 个完整或部分的提款，而每个区块的产生时间为 12 秒。这意味着网络需要约 104 个小时才能处理信标链上的约 500,000 个验证器的所有提款。需要注意的是，验证器的凭据必须为 0x01 才能进行提款操作。
+ 
 
-大多数 DEX 难以吸引有机增长，因为很大一部分交易量是由机器人和想赚取代币的交易者产生的。
+ 
 
-GMX 成为该垂直领域最大的惊喜。其无滑点设计使其成为对鲸鱼交易者有极大吸引力的场所。
+ 
 
-GMX 的产品仍远非完美，包括受限的资产选择、流动性扩展问题、缺乏足够的协议级风险管理、对中心化报价的依赖以及次优的用户体验等。
+ 
+没错，1720 万个 ETH，但我要补充一点。根据 Defillama 的数据，LSD 抵押了 760 万个 ETH。也就是说 760 万个 ETH 一直处于不流动状态。现在，让我们做一些简单的数学计算：1720 万 ETH - 760 万 ETH &#x3D; 960 万 ETH。
+ 
 
-然而，其中一些缺点可能是有意的权衡下产生，帮助 GMX 找到产品市场适配度并成为原生需求最大的衍生品 DEX。
+ 
 
-尽管如此，市场已经证明，要赢得加密衍生品市场份额，DEX 必须击败 CEX。
+ 
 
-加密货币衍生品交易量一直超过现货市场，这种趋势并没有减缓的迹象。2022 年，前 10 家衍生品集中交易所（CEX）的日均交易量约为 950 亿美元，而前 10 家现货 CEX 的交易量约为 310 亿美元。随着行业的不断成熟，我们可以预期衍生品与现货交易量的比例将达到类似传统资产类别的水平。
-然而，当我们将注意力转向去中心化交易所（DEX）时，情况有所不同。衍生品交易量仅相当于现货市场交易量的 56 ％，表明衍生品 DEX 的相对不成熟。当我们比较特定垂直领域内 DEX 与 CEX 的比例时，这一点尤为明显：衍生品 DEX 仅占 CEX 交易量的 1.5 ％，而在现货市场上这一比例更接近 8 ％。
+ 
+问题是，这 960 万个 ETH 会被提取吗？
+ 
+让我们回到过去。根据通过 Etherscan 获得的信标链合约数据，去年 12 月份质押的 ETH 总数为 140 万个。
+ 
 
-Source: IOSG Ventures
-值得注意的是，虽然衍生品在传统金融和中心化加密货币交易所中产生了更大的名义交易量，但这并不一定意味着我们会在去中心化的参与者中看到同样的趋势。事实上，目前只有一个加密货币衍生品市场，它有可能在没有去中心化交易所的任何贡献下继续超过加密现货市场。
-如果说有什么时刻可以作为推动去中心化衍生品交…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
+ 
+根据 CoinGecko 的数据，在 Beacon 链启动的 2020 年 12 月 1 日至 12 月 31 日期间，ETH 的平均价格为 681.10 美元。
+ 
+目前 ETH 的价格为 1570 美元，去年 12 月份质押的全部 140 万个 ETH 都处于盈利状态。
+ 
+
+ 
+问题仍然是：这 140 万 ETH 会被提取吗？截至目前，已有 1,084 个验证者退出了信标链。
+ 
+一旦上海再次启动，34,688 ETH（1,084 个验证者）将自动被取消质押。在 1,084 个验证者中，有 864 个自愿退出，而 220 个被处罚退出。
+ 
+从这些数据可以看出，仅有一小部分验证者（50 万个验证者中的 884 个）是自愿退出的，而其余验证者可能长期看涨并享受收益。
+ 
+在 2020 年 12 月信标链质押推出时，没有任何提款的消息或对 ETH 的担忧。根据心理分析，许多质押者长期看涨以太币，并寻求累积更多资产。
+ 
+现在，随着质押池和中心化交易所（CEXs）的介入，情况变得更加有趣。通过我的研究，我发现 Defillama 和 Etherscan 在流动质押方面存在冲突。
+ 
+我发现 Defillama 认为 Coinbase 是流动质押，这是正确的。中心化交易所（CEXs）：一些 CEX 使用流动性 ETH，而其他一些则采用与质押池相同的设计，质押者不会立即获得提款，并且存在锁定的质押等。
+ 
+
+ 
+目前没有人知道有多少 ETH 将取消质押，也没有人能够预测。但是，根据现有的数据和分析，我们可以推断出，虽然一些代币可能会取消质押，但总的来说，由于许多验证者看好 ETH 的长期前景，他们将继续持有和积累 ETH，因此卖压将会减少。
+ 
+
+ 
+根据这张图片，我们可以看到流动性质押、中心化交易所和质押池的总比例为 69.6%。那是 1700 万的 69.6%，也就是 1190 万 ETH 将被纳入这些机构的管理范围。
+ 
+如果我们从 1720 万中减去 1190 万，我们还剩下 530 万 ETH 给鲸鱼和其他人。鲸鱼质押了大量 ETH，因此它们是长期持有者并且非常看好市场，当然有些会卖出。
+ 
+有多少 ETH 将被提取？没有人知道，也无法预测。
+ 
+原文链接</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3020,45 +2771,44 @@ Source: IOSG Ventures
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.odaily.news/post/5185543"
+                        data-accordion-key="https://www.techflowpost.com/article/2197"
                         open
                       >
-                        <summary class="article-expander__title">ETHDenver结束，有哪些值得关注的趋势或项目？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185543">
+                        <summary class="article-expander__title">专访以太坊基金会研究员：Rollup、社交和游戏板块最终会从Danksharding获益</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2197">
                           <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/e8e7c19bf91b40ea9957b55332cd0d52.png" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>原文作者：Chloe
-原文来源：链茶馆
-
-全球规模最大的 crypto 会议 ETHDenver 昨天刚结束，今年参加人数超过 30000 多人，是有史以来人数最多的一次，完全不受行业各种暴雷事件的影响。
-这场大会持续 11 天，分为黑客松和 BUIDLWeek，主要面向以太坊和区块链协议爱好者、设计师、开发者，共同探讨以太坊建设等议题。
-核心活动会在 3 月 1 日至 3 月 5 日举行，包括主题演讲、小组讨论和展示等。
-主题包括且不限于 L2 扩展、加密货币与真实世界连接、去中心化和监管挑战、如何实现链游、重新思考 veToken 模型、LSD 发展的催化剂 DVT、零知识密码学公开可验证选举、零知识技术将如何彻底改变 Web3 之类。
-我们可以从中感受到现场的前沿趋势的碰撞，不过整场会议的重点还是在扩容上。
-Vitalik Buterin 表示，牛市往往会吸引投机者加入，熊市反而会让一些原本就该消失的应用消失，剩下的是有长期可持续性的潜力项目。
-科罗拉多州作为 ETHDenver 的大本营，州长 Jared Polis 今年出席并演讲。他不仅积极推动加密货币，还打算将科罗拉多州塑造为加密货币发展圣地，以吸引更多的项目、人才。
-从 2022 年 9 月开始，科罗拉多州是美国第一个接受加密货币作为州税支付方式的州。
-ETHDenver 的联合创始人 John Paller 表示，明年的规模将会更大，有可能在世界各地举办卫星活动，ETHDenver 将成为「超级碗」。
-ETHDenver 是由社区资助的，筹集 500 万美元来充当孵化器，投资 ETHDenver 2023 的项目。
-以下是链茶馆整理的部分值得关注的重点项目或趋势（如果没有提到你认为重要的，不是因为我们认为不重要，而是实在太多了！）。
-1.以太坊「账户抽象提案 ERC-4337 」将在 EVM 兼容链部署
-核心合约已经通过了 Open Zeppelin 的审计，将在每个 EVM 兼容网络上提供（包括 Polygon、Optimism、Arbitrum、BNB Chain、Avalanche 等）。
-账户抽象（Account Abstraction）意味着新用户进入 crypto 世界将不再需要学习复杂的助记词或设置钱包的技术过程。
-账户抽象或将成为 2023 年加密货币的一个关键主题，该技术已经被 StarkWare 和 zkSync 的 zk-Rollup 解决方案纳入。
-2.Near Protocol 启动「区块链操作系统」
-Near Protocol 推出了一个产品优先的操作系统，开发人员可以在该系统中构建，用户可以将其作为一个平台进行交互。
-这意味着 Near 将与所有区块链兼容（目前支持 Near 协议和 EVM），Near 等于是其中的入口。
-3.Uniswap 发布自托管钱包
-Uniswap 发布了钱包 App，支持以太坊、Polygon、Optimism 等链，而且还提供价格监测工具、追踪其他地址的交易活动。不过苹果拒绝给予 Uniswap 的 App 上架请求。
-Uniswap 表示会尽力满足要求条件，以进行二次申请。
-4.Koii Labs 和 Idexo 宣布一个全新的跨链中间件
-它们仅用「几行代码」就可以在链上部署，这项解决方案不仅要提高安全性、加快部署效率，更要创建一条用 DeFi 桥取代 DEX 的路径。
-只要用户通过桥，就可将两个或多个区块链数据共享，包括智能合约以及代币等。
-5.方便部署跨链应用的无代码产品 Swing Platform
-跨链流动性协议 Swing 推出旨在方便部署跨链应用的无代码产品 Swing Platform，还在大会上直接提供给开发人员使用。
-Swing Platform 旨在减少跨链部署和 DApp 更新所需的时间，且可以在不更改代码的情况下更新配置和部署更新。
-过去有许多场景是因为怕出现安全漏洞所以禁用特定代币或跨链桥，Swing Platform 目的即是要降低类似应用场景的不方便性。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;6
+                              <span>撰写：Rose
+ 
+编译：深潮 TechFlow
+ 
+这期 Kernel Talk 邀请到了以太坊基金会的研究员 Dankrad Feist。作为提出新的分片设计和 Danksharding 概念的人，Dankrad 在本次采访中分享了 Danksharding 的下一步计划、价值以及 Proto-Danksharding 所带来的新用例。Kernel Ventures 作为一家专注于支持开发者社区和支持世界上最有创意创新者的加密货币风投基金，对于以太坊和 Danksharding 的未来发展充满期待。
+ 
+1. 在 Proto-Danksharding 之后，Danksharding 的下一步是什么？
+ 
+Proto-Danksharding 的设计目标是为了使其升级变得非常容易，因此它基本上已经使用了我们需要进行分片的所有密码学和基本组件。这意味着我们可以逐步升级，而不需要再次进行硬分叉以太坊。因此，所有下一步计划都将是我们可以在网络层面上进行的事情。而且我们可能很快就可以实现一些计划。
+ 
+例如，我们可以进行一些优化以更有效地在网络上传输 blob，这将可能进行少量扩展，可能是我们可以允许的承诺数量的两倍或四倍。这可能会在首次实现后的半年到一年内实现。
+ 
+2. Danksharding 带来的最大增值是什么？Danksharding 的实施是否使某种新应用程序的出现成为可能，我们还能期待什么？
+ 
+Danksharding 最大的增值是提供了可扩展的数据可用性层。在 Rollups 上，可以处理大量的交易，这意味着交易会更便宜。对我来说，这意味着我们终于准备好了去实现加密货币的全部潜力。就像人们在 2014 年、2015 年早期设计和构建以太坊时所想象的那样，这不仅可以被实现，而且还可以被大量用户使用。我认为可能性是无限的，我们将会看到很多。即使是基本的应用，如支付，在我们终于使它变得便宜和可扩展之后，也是一个巨大的应用。
+ 
+3. Optimistic Rollup 和 zk-Rollup 从 Proto-Danksharding 和 Danksharding 中获得同样的好处吗？
+ 
+大体上是的，对于 Optimistic Rollup 和 zk-Rollup 来说，它们需要的是一个数据可用性层，以便具有便宜的交易和可扩展性。这为它们带来了比现在以太坊上的核心数据更多的数据。它们可以以相同的方式从中受益，只是在实现区块链的具体细节方面可能略有不同。
+ 
+4. 您对以太坊分片后的存储有何看法？你看到有任何项目在做这件事吗？
+ 
+基本上，以太坊不会负责 Rollups 的状态。如果以太坊负责发布更新状态所需的所有数据，但状态本身，Rollups 将不得不想办法如何维护它并潜在地如何激励它的维护。这在某种程度上是由它们决定的。我认为已经有一些想法和解决方案正在出现。但这取决于 Rollup 的大小，对于我们现在看到的 Rollup，我不认为这是一个主要问题，因为状态还是足够小的，即使没有特定的激励，它也不会丢失，而是会一直存在。但如果你想设计具有更大状态的 Rollup，我认为人们绝对应该这样做，那么值得考虑的是如何激励它。
+ 
+5. 您是否看到任何由 Proto-Danksharding 启用的新用例，例如社交或游戏？您期待哪些新的或令人兴奋的用例？
+ 
+当然，正如您所提到的，社交和游戏最终会从拥有更便宜的交易中受益。对于社交应用程序，我发现这非常有趣，因为这是一种不一定依赖于任何现实世界桥梁的应用程序，比如金融应用程序，如果你可以在以太坊上获得安全性，这显然是从监管的角度来看，这是一个相当棘手的问题。但在社交和游戏中，我们可以做很多事情而不必一定需要这个。因此，我绝对期待看到这一点。我认为所有这些都将由于拥有可扩展的基础层而得以实现。
+ 
+原文链接</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3069,28 +2819,325 @@ Swing Platform 旨在减少跨链部署和 DApp 更新所需的时间，且可�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.odaily.news/post/5185538"
+                        data-accordion-key="https://www.techflowpost.com/article/2196"
                         open
                       >
-                        <summary class="article-expander__title">星球日报 | Optimism主网Bedrock升级V2提案将发布；以太坊扩容项目Scroll完成5000万美元融资（3月7日）</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.odaily.news/post/5185538">
+                        <summary class="article-expander__title">如何通过数据指标来判断项目预售是否会成功？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2196">
                           <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/479baf1c9ff04dd4b2ff2139b59a66f4.png" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
-                              <span>头条
+                              <span>撰写：Crypto Nova
+ 
+编译：深潮 TechFlow
+ 
+在加密货币市场中，参与项目的预售成为了获取高收益的一种常见方式。然而，要想预测一个项目的真实潜力需要耗费大量时间和精力，需要进行多个步骤的分析。但是，加密分析师 Crypto Nova 有一种更高效和有效的预测方法，只需要两个步骤。
+ 
+本文将深入探讨这两个步骤的重要性和如何进行分析，帮助您更准确地评估一个项目的成功概率。
+ 
+每当您发现一个新的预售项目时，您只需要关注这两个方面：
+ 
+• 社交媒体参与度；
+ 
+• 代币经济学；
+ 
+社交媒体参与度
+ 
+社交媒体参与度与项目在市场上推出的表现之间有着巨大的相关性。项目官方社交媒体页面上的良好关注度是需求的一个表现指标。
+ 
+良好的互动&#x3D;强劲表现。（但要注意虚假数据。）
+ 
+你需要的是真正的互动。在这个领域里，经常会看到一个账户有 10 万个关注者，但只有 10 个人点赞他们的推文……这意味着完全没有任何曝光，你在看虚假的数据，他们买了机器人。
+ 
+人们很容易买关注数，很容易买一条推文，但很难在每一条推文上都做假。以下是一个例子：
+ 
+一个 40k 粉丝的帐户平均应该有 5-10k 的推文浏览量。而拥有 100k 粉丝的账户，一般的推文应该有 10k 到 20k 次浏览量。虽然这些只是平均数，并不适用于每条推文，但你应该期望总浏览量占总粉丝数的 10%-20%。
+ 
+健康的数字&#x3D;强劲的需求。
+ 
+代币经济学
+ 
+现在，我们已经看到了是否有充足的需求，接下来要确定代币锁定期。需求来来去去，有时会保持不变，但很多时候在预售之后就消失了。公众的优势之一是我们的代币锁定期。
+ 
+你需要找出你何时可以获得所有代币的访问权。最好是在发行时完全解锁，或者每个月解锁一部分，持续时间不超过 6 个月。
+ 
 
-Optimism主网 Bedrock 升级V2提案将在第 11 周期审核期间发布
-Odaily星球日报讯 据社区成员 lavande 透露，关于以太坊二层解决方案 Optimism 主网 Bedrock 升级提案的新版本（即V2版本）将在第 11 周期的审核期间发布，第 11 周期的评审阶段为 3 月 2 日至 3 月 22 日，投票阶段为 3 月 23 日至 4 月 5 日。
-据悉，Bedrock 是由 OP Labs 开发的新一代去中心化 Rollup 基础架构，旨在为 Layer 2 网络提供模块化、简单性和以太坊等效性
-此前报道， 2 月 17 日，Optimism 社区关于主网 Bedrock 升级的投票推迟至 3 月 2 日开始。
-以太坊扩容项目 Scroll 融资 5000 万美元，红杉中国、Polychain Capital等参投
-Odaily星球日报讯 以太坊扩容项目 Scroll 宣布完成 5000 万美元的新一轮融资，Polychain Capital、Sequoia China（红杉中国）、Bain Capital Crypto、Moore Capital Management、Variant Fund、Newman Capital、IOSG Ventures、Qiming Venture Partners 参投。本轮融资使 Scroll 的融资总额达到 8300 万美元。
-Scroll 拒绝就本轮融资的估值和结构发表评论，但一位消息人士透露，本轮融资使 Scroll 的估值达到 18 亿美元。Scroll 此前在两轮融资中筹集了 3300 万美元，当时尚未披露其估值。
-Scroll 计划利用新融资继续构建其产品、启动主网并扩展生态系统。此外，Scroll 还计划将目前的团队规模从大约 60 人增加到近 100 人。
+ 
+最后要知道的是你投资的价格。有些项目的估值模型非常疯狂：
+ 
+• 代币价格：0.12美元
+ 
+• 总供应量：80亿
+ 
+• 市值&#x3D;代币价格x供应量
+ 
+• 市值&#x3D;0.12x80亿
+ 
+预售市值达 9.6 亿美元。
+ 
+结论
+ 
+实际上只有 2 个主要指标对预售的表现影响最大：
+ 
+• 社交媒体互动；
+ 
+• 代币经济学（代币释放和市值）；
+ 
+一旦你掌握了这两个方面的技能，寻找高质量的预售项目就会变得轻而易举。
+ 
+原文链接</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.techflowpost.com/article/2195"
+                        open
+                      >
+                        <summary class="article-expander__title">前Riot Games总经理：区块链如何让游戏变得更加有趣？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2195">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/b17bf38606fd429a9594993cb29650cb.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>撰写：Overpriced JPEGs
+ 
+编译：深潮 TechFlow
+ 
+随着 Web3 的普及，游戏开发者拥有了一些新的工具和能力，使他们能够创造更加有趣和吸引人的游戏体验。这篇文章将探讨如何利用这些新工具和能力来设计更好玩的游戏，并邀请到了 Justin Hulog，他是 Immutable 的首席工作室官员，负责监督 Immutable 游戏的出版和开发，包括 Gods Unchained，Guild of Guardians 和其他即将公布的游戏。在转向 Web3 游戏之前，Justin 曾是 Riot Games 东南亚区总经理。
+ 
 
-项目要闻
+ 
+Web3 游戏一直在等待时机。从 DookeyDash 的巨大成功——最高得分的玩家是 Fortnite 的职业玩家 Kyle Jackson，也被称为 Mongraal，他以160万美元的高价出售了战利品 Golden Key——到 Unity 集成 MetaMask 和其他 Web3 工具，似乎 Web3 游戏终于开始要跨入到主流。
+ 
+在 Immutable，我们也看到了过去一年玩家活动和兴趣的激增。看看这些熊市统计数据：
+ 
+ 
+ 
+ Gods Unchained 的游戏数量和游戏总时长几乎增长了三倍。
+  
+ 
+ 我们有超过 100 万的 Guild of Guardians 预注册。
+  
+ 
+ Illuvium 的土地销售是历史上最成功的 NFT 销售之一，72 小时内售出了价值 7200 万美元的土地。
+  
+ 
+作为 Web3 游戏开发者，我们瞄准的市场是巨大的。游戏产业已经比电影、电视和音乐产业的总和更大。然而我们还没有见识到 Web3 的杀手级功能：让玩家真正获得游戏资产的所有权。问问那些坐拥大量无法交易的游戏皮肤或物品的人，你会发现玩家能够随心所欲地处理他们的数字资产将推动游戏迎来指数级增长的下一个…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.techflowpost.com/article/2194"
+                        open
+                      >
+                        <summary class="article-expander__title">ETHDenver 参会总结：我们看到了哪些趋势？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2194">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/c2cd11060c3b43b2bd0dab26edeb6ac8.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>刚从Denver回来，过去的一周精彩不已。分享一下个人感受，和整个会议传递的新趋势。
+ 
+整体而言，EthDenver整体感受非常好，远胜Consensus，Token2049。
+ 
+1. 全球性开发者文化
+ 
+据说整个ETHDenver来了35000人，7500 hackers。我住的酒店离downtown开车要15分钟，但是基本每天电梯里都能见到参会者，大家一看胸牌，互相一秒熟络。从业者里，项目方：VC约5:1。项目方颇具全球性，除了美国本土，中国，加拿大，英国，新加坡，欧洲是最大的集合。和ArkStream好几个北美欧洲的portfolio，终于见上了。VC领域，大部分活跃的一二线基金都有来人，尤其是过去很少出现的一些欧洲地区资本。
+ 与Consensus不同，ETHdenver的开发者文化使得整个活动都非常加密原生。与项目方见面基本都是直接坐下，当场电脑展示demo，30分钟就把产品给聊得很透彻。这点我非常喜欢，仿佛回到了2017年刚入行时的感觉。
+ 
 
-Krake…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;7
+ 
+随处可见的hacker
+ 
+2. 参会指南
+ 
+ArkStream作为VC，我们最重要的还是source项目。因为活动太多，最高效的方式依然是小型活动+定向搜索。
+ 
+小型活动一般以20-100人的brunch，seminar和party组成。这次参与的几个好的活动有Meet the VC Brekky, Brunch party with Fabric/SevenX, zkNight Afterparty, MIT Alumni founder’s lunch, Cosmos on Tap, IOSG old friend Reunion, Founders Club启动仪式，收获了很多高效对话，和重要连接。
+ 
+定向搜索则是我们过去5年认为的最高效的crypto社交方式。在参会前团队花了两天把几个分会场如Z…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.techflowpost.com/article/2193"
+                        open
+                      >
+                        <summary class="article-expander__title">ETHDenver 有哪些新现象和趋势，参会者这样说</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2193">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/cc6ff4c6686e431cbbe4b0e40d8faabe.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>采访：Will
+ 
+整理：Claudia
+ 
+ 
+ 
+“这边（ETHDenver）氛围真的 TM 好，真 TM 不想走”
+ 
+ 
+参加完 ETHDenver 的 Will 老师发出如此感叹，作为资深加密资料收集整理控，勤奋的 Will 老师再次卷了起来，在活动期间采访了 75 位参会者，试图群描 Denver 现场新鲜出炉的参会感想。
+ 
+对于开发者和大部分 Builder 来说，整个会场一洗牛市的低沉，能量和生机在交谈中不断熵增，对于入圈不久的新人和学生来说，现场的氛围打开了眼界；更有乐观者对于「中国崛起」的叙事有了百分之百的预期，很多项目有大量华人的身影，分布在项目的各个环节；但对于很多投资人来说，新的玩法叙事，包括技术突破都尚未涌现。
+ 
+不论如何，大多数参与者仍然对新项目有着积极的预期，AI，ZK 等宠儿仍然占据了较大的视线。不管新的叙事有没有出现，ETHDenver 中涌现的对于行业的热情和能量已经重于黄金。深潮 TechFlow 综合 Will 老师的采访，整理出以下内容，一起跨越时空，回归 Denver 现场的汹涌。
+ 
+初夏虎
+ 
+参加 Denver 大会活动感受：挺好的，一起来逛的老婆说：这生态，已经大到灭不掉了。我不太看好那些依赖技术的东西，其中大多数 95% 的东西都会失败，只有 5% 的东西有可能成功，但我们无法确定哪些是那 5%，只能一个一个地了解，判断它们属于以下三类：
+ 
+1）金融服务，比如 LSD 借贷等；
+ 
+2）数据服务，例如 API 方式和开发工具；
+ 
+3）游戏。
+ 
+我最看好金融领域，数据也有一些机会，但数量有限。对游戏则持悲观态度，Web2 进去是天方夜谭。
+ 
+匿名 Z 某基金投资人 
+ 
+1）对个体来说，除非和项目方或创始人关系特别好，否则信息差太大了。因此，如果只从事一级市场，那样就太不划算了，除非你具备非常优秀的美国本科计…</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;78
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.techflowpost.com/article/2191"
+                        open
+                      >
+                        <summary class="article-expander__title">ETHDenver 黑客松评委：如何打好一场黑客松？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2191">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/2b0354515d7948b99288c24c3b7bea58.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>撰文：ZainanZhou
+ 
+作者简介：ZainanZhou 为现任EIP Editor六人之一，也是以太坊社区第一位华人 EIP Editor。EIP Editor 负责审核所有提交 ETH 社区 EIP 协议，对以太坊社区生态发展至关重要。Victor Zhou 也是 ERC1202，ERC5750 等协议作者，为以太坊 DAO 投票治理相关协议作出过重大贡献。
+ 
+作为今年的评委之一，深感一些 Builder 也非常优秀，但是因为参赛技巧与大家失之交臂，非常可惜。因为这类国际赛华人评委少，中文圈对参赛经验鲜有讨论，所以分享一点当评委视角体悟，希望帮到未来者。也促进华文圈更多讨论共进:
+ 
+1.Hackathon 的展示只有 90 秒，非常短所以必须精炼。一个项目最好只突出一两个产品和技术亮点来讲解，其他可以略去。部分优秀项目做了很多功能，讲解的时候流水账，令评委们难以捕捉最重要的地方，非常可惜；
+ 
+2.如果有 Demo，一定要展示 demo，哪怕是只有 10 秒一扫而过，也能体现项目的完成度。我自己和其他评委都很注重完成度这一项评价。有的项目明明做好了，时间短选择不 demo，我们评委需要主动询问才 demo，差点失去机会。
+ 
+3.Demo 也区分 deployed demo,local demo 和 design demo，完成度各不相同，打分差距也很多。所以如果做到差不多了， deploy 到@vercel 或者@Netlify 让评委可以打开会非常有用。可以 deploy 而没有 deploy 非常可惜。
+ 
+4.选题要注重新颖性，不新颖等于白做。评委多数都见过很多产品，项目以及以前的 hackathon。相似的项目，很容易被打低分。建议提前调研避免雷同。
+ 
+5.视觉效果重要也不重要，太难看确实会影响观感，少了 impress 评委的机会。visual 好到像一个普通产品，基本上就够了，在这以上再好的 visual 也没有额外加分了。
+ 
+6.准备好回答评委一些非常尖锐的问题，比如:这个系统里面哪个地方是中心化的?一个参赛队被这个问题问懵了，评委们纷纷扣了印象分。另一个参赛队回答的很好，虽然有中心化部分，反而因为对技术理解透彻，被加分。
+ 
+7.回答好“这个项目哪些部分是参赛期间做的”。对于 EthereumDenver 来说这点非常重要，抢跑或者用旧项目参赛会被取消资格。有个参赛队穿了个本队 logo 的 T-short 被问：你们 T-shirt 什么时候做的。
+ 
+8.熟用巧用已有模版。一些 web frontend 模版能够大大提高 prototype 的效率和的 deploy 的便利，视觉效果也吊打 from scratch 的项目。
+ 
+9.作为区块链黑客松，选题的时候要回答“为什么这个问题需要区块链来解决。”很多项目本身做得很用心，但是出发点就把区块链用在了用数据库可以解决的问题。这种情况发生过几次，我抬起头看其他评委，能很敏锐感觉到其他评委的兴趣陡然下降。
+ 
+10.最后一个小安慰：黑客松裁判其实随机性蛮大的，跟得奖失之交臂有时候只是运气不好。
+ 
+在黑客松中学到知识，认识一群好朋友，是最大的收获。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.techflowpost.com/article/2190"
+                        open
+                      >
+                        <summary class="article-expander__title">$EQUAL如何在$FTM生态系统中利用fUSD v2催化剂实现增长？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.techflowpost.com/article/2190">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://assets.techflowpost.com/20230207/5005359c9697476cba7e8eba6bfde4bf.png" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>撰写：Gains Goblin 
+ 
+编译：深潮 TechFlow
+ 
+fUSD v2 是$FTM 独有的一种革命性稳定币。作为 L1 原生的稳定币，它允许用户使用稳定币在链上支付交易费用。这为许多新产品和生态系统的增长打开了大门。本文是 Equalizer 团队成员 levy 以 Equalizer 为例，设想了 fUSD 将如何与生态项目结合，发挥该催化剂的所有潜力。
+ 
+
+ 
+fUSD 的一个关键特点是，它可以使用$wFTM 和$sFTM 进行铸造。这个特点非常重要的原因是目前已经质押了超过 14 亿个 FTM（价值约 5.8 亿美元）。这意味着有价值 5.8 亿美元的资产可以在抵押率为 300%的情况下用来铸造价值 2 亿美元的 fUSD。
+ 
+
+ 
+考虑到目前 FTM 的总锁定价值 (TVL) 仅为 4.58 亿美元，向生态系统注入 2 亿美元的 fUSD 将代表 43% 的显着增长。我坚信这将成为 $FTM 的 DeFi 生态系统的重要催化剂。
+ 
+
+ 
+此外，该计算甚至没有考虑使用 wFTM 铸造 fUSD，也没有考虑 $FTM 的潜在价格增长。假设每 $FTM 的价格为 1 美元，则有可能铸造超过 4.6 亿美元的 fUSD。
+ 
+现在，让我们讨论 $EQUAL 如何利用这个机会。想法很简单：我坚信 $EQUAL 及其投票托管飞轮将继续吸收 TVL 并成为 $FTM 上的领先 DEX。
+ 
+
+ 
+作为一个以生态系统为中心的平台，$EQUAL 可以从 fUSD 的铸造中获得几乎所有的好处：
+ 
+ 
+ 
+fUSD 用于购买项目代币？
+ 
+ 
+$EQUAL 促进交易，获得费用，并从生态系统项目价格上涨中受益。
+ 
+ 
+ 
+fUSD 用于流动性挖矿？
+ 
+ 
+由于拥有最高的流动性挖矿收益率，TVL 将流入$EQUAL。也许他们会使用类似于 Beefyfinance 或 Reaper Farm 的保险库，以便将资金路由到$EQUAL。
+ 
+ 
+ 
+fUSD 用于 dApps？（永续交易、质押等）
+ 
+ 
+Equal 将从合作项目的增长中受益。（增加交易量等）
+ 
+ 
+ 
+fUSD 用于借贷？
+ 
+ 
+借款人将会在项目 1、2 或 3 中有效地使用资金。也许他们会在 TarotFinance 上利用 LP。
+ 
+在几乎所有方面，我都认为$EQUAL 是生态系统的基石，它将利用$FTM 的增长，特别是 fUSD V2 带来的催化效应，实现自己的经济飞轮。
+ 
+原文链接</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;75
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3339,51 +3386,6 @@ MUX 协议是一个建立在多个区块链之上的杠杆交易协议。它旨�
                             <span class="media-object__text">
                               <span>据 TokenInsight 数据，Liquity（$LQTY）价格近24小时涨幅达20.06%，现价2.3953美元。
 Liquity 是一个去中心化的借贷协议，允许用户使用 $ETH 作为抵押品进行无息贷款。贷款以与美元挂钩的稳定币 $LUSD 支付，并由一个稳定池和作为担保人的其他借款人担保。$LQTY 是该协议的效用代币，用于质押和流动性挖矿。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://tokeninsight.com/zh/news/babel-finance-proposes-recovery-coin-to-repay-creditors-following-massive-loss?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;"
-                        open
-                      >
-                        <summary class="article-expander__title">贝宝金融（Babel Finance）拟针对债权人的巨额损失，进行债务重组</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://tokeninsight.com/zh/news/babel-finance-proposes-recovery-coin-to-repay-creditors-following-massive-loss?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://s2.tokeninsight.com/static/news/cover/img/babelfinance.png" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>据彭博社报道，陷入困境的加密货币贷款公司 Babel Finance 拟进行债务重组，并声称在因交易台活动而遭受7.66亿美元的损失后，将通过一系列重组举措偿还债权人。 
-该公司计划向新加坡高等法院申请暂停保护，并寻求债权人批准重组计划，2022年贝宝危机后，重回公司的创始人 Yang Zhou 将主导重组计划。
-贝宝创始人 Yang Zhou 于2021年退出后，一直在建立一个名为“HOPE（希望）”的新的去中心化稳定币项目。该项目使用比特币和以太坊作为抵押品。贝宝创始人 Yang Zhou 计划与香港的一些前雇员一起建立这个项目。
-贝宝指称联合创始人 Wang Li 应对损失负责，并已将其从领导层除名。贝宝估计，由于 Wang Li 的交易活动，该公司及其客户拥有的价值5.24亿美元的加密货币被损失。另外还有2.24亿美元的损失，因为Babel的交易对手在无法满足大量的保证金要求后清算了抵押品。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://tokeninsight.com/zh/news/binance-tried-to-hire-current-us-sec-chair-as-advisor-wall-street-journal-reports?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;"
-                        open
-                      >
-                        <summary class="article-expander__title">华尔街日报：Binance 曾试图聘请现任美国证券交易委员会主席担任顾问</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://tokeninsight.com/zh/news/binance-tried-to-hire-current-us-sec-chair-as-advisor-wall-street-journal-reports?utm_source&#x3D;public&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://s2.tokeninsight.com/static/news/cover/img/cover_(2).jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>据《华尔街日报》报道，在 Gary Gensler 成为美国证券交易委员会（SEC）主席之前的几年，Binance 曾试图聘请他担任顾问，但遭到拒绝。
-在2018到2019两年间，Binance 曾几次接触当时的麻省理工学院教授 Gary Gensler。Binance 员工的内部聊天记录显示，2018年10月，时任 Binance 风险投资部门负责人 Ella Zhang 和 Binance 所投资的公司 Koi Trading 的联合创始人 Harry Zhou 曾与 Gary Gensler 会面。Zhou 在一则信息中表示，“尽管 Gensler 拒绝出任顾问，但他慷慨地分享了获得经营许可的策略。”此后，Gary Gensler 还曾于2019年3月在东京与 CZ 会面。
-据悉，Gary Gensler 在麻省理工学院期间曾被多家公司邀请出任顾问，但他全部拒绝。2021年4月，他成为了 SEC 主席。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;3
                                   min&hairsp;)</span>
                             </span>
@@ -3778,7 +3780,7 @@ Polygon 的另一个优势是交易费用低，这使其成为 NFT 创作者和�
 第一种，用户主动设置了多签签名
  
 一些新手在摸索钱包功能时误操作设置成了多签。当资产转账时，由于设置了多签，需要至少2个钱包地址共同完成…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                &ensp;<span class="article-reading-time">(&hairsp;75
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3924,7 +3926,7 @@ L2 的 sequencer 非常中心化。
 推文原链接
  
 Gnosis创始人EthDenver分享视频链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3998,7 +4000,7 @@ Web3 安全技术
  
  
  冒险游戏：玩家在游戏中需要进入不同的元宇宙区域，每个区域在探索的过程中都有自己独特的挑战。如果要进入下一阶段，玩家…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -4071,7 +4073,7 @@ sfrxETH 吃“两份” Staking 收益，APR 自然就高了
   
  
 不过需要注意的是，这里所谓的 “协议资产” 并非仅是 Yearn 的国库所有的，可能还包括 Yearn 从 yCRV 产品那里挪过来的投票权…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -4660,7 +4662,7 @@ Flow 将大量非加密货币用户引入其 NFT 生态系统，但仅靠出售�
 
  
 原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;74
+                                &ensp;<span class="article-reading-time">(&hairsp;75
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -4886,7 +4888,7 @@ TLDR
 理解代币经济学的挑战在于理解机制设计。在经济学中，博弈论研究的是博弈中存在的策略和激励。而在机制设计中，研究的是相反的问题，即一组期望的激励和策略如何影响游戏本身的设计。通过这种数学框架，我们可以将代币经济的设计视为一种游戏的设计，其中代币是激励行为的最重要工具。
  
 但与游戏不同的是，代币经济学是一种开放系统，容易受到外部因素…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5105,7 +5107,7 @@ Slush vs Sovereign
   
  
 原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5152,7 +5154,7 @@ Slush vs Sovereign
 了解 Cwallet：简单且安全的多链钱包
  
 对于普通加密投资者的直观感受而言，资产存储并非第一要务，便捷的链上操作、轻松参与各类社区活动或者 Giveaway 活动，以及支付等操作才是他们…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;78
+                                &ensp;<span class="article-reading-time">(&hairsp;79
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5198,7 +5200,7 @@ Slush vs Sovereign
 经过调查，OKX 发现了其中 5 个可疑获利帐户并将其立即冻结，经过反复沟通，项目方也最终同意退回 130 万 USDT。
  
 最后，OKX 也提供了…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5254,7 +5256,7 @@ Arbitrum 期货空投，未来的官方代币兑换凭证
 注：通过红包获得 ARBK 的用户，须通过在 BitKeep 上创建的钱包地址，完成一笔 Token Swap 或 NFT 交易，即可获得未来兑换 Arbitrum 官方代币资格。
  
 Web3 具备开放互通的基因，BitKeep 作为一个 Web3 开放平台，一直在通过丰富产品功能、拓展生态版图发挥自己的作用。虽然身处钱包赛道，但是 BitKeep 的产品功能却远超钱包，Swap、NFT 市场、DApp 中心等，这些功能让 BitKeep 更像是一个 DEX，一个 NFT 交易市场，一个 Web3 超级聚合器。整个钱包生态就是一个开放的大平台，对接好每一条主流公链，满足用户生态体验的多样需求，通过规模效应和对用户的精细化运营实现 Web3 价值互联。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5374,7 +5376,7 @@ Stacks 生态系统现在非常火热，$DIKO 已经积累了 760 万美元的 T
 另外值得一提的是，我们在自己的系统中也使用了 SHA-256，所以这对我们来说也很方便！ 😂
  
 我们的性能测试评估了 SHA-256 在各种 zk-SNARK 和…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;79
+                                &ensp;<span class="article-reading-time">(&hairsp;80
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5672,7 +5674,7 @@ Hook 是一个专注于欧式看涨期权的去中心化的 NFT 衍生品协议�
 Hook 的最新产品是 Hook Earn，它由协议的看涨期权提供底层逻辑支持。这项新产品允许 NFT 所有者从他们闲置的 NFT 上获得即时收益——只要他们同意在未来某个特定的日期以特定的价格列出上述 NFT。如果在该目标日期没有被购买，你可以保留 NFT，并可以将其重新存入盈利系统。如果 NFT 的售价高于其列出价格，则相关交易者将获得价差。
  
 原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -5965,7 +5967,7 @@ Alex 确实是比特币 DeFi 的先驱，因此在我看来仅 3600 万美元的
 Alex Labs 和$ALEX 拥有自己的永续 DEX、移动应用，以及正在构建的法币进出通道，这无一不显示出其巨大的上升潜力。
  
 原文链接</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -6182,7 +6184,7 @@ Flashbots 的核心产品
   
  
  MEV-Boost 的设计是为了迎接以太坊的合并（Merg…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;76
+                                &ensp;<span class="article-reading-time">(&hairsp;77
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -6356,7 +6358,7 @@ Chainlink 没有安全的经济学，它仍然能保证整个 DeFi 的安全。�
 
  
 当 Aptos 市场表现强劲时，价值更有可能外溢到其生态项目上；而这个圈子中大量重复的叙事则告诉我们，…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;77
+                                &ensp;<span class="article-reading-time">(&hairsp;78
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -6520,7 +6522,7 @@ DVT 将以开放、建设性和高度协作的方式进行推出，采用类似�
  
 2018 年就做了秘银 Mithril (MITH)，还推出社交挖矿，鼓励用户上照片或影片来挖矿。算是走得很前面，但就是因为太前面了，很多细节没有想好，结果币价就崩掉了。虽然可惜，但也学到了很多经验，后来又做了 CREAM。
  …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;75
+                                &ensp;<span class="article-reading-time">(&hairsp;76
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -6932,8 +6934,8 @@ Polygon ($MATIC）
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/0xcii/tag-posts-feed/actions/runs/4353501686">
-        <time id="build-timestamp" datetime="2023-03-07T11:13:18.773Z">2023-03-07T11:13:18.773Z</time>
+      <a class="footer-link" href="https://github.com/0xcii/tag-posts-feed/actions/runs/4354116692">
+        <time id="build-timestamp" datetime="2023-03-07T12:30:11.191Z">2023-03-07T12:30:11.191Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>
