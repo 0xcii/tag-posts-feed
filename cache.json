@@ -11,7 +11,7 @@
           "description": "原文作者：SAMUEL MCCULLOCH\n原文编译：深潮 TechFlow\n2023 年 8 月 7 日上午，支付巨头 Paypal 宣布推出其稳定币 PayPal USD（PYUSD）。这种新的稳定币将用于连接 Paypal 现有的 4.31 亿用户，并最终展示他们对区块链的承诺。\n\nPYUSD 是什么？\nPaypal 的 PYUSD 是由“非加密货币”公司发行的第一种稳定币。它代表了企业对稳定币的普遍态度转变和对即将到来的政策接受的未来信念。\nPayPal 的稳定币 PYUSD 完全由美元存款支持，例如短期美国国债和等值资产。由 Paxos Trust Company 管理，PYUSD 可以通过 PayPal 或 Venmo 应用以 1: 1 的比例兑换成美元。\n根据 Paypal 的新闻稿：\n购买 PayPal USD 的 PayPal 客户将能够：\n\n在 PayPal 和兼容的外部钱包之间转移 PayPal USD；\n\n使用 PYUSD 进行个人间支付；\n\n在结账时选择使用 PayPal USD 进行购买；\n\n将 PayPal 支持的任何加密货币与 PayPal USD 相互兑换。\n\n为什么 PayPal 的公告对加密货币的采用产生了重大影响\n直到现在，获取支付稳定币的唯一途径是通过像 Tether、Coinbase 或 Gemini 这样的加密货币公司。现在，随着 PayPal 进入市场，数百万人将能够通过全球最广泛使用的支付平台之一进入加密货币领域。\n前 Paxos 投资组合管理负责人、Zero Knowledge Consulting 的合伙人 Austin Campbell 在 Leviathan News 上表示：“加密货币生态系统中最不发达的部分之一是实际的出入金通道。从这个角度来看，很难找到比 PayPal 更好的选择。我认为这里最大的创新就是在 P…",
           "link": "https://www.odaily.news/post/5188930",
           "publishedOn": "2023-08-08T08:30:00.000Z",
-          "wordCount": 2311,
+          "wordCount": 2307,
           "title": "PayPal推出PYUSD，行业或将开启「稳定币之春」？",
           "imageUrl": "https://piccdn.0daily.com/202205/07035137/s29xjxxva9nzvyd5.png"
         },
@@ -21,7 +21,7 @@
           "description": "Worldcoin 的白皮书中声明，Worldcoin 旨在构建一个连接全球人类的新型数字经济系统，由 OpenAI 创始人 Sam Altman 于 2020 年发起。通过区块链技术在 Web 3 世界中实现更加公平、开放和包容的经济体系，并将所有权赋予每个人。并且希望让全世界每一个人都能有最低的生活保障，提高全民基本收入，迎接共同富裕的未来。于 2023 年 7 月 24 日 Sam 在推特社交平台宣布，Worldcoin 正式推出。\n1. Worldcoin 基本面\n1.1 业务模型\nWorldcoin 包含三个组成部分：全球数字身份（World ID）、全球数字加密货币（WLD）和一个可以承载和运用 World ID 和 WLD 加密钱包（World App）。此外，通过区块链技术，Worldcoin 将支持智能合约和去中心化应用（DApps）的发展。\n2021 年 6 月，Worldcoin 首次向大众公开，并完成了 2500 万美元融资，投资方包括 a 16 z、Coinbase Ventures、LinkedIn 创始人 Reid Hoffman、Day One Ventures。2023 年 5 月 Worldcoin 完成 1.15 亿美元 C 轮融资，Blockchain Capital 领投，a 16 z、Bain Capital Crypto 和 Distributed Global 参投，估值达到 30 亿美金。\nWorldcoin 围绕基于生物识别技术构建的 World ID 身份识别系统展开叙事，用户通过生物识别设备 Orb 扫描虹膜，获得 World ID，来证明自己的身份，Worldcoin 声明采用零知识证明保护用户的隐私。近年来，人工智能的迅速发展让人产生被 AI 替代的忧虑，因此真实、独特的人类身份证明成为极为重要的课题，Worldc…",
           "link": "https://www.odaily.news/post/5188926",
           "publishedOn": "2023-08-08T07:51:24.000Z",
-          "wordCount": 2761,
+          "wordCount": 2805,
           "title": "SharkTeam：Worldcoin运营数据及业务安全分析",
           "imageUrl": "https://piccdn.0daily.com/202205/07035137/s29xjxxva9nzvyd5.png"
         },
@@ -71,7 +71,7 @@
           "description": "原文作者：蒋海波，PANews\nMakerDAO 在北京时间 8 月 7 日凌晨正式将 DSR（DAI 存款利率）以短期补贴的方式提高到 8% 。由于 Maker 在 RWA 中的投入已超过 20 亿美元，目前只有大约 20% 的 DAI 存在 DSR 合约中获得利息，因此给予 DSR 更高的短期补贴并不会使 Maker 陷入亏损。但此举也使 Maker 的盈利预期下降，可能也表明 Maker 的增长进入瓶颈期，下文 PANews 将对该事件背景、经过和影响进行解读。\nPSM 中的稳定币储备不足\n随着 DAI 发行量的下降和在 RWA 上投入的增加，Maker 锚定稳定模块（PSM）中的稳定币储备不断下降。根据@SteakFi 在 Dune 整理的数据，Maker 在 RWA 中的投入已经达到 23.5 亿美元。\n\n其中 PSM 中的 USDC 是 DAI 的主要退出流动性，根据 Etherscan 及 DeBank 数据，Maker：PSM-USDC-A 合约中的储备资产价值从最高值时的 55 亿美元，下降至 8 月 3 日的 1.8 亿美元。如果流动性耗尽，DAI 不能赎回为 USDC，将影响用户对 DAI 和 Maker 的信心。\n\n这一情况在我们之前的文章中也有提到，参考阅读：《解读 MakerDAO 发展现状：预期利润大增，回购规则可能调整为协议捕获价值》。\n而若能使用一定的激励措施吸引更多资金用 USDC 铸造 DAI，Maker 将 USDC 换成美元购买美债，在这过程中将部分收益分配给 DSR 中的 DAI 存款者，则有望实现 Maker 的增长飞轮。于是，一个提高 DAI 存款收益的提案诞生了，该方案是一个短期激励措施，还需观察激励结束后的资金留存情况。\n由 Rune 主导，无人反对的投票\n7 月 19 日，MakerDAO 联合创始人 Rune Chri…",
           "link": "https://www.odaily.news/post/5188920",
           "publishedOn": "2023-08-08T02:45:00.000Z",
-          "wordCount": 2418,
+          "wordCount": 2420,
           "title": "MakerDAO将DSR提高至8%，对协议有何利弊？",
           "imageUrl": "https://piccdn.0daily.com/202205/07035137/s29xjxxva9nzvyd5.png"
         },
@@ -118,7 +118,7 @@
           "description": "Layer2 在今年已成为最重要的赛道之一，它的发展将会使得 Web3 网络在保持新生产关系，智能合约等优势后，以更高的效率和更低的费用来服务用户，作为底层设施影响未来行业发展的速度。近来，除了专门聚焦在 L2 赛道的项目，交易所也在 L2 赛道动作频出。",
           "link": "https://www.web3sj.com/news/83705/",
           "publishedOn": "2023-08-08T09:05:45.000Z",
-          "wordCount": 1335,
+          "wordCount": 1417,
           "title": "加密交易所布局Layer2动作频出，承载着对未来市场的野望",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691485531376.png"
         },
@@ -128,7 +128,7 @@
           "description": "Dan 认为 Polkadot 将自己描述为「互操作性解决方案」的定位并没有准确把握住 Polkadot 为顶级区块链开发团队带来的主要优势。因为 Polkadot 提供的只是 Polkadot 内部的互操作性，而像 Axelar，LayerZero 和 Wormhole 这样的协议在实现全面加密互操作性方面已经占据了大部分的交易量。只有当 Polkadot 多个平行链上有显著的用户活动和交易量时，Polkadot 世界内的互操作性才能发挥出优势。",
           "link": "https://www.web3sj.com/news/83702/",
           "publishedOn": "2023-08-08T08:09:16.000Z",
-          "wordCount": 743,
+          "wordCount": 748,
           "title": "Polkadot的市场定位和叙事是否应该调整？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691482144266.png"
         },
@@ -138,7 +138,7 @@
           "description": "经过至少两年的考虑、开发和延迟，数字支付巨头 PayPal 终于推出了自己的美元稳定币，允许用户在其平台上「购买、出售、持有和转移」代币。这听起来可能并不算多，因为这基本上是人们已经可以使用支票账户或现有的持有美元的 PayPal 账户进行的操作。",
           "link": "https://www.web3sj.com/news/83699/",
           "publishedOn": "2023-08-08T07:12:13.000Z",
-          "wordCount": 725,
+          "wordCount": 746,
           "title": "PayPal稳定币面临的三个问题：实用性、Gas费和旧技术",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691478722403.png"
         },
@@ -148,7 +148,7 @@
           "description": "该轮融资由磁星资本、黑石集团领衔，贝莱德集团（BlackRock)、太平洋投资管理（PIMCO)、凯雷集团（Carlyle)、Coatue、DigitalBridge 等也都参与其中。在此之前，CoreWeave 曾融资 4.21 亿美元，估值超过 20 亿美元。",
           "link": "https://www.web3sj.com/news/83677/",
           "publishedOn": "2023-08-08T03:47:06.000Z",
-          "wordCount": 782,
+          "wordCount": 789,
           "title": "CoreWeave的奇幻漂流：以太坊挖矿起家，转型AI算力公司，估值超20亿美元",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691466414742.png"
         },
@@ -158,7 +158,7 @@
           "description": "当买方主导亚洲交易时段时，BTC 和 ETH 价格就会上涨。以往出现大行情时几乎总是如此。亚洲市场开始抛售的时间，通常在市场顶部附近。作者构建了一套算法来测试市场目前的动态（作者即将开源算法），测试显示亚洲市场现在正处于买入阶段。",
           "link": "https://www.web3sj.com/transaction/83665/",
           "publishedOn": "2023-08-08T03:23:49.000Z",
-          "wordCount": 674,
+          "wordCount": 679,
           "title": "速览7个看涨的指标：加密市场将走牛？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691465012821.png"
         },
@@ -168,7 +168,7 @@
           "description": "Rollup 通常与以太坊网络相关。在 2022 年 9 月过渡到权益证明之后，以太坊区块链变得更加中心化。此外，许多 Rollup 实际上依赖于 L2 上交易的中心化排序器。去中心化确实能带来更高的安全性，特别是在比特币方面，但伴随着比特币的发展，去中心化和算力规模之间的矛盾也越来越突出，这种矛盾的来源在于用户量的增加和验证区块时的计算量，而能够缓解这种矛盾的关键就在于提升区块链的可扩展性。",
           "link": "https://www.web3sj.com/news/83662/",
           "publishedOn": "2023-08-08T03:20:56.000Z",
-          "wordCount": 904,
+          "wordCount": 911,
           "title": "Rollups方案如何助力Bitcoin扩容？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691464842881.png"
         },
@@ -178,7 +178,7 @@
           "description": "作为交易用途的 TG Bot，不会脱离用户的交易习惯以及 DEX 的一些特点去发展，会在 DEX 的基础上在交易中去提供更舒适的用户体验。目前 TG Bot 主要是服务于追求高收益高风险的 Meme 玩家。对于这类玩家而言，交易机器人会围绕交易的前中后去适配不同的功能。",
           "link": "https://www.web3sj.com/news/83659/",
           "publishedOn": "2023-08-08T03:14:40.000Z",
-          "wordCount": 832,
+          "wordCount": 831,
           "title": "异军突起的TG BOT：链上营销与草根逆袭",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691464466129.png"
         },
@@ -188,7 +188,7 @@
           "description": "从游戏「远古时期」的 BitQuest 和 Huntercoin，再到短暂而繁荣的 Axie 与 Stepn 时代；从沙盒到 Play-to-earn, 受制于基础设施，WEB3 游戏赛道始终无法完成最后一跃，成为承接 Web2 用户 Mass adoption 的桥头堡。区块链行业的游戏开发者从自发到自觉，已经走过无意识的使用通证或仅仅资产上链的「金融竞技场」时期，而面对的是在区块链行业内「游戏何为」的深水区问题。",
           "link": "https://www.web3sj.com/news/83655/",
           "publishedOn": "2023-08-08T03:06:51.000Z",
-          "wordCount": 789,
+          "wordCount": 823,
           "title": "AW基础设施盘点：从街机账户Arcade Accounts到高铁网络Trustless Relay，全链游戏准备好了吗？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691463999129.png"
         },
@@ -198,7 +198,7 @@
           "description": "简单来说，MakerDAO 引入 RWA 资产的目的是借助外部信用的能力使其背后支持的资产多元化，并且借助美国国债带来的长期额外收益可以帮助 DAI 稳定自身汇率，增加发行量的弹性，并且在资产负债表中掺入美国国债的成份可以降低 DAI 对 USDC 的依赖程度，减少单点风险。",
           "link": "https://www.web3sj.com/definews/83645/",
           "publishedOn": "2023-08-08T03:03:32.000Z",
-          "wordCount": 781,
+          "wordCount": 798,
           "title": "DAI的8%超额「无风险利率」怎么来的？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691463794584.png"
         },
@@ -208,7 +208,7 @@
           "description": "根据 Binance 的数据，目前加密衍生品市场在总交易量上占据了 74.2% 的市场份额。加密衍生品的月交易量达到 1.9 万亿美元，过去三年里增长了 3 倍。在此期间，衍生品市场呈现出多样化和增长的态势。",
           "link": "https://www.web3sj.com/definews/83633/",
           "publishedOn": "2023-08-08T02:59:44.000Z",
-          "wordCount": 809,
+          "wordCount": 782,
           "title": "Binance衍生品市场研报：6个值得关注的衍生品DEX",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2023/08/1691463569071.png"
         }
@@ -220,12 +220,32 @@
       "siteUrl": "https://tokeninsight.com/zh/news",
       "articles": [
         {
+          "id": "https://tokeninsight.com/zh/news/zksync-era-based-lending-protocol-eralend-redeployed-to-allocate-all-protocol-fees-for-victim-compensation?utm_source=public&utm_medium=rss",
+          "author": "TokenInsight 新闻",
+          "description": "zkSync Era 生态借贷协议 EraLend 已重新部署，全部协议费用将用于补偿受害者",
+          "link": "https://tokeninsight.com/zh/news/zksync-era-based-lending-protocol-eralend-redeployed-to-allocate-all-protocol-fees-for-victim-compensation?utm_source=public&utm_medium=rss",
+          "publishedOn": "2023-08-08T10:51:48.000Z",
+          "wordCount": 1307,
+          "title": "zkSync Era 生态借贷协议 EraLend 已重新部署，全部协议费用将用于补偿受害者",
+          "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/eralend_redeploy.jpg"
+        },
+        {
+          "id": "https://tokeninsight.com/zh/news/coin98-secures-millions-in-investment-from-dwf-labs?utm_source=public&utm_medium=rss",
+          "author": "TokenInsight 新闻",
+          "description": "Coin98 获得来自 DWF Labs 的数百万美元投资",
+          "link": "https://tokeninsight.com/zh/news/coin98-secures-millions-in-investment-from-dwf-labs?utm_source=public&utm_medium=rss",
+          "publishedOn": "2023-08-08T10:40:53.000Z",
+          "wordCount": 1306,
+          "title": "Coin98 获得来自 DWF Labs 的数百万美元投资",
+          "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/coin98.001.jpeg"
+        },
+        {
           "id": "https://tokeninsight.com/zh/news/lending-protocol-rocifi-integrates-its-credit-scores-to-gora-s-oracle-network?utm_source=public&utm_medium=rss",
           "author": "TokenInsight 新闻",
           "description": "借贷协议 RociFi 将信用评分集成到预言机网络 Gora",
           "link": "https://tokeninsight.com/zh/news/lending-protocol-rocifi-integrates-its-credit-scores-to-gora-s-oracle-network?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T09:39:13.000Z",
-          "wordCount": 1316,
+          "wordCount": 1313,
           "title": "借贷协议 RociFi 将信用评分集成到预言机网络 Gora",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/gora_rocifi.jpg"
         },
@@ -235,7 +255,7 @@
           "description": "Web3 资管平台 DeSyn Protocol 入围香港数码港孵化器，上线3倍 stETH ETF 封闭式基金和空投活动",
           "link": "https://tokeninsight.com/zh/news/desyn-protocol-nominated-for-hong-kong-cyberport-incubator-program-launches-closed-end-3x-eth-staking-etf-leverage-product-with-airdrop-campaign?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T08:36:07.000Z",
-          "wordCount": 1325,
+          "wordCount": 1316,
           "title": "Web3 资管平台 DeSyn Protocol 入围香港数码港孵化器，上线3倍 stETH ETF 封闭式基金和空投活动",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/desyn_3x_eth.jpg"
         },
@@ -245,7 +265,7 @@
           "description": "$AUDIO 突破0.22美元，近24小时内涨幅达24.76%",
           "link": "https://tokeninsight.com/zh/news/audio-price-breaks-0.22-up-24.76-over-the-last-24-hours?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T08:17:49.000Z",
-          "wordCount": 1219,
+          "wordCount": 1223,
           "title": "$AUDIO 突破0.22美元，近24小时内涨幅达24.76%",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/audius.0014.jpeg"
         },
@@ -255,7 +275,7 @@
           "description": "现实世界资产（RWA）借贷协议 Goldfinch 面临贷款违约",
           "link": "https://tokeninsight.com/zh/news/real-world-asset-lending-protocol-goldfinch-face-loan-default?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T06:55:28.000Z",
-          "wordCount": 1280,
+          "wordCount": 1271,
           "title": "现实世界资产（RWA）借贷协议 Goldfinch 面临贷款违约",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/gfi.png"
         },
@@ -265,7 +285,7 @@
           "description": "$DODO 突破0.15美元，近24小时内涨幅达51.81%",
           "link": "https://tokeninsight.com/zh/news/dodo-price-breaks-0.15-up-51.81-over-the-last-24-hours?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T06:43:26.000Z",
-          "wordCount": 1247,
+          "wordCount": 1240,
           "title": "$DODO 突破0.15美元，近24小时内涨幅达51.81%",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/dodo.001.jpeg"
         },
@@ -275,7 +295,7 @@
           "description": "比特小鹿已完成与不丹王国合作的挖矿设施建设",
           "link": "https://tokeninsight.com/zh/news/bitdeer-completes-mining-facility-construction-in-bhutan?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T03:22:28.000Z",
-          "wordCount": 1219,
+          "wordCount": 1231,
           "title": "比特小鹿已完成与不丹王国合作的挖矿设施建设",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/bitdeer.png"
         },
@@ -285,7 +305,7 @@
           "description": "$RSS3 突破0.15美元，近24小时内涨幅达37.98%",
           "link": "https://tokeninsight.com/zh/news/rss3-price-breaks-0.15-up-37.98-over-the-last-24-hours?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T02:21:38.000Z",
-          "wordCount": 1221,
+          "wordCount": 1230,
           "title": "$RSS3 突破0.15美元，近24小时内涨幅达37.98%",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/rss3.0012.jpeg"
         },
@@ -295,7 +315,7 @@
           "description": "Mantle Network 通过最高 20 万枚 $ETH 进行质押的社区提案投票",
           "link": "https://tokeninsight.com/zh/news/mantle-network-proposal-for-staking-up-to-200-000-eth-approved?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T01:11:43.000Z",
-          "wordCount": 1445,
+          "wordCount": 1455,
           "title": "Mantle Network 通过最高 20 万枚 $ETH 进行质押的社区提案投票",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/mantle_stake.png"
         },
@@ -305,7 +325,7 @@
           "description": "PayPal 推出新稳定币 PayPal 美元（PYUSD），由 Paxos 发行",
           "link": "https://tokeninsight.com/zh/news/paypal-launched-new-stablecoin-paypal-usd-issued-by-paxos?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-08T00:21:35.000Z",
-          "wordCount": 1291,
+          "wordCount": 1301,
           "title": "PayPal 推出新稳定币 PayPal 美元（PYUSD），由 Paxos 发行",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/pyusd.png"
         },
@@ -315,7 +335,7 @@
           "description": "DeFi 分析师对 Huobi 的偿付能力表示担忧，称 $USDT 资产被挪用",
           "link": "https://tokeninsight.com/zh/news/defi-analyst-raising-concern-about-huobi-solvency-citing-misuse-of-usdt-asset?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-07T10:23:46.000Z",
-          "wordCount": 1429,
+          "wordCount": 1440,
           "title": "DeFi 分析师对 Huobi 的偿付能力表示担忧，称 $USDT 资产被挪用",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/huobi_concern.png"
         },
@@ -325,7 +345,7 @@
           "description": "PancakeSwap 与 bloXroute Labs 合作推出私人 RPC 功能",
           "link": "https://tokeninsight.com/zh/news/pancakeswap-introduces-private-rpc-in-collaboration-with-bloxroute-labs?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-07T08:01:23.000Z",
-          "wordCount": 1292,
+          "wordCount": 1288,
           "title": "PancakeSwap 与 bloXroute Labs 合作推出私人 RPC 功能",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/cake_rpc.png"
         },
@@ -335,29 +355,9 @@
           "description": "$LPT 近24小时内涨幅达47.96%",
           "link": "https://tokeninsight.com/zh/news/lpt-price-went-up-47.96-over-the-last-24-hours?utm_source=public&utm_medium=rss",
           "publishedOn": "2023-08-07T07:19:48.000Z",
-          "wordCount": 1236,
+          "wordCount": 1240,
           "title": "$LPT 近24小时内涨幅达47.96%",
           "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/livepeer.001.jpeg"
-        },
-        {
-          "id": "https://tokeninsight.com/zh/news/perp-dex-protocol-d8x-closes-1.5-million-in-pre-seed-round-led-by-polygon-ventures?utm_source=public&utm_medium=rss",
-          "author": "TokenInsight 新闻",
-          "description": "永续合约 DEX D8X 完成150万美元 pre-seed 轮融资，Polygon Ventures 领投",
-          "link": "https://tokeninsight.com/zh/news/perp-dex-protocol-d8x-closes-1.5-million-in-pre-seed-round-led-by-polygon-ventures?utm_source=public&utm_medium=rss",
-          "publishedOn": "2023-08-07T06:55:12.000Z",
-          "wordCount": 1385,
-          "title": "永续合约 DEX D8X 完成150万美元 pre-seed 轮融资，Polygon Ventures 领投",
-          "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/d8x.001.jpeg"
-        },
-        {
-          "id": "https://tokeninsight.com/zh/news/makerdao-s-lending-protocol-spark-now-offers-8-apy-on-dai-deposits?utm_source=public&utm_medium=rss",
-          "author": "TokenInsight 新闻",
-          "description": "MakerDAO 的借贷协议 Spark Protocol 当前提供8%的 $DAI 储蓄利率",
-          "link": "https://tokeninsight.com/zh/news/makerdao-s-lending-protocol-spark-now-offers-8-apy-on-dai-deposits?utm_source=public&utm_medium=rss",
-          "publishedOn": "2023-08-07T06:42:03.000Z",
-          "wordCount": 1406,
-          "title": "MakerDAO 的借贷协议 Spark Protocol 当前提供8%的 $DAI 储蓄利率",
-          "imageUrl": "https://s2.tokeninsight.com/static/news/cover/img/spark_dsr.jpg"
         }
       ]
     }
