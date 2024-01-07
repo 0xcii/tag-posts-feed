@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2024-01-07T07:11:39.029Z</id>
+    <id>urn:2024-01-07T08:16:17.414Z</id>
     <title>web3::cave</title>
-    <updated>2024-01-07T07:11:39.029Z</updated>
+    <updated>2024-01-07T08:16:17.414Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[50天，18亿美元，本轮小牛行情的「发动机」浮出水面？]]></title>
+        <id>https://www.odaily.news/post/5192086</id>
+        <link href="https://www.odaily.news/post/5192086"/>
+        <updated>2024-01-07T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[10 月 16 日，比特币一根巨阳，刺破「 8 · 18 」大跌的前期高点，开启新一轮上涨周期，从 27000 USDT 一路上涨至最高 44000 USDT，累计最大涨幅超 60% 。
+
+与此同时，某个链上神秘地址（0x 1 dbbbc 3 fd b2c 4 fabd 28 fd 9 b 84 ed 99 ceb 84 bfbec 5），从 10 月 20 日开始，陆续从 Tether 铸造获得 18.1 亿枚 USDT，并将其转入 Kraken、Coinbase、OKX 等合规交易所，操作节点与此轮行情的上涨时间点完美契合，被认为是本轮小牛行情的「潜在发动机」之一。
+
+OKLink 链上天眼数据（下同）
+那么，该神秘地址的具体购买情况与出手规律是怎样的？背后又可能是哪家机构，隐藏着怎样的逻辑？本文旨在借助 OKLink（链上天眼等）、Arkham 等链上数据分析工具对该地址进行抽丝剥茧的深入挖掘。
+50 天， 17.6 亿 USDT
+首先，欧科云链 OKLink 浏览器数据显示，该地址的初始手续费来源为 2023 年 10 月 20 日 23: 28: 23 从 Kraken 存款地址转入的 0.497 枚 ETH。
+随即根据 OKLink 链上天眼数据统计，在此笔手续费转入该神秘地址 22 分钟后，原先的 Kraken 存款地址便调用 Tether USDT 铸造合约，向该神秘地址首次转入 20 USDT。
+理论上，该笔 20 USDT 的小额铸造，应当是为了进行首次 USDT 转入测试，确保该神秘地址在后续转入 USDT 的情况下可用。
+随后从 10 月 20 日起，一直至 12 月 9 日，该神秘地址累计从 Tether 分 38 次累计转入 17.6 亿枚 USDT，并分别 298 次分多次转入 Kraken、Coinbase、OKX、Huobi 等中心化交易所…]]></summary>
+        <author>
+            <name>小河 River</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Rollup Summer思考：叙事推演和投资机会]]></title>
         <id>https://www.odaily.news/post/5192199</id>
