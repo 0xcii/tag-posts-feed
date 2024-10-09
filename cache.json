@@ -6,12 +6,62 @@
       "siteUrl": "https://www.web3sj.com",
       "articles": [
         {
+          "id": "https://www.web3sj.com/?p=124262",
+          "author": "Gao",
+          "description": "Ben Adams 描述 EIP-7781 时表示，在不增加单个区块或 blob 数量的情况下，将交易吞吐量提高约 33%；随着时间的推移分配带宽使用量，以降低峰值带宽需求并保持网络效率；这相当于将 blob 数量从 6 增加到 8，或将 gas 限制从 30M 增加到 40M；但是这种方法不会增加峰值带宽。",
+          "link": "https://www.web3sj.com/news/124262/",
+          "publishedOn": "2024-10-09T11:57:32.000Z",
+          "wordCount": 900,
+          "title": "将以太坊吞吐量提高50%？快速了解社区新提案EIP-7781",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728474997094.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=124259",
+          "author": "Gao",
+          "description": "2021 年，约 135 万枚 SOL 代币被转入 FalconX 的钱包中，却没有任何身份信息。过去三年，这部分代币随着 FTX 暴雷一度跌至约 1300 万美元，如今因 Solana 的强势复苏价值已超 1.9 亿美元。而币安正是这笔巨额资金「失主」。",
+          "link": "https://www.web3sj.com/news/124259/",
+          "publishedOn": "2024-10-09T11:54:21.000Z",
+          "wordCount": 938,
+          "title": "币安惊现近2亿美元Solana代币「失踪案」，「捡到钱」的FalconX有何来头？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728474762509.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=124254",
+          "author": "Gao",
+          "description": "「给 Vitalik 打币」，这个大家曾经熟悉的吸引眼球的方式又重新归来。国庆假期期间，以太坊联合创始人 Vitalik Buterin 通过 KyberSwap 卖出 117.6 亿枚 MOODENG 兑换为 21.033 枚 ETH（约 5.09 万美元）。10 月 7 日，Vitalik 地址再次出售 100 亿枚 MOODENG 获得 308.69 枚 ETH (76.2 万美元 ) 并将 260.16 枚 ETH (64.2 万美元 ) 转给慈善机构 Kanro，这让以太坊上的 $MOODENG 大力拉升，创下新高。",
+          "link": "https://www.web3sj.com/news/124254/",
+          "publishedOn": "2024-10-09T11:50:03.000Z",
+          "wordCount": 978,
+          "title": "为了注意力，meme们正在「脱虚向实」？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728474392417.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=124238",
+          "author": "Gao",
+          "description": "本文深入 Sui 生态系统，从基础设施、稳定币、DeFi、Meme 和消费者应用程序等领域介绍了 Sui 生态的发展，最后还推荐了 Sui 生态值得关注的 KOL，希望对读者了解 Sui 生态有帮助。",
+          "link": "https://www.web3sj.com/project/124238/",
+          "publishedOn": "2024-10-09T11:38:18.000Z",
+          "wordCount": 1332,
+          "title": "除了Meme，Sui生态还有哪些项目值得关注？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728473725836.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=124229",
+          "author": "Gao",
+          "description": "任何一个撸毛党都不会满足于猪脚饭式空投，但也并不至于反目成仇，真正难以接受的则是「你说你是我的甜心糖，但你背着我做起了老鼠仓；你说你是背景深厚的高富帅，但你只想骗我去缅甸；你的预期不兑现，你还说我是大混蛋」。",
+          "link": "https://www.web3sj.com/news/124229/",
+          "publishedOn": "2024-10-09T11:27:04.000Z",
+          "wordCount": 932,
+          "title": "如何做好空投预期管理：项目方「大格局」的正确展开姿势",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728473193257.png"
+        },
+        {
           "id": "https://www.web3sj.com/?p=124226",
           "author": "Gao",
           "description": "数据：MicroStrategy 股价今年上涨 185%，MARA 过去 12 个月上涨 107%.若比特币突破6.4万美元，主流CEX累计空单清算强度将达4.01亿。谷歌搜索已集成 ENS，用户可搜索 .eth 域名并查看余额。",
           "link": "https://www.web3sj.com/news/124226/",
           "publishedOn": "2024-10-09T10:26:16.000Z",
-          "wordCount": 927,
+          "wordCount": 952,
           "title": "Web3世界日报（2024-10.9）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024100910213916.jpg"
         },
@@ -21,7 +71,7 @@
           "description": "3AC 代币的发行颇具吸引力。3AC 团队将私募销售的收入大致分成两半。他们将 317 ETH（85 万美元）分配用于 Uniswap V2 的流动性，并锁定一年期。剩余的 336 ETH（88 万美元）分散在八个钱包中，这些钱包属于抢先购买 $3AC 上市的团队。",
           "link": "https://www.web3sj.com/news/124211/",
           "publishedOn": "2024-10-09T04:07:57.000Z",
-          "wordCount": 891,
+          "wordCount": 862,
           "title": "三箭资本归来设立Meme基金，但8成供应量都集中在内部人士手中",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728446843142.png"
         },
@@ -31,7 +81,7 @@
           "description": "传统金融市场的波动性持续上升，这主要受到技术进步和多种市场因素的推动。机构投资者的大规模交易，特别是大宗交易和高频交易 (HFT) 技术的演变，是这种波动性的主要原因。",
           "link": "https://www.web3sj.com/definews/124199/",
           "publishedOn": "2024-10-09T04:04:29.000Z",
-          "wordCount": 982,
+          "wordCount": 920,
           "title": "DeFi新前沿：链上暗池崛起，隐私、效率与去中心化的融合",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728446601064.png"
         },
@@ -41,7 +91,7 @@
           "description": "上映的一部 HBO 纪录片再次引发了人们对 Len Sassaman 是比特币创造者的猜测。我认识 Len。这个理论很有道理。 周二上映的一部 HBO 纪录片重新引发了人们对我已故…",
           "link": "https://www.web3sj.com/news/124181/",
           "publishedOn": "2024-10-09T02:50:30.000Z",
-          "wordCount": 875,
+          "wordCount": 852,
           "title": "本周将揭晓币圈最大谜底？「中本聪」到底是谁？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728376121727427.png"
         },
@@ -51,59 +101,9 @@
           "description": "Anoma 和 Namada 的共同创始人克里斯托弗·戈斯表示，今天盛行的代币分配模式从根本上是有缺陷的。 当前加密货币领域主导的代币分配模型是所谓的“低流动性、高完全稀释估值”（…",
           "link": "https://www.web3sj.com/news/124178/",
           "publishedOn": "2024-10-09T02:47:07.000Z",
-          "wordCount": 788,
+          "wordCount": 773,
           "title": "“归属”谬误：加密代币锁定机制如何误导投资者？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728418848899782.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124162",
-          "author": "Merlin",
-          "description": "1. 引言 为什么选择 BTC-LST？  随着 Babylon 的诞生，它通过提供一种称为时间戳的安全服务，为 BTC 增加了额外的收益。这种再质押服务通过提高攻击成本…",
-          "link": "https://www.web3sj.com/project/124162/",
-          "publishedOn": "2024-10-09T02:43:59.000Z",
-          "wordCount": 1650,
-          "title": "从 WBTC 到 ETH 上的 BTC-LST：BTC-LST 生态系统的早期探索",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/842-1728387561624.jpeg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124157",
-          "author": "Gao",
-          "description": "Cetus属于Sui的龙头项目，值得长期关注，如果Sui热度不减，Cetus的潜力将非常之高。当然这个项目的缺陷在于创新。",
-          "link": "https://www.web3sj.com/show/124157/",
-          "publishedOn": "2024-10-08T11:02:02.000Z",
-          "wordCount": 747,
-          "title": "【老高说币】Sui龙头DEX—Cetus分析思路 | Aptos&Sui 链必用Swap",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1728385292454.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124142",
-          "author": "Gao",
-          "description": "本文梳理了 Sui 生态 12 个 Meme 项目，其中，部分 Meme 被 Mysten Labs 联合创始人 Adeniyi Abiodun 关注和推特提及。入场前请务必做好研究，DYOR。",
-          "link": "https://www.web3sj.com/news/124142/",
-          "publishedOn": "2024-10-08T10:55:48.000Z",
-          "wordCount": 1219,
-          "title": "盘点Sui生态12个热门Meme",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024100810535571.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124133",
-          "author": "Gao",
-          "description": "好吧，让我们说清楚一件事——我不是来宣扬像某种数字隐士一样全天候持有的。这是通往精疲力竭城市的单程票，而那里的唯一居民就是你。",
-          "link": "https://www.web3sj.com/news/124133/",
-          "publishedOn": "2024-10-08T10:50:04.000Z",
-          "wordCount": 978,
-          "title": "掌握加密市场，在锁定利润和放松心情之间找到最佳平衡点",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024100810495795.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124130",
-          "author": "Gao",
-          "description": "但是，与具有预先确定路线的越野驾驶不同，通过 BGP 路由的数据包没有已知的路由！唯一已知的是目的 IP，而「下一跳」是在「当前跳」处动态确定的。基本上，BGP 路由就像越野行驶一样，导航到第一个休息站，然后向该休息站询问前往下一个休息站的方向。",
-          "link": "https://www.web3sj.com/news/124130/",
-          "publishedOn": "2024-10-08T10:44:52.000Z",
-          "wordCount": 857,
-          "title": "押注SCION，Sui如何在性能上更进一步？",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024100810443382.jpg"
         }
       ]
     },
