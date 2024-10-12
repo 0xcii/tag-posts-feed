@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2024-10-12T10:16:07.041Z</id>
+    <id>urn:2024-10-12T11:14:05.353Z</id>
     <title>web3::cave</title>
-    <updated>2024-10-12T10:16:07.041Z</updated>
+    <updated>2024-10-12T11:14:05.353Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[DETH巨鲸被盗，社区最关心的是脱锚后能抄底吗]]></title>
+        <id>https://www.web3sj.com/?p=124445</id>
+        <link href="https://www.web3sj.com/news/124445/"/>
+        <updated>2024-10-12T10:56:33.000Z</updated>
+        <summary type="html"><![CDATA[安全平台 Scam Sniffer 在 X 平台发文，有人在签署「permit」网络钓鱼签名后损失了 15, 079 fwDETH，价值约为 3500 万美元。随后黑客将被盗资金在市场上抛售，通过 swap 交易将 DETH 换成 ETH。由于 DETH 池子深度不够， 14, 079 枚 DETH 仅仅换回了 2, 288 ETH，但依旧导致 DETH 脱锚。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web3世界日报（2024-10.12）]]></title>
+        <id>https://www.web3sj.com/?p=124442</id>
+        <link href="https://www.web3sj.com/news/124442/"/>
+        <updated>2024-10-12T10:47:02.000Z</updated>
+        <summary type="html"><![CDATA[Arbitrum 社区成员质疑“游戏催化计划”进展，发起提案要求返还 2.2 亿枚 ARB 至 DAO 国库。以太坊现货ETF昨日总净流出9.71万美元，ETF净资产比率达2.28%。比特币波动指数昨日升至56.16，单日涨幅1.79%。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Mt. Gox 将还款计划截止日期推迟至 2025 年 10 月]]></title>
         <id>https://tokeninsight.com/zh/news/mt.-gox-pushes-repayment-plan-deadline-to-october-2025?utm_source=public&amp;utm_medium=rss</id>
@@ -123,36 +143,6 @@
         <summary type="html"><![CDATA[优秀的内容营销就是简单地让人们感到愉悦。用简单易懂的语言进行教育是针对普通用户的最佳营销方式之一。为合适的受众撰写内容（例如开发者与用户）]]></summary>
         <author>
             <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何看待Uniswap即将推出DeFi专用L2？]]></title>
-        <id>https://www.web3sj.com/?p=124354</id>
-        <link href="https://www.web3sj.com/definews/124354/"/>
-        <updated>2024-10-11T04:35:38.000Z</updated>
-        <summary type="html"><![CDATA[dYdX 基于 Cosmos IBC 架构做了独立链和 MakerDAO 意欲亲近 Solana 做独立链，性质类似，都碍于以太坊本链的性能 Bottleneck。以太坊的 Gas Limit 上限决定了一个区块仅可处理千余笔交易，而 layer2 链性能即使做了链下扩展，也受限于主网的 Rollup 合约处理能力，因此 dYdX 和 MakerDAO 最终都选择独立共识链。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[以太坊现货 ETF 表现遇冷的四大原因]]></title>
-        <id>https://www.web3sj.com/?p=124352</id>
-        <link href="https://www.web3sj.com/project/124352/"/>
-        <updated>2024-10-11T04:25:11.000Z</updated>
-        <summary type="html"><![CDATA[对于许多投资者来说，现货以太坊（ETH）交易所交易基金（ETF）的表现令人失望。 尽管现货比特币 ETF 在 10 个月内处理了近 190 亿美元的资金流入，但 7 月份开始交易的…]]></summary>
-        <author>
-            <name>Merlin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cardano在阿根廷托管首个具有法律约束力的智能合约]]></title>
-        <id>https://tokeninsight.com/zh/news/cardano-hosts-first-smart-contract-legally-enforceable-in-argentina?utm_source=public&amp;utm_medium=rss</id>
-        <link href="https://tokeninsight.com/zh/news/cardano-hosts-first-smart-contract-legally-enforceable-in-argentina?utm_source=public&amp;utm_medium=rss"/>
-        <updated>2024-10-10T13:38:35.000Z</updated>
-        <summary type="html"><![CDATA[Cardano在阿根廷托管首个具有法律约束力的智能合约]]></summary>
-        <author>
-            <name>TokenInsight 新闻</name>
         </author>
     </entry>
 </feed>
