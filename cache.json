@@ -6,12 +6,22 @@
       "siteUrl": "https://www.web3sj.com",
       "articles": [
         {
+          "id": "https://www.web3sj.com/?p=125082",
+          "author": "Gao",
+          "description": "第144次以太坊ACDC会议：开发人员同意在Pectra中加入EIP-7742变更。Worldcoin 更名为 World Network，并宣布 World Chain 已上线主网。Matrixport：比特币年底达到 70000 美元目标或过于保守。",
+          "link": "https://www.web3sj.com/news/125082/",
+          "publishedOn": "2024-10-18T10:06:16.000Z",
+          "wordCount": 1018,
+          "title": "Web3世界日报（2024-10.18）",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024101810043546.jpg"
+        },
+        {
           "id": "https://www.web3sj.com/?p=125069",
           "author": "Gao",
           "description": "layer2 协议从 2015 年的状态通道到 2017 年的 Plasma，最终发展到 2019 年 Rollup，Rollup 发展成为主流是以太坊生态不断演变的结果，以至于原定的 Sharding 分片计划也发生了改变。",
           "link": "https://www.web3sj.com/news/125069/",
           "publishedOn": "2024-10-18T02:08:28.000Z",
-          "wordCount": 1007,
+          "wordCount": 980,
           "title": "Vitalik摇旗收缩Rollup边界，对以太坊意味着什么？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729217133235.png"
         },
@@ -21,7 +31,7 @@
           "description": "目录 要点 DePin 区块链网络在一些方面表现出色，但也许最重要的是解锁了无需信任的协作。在早期，人们对这种能力可以解锁的各种可能性感到兴奋。当时最令人兴奋的想法是将资源整合到网…",
           "link": "https://www.web3sj.com/depinnews/125052/",
           "publishedOn": "2024-10-18T01:29:04.000Z",
-          "wordCount": 835,
+          "wordCount": 854,
           "title": "从Helium到Blockcast：DePin网络的挑战与机遇",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/Depin.jpg"
         },
@@ -31,7 +41,7 @@
           "description": "10 月比特币价格以下跌走势打开，最低跌至 59000 美元附近。但近日，比特币价格出现了良好反弹，昨日高点涨至 68422 美元…",
           "link": "https://www.web3sj.com/project/125049/",
           "publishedOn": "2024-10-18T01:14:52.000Z",
-          "wordCount": 1387,
+          "wordCount": 1376,
           "title": "大盘吸血，Bankless 预测 10 大山寨币走势",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/842-1729157681807.jpeg"
         },
@@ -41,7 +51,7 @@
           "description": "MicroStrategy 的「躺赚」模式也吸引了更多的效仿者。日本上市公司 Metaplanet 自 4 月开启比特币投资战略至今，股价已上涨 480%。近日德国上市公司 Samara Asset Group 也将发行 3000 万欧元债券，部分用于购买比特币。",
           "link": "https://www.web3sj.com/news/125043/",
           "publishedOn": "2024-10-17T15:13:30.000Z",
-          "wordCount": 1160,
+          "wordCount": 1148,
           "title": "克隆版「MicroStrategy」批量入场，BTC「躺赢策略」被证实了吗？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729177983504.png"
         },
@@ -51,7 +61,7 @@
           "description": "本周山寨期权都有惊人涨幅，BCH跟DOG看涨期权都出现最高百倍上涨，比MEME还要夸张。其余山寨币期权看涨端均有10倍左右涨幅。从数据来看，加密市场可能已经开启牛初阶段，但每次的宏观经济数据仍为重要，预示着后续降息的频率。",
           "link": "https://www.web3sj.com/transaction/125028/",
           "publishedOn": "2024-10-17T12:36:06.000Z",
-          "wordCount": 872,
+          "wordCount": 871,
           "title": "Coincall山寨币期权一周播报（10.13~10.17）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/04/2024042505344022.jpg"
         },
@@ -61,7 +71,7 @@
           "description": "活跃度的激增主要归功于 Solana，约有 1 亿个活跃地址。其次是 NEAR（3100 万个活跃地址）、Coinbase 的二层网络 Base（2200 万）、Tron（1400 万）和比特币（1100 万）。以太坊虚拟机（EVM）链中，Base 之后是最活跃的链是币安的 BNB Chain（1000 万），其次是以太坊（600 万）。",
           "link": "https://www.web3sj.com/news/124918/",
           "publishedOn": "2024-10-17T11:03:38.000Z",
-          "wordCount": 1333,
+          "wordCount": 1338,
           "title": "a16z报告：加密货币持有者约6.17亿，活跃地址数与使用率创历史新高",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729163806874.png"
         },
@@ -71,7 +81,7 @@
           "description": "这个小故事可以视为 ETH 上 Approve 授权的具象化。在这个过程中，授权只能由杰克马（资产所有人）打电话告知银行进行授权（上链），并由银行（Token 合约）管理这些授权，之后我（被授权方）才能从银行转走不高于授权金额钱。假如银行没有查到授权记录的话，我的提款申请毫无疑问会被拒绝。",
           "link": "https://www.web3sj.com/news/124912/",
           "publishedOn": "2024-10-17T10:58:22.000Z",
-          "wordCount": 949,
+          "wordCount": 948,
           "title": "从解药到毒药：Permit为何变成风险之源？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729162672474.png"
         },
@@ -81,7 +91,7 @@
           "description": "一个季度过去了，Aptos 链上的 DeFi 总锁仓价值（TVL）经历了极速的增长，同时新推出了多个潜力协议。目前 Sui 热度高居不下，掩盖了其它公链的光芒，但同为 Move 双子星之一的 Aptos 近期币价、生态都动作频频，值得更多的关注。在目前 Aptos 生态蓝海、竞争较小的阶段埋伏，或许会有意料之外的收获。",
           "link": "https://www.web3sj.com/news/124900/",
           "publishedOn": "2024-10-17T10:30:22.000Z",
-          "wordCount": 1005,
+          "wordCount": 999,
           "title": "淘金手册｜Aptos上不容错过的空投+高收益机会",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729161006677.png"
         },
@@ -91,19 +101,9 @@
           "description": "2020 年 9 月 17 日，UNISWAP 进行了最低 400 代币的空投，这笔空投最高价值 16,000 美元，而申领的规则仅仅是使用过该协议。对用户来说，一次成功的空投会被叫做「X 总」，反之则是「被反撸的 X 某」；",
           "link": "https://www.web3sj.com/news/124886/",
           "publishedOn": "2024-10-17T10:27:24.000Z",
-          "wordCount": 1661,
+          "wordCount": 1652,
           "title": "都202X年了，这空投还能撸吗？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729160824403.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=124883",
-          "author": "Gao",
-          "description": "Galaxy Digital：加密行业 Q3 投资额为 24 亿美元，较上季度下降 20%。a16z crypto报告：全球加密货币持有者数量约6.17亿，加密货币活跃地址数和使用率创历史新高。调查报告：94%的亚洲私人财富已投资或考虑投资加密货币。",
-          "link": "https://www.web3sj.com/news/124883/",
-          "publishedOn": "2024-10-17T10:16:30.000Z",
-          "wordCount": 991,
-          "title": "Web3世界日报（2024-10.17）",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024101710145445.jpg"
         }
       ]
     },
