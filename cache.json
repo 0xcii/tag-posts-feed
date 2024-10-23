@@ -1,23 +1,47 @@
 {
   "sources": [
     {
-      "title": "最新 - Odaily星球日报",
-      "feedUrl": "https://rsshub.app/odaily",
-      "siteUrl": "https://www.odaily.news",
-      "articles": []
-    },
-    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
       "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=125454",
+          "author": "Gao",
+          "description": "10 月 18 日，美国证券交易委员会批准了纽约证券交易所 (NYSE) 和芝加哥期权交易所 (CBOE) 的申请，这将使 11 家获批的比特币 ETF 提供商可以进行期权交易。目…",
+          "link": "https://www.web3sj.com/transaction/125454/",
+          "publishedOn": "2024-10-23T03:04:36.000Z",
+          "wordCount": 939,
+          "title": "比特币ETF期权获批，比特币将迎来爆发式上涨？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729652641263.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=125441",
+          "author": "Gao",
+          "description": "这个涨得连老 meme 玩家都傻眼的新代币，竟「意外」地将 AI 和 meme 两条赛道结合到了一起，创造了一个更性感、更具想象空间的 AI meme 赛道。AI 自主发币，这个在过去没人尝试的叙事在数千万市值的衬托下显得如此自洽且 Native。",
+          "link": "https://www.web3sj.com/news/125441/",
+          "publishedOn": "2024-10-23T02:56:45.000Z",
+          "wordCount": 1168,
+          "title": "GOAT爆火背后，AI Meme的炒作预期和隐忧",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729652174907.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=125436",
+          "author": "Gao",
+          "description": "ZEROBASE 是实时 ZK 证明网络，提供隐私并可访问去中心化计算基础设施。它由 Salus 推出，Salus 是以研究分析漏洞与安全审计的 Web3 安全公司。三个月前，该公司印零知识方面的漏洞分析与安全审计，获得由以太坊、Aztec、Polygon、Scroll、Taikoxyz 与 ZKsync 联合发放的资助 Grant。",
+          "link": "https://www.web3sj.com/news/125436/",
+          "publishedOn": "2024-10-23T02:51:45.000Z",
+          "wordCount": 902,
+          "title": "Binance Labs参投，一文速览ZK实时证明网络ZEROBASE",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729651862129.png"
+        },
         {
           "id": "https://www.web3sj.com/?p=125411",
           "author": "Gao",
           "description": "近一个月的加密市场，随着比特币突破 69000 美金，VC 价值币彻底打了个翻身仗。各大项目的更新频频，像是握着底牌准备摊开，结果市场一看——好家伙，涨得比预期还猛！从 World…",
           "link": "https://www.web3sj.com/news/125411/",
           "publishedOn": "2024-10-22T14:29:13.000Z",
-          "wordCount": 1420,
+          "wordCount": 1407,
           "title": "VC币与Meme币的博弈：八大价值币的崛起是否预示市场新转机？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729607246048.png"
         },
@@ -27,7 +51,7 @@
           "description": "作为一个基于以太坊的 SVM（Solana Virtual Machine）L2 项目，Eclipse 利用 Celestia 的数据可用性和可验证性，以及 RISC ZERO 的 ZK 欺诈证明技术，将以太坊和 Solana 打通，不仅结合了 SVM 的高性能和可扩展性，还保留了以太坊的安全属性。此外，Eclipse 接受 ETH 作 Gas 支付方式，这有助于其轻松获得流动性和以太坊的网络效应。",
           "link": "https://www.web3sj.com/news/125406/",
           "publishedOn": "2024-10-22T11:32:06.000Z",
-          "wordCount": 1339,
+          "wordCount": 1330,
           "title": "淘金手册 ｜Eclipse 生态前瞻与空投指南",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729596668693.png"
         },
@@ -37,7 +61,7 @@
           "description": "Dune 数据显示，截至发文约有 9 亿枚 DAI 已完成向 USDS 的迁移，仅占当前 DAI 总供应量（58 亿枚）的约 15.5% ；约有 91880 枚 MKR 已完成向 SKY 的迁移，仅占当前 MKR 流通供应量（868478 枚）的 10.6% 。",
           "link": "https://www.web3sj.com/definews/125400/",
           "publishedOn": "2024-10-22T11:21:58.000Z",
-          "wordCount": 1001,
+          "wordCount": 992,
           "title": "品牌重塑引发「混乱」，Maker创始人想把名字改回来了……",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729595993955.png"
         },
@@ -47,7 +71,7 @@
           "description": "作者将世界框架设定为 EVM 与非 EVM 之间的对立，形成了一种将不选择在 EVM 内开发的生态系统和开发者视为「他者」的二元对立。例如，关于活跃地址的可视化展示令人误解。Solana 每月活跃地址达到 1 亿，超过 base 的 2200 万，然而图表却将这两者几乎等同。",
           "link": "https://www.web3sj.com/news/125391/",
           "publishedOn": "2024-10-22T11:14:15.000Z",
-          "wordCount": 983,
+          "wordCount": 987,
           "title": "「a16z对EVM有偏见」，Solana基金会主席怎么看a16z的加密行业报告？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729595599866.png"
         },
@@ -57,7 +81,7 @@
           "description": "Pectra 升级作为以太坊历史上可能涉及最多 Ethereum Improvement Proposals（EIP）的一次硬分叉，不仅包含了一系列针对验证者操作和主网性能提升的提案，还引入了优化 L2 的提案。Pectra Devnet 4 测试网刚上线，目前已经有 8 个 EIP 确定包含在 Pectra 升级中。",
           "link": "https://www.web3sj.com/news/125387/",
           "publishedOn": "2024-10-22T10:22:29.000Z",
-          "wordCount": 985,
+          "wordCount": 989,
           "title": "Pectra升级已确定纳入哪些EIP？是否会加剧ETH通胀？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729592527794.png"
         },
@@ -67,7 +91,7 @@
           "description": "A16z Crypto 近期发布的 State of Crypto Report 2024，已经明确表示稳定币已经成为 Web3 领域最明显的「杀手级应用」之一。得益于智能手机的普及和区块链技术的落地——稳定币可能成为人类有史以来最伟大的金融赋权运动。",
           "link": "https://www.web3sj.com/news/125380/",
           "publishedOn": "2024-10-22T10:20:30.000Z",
-          "wordCount": 1215,
+          "wordCount": 1207,
           "title": "业内最大并购，Stripe 11亿美元收购Bridge的底层逻辑",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729592381373.png"
         },
@@ -77,39 +101,9 @@
           "description": "Avalanche 基金会宣布推出 Avalanche Card，可消费 AVAX 等代币。Solana TVL升至64.68亿美元，创2022年1月以来最高水平。美国比特币现货ETF累计净流入突破213亿美元，续创历史新高。",
           "link": "https://www.web3sj.com/news/125377/",
           "publishedOn": "2024-10-22T10:09:46.000Z",
-          "wordCount": 952,
+          "wordCount": 969,
           "title": "Web3世界日报（2024-10.22）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/2024102210074797.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=125363",
-          "author": "Gao",
-          "description": "在 2024 年推出的 525 只 ETF 中，13 只属于前 25 名，与比特币或以太坊相关。如果算上 MSTR 选项策略 ETF，总共有 14 只。前四只 ETF 都是现货比特币。七只与加密相关的 ETF 中，有五只是。我将这幅杰作称为「没有（市场）需求」。",
-          "link": "https://www.web3sj.com/news/125363/",
-          "publishedOn": "2024-10-22T03:22:03.000Z",
-          "wordCount": 860,
-          "title": "Bitwise Invest CEO：为什么以太坊ETF的表现不如比特币ETF？",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729567295274.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=125352",
-          "author": "Gao",
-          "description": "「Facebook 拥有三十亿月活跃用户」是一个有用的信息，它告诉我们一些关于这个社交网络的情况。由于垃圾邮件发送者没有足够的盈利机会来泛滥 Facebook，活跃地址是评估该平台对消费者真正价值的一个不错方法。",
-          "link": "https://www.web3sj.com/news/125352/",
-          "publishedOn": "2024-10-22T03:19:40.000Z",
-          "wordCount": 955,
-          "title": "去伪存真，别再用「每日活跃地址」指标误导你的投研判断",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729567122784.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=125349",
-          "author": "Gao",
-          "description": "Aptos  的比特币生态战略目前是「两条腿走」。一条腿是与老牌比特币 Layer2 Stacks 的合作,借助其成熟的技术和用户基础快速切入;另一条腿则是与新秀 B² Network 展开深度合作,获取新范式比特币 L2 的成长性红利。而今天我们要聚焦的主角 Echo Protocol 正是 AptosBitcoin 这场大棋局中的一颗重要棋子。",
-          "link": "https://www.web3sj.com/news/125349/",
-          "publishedOn": "2024-10-22T03:14:40.000Z",
-          "wordCount": 931,
-          "title": "Arthur Hayes的新赌注：Echo能否成为连接Aptos和比特币的关键纽带?",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/10/1729566845906.png"
         }
       ]
     },
