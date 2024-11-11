@@ -1,23 +1,37 @@
 {
   "sources": [
     {
-      "title": "最新 - Odaily星球日报",
-      "feedUrl": "https://rsshub.app/odaily",
-      "siteUrl": "https://www.odaily.news",
-      "articles": []
-    },
-    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
       "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=126926",
+          "author": "Merlin",
+          "description": "前言 Aptos从首次空投到现在已经过去了两年时间，毕竟上一轮空投，随便在测试网mint 一个NFT，就能够获得上千美金的空投，随着aptos生态越来越完善，搞事情越来越频繁，二期…",
+          "link": "https://www.web3sj.com/definews/126926/",
+          "publishedOn": "2024-11-11T01:55:31.000Z",
+          "wordCount": 975,
+          "title": "掘金时刻！Aptos二期空投启动信号与策略全面分析",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731235301212643.jpg"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=126923",
+          "author": "Merlin",
+          "description": "知情人士向媒体透露，Kramer Levin Naftalis & Frankel 律所合伙人 Richard Farley，以及 Kirkland & Ellis…",
+          "link": "https://www.web3sj.com/news/126923/",
+          "publishedOn": "2024-11-11T01:52:46.000Z",
+          "wordCount": 883,
+          "title": "美国 SEC 主席 Gensler 下台倒计时！报道称新掌门人选或为律所合伙人",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/25719-1731120685961.jpg"
+        },
         {
           "id": "https://www.web3sj.com/?p=126918",
           "author": "Gao",
           "description": "在 MicroStrategy 于 10 月 30 日举行的最近一次收益会议上，公司高管公布了他们的「21/21 计划」，这是一项战略举措，旨在以 50/50 的比例筹集 42B 美元的资本（相当于分析时 MSTR 市值的 80%）。计划中的股票销售和债券发行组合成为美国股市历史上规模最大的二次股票发行。",
           "link": "https://www.web3sj.com/news/126918/",
           "publishedOn": "2024-11-10T13:59:16.000Z",
-          "wordCount": 992,
+          "wordCount": 986,
           "title": "解密MicroStrategy的无限印钞术",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731247043069.png"
         },
@@ -27,7 +41,7 @@
           "description": "市场总是在预测谁将执掌华盛顿大权。但如果要评估美国总统的身价，没有比看看特朗普的个人财富更加清晰的方法了。彭博亿万富翁指数估计，特朗普的个人财富约为 67 亿美元。",
           "link": "https://www.web3sj.com/news/126909/",
           "publishedOn": "2024-11-10T13:53:45.000Z",
-          "wordCount": 983,
+          "wordCount": 1010,
           "title": "重返白宫，特朗普的身价会涨多少？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/5-1731047107383.webp"
         },
@@ -37,7 +51,7 @@
           "description": "从比特币诞生至今，加密行业已走过了十余个年头，这期间不断有创业者入狱，其中不乏一些红极一时的「大佬」。",
           "link": "https://www.web3sj.com/news/126902/",
           "publishedOn": "2024-11-10T13:50:12.000Z",
-          "wordCount": 869,
+          "wordCount": 866,
           "title": "赵长鹏等比特币大佬的「入狱风险」为何居高不下？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/62ec4de122883a90dfad84ca0738883b.png"
         },
@@ -47,7 +61,7 @@
           "description": "Multisynq属于Depin赛道的新项目，24年才成立，目前融资220W美金，并不算多。今天才发布注册任务，因为比较简单，所以建议可以注册一个埋伏，等待后续任务。早期融资不多没关系，Grass最早也只有250W融资。",
           "link": "https://www.web3sj.com/show/126899/",
           "publishedOn": "2024-11-10T13:44:16.000Z",
-          "wordCount": 735,
+          "wordCount": 746,
           "title": "【0撸空投】去中心化低延迟同步网络 Multisynq 注册教程 | Depin 早期项目目前融资220W",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/2024111013432036.jpg"
         },
@@ -57,7 +71,7 @@
           "description": "1confirmation：迄今为止最大的投资项目是Polymarket。Solana 联创：Solana 战略重点包括构建强大 L1 链以及实现同步可组合性。The ETF Store总裁：特朗普胜选后现货比特币ETF资金流入已达23亿美元。",
           "link": "https://www.web3sj.com/news/126895/",
           "publishedOn": "2024-11-10T11:29:00.000Z",
-          "wordCount": 880,
+          "wordCount": 924,
           "title": "Web3世界日报（2024-11.10）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/2024111011201384.jpg"
         },
@@ -67,7 +81,7 @@
           "description": "那对于 TON 来说，这一次行业瞩目的大选事件中，对 TON 最有利的是什么？在川普对于加密货币的十大承诺中我们可以找到一些答案，在承诺中，我们看到，不仅对比特币有措施，更多的举措将代表美元经济体未来对于加密货币行业的「解封」，对于久在迷雾中的 Telegram 和 TON，这将是一剂猛药。",
           "link": "https://www.web3sj.com/project/126879/",
           "publishedOn": "2024-11-09T12:46:26.000Z",
-          "wordCount": 1361,
+          "wordCount": 1351,
           "title": "「川普承诺」愿景下，TON的增长还有希望吗？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731156350854.png"
         },
@@ -77,7 +91,7 @@
           "description": "文章还指出，Coinbase 的支持和 Base 链的扩展将推动 Aerodrome 进一步增长，预计 TVL 将达到 40 亿美元，月度交易量将达到 500 亿美元。整体看好 Aerodrome 成为 DeFi 生态中关键的基础设施。",
           "link": "https://www.web3sj.com/definews/126861/",
           "publishedOn": "2024-11-09T12:42:55.000Z",
-          "wordCount": 1415,
+          "wordCount": 1443,
           "title": "DeFi复兴潮，为什么看好Base龙头DEX Aerodrome？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731156146336.png"
         },
@@ -87,29 +101,9 @@
           "description": "在市场传统认知中，与 Trump 关联最深的 Trump meme 币会随着 Trump 当选的消息应声大涨，但有趣的是，在 Trump 当选 Web3 狂欢的 11 月 6 日，只要不涨就会出现在主流交易所的跌幅榜的时候，Trump 系列的 meme 币在当选当天没有产生突出的表现，反而出现了「腰斩」的情况。",
           "link": "https://www.web3sj.com/news/126851/",
           "publishedOn": "2024-11-09T12:35:26.000Z",
-          "wordCount": 1022,
+          "wordCount": 1028,
           "title": "特朗普赢了，MAGA币却输了",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731155705615.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=126847",
-          "author": "Gao",
-          "description": "7 月，Base 这个「数字美国西部」，迎来了一个大玩家：SynFutures。截至今天，SynFutures 已在 Base 积累了 260 亿美元的交易量，占到 Base 生态…",
-          "link": "https://www.web3sj.com/news/126847/",
-          "publishedOn": "2024-11-09T12:17:25.000Z",
-          "wordCount": 956,
-          "title": "链上Alpha掘金P1：解读SynFutures的Perp Launchpad",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/1731154610883.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=126843",
-          "author": "Gao",
-          "description": "老高每次要讲行情，心情都十分忐忑，只怕又有人要开喷了，我就复盘一下自己在做现货交易的心得，虽然测试策略的资金很少，但是7月到10月炒山寨的难度大家可想而知。",
-          "link": "https://www.web3sj.com/show/126843/",
-          "publishedOn": "2024-11-09T11:56:31.000Z",
-          "wordCount": 731,
-          "title": "【行情分析】山寨币现货交易也能翻4倍，交易心得分析 | 个人观点，友好交流",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/11/2024110911545648.jpg"
         }
       ]
     },
