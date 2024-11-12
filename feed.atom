@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2024-11-12T05:16:07.730Z</id>
+    <id>urn:2024-11-12T06:23:07.210Z</id>
     <title>web3::cave</title>
-    <updated>2024-11-12T05:16:07.730Z</updated>
+    <updated>2024-11-12T06:23:07.210Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[关于「链抽象」的常见误解]]></title>
+        <id>https://www.web3sj.com/?p=127079</id>
+        <link href="https://www.web3sj.com/news/127079/"/>
+        <updated>2024-11-12T05:34:05.000Z</updated>
+        <summary type="html"><![CDATA[所以交互安全问题的核心还是用户如何决策，而不在于决策后如何执行。目前已经有很多方案去帮助用户思考和决策要不要信任某个 dApp，链抽象方案的风控层是其中之一。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[机构「双 11」抢购BTC，10万美元指日可待？]]></title>
+        <id>https://www.web3sj.com/?p=127072</id>
+        <link href="https://www.web3sj.com/news/127072/"/>
+        <updated>2024-11-12T05:23:54.000Z</updated>
+        <summary type="html"><![CDATA[过往被疯狂 FUD 的以太坊也跟随比特币，实现日线 7 连涨，从底部 2400 美元，逼近 3400 美元，最高冲至 3387 美元。据 8marketcap 数据显示，以太坊市值升至约 4000.7 亿美元，超越宝洁公司（Procter & Gamble），在全球资产市值中排名升至第 32 位。SOL 突破 212 美元后，市值一度超 1000 亿美元。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[解析牛市四阶段：我们正在进入狂喜期]]></title>
+        <id>https://www.web3sj.com/?p=127063</id>
+        <link href="https://www.web3sj.com/transaction/127063/"/>
+        <updated>2024-11-12T05:19:25.000Z</updated>
+        <summary type="html"><![CDATA[一些币种接近历史高点。市场故事回归，但每季度只有少数几个。加密货币领域的每个人都知道我们现在处于牛市。但奇怪的是，你的朋友们仍然没有给你发信息。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[链上费用超以太坊，SOL真的要取代ETH的地位了？]]></title>
+        <id>https://www.web3sj.com/?p=127054</id>
+        <link href="https://www.web3sj.com/project/127054/"/>
+        <updated>2024-11-12T05:16:34.000Z</updated>
+        <summary type="html"><![CDATA[和以太坊类似，Solana 的链上收入也包括基础交易手续费、MEV小费等。以太坊在EIP1599提案之后，将所有的基础 Base 费销毁，MEV 小费则直接奖励给验证节点，Solana 也有类似的销毁机制，将基础手续费按固定比例销毁（初期设定 50%），剩下的分配给验证者。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[为什么是DeFi与AI开启这轮牛市]]></title>
         <id>https://www.web3sj.com/?p=127034</id>
@@ -66,16 +106,6 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Web3世界日报（2024-11.11）]]></title>
-        <id>https://www.web3sj.com/?p=126999</id>
-        <link href="https://www.web3sj.com/news/126999/"/>
-        <updated>2024-11-11T10:32:08.000Z</updated>
-        <summary type="html"><![CDATA[美元流入加密货币市场上周周净流入 62.83 亿美元，自 22 年 1 月以来周流入历史新高。数据：以太坊现货 ETF 上周单周净流入 1.54 亿美金，单周净流入达到历史新高。数据：Solana 上 Meme 币的总市值超 150 亿美元，创历史新高。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[MicroStrategy 的比特币投资组合超过 200 亿美元，投资回报率现已超过 100%]]></title>
         <id>https://tokeninsight.com/zh/news/microstrategy-s-bitcoin-portfolio-surpasses-20b-roi-now-over-100?utm_source=public&amp;utm_medium=rss</id>
         <link href="https://tokeninsight.com/zh/news/microstrategy-s-bitcoin-portfolio-surpasses-20b-roi-now-over-100?utm_source=public&amp;utm_medium=rss"/>
@@ -93,36 +123,6 @@
         <summary type="html"><![CDATA[ENS 实验室推出了自己的 “l2不可知论” 聚合命名链，目标是在 2025 年底推出]]></summary>
         <author>
             <name>TokenInsight 新闻</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[深度揭秘：是谁扼杀了Telegram小游戏的生机？]]></title>
-        <id>https://www.web3sj.com/?p=126972</id>
-        <link href="https://www.web3sj.com/news/126972/"/>
-        <updated>2024-11-11T04:58:43.000Z</updated>
-        <summary type="html"><![CDATA[TON 基金会在扶持策略上过度依赖 Clicker 游戏，虽然短期内带来了用户和数据的激增，但也埋下了生态失衡的种子。当用户的新鲜感消退，Clicker 游戏的同质化和缺乏深度的问题逐渐显现，整个生态开始遭受反噬。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[先睹为快！OpenSea 2.0有啥看点？]]></title>
-        <id>https://www.web3sj.com/?p=126965</id>
-        <link href="https://www.web3sj.com/nftnews/126965/"/>
-        <updated>2024-11-11T04:52:24.000Z</updated>
-        <summary type="html"><![CDATA[关于 OpenSea 是否在复制 Blur 的热议，OpenSea 联合创始人兼 CEO Devin Finzer 明确表示了否定态度。他强调，OpenSea 2.0 的目标是成为每个人的 NFT 之家，无论是收藏家、专业交易员，还是介于这两者之间的用户。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[观点：为什么说币安上币困境是必然的？]]></title>
-        <id>https://www.web3sj.com/?p=126962</id>
-        <link href="https://www.web3sj.com/news/126962/"/>
-        <updated>2024-11-11T04:48:10.000Z</updated>
-        <summary type="html"><![CDATA[这就为什么过去大家总讲“资本会自我繁殖”，因为一切目标终结于：通过商业优势赚更多钱。而且，很多公司甚至不想上市，比如字节跳动，比如华为，因为人家自己赚钱已经足够，不再需要通过再融资扩大商业优势。]]></summary>
-        <author>
-            <name>Gao</name>
         </author>
     </entry>
     <entry>
