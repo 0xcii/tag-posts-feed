@@ -1,23 +1,47 @@
 {
   "sources": [
     {
-      "title": "最新 - Odaily星球日报",
-      "feedUrl": "https://rsshub.app/odaily",
-      "siteUrl": "https://www.odaily.news",
-      "articles": []
-    },
-    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
       "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=130247",
+          "author": "Gao",
+          "description": "灰度（Grayscale）是一家数字资产管理公司，成立于 2013 年，主要提供多种加密资产信托基金，旨在为投资者提供合法、受监管的投资渠道。作为全球最大的加密资产管理公司之一，其管理着数十亿美元的资产。截止目前，灰度已推出 26 支加密信托。",
+          "link": "https://www.web3sj.com/news/130247/",
+          "publishedOn": "2024-12-23T07:08:48.000Z",
+          "wordCount": 849,
+          "title": "ZEN连涨3日，灰度信托持仓能跟着买吗？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734937636866.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130243",
+          "author": "Gao",
+          "description": "就在 IBIT 遭遇同样困境的前一天，同为 ETF 发行商的富达智源 BTC 基金（FBTC）也在 12 月 19 日创下了 2.085 亿美元的历史最高流出量。",
+          "link": "https://www.web3sj.com/news/130243/",
+          "publishedOn": "2024-12-23T06:46:51.000Z",
+          "wordCount": 899,
+          "title": "资金流出破纪录，贝莱德BTC ETF日流出7300万美元",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734936350025.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130235",
+          "author": "Gao",
+          "description": "不到一个月的时间，整个 AI Agent 赛道项目的市值曾达到百亿美金。其中 Virtuals 市值曾达到 30 亿美元，ai16z 、Fartcoin 等市值曾达到 10 亿美元。 不完全统计， AI Agent 相关的超过 1 亿美金的加密货币就有至少 14 个。",
+          "link": "https://www.web3sj.com/ainews/130235/",
+          "publishedOn": "2024-12-23T06:32:43.000Z",
+          "wordCount": 1100,
+          "title": "寻找 AI Agent 龙头的十种方法",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734935400969.png"
+        },
         {
           "id": "https://www.web3sj.com/?p=130228",
           "author": "Gao",
           "description": "尽管已经推出一年多了，但人们对 Ethena 的工作原理仍然存在普遍的误解。许多人声称它是新的 Luna，然后拒绝进一步阐述。作为一个警告过 Luna 的人，我发现这一观点非常片面，但同时我也相信，大多数人对 Ethena 如何运作的细节缺乏足够的了解。",
           "link": "https://www.web3sj.com/definews/130228/",
           "publishedOn": "2024-12-23T06:19:32.000Z",
-          "wordCount": 1211,
+          "wordCount": 1217,
           "title": "Ethena对DeFi来说是系统性风险还是救世主？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734934726804.png"
         },
@@ -27,7 +51,7 @@
           "description": "真的吗？比特币也好，黄金也罢，北上广深的房子也是一样，本质上是什么？是参与财富重新分配的过程。我 1 块钱买的，你 100 万去买，是不是你 10 年的劳动成果就归我了？",
           "link": "https://www.web3sj.com/news/130225/",
           "publishedOn": "2024-12-23T06:09:30.000Z",
-          "wordCount": 795,
+          "wordCount": 802,
           "title": "坚决不买比特币会怎样？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734934038361.png"
         },
@@ -37,7 +61,7 @@
           "description": "在这个充满挑战与机遇的 2024 年，加密货币市场经历了跌宕起伏的发展历程。在年终之际，Chopping Block 节目邀请了四位行业 Dragonfly 管理合伙人 Hasee…",
           "link": "https://www.web3sj.com/news/130222/",
           "publishedOn": "2024-12-23T04:57:11.000Z",
-          "wordCount": 1237,
+          "wordCount": 1226,
           "title": "四位顶级投资人激辩：2024加密货币市场成败得失与2025预测",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734929798666.png"
         },
@@ -47,7 +71,7 @@
           "description": "而存款类项目 TGE 后的财富效应也较为显著，例如近期火热的 Usual 存款为用户带来了约 50% 存款量的收益，此前 Ethena 也为首期用户带来了 70% 的收益率，且几个项目均是在短短几个月的存款周期内便为用户带来了可观的回报，由此，很多存款项目正在吸引越来越多的链上流动性入局押注。",
           "link": "https://www.web3sj.com/news/130212/",
           "publishedOn": "2024-12-23T04:48:33.000Z",
-          "wordCount": 975,
+          "wordCount": 985,
           "title": "淘金手册 | 潜在稳定币存款空投哪家强？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734929284305.png"
         },
@@ -57,7 +81,7 @@
           "description": "Alkimiya 在 Base 上构建了一个这样的金融市场：Base Gas Market（还未正式上线），允许用户通过交易 Base 网络的 Gas 费用波动，间接参与网络经济活动的变化。Alkimiya 是一个可以交易区块空间资源（比如交易费用）的协议，通过将区块链的交易费用等资源转化为可交易的资产，帮助用户对冲费用波动，并提供更多投机机会。",
           "link": "https://www.web3sj.com/news/130193/",
           "publishedOn": "2024-12-22T16:19:49.000Z",
-          "wordCount": 922,
+          "wordCount": 929,
           "title": "如何通过交易Gas费用赚取Base上的wETH？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734884320356.png"
         },
@@ -67,7 +91,7 @@
           "description": "Fartcoin 的诞生和 GOAT 同出一源，都是来自 terminal of truths 这个人工代理模型，在 goat 模型和 opus 的对话过程中，提到马斯克马斯克喜欢放屁的声音，因此这个 AI 模型提议发行一个名为 Fartcoin 的代币，并设计了一系列的推广方式和玩法。",
           "link": "https://www.web3sj.com/news/130182/",
           "publishedOn": "2024-12-22T16:15:56.000Z",
-          "wordCount": 1180,
+          "wordCount": 1199,
           "title": "数解Fartcoin的10亿美元之路：机构早期布局或为推手，冷发酵铸造MEME新王",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734883531259.png"
         },
@@ -77,39 +101,9 @@
           "description": "老高也来讲讲SOON，这个项目目前仅仅有几个测试网的交互，遗憾的是之前测试网的NFT没拿到，后面的测试交互随缘做做吧。",
           "link": "https://www.web3sj.com/show/130179/",
           "publishedOn": "2024-12-22T15:38:03.000Z",
-          "wordCount": 734,
+          "wordCount": 744,
           "title": "【0撸交互】Solana联创支持的L2 SOON交互教程讲解 | 后续大概率要出质押任务",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024122215363291.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130176",
-          "author": "Gao",
-          "description": "Uniswap 前端交易收入突破 1.3 亿美元。Michael Saylor：明年即将生效的会计规则或使 MicroStrategy 满足标普 500 盈利要求。全网比特币合约持仓量跌破600亿美元，距高点已回落11.89%。",
-          "link": "https://www.web3sj.com/news/130176/",
-          "publishedOn": "2024-12-22T11:51:50.000Z",
-          "wordCount": 893,
-          "title": "Web3世界日报（2024-12.22）",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024122211492829.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130154",
-          "author": "Gao",
-          "description": "在此前购入一系列主流币、基建项目代币以及 RWA 代币之后，该项目于 19 日凌晨 2 点左右官宣了与 Ethena Labs 的合作，双方计划将 Ethena 的收益代币 sUSDe 集成至 WLFI 借贷平台。",
-          "link": "https://www.web3sj.com/definews/130154/",
-          "publishedOn": "2024-12-21T14:22:47.000Z",
-          "wordCount": 1363,
-          "title": "揭秘特朗普家族加密项目WLFI「资产包」，特朗普效应的外溢？",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734790892442.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130148",
-          "author": "Gao",
-          "description": "DeFi 质押涉及将加密货币资产锁定在智能合约中，以支持区块链网络的运营，特别是那些采用权益证明（PoS）共识机制的网络。在 PoS 网络中，验证者根据他们质押的加密货币数量来确认交易，并创建新的区块。质押通常需要部署一个完整节点并满足网络的最低质押要求，从而使参与者能够验证交易，并参与网络共识以获得奖励。",
-          "link": "https://www.web3sj.com/definews/130148/",
-          "publishedOn": "2024-12-21T14:13:16.000Z",
-          "wordCount": 1489,
-          "title": "一文盘点2025年七大DeFi质押平台：如何最大化DeFi质押收益？",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1734790368250.png"
         }
       ]
     },
