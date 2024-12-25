@@ -1,17 +1,73 @@
 {
   "sources": [
     {
+      "title": "深潮TechFlow",
+      "feedUrl": "https://rsshub.app/techflowpost",
+      "siteUrl": "https://www.techflowpost.com",
+      "articles": []
+    },
+    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
       "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=130433",
+          "author": "Gao",
+          "description": "2024 年机构对主战场在申请和运营比特币 /ETH 现货 ETF 以及推动 RWA( 美债代币化为主 ) 业务。而 Paypal 推出稳定币 PYUSD，Stripe 收购稳定币公司 Bridge 等等事件，让金融科技、支付和加密货币之间的界限开始模糊。",
+          "link": "https://www.web3sj.com/depinnews/130433/",
+          "publishedOn": "2024-12-25T13:17:48.000Z",
+          "wordCount": 1300,
+          "title": "解读Messari 190页报告：划重点、抓方向、找时机",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735132573564.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130426",
+          "author": "Gao",
+          "description": "Story Protocol 是一个专注于知识产权（IP）管理的 Layer 1 ，致力于通过链上的透明性与可编程性彻底改变传统创意经济的运作方式。它通过引入 Agent TCP/IP 框架，允许多个 AI 代理之间自主交易 IP，包括训练数据、创作风格和投资策略等。",
+          "link": "https://www.web3sj.com/project/130426/",
+          "publishedOn": "2024-12-25T13:09:23.000Z",
+          "wordCount": 1089,
+          "title": "一文读懂总融资1.4亿的Story Protocol及参与方式",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/842-1735118245341.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130423",
+          "author": "Gao",
+          "description": "在开始总结之前，让我们先回顾一下这一年所在的大背景。Polkadot 的旅程始于一份白皮书（2016 年）和 crowd sale 活动（2017 年）。在很大程度上，这决定了随后的发展方向和产品理念。过去的几年里，我们专注于实现白皮书中描绘的产品愿景。",
+          "link": "https://www.web3sj.com/project/130423/",
+          "publishedOn": "2024-12-25T13:05:41.000Z",
+          "wordCount": 1866,
+          "title": "Gavin Wood亲笔：Polkadot 2024年度回顾",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735131879805.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130417",
+          "author": "Gao",
+          "description": "要理解 TradFi，需要先了解被动基金在投资中的发展。简单来说，被动基金是旨在追踪并复制某一特定市场指数或细分市场表现的投资产品，而不是试图超越它们。这类基金遵循特定的规则和方法，针对其目标市场和风险偏好提供服务。",
+          "link": "https://www.web3sj.com/news/130417/",
+          "publishedOn": "2024-12-25T12:40:19.000Z",
+          "wordCount": 932,
+          "title": "传统金融如何在不经意间推高比特币价格？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735130368814.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130413",
+          "author": "Gao",
+          "description": "以太坊 ETF 同样表现不俗。作为全球市值第二大的加密货币，以太坊具有智能合约和去中心化应用的广泛用途，推动其 ETF 迅速受到市场欢迎。比特币和以太坊是大多数投资者进入加密 ETF 市场的起点，但未来会有更多资产进入这片蓝海。",
+          "link": "https://www.web3sj.com/news/130413/",
+          "publishedOn": "2024-12-25T12:33:45.000Z",
+          "wordCount": 909,
+          "title": "揭秘加密ETF未来趋势",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735129974606.png"
+        },
         {
           "id": "https://www.web3sj.com/?p=130410",
           "author": "Gao",
           "description": "比特币现货 ETF 昨日净流出 3.38 亿美元，以太坊现货 ETF 净流入 5354 万美元。MicroStrategy 召开股东大会以筹集更多资金购买比特币。Aave 和 Lido 累计净存款额一度超过 700 亿美元。",
           "link": "https://www.web3sj.com/news/130410/",
           "publishedOn": "2024-12-25T12:22:26.000Z",
-          "wordCount": 1026,
+          "wordCount": 1028,
           "title": "Web3世界日报（2024-12.25）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024122512202987.jpg"
         },
@@ -21,7 +77,7 @@
           "description": "上轮牛市期间，灰度通过场外交易市场、DeFi 基金 DEFG 和 GSCPxE 基金推出了开放了 14 个加密货币信托产品，这些产品在约一年的时间里陆续开放。从产品推出时间来看，灰度在牛市初期便开始推出相关代币基金，且在中后期开始加快布局频率。",
           "link": "https://www.web3sj.com/transaction/130399/",
           "publishedOn": "2024-12-25T06:08:29.000Z",
-          "wordCount": 898,
+          "wordCount": 906,
           "title": "重温上轮牛市「灰度效应」：14个代币回报率超200%，市场周期显著影响",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735106823083.png"
         },
@@ -31,7 +87,7 @@
           "description": "Usual 通过治理代币 $USUAL 让用户拥有更多的所有权和控制权，将 90% 的收益分配给社区，促进公平和去中心化。",
           "link": "https://www.web3sj.com/project/130396/",
           "publishedOn": "2024-12-25T06:03:01.000Z",
-          "wordCount": 869,
+          "wordCount": 908,
           "title": "稳定币的未来：USUAL如何推动去中心化革命",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735106556274.png"
         },
@@ -41,7 +97,7 @@
           "description": "时代的高铁，滋啦啦得破空向前。以太坊转 PoS 共识算法之后，PoS 链已经成为 Web3 Infra 的默认设置。但 PoW 依然有一部分意志坚定的加密原教旨主义信仰者，他们相信加密唯一的应用应该是 Coin/Currency，而不是花样百出的其他 Utility。",
           "link": "https://www.web3sj.com/project/130393/",
           "publishedOn": "2024-12-25T05:58:18.000Z",
-          "wordCount": 982,
+          "wordCount": 983,
           "title": "浅析Alephium：能否成为PoW赛道新Alpha？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735106245124.png"
         },
@@ -51,59 +107,9 @@
           "description": "熊链圣诞任务：https://beratown.dapdap.net/activity/christmas 熊链DC：https://discord.gg/berachain 老高…",
           "link": "https://www.web3sj.com/show/130390/",
           "publishedOn": "2024-12-25T05:55:48.000Z",
-          "wordCount": 719,
+          "wordCount": 726,
           "title": "【0撸空投】1.5亿融资天王熊链圣诞节任务讲解 | 简单刷刷交互体验一下圣诞节撸毛气氛",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024122505552045.jpg"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130382",
-          "author": "Gao",
-          "description": "特朗普政府提议为美国建立战略比特币储备 (SBR)，这引发了很多的争论和猜测。虽然将比特币添加到美国财政部的资产负债表中需要相当大的政治意愿和国会批准，但仅仅提出这一倡议就具有深远的影响。",
-          "link": "https://www.web3sj.com/news/130382/",
-          "publishedOn": "2024-12-25T05:53:49.000Z",
-          "wordCount": 978,
-          "title": "福布斯2025年加密7大预测：更多大国或将布局比特币储备，加密总市值超8万亿美元",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735105984822.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130378",
-          "author": "Gao",
-          "description": "最初，大多数项目都集中于通过去中心化自治组织（DAO）提供研究资金。著名的例子包括 VitaDAO、HairDAO 和 AxonDAO，它们在 DeSci 领域仍然具有影响力。",
-          "link": "https://www.web3sj.com/news/130378/",
-          "publishedOn": "2024-12-25T05:48:24.000Z",
-          "wordCount": 842,
-          "title": "MV Global报告：DeSci有望在2025年借助MEME迎来爆发式增长",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735105679674.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130369",
-          "author": "Gao",
-          "description": "「模因是先行指标，」OnChainMonkey 的创始人 Danny Yang 说道，指的是相对于其他指标的疯狂回报。模因币将投资过程游戏化，投资者蜂拥而至，跟随来自选举结果的无形趋势，或在 UnitedHealthcare CEO 射击嫌疑犯被捕后十分钟内加入最新发行的币。这非常类似于 4Chan 的风格。",
-          "link": "https://www.web3sj.com/news/130369/",
-          "publishedOn": "2024-12-25T05:45:12.000Z",
-          "wordCount": 1052,
-          "title": "模因币的四大用途：规避证券法、政治投机、慈善融资与AI启蒙",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735105487724.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130366",
-          "author": "Gao",
-          "description": "如果没有这种特质，你在加密货币领域基本上无从下手。即使是最简单、最具逻辑关系的数据集（例如 LTC 图表——第一个山寨币，以及所有后续币种遵循的「法典」），对你来说也可能像未解之谜一样复杂。",
-          "link": "https://www.web3sj.com/transaction/130366/",
-          "publishedOn": "2024-12-25T05:40:52.000Z",
-          "wordCount": 883,
-          "title": "为什么知道市场规律也赚不到钱？",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735105214480.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130351",
-          "author": "Gao",
-          "description": "比特币和以太坊ETF的购买量下降了90%。灰度宣布已开放22个加密货币信托产品私募认购。QCP：本周五将有名义价值近200亿美元BTC和ETH期权到期，或出现季度末波动率抛售。",
-          "link": "https://www.web3sj.com/news/130351/",
-          "publishedOn": "2024-12-24T12:44:22.000Z",
-          "wordCount": 927,
-          "title": "Web3世界日报（2024-12.24）",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024122412400550.jpg"
         }
       ]
     },
