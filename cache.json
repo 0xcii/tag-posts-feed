@@ -1,23 +1,37 @@
 {
   "sources": [
     {
-      "title": "最新 - Odaily星球日报",
-      "feedUrl": "https://rsshub.app/odaily",
-      "siteUrl": "https://www.odaily.news",
-      "articles": []
-    },
-    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
       "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=130810",
+          "author": "Gao",
+          "description": "随着 11 月大选落幕，美国人民发出了声音。他们选择了唐纳德·J·特朗普（那个橙色的人）来带领他们（以及那枚橙色的币）迈向未来。我原以为这一天会来得更晚些，但事实摆在眼前。全球最富有的政府已经被加密信仰者渗透了。",
+          "link": "https://www.web3sj.com/news/130810/",
+          "publishedOn": "2024-12-31T05:06:16.000Z",
+          "wordCount": 1182,
+          "title": "总结2024，展望2025，我们只能握预测未来3个月的投资机会",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735621540823.png"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=130805",
+          "author": "Gao",
+          "description": "规定将在公布日起 60 天后正式生效。然而，文件也指出，2025 年至 2026 年期间将作为过渡期，在此期间可能会给予一定程度的宽限，但具体宽松的范围和标准尚不明确。宽限期之后，新规定将从 2027 年开始适用于数字资产的销售，经纪商需要从 2026 年起开始收集并报告数字资产交易所需的数据。",
+          "link": "https://www.web3sj.com/definews/130805/",
+          "publishedOn": "2024-12-31T04:59:13.000Z",
+          "wordCount": 1006,
+          "title": "美国国税局「DeFi 经纪商」最终规则遭加密行业强烈反对，特朗普政府将其撤销可能性有多大？",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735621107431.png"
+        },
         {
           "id": "https://www.web3sj.com/?p=130783",
           "author": "Gao",
           "description": "2023 年的 12 月，Solana NFT 的单月总成交量以约 3.65 亿美元，对以太坊的约 3.63 亿美元完成了一个微弱的超越。回过头看，这是以太坊、Solana 以及比特币（Ordinals）三分 NFT 天下的开始。",
           "link": "https://www.web3sj.com/nftnews/130783/",
           "publishedOn": "2024-12-30T12:02:23.000Z",
-          "wordCount": 1343,
+          "wordCount": 1366,
           "title": "NFT的2024：努力不想离场的图片们",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735560020381.png"
         },
@@ -27,7 +41,7 @@
           "description": "在与美国证券交易委员会（SEC）多年冲突之后，比特币和以太坊交易所交易基金（ETF）终于到来了。据加密货币研究公司 K33 Research 称，截至 12 月 16 日，美国比特币 ETF 持有的资产规模达到 1290 亿美元，超过了黄金 ETF 的 1250 亿美元。",
           "link": "https://www.web3sj.com/news/130780/",
           "publishedOn": "2024-12-30T11:48:22.000Z",
-          "wordCount": 1030,
+          "wordCount": 1024,
           "title": "福布斯：2025年，加密货币将被重新定义",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735559252673.png"
         },
@@ -37,7 +51,7 @@
           "description": "相较于贝莱德等公司推出的 BTC ETF 或者其他的 Spot Bitcoin ETPs，MicroStrategy 的比特币战略 更加激进。它通过公司闲置资金、发行可转债、股份增发等融资方式来购买比特币，公司本身获取比特币上涨的潜在收益，同时承受比特币下跌的潜在风险，而 ETF/ETPs 更侧重于价格的追踪。",
           "link": "https://www.web3sj.com/news/130770/",
           "publishedOn": "2024-12-30T11:39:59.000Z",
-          "wordCount": 1300,
+          "wordCount": 1337,
           "title": "一文读懂MSTR微策略的比特币战略",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735555293319.png"
         },
@@ -47,7 +61,7 @@
           "description": "过去 3 个月 AI Agents 叙事的整体市值上涨了 7000%（受新产品的推动），而 Memecoins 仅上涨 15.19%。",
           "link": "https://www.web3sj.com/news/130764/",
           "publishedOn": "2024-12-30T10:50:39.000Z",
-          "wordCount": 892,
+          "wordCount": 896,
           "title": "观点：AI Agents「接棒」Memecoin进入超级周期",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735555817611.png"
         },
@@ -57,7 +71,7 @@
           "description": "12月DEX交易量突破3200亿美元，创历史新高。10x Research：预计比特币波动性将很快增加。彭博社：交易员正观望 MicroStrategy 是否会继续在周一宣布增持比特币。",
           "link": "https://www.web3sj.com/news/130761/",
           "publishedOn": "2024-12-30T10:34:16.000Z",
-          "wordCount": 1005,
+          "wordCount": 978,
           "title": "Web3世界日报（2024-12.30）",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024123010330096.jpg"
         },
@@ -67,7 +81,7 @@
           "description": "DeSci只能算区块链的新应用场景，至于能不能走的远，只能交给市场了。老高目前对这个项目的长期发展是信心不足，短期可能会被币安高度控盘，后期发展还需要看到底能否跑出优秀的科学项目。",
           "link": "https://www.web3sj.com/show/130744/",
           "publishedOn": "2024-12-30T05:56:27.000Z",
-          "wordCount": 723,
+          "wordCount": 725,
           "title": "【老高说币】币安投资DeSci项目BIO详解，去中心科学到底是个啥？| 仅代表个人观点，理性交流",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/2024123005560521.jpg"
         },
@@ -77,7 +91,7 @@
           "description": "名人效应并非总是灵丹妙药。一些人利用自身影响力为加密项目站台，结果却往往不尽如人意。过去十年，美国证监会（SEC）就曾对十余起名人违规宣传加密货币的事件采取行动，金·卡戴珊和拳王梅威瑟等人都因此受到处罚。更令人唏嘘的是，不少名人也深陷 FTX 交易所的崩盘丑闻，这场风暴几乎摧毁了整个加密行业。",
           "link": "https://www.web3sj.com/news/130741/",
           "publishedOn": "2024-12-30T04:37:22.000Z",
-          "wordCount": 970,
+          "wordCount": 952,
           "title": "2024 名人meme币：一场集体「扑街」秀？",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735533423595.png"
         },
@@ -90,26 +104,6 @@
           "wordCount": 838,
           "title": "眼红Tether的百亿利润，银行业争相发行稳定币",
           "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735533200093.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130720",
-          "author": "Gao",
-          "description": "本文将概述以太坊虚拟机（EVM）的 Gas 费机制、Gas 费优化的相关核心概念，以及开发智能合约时进行 Gas 费优化的最佳实践。希望通过这些内容，能为开发者提供启发和实用帮助，同时也助力普通用户更好地理解 EVM 的 Gas 费用运作方式，共同应对区块链生态中的挑战。",
-          "link": "https://www.web3sj.com/project/130720/",
-          "publishedOn": "2024-12-30T04:31:30.000Z",
-          "wordCount": 1205,
-          "title": "以太坊智能合约的 Gas 优化十大最佳实践",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735533042962.png"
-        },
-        {
-          "id": "https://www.web3sj.com/?p=130697",
-          "author": "Gao",
-          "description": "去银行化并非一个二元的概念。相反，它是一种普遍的尝试，旨在限制对特定行业的金融服务，而不是对该领域的每个参与者采取基于风险评估的处理方式。",
-          "link": "https://www.web3sj.com/news/130697/",
-          "publishedOn": "2024-12-29T12:52:48.000Z",
-          "wordCount": 1004,
-          "title": "去银行化：个人见解",
-          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/12/1735476737638.png"
         }
       ]
     },
