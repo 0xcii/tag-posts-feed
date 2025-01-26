@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2025-01-26T10:15:43.489Z</id>
+    <id>urn:2025-01-26T11:11:38.607Z</id>
     <title>web3::cave</title>
-    <updated>2025-01-26T10:15:43.489Z</updated>
+    <updated>2025-01-26T11:11:38.607Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[浅谈以太坊 Gas 限制之争：增加上限对区块、验证器及 MEV 收益有哪些利与弊？]]></title>
+        <id>https://www.web3sj.com/?p=131633</id>
+        <link href="https://www.web3sj.com/news/131633/"/>
+        <updated>2025-01-26T10:43:52.000Z</updated>
+        <summary type="html"><![CDATA[该提案在社区内也引发了广泛关注，由社区创建的网站如 pumpthegas.org，旨在普及 Gas 上限增加的基础知识，以及验证者如何更改其节点设置。另一个网站 Gaslimit.pics 则积极追踪验证者对更高 Gas 上限支持度的进展。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[对 Vitalik 最新文章的三点思考]]></title>
+        <id>https://www.web3sj.com/?p=131630</id>
+        <link href="https://www.web3sj.com/news/131630/"/>
+        <updated>2025-01-26T10:40:41.000Z</updated>
+        <summary type="html"><![CDATA[Vitalik 总书记发出最高指示，坚持供给经济学不动摇，面对来自 Solana 的严峻外部挑战，以太坊生态要增强 infra-centric 道路自信和白左嬉皮士文化自信，继续坚定不移地推进以太坊的模块化（分片化）之路。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TRUMP Meme币上线令人失望！去中心化的幌子，割韭菜的新招？]]></title>
+        <id>https://www.web3sj.com/?p=131627</id>
+        <link href="https://www.web3sj.com/news/131627/"/>
+        <updated>2025-01-26T10:35:33.000Z</updated>
+        <summary type="html"><![CDATA[近期，由特朗普官方推出的 TRUMP Meme 币引起了市场的广泛关注。然而，深入分析其上线后的运营模式和分配机制后，这个项目却让人不禁感到失望和警惕。以下是 TRUMP Meme 币的关键问题及原因分析，提醒投资者在参与前谨慎思考。]]></summary>
+        <author>
+            <name>Gao</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NoOnes 首席执行官 Ray Youssef 在事件发生几周后披露了价值 800 万美元的漏洞，证实了加密侦探 ZachXBT 的调查]]></title>
         <id>https://tokeninsight.com/zh/news/noones-ceo-ray-youssef-discloses-8-million-exploit-weeks-after-the-fact-confirming-crypto-sleuth-zachxbt-s-investigation?utm_source=public&amp;utm_medium=rss</id>
@@ -111,36 +141,6 @@
         <link href="https://www.web3sj.com/ainews/131541/"/>
         <updated>2025-01-22T04:23:38.000Z</updated>
         <summary type="html"><![CDATA[ChatGPT 的出现是一个转折点，它将先进的人工智能从一个未来主义的想法变成了一个广泛使用的工具，证明了这些模型可以实时学习和适应。当开发人员认识到人工智能可以做的不仅仅是回答文本提示——例如处理管理日历或编码等任务——AI Agents 进入了聚光灯下。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【0撸空头】1200W融资A16Z领投L1项目linera初期任务讲解 | 重点拿DC角色与Poap]]></title>
-        <id>https://www.web3sj.com/?p=131515</id>
-        <link href="https://www.web3sj.com/show/131515/"/>
-        <updated>2025-01-20T08:11:01.000Z</updated>
-        <summary type="html"><![CDATA[A16Z领投的公链可以好好关注一下，目前DC频道已经非常火爆了，虽然融资在公链中并不算多，但是机构背景实力强大，还是值得做一做。Poap这个老高强烈建议至少要拿一个号！]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Blob空间不足，以太坊L2也在崩溃边缘？]]></title>
-        <id>https://www.web3sj.com/?p=131504</id>
-        <link href="https://www.web3sj.com/news/131504/"/>
-        <updated>2025-01-20T08:06:35.000Z</updated>
-        <summary type="html"><![CDATA[本文讨论了以太坊 L2 面临的 Blob 空间不足问题，随着 L2 链的增长，多个 L2 竞争有限的 Blob 存储，导致费用飙升，用户成本增加。即使通过 Pectra 升级将 Blob 数增至 6 个，问题也只能暂时缓解，无法根本解决。解决方案包括短期的 Pectra 升级、中期的 PeerDAS 实现和长期的 DA 扩展，但这些方案能否及时到位仍不确定。]]></summary>
-        <author>
-            <name>Gao</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[美国第一镰刀？「特朗普币」暴涨后，「第一夫人币」上线了]]></title>
-        <id>https://www.web3sj.com/?p=131499</id>
-        <link href="https://www.web3sj.com/news/131499/"/>
-        <updated>2025-01-20T08:01:42.000Z</updated>
-        <summary type="html"><![CDATA[该代币一经推出便大火。CoinGecko 数据显示，「特朗普币」以 0.1824 美元的开盘价开始交易，12 小时内涨超 15000% 至约 30 美元，自推出以来最高升至 75.35 美元（累计涨幅超过 41200%），完全稀释市值（FDV）市值接近 800 亿美元。]]></summary>
         <author>
             <name>Gao</name>
         </author>
