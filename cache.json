@@ -1,6 +1,59 @@
 {
   "sources": [
     {
+      "title": "最新 - Odaily星球日报",
+      "feedUrl": "https://rsshub.app/odaily",
+      "siteUrl": "https://www.odaily.news",
+      "articles": []
+    },
+    {
+      "title": "Web3世界",
+      "feedUrl": "https://www.web3sj.com/feed/",
+      "siteUrl": "https://www.web3sj.com",
+      "articles": [
+        {
+          "id": "https://www.web3sj.com/?p=133870",
+          "author": "Gao",
+          "description": "BTC突破新高后，山寨币虽然也出现跟涨行情，但是市场的活跃度并不算高，其中期权标的ORDI，CRV，ETH出现过10倍以上涨幅，其余的高IV期权标涨幅较往期来看并不算高，并且近期山寨都出现了阴跌行情，市场活跃度逐渐出现下降趋势。",
+          "link": "https://www.web3sj.com/news/133870/",
+          "publishedOn": "2025-05-29T10:33:57.000Z",
+          "wordCount": 849,
+          "title": "Coincall山寨币期权一周播报（5.23~5.29）",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/04/2024042505344022.jpg"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=133854",
+          "author": "Gao",
+          "description": "本周BTC虽然新高，但是山寨币涨幅仍有限，虽然出现补涨，但涨幅不算暴力。其中 TRUMP 期权最高出现了20倍以上的涨幅 ，其余山寨币期权均为10倍左右涨幅。",
+          "link": "https://www.web3sj.com/news/133854/",
+          "publishedOn": "2025-05-22T15:11:45.000Z",
+          "wordCount": 853,
+          "title": "Coincall山寨币期权一周播报（5.16~5.22）",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/04/2024042505344022.jpg"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=133833",
+          "author": "Gao",
+          "description": "最近BTC虽然是横盘市场，但是山寨币的波动总算是起来了，本周ORDI都出现了260倍的夸张涨幅，其余山寨币不管是看涨还是看跌基本都出现了15倍以上的涨幅，只有SOL的期权标的相对于稳定。",
+          "link": "https://www.web3sj.com/news/133833/",
+          "publishedOn": "2025-05-15T08:23:06.000Z",
+          "wordCount": 849,
+          "title": "Coincall山寨币期权一周播报（5.8~5.15）",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/04/2024042505344022.jpg"
+        },
+        {
+          "id": "https://www.web3sj.com/?p=133809",
+          "author": "Gao",
+          "description": "在FOMC利率决议后，鲍威尔表态降息并不会快速到来，但对加密市场并没有较大的影响。反而BTC出现了快速的上涨，大部分山寨也出现跟涨行情，其中TRUMP，ENA 看涨期权均出现100多倍的上涨，其余山寨币期权均出现10-40倍不等的上涨，市场慢慢有牛的味道了。",
+          "link": "https://www.web3sj.com/news/133809/",
+          "publishedOn": "2025-05-08T11:47:40.000Z",
+          "wordCount": 880,
+          "title": "Coincall山寨币期权一周播报（5.2~5.8）",
+          "imageUrl": "https://www.web3sj.com/wp-content/uploads/2024/04/2024042505344022.jpg"
+        }
+      ]
+    },
+    {
       "title": "TokenInsight新闻",
       "feedUrl": "https://tokeninsight.com/rss/zh",
       "siteUrl": "https://tokeninsight.com/zh/news",
