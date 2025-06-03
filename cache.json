@@ -1,6 +1,12 @@
 {
   "sources": [
     {
+      "title": "最新 - Odaily星球日报",
+      "feedUrl": "https://rsshub.app/odaily",
+      "siteUrl": "https://www.odaily.news",
+      "articles": []
+    },
+    {
       "title": "Web3世界",
       "feedUrl": "https://www.web3sj.com/feed/",
       "siteUrl": "https://www.web3sj.com",
@@ -52,6 +58,16 @@
       "feedUrl": "https://tokeninsight.com/rss/zh",
       "siteUrl": "https://tokeninsight.com/zh/news",
       "articles": [
+        {
+          "id": "https://tokeninsight.com/zh/news/robinhood-completes-200-million-acquisition-of-crypto-exchange-bitstamp?utm_source=public&utm_medium=rss",
+          "author": "TokenInsight 新闻",
+          "description": "Robinhood 以 2 亿美元收购加密货币交易所 Bitstamp",
+          "link": "https://tokeninsight.com/zh/news/robinhood-completes-200-million-acquisition-of-crypto-exchange-bitstamp?utm_source=public&utm_medium=rss",
+          "publishedOn": "2025-06-03T09:57:39.000Z",
+          "wordCount": null,
+          "title": "Robinhood 以 2 亿美元收购加密货币交易所 Bitstamp",
+          "imageUrl": null
+        },
         {
           "id": "https://tokeninsight.com/zh/news/cobie-s-ico-platform-sonar-goes-live-with-plasma-seeking-50-million-at-500-million-token-valuation?utm_source=public&utm_medium=rss",
           "author": "TokenInsight 新闻",
