@@ -1,1289 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2025-06-10T08:26:54.840Z</id>
+    <id>urn:2025-06-10T09:20:33.418Z</id>
     <title>web3::cave</title>
-    <updated>2025-06-10T08:26:54.840Z</updated>
+    <updated>2025-06-10T09:20:33.418Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
-        <title type="html"><![CDATA[▪ 什么是区块链预言机，能预测币价涨跌吗？| 229]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499439&amp;idx=3&amp;sn=10b7df1a67254fefbccff4c016f51bec&amp;chksm=fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499439&amp;idx=3&amp;sn=10b7df1a67254fefbccff4c016f51bec&amp;chksm=fa01c988cd76409ea834ba84c5d018037a0a798105957e47fb7b9b834d64534ea3f6cf5c0cd7#rd"/>
-        <updated>2025-06-10T08:26:54.819Z</updated>
-        <summary type="html"><![CDATA[在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
+        <title type="html"><![CDATA[波动率周回顾(6月2日-6月9日)]]></title>
+        <id>https://www.odaily.news/post/5204251</id>
+        <link href="https://www.odaily.news/post/5204251"/>
+        <updated>2025-06-10T08:30:11.000Z</updated>
+        <summary type="html"><![CDATA[关键指标：( 6 月 2 日 下午 4 点 -> 6 月 9 日 下午 4 点 香港时间)
 
-作者 | 易妙萍
-出品｜白话区块链（ID：hellobtc）
-10 月 1 日，白话区块链发文《比特币出现神预测，这事靠谱么》，文中谈及了一个有关比特币价格预测图的可靠性。那张图的前两个预测都是对，那么，第三个预测还会正确吗？
-
-这让人联想到了区块链预言机，它能预测加密资产的价格涨跌吗？
-
-
- 01 
-什么是预言机？
-与这个有点“不觉明厉”的名字不太相符的是，区块链预言机是第三方信息源，其唯一功能是向区块链提供数据，从而使创建智能合约成为可能。
-从根本上讲，智能合约只是一个自我执行的代码。智能合约会评估来自预言机的传入数据，并根据收到的信息启动执行流程。
-让我们举一个例子，比如说张三和李四对这个星期六的比特币价格进行下注。张三认为比特币的价格将在 8500 美元或更高，相反，小黑认为在 8000 美元或更低。于是，他们设计了一个智能合约（双方都会向其发送资金），谁预测的价格更靠近实际价格，谁就赢得了资金。
-为了使智能合约确定比特币的价格，从而向赢家付款，它必须通过预言机来查询这个星期六比特币的价格。当查询到比特币价格数据后，比如返回的值是周六比特币价格为 8600 美元，然后，智能合约将根据其条件执行并将所有资金发送给张三。
-
-
- 02 
-预言机的类型
-预言机通过为智能合约提供了一种在去中心化区块链网络之外进行通信的方式，为智能合约提供了附加功能。
-区块链预言机可以采用多种形式，包括但不限于：
-1、软件预言机
-这种形式的预言机通常包括易于访问的在线信息源，例如网站和公共数据库。它们通常提供以下信息：温度读数，公共交通信息以及各种金融资产的当前价格。
-软件预言机可能是目前最强大的预言机类型，因为它们与互联网具有固有的互连性。这种连接允许软件预言机向智能合约提供最新信息。
-2、硬件预言机
-这种形式的预言机通常负责物理世界中发生的事件，并将数据发送到智能合约上。例如，在供应链管理中，如果带有 RFID 标签的物体要到达特定的仓库，则可以将该数据发送到智能合约，硬件预言机系统可以在整个供应链中进行货物跟踪。
-3、输入式预言机
-这种形式的预告机具有简单地向智能合约提供数据的功能。所提供的数据在智能合约的外部，并且在接收信息后开始执行。上面示例中提供比特币价格的新闻网站，可以被归入为输入式预言机。
-4、输出式预言机
-这些预言机将智能合约数据传送到外部源。就上面的例子而言，一旦张三被确定为赢家，智能合约便可以将此信息传达给钱包提供商，以便自动更新其余额以反映资金的增加。
-在这种情况下，智能合约本身就可以作为输出式预言机运作。
-5、基于共识的预言机
-这种预言机的功能是查询多个信息源，并根据它们的共识得出结果。例如，上面的例子也可以使用 4 个网站来查询比特币的价格。如果所有预言源（网站）返回的值都相同，则智能合约可以成功执行。
-
-
- 03 
-预言机需要信任
-虽然预言机的优势非常明显，但它存在一个缺点：预言机需要信任。
-预言机用来获取信息并将信息传输到智能合约的数据源，必须被视为可信的。还是上文的例子，如果张三能够以某种方式控制那个比特币价格网站，那么就可以轻而易举地让返回的比特币价格为 8600 美元，从而使自己赢得比赛。
-所以，如果由预言机提供给智能合约的数据被证明是错误的，则存在安全问题。针对此问题，一种可能的补救方法是从多个预言机数据库请求数据，而不是单个预言机数据库。
-比如说，如果一个预言机返回的比特币价格为 8600 美元，而其他 4 个预言机返回的价格是 8000 美元，则可以将其他条件编程到智能合约中以解决冲突。智能合约可以选择仅接受多数值，在这种情况下，李四成为胜利者。
-你觉得在哪些情境下，需要用到预言机？欢迎在评论区留言分享。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
+BTC 对 USD 上涨 0.2% （105.4->105.65 千美元），ETH 对 USD 下跌 0.6% （2, 510 -> 2, 495 美元）
 
 
 
+上周市场下探 99-101 千美元的支撑位但随后迅速反弹回到 105-106 千美元的区间，强烈暗示币价短期内即将再次尝试向上突破到新高。如果这次突破失败，这波上涨的时间可能会被继续延期，我们会先回到 90-95 千美元的区间。否则我们预期这次币价突破会带领我们朝着预期的 125 千美元目标迈进，与此同时伴随币价到达新高，实际波动率也会从目前的低位反弹。
+
+市场主题
+
+今年二季度的最后一个月伊始，市场和五月底的走势基本一致。跨资产波动率持续下降，风险资产逐步抬升。虽然在上周四晚上特朗普和马斯克公开撕破脸后 SPX 在 6 千美元的心理关口前持续动摇，但第二天受超预期的就业数据推动终于突破。在过去的九周内，VIX 恐慌指数从 45.3 下降到了 16.8 ，这是有史以来最大的 9 周跌幅（63% ，甚至超过了 2023 年 3 月底 65.5 到 2023 年五月底 27.5 的 58.5% COVID 下跌）。总的来说，宏观和基本面仍然有利于短期内风险资产的上涨，并且市场已经适应了特朗普政府时不时针对关税发表的言论。但考虑到目前已经回归正常的低波动水平来看，我们预期伴随七月关税截期到来短期内市场波动水平会上升。
+
+比特币从上周触及历史最高点后持续向下修正，包括特朗普-埃隆新闻引发了对 100-101 千美元关键支撑位的冲击，但币价很快站稳脚跟并在 24 小时内从 100.4 千美元的低点回到 105 千美元。最后币价又回到了 100-110 千美元区间偏上的位置。自大选结束以来我们已经多次在这里徘徊。
+
+BTC 隐含波动率
 
 
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
+实际波动率上周基本在底部徘徊，未能在币价跌至 100 千美元时从 30 出头的水平抬高（币价随后反弹）；市场对非农数据的反应也非常平淡，没有给实际波动率提供助力。伴随币价回到 100-110 千美元的区间整盘，全期限的隐含波动率都会被继续压低。对期权的需求伴随暑假的到来变得稀少，同时市场看上去依然拿着大量的多头波动率头寸，同时卖出短期到期日以支撑，但考虑到本月接下来的时间，前端价值现在已经变得很低了。
+
+波动期限结构开始变得平缓。考虑到没有买家以及持续的卖压，市场逐渐失去了拿远期头寸的耐心。现在看来期限结构的滚动下跌不再那么吓人，并且考虑到在目前很低的实际波动率基础上，任何区间突破都可能导致隐含波动率伴随实际波动率迅速抬升-我们认为远期期限开始变得值得持有。
+
+BTC 偏度/峰度
 
 
+偏度上周基本横盘，哪怕币价一度跌到了 100 千美元附近，市场也对买入下方毫无兴趣。导致偏度在整个期限结构上都偏向上方。
 
+上周峰度整体横盘。但有趣的是，尽管 ATM 部分隐含波动率下跌，远期的峰度却有所抬升。因为考虑到比特币资产波动率的波动，市场不愿意降低尾部的定价，但 ATM 的部分却因为币价在 100-110 千美元稳定而逐步下跌。我们认为总的来说这种定价是合理的，并且持续建议在更短的期限上持有峰度以保护币价爆发时的波动率抬升。
 
-——End——
+祝大家本周好运！
 
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+您可免费使用 SignalPlus 交易风向标功能t.signalplus.com/news，通过 AI 整合市场信息，市场情绪一目了然。
+如果想即时收到我们的更新，欢迎关注我们的推特账号@SignalPlusCN，或者加入我们的微信群（添加小助手微信，请删除英文和数字中间的空格：SignalPlus 666）、Telegram 群以及 Discord 社群，和更多朋友一起交流互动。
+SignalPlus Official Website：https://www.signalplus.com]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>SignalPlus</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 什么是交易深度？如何衡量交易深度？| 241]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499928&amp;idx=2&amp;sn=0139f152eb1b17f63e865a77c8e75b79&amp;chksm=fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499928&amp;idx=2&amp;sn=0139f152eb1b17f63e865a77c8e75b79&amp;chksm=fa01f7bfcd767ea98927505cd3229aea24d0bd189465c39377ffe0b88066888363bbe0651c8c#rd"/>
-        <updated>2025-06-10T08:26:54.804Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者|阿华
-出品|白话区块链（ID：hellobtc）
-我们在选择数字货币交易平台进行交易时，最先要考虑的就是平台的安全性和交易深度了，一般来说，世界排名靠前的交易平台都符合这两个特性，即安全性和深度都好。
-安全性容易理解无需多说，那么什么是交易深度呢？如何衡量交易深度？下面我们一起来探讨下。
-
-
- 01 
-什么是交易深度
-交易深度是指市场在承受大额交易时币价不出现大幅波动的能力。一般在谈论交易深度时，指的是某个币种在某个平台的交易深度。
-我们需要从挂单量和价差两个指标来理解交易深度，挂单数量大、相邻挂单之间的价差小，就说明交易深度好。
-
-
-
-
-
-例如在上图中，左侧是A平台，右侧是B平台，很明显B平台EOS的交易深度好。说明在B平台中，EOS的委托挂单量大，而且相邻挂单间价差也比较小，即挂单比较密集，因此，在B平台买入的时候就不会出现大幅拉盘，卖出的时候也不会出现大幅砸盘，即买的轻松、卖的容易。
-
-
- 02 
-如何衡量交易深度
-衡量平台交易深度好坏一般会用两个指标，一个是价差，另外一个是挂单量。
-价差是指相邻两笔订单之间的价格差距。价差越小，挂单价格越密集，说明买入或卖出的实际价格越接近真实的市场价格。
-挂单量是指每笔委托挂单数量的多少，是市场承载能力的体现，挂单量越大，意味着交易深度越好，越能够满足大单的交易需求。
-
-
- 03 
-交易深度有什么用
-我们在进行数字货币交易时，尽量去交易深度好的平台进行交易，这有两个好处：交易时币价相对更稳定，交易成本也更低。
-1、交易时币价相对更稳定
-下面我们举例说明，如果要购买300个EOS，如下图，分别对比下在A平台和B 平台完成交易后对EOS价格的影响。
-
-在上图中，很明显B平台的交易深度要更好一些。
-如果想要在 A 交易平台快速购买300个EOS，需要吃掉卖1价、卖2价、卖3价等，直到买够300 EOS，由于交易深度不好，完成交易后EOS的价格被推高了；
-而如果在B平台快速购买300个EOS，仅仅使用卖1价2.8209即可成交（因为这个价格的挂单量为303，大于购买量300），完成交易后EOS价格稳定，并没有被推高。
-2、交易成本更低
-举例说明：下图是平台 A 和 平台 B 中卖单的交易深度，假如小明想快速完成2000个EOS的交易，我们对比下在两个平台购买2000个EOS 时的交易成本。
-
-在平台A进行交易：
-小明需要以20的价格购买500个，以21的价格购买500个，以此类推，按照交易深度持续购买。
-小明的总成本为：20500+21500+22500+23500 = 43000（比B平台贵了3000）。
-交易完成后，平台A中EOS的价格被推高至23。
-在平台B进行交易：
-小明直接以20的价格购买2000个，小明的总成本就是：20*2000=40000。
-交易完成后，平台B中EOS的价格仍然是20。所以，在交易深度好的平台进行交易时，成本会更低。
-总之，我们在进行交易时，尽量选择交易深度好的平台，不但可以快速完成交易，而且成本也低，对市场也不会造成太大的冲击。
-你理解交易深度了吗？你觉得哪些平台的交易深度普遍好？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+        <title type="html"><![CDATA[Binance上线路径研究：Alpha、IDO、Futures、Spot全拆解]]></title>
+        <id>https://www.odaily.news/post/5204252</id>
+        <link href="https://www.odaily.news/post/5204252"/>
+        <updated>2025-06-10T08:21:26.000Z</updated>
+        <summary type="html"><![CDATA[原文作者：Xinyang，IOSG Ventures
+TL;DR:
+本研究分析了 Binance 四大 Listing 渠道——Alpha、IDO、Futures 和 Spot——的 token 生命周期表现，并跟踪其在 Bitget、Bybit、Coinbase、Upbit 上的后续上线情况，重点考察了回报表现、listing 节奏、赛道偏好及 FDV 区间。
+表现回顾
+· 大多数渠道的 14 天 FDV 中位数为负，反映出多数项目上线即为估值高点；
+· Binance Alpha 表现最具爆发力（均值 220% ），但波动性大；
+· Binance IDO 有良好平衡的短期涨幅和较高转化率（至 Futures 和 Spot）；
+· Binance Spot 短期表现最弱，或因成为早期投资人退出点；
+· Bitget 和 Coinbase 在二级市场上表现亮眼，Bybit 和 Upbit 较为一般。
+按 FDV 区间选择平台
+· Binance Spot 偏好大市值项目（>$ 500 M）；
+· Alpha 主要支持 < $ 200 M 的早期项目，适合试水；
+· IDO 聚焦于 $ 70 M–$ 200 M 的中型项目；
+· Bitget / Bybit 区间灵活，但更偏向有增长势能或大市值项目；
+· Coinbase / Upbit 偏好合规性强、估值高的项目。
+上币时间预期
+· Alpha → Spot：平均约 60 天；
+· IDO → Spot：平均约 17 天；
+· Futures → Spot：平均仅 14 天；
+· Futures 可能是最快捷的通道。
+赛道偏好
+· Alpha：偏好 Meme、AI；
+· IDO：偏好 Infra、AI；
+· Spot：覆盖 Infra、Meme、AI；
+· Futures：更广泛，主打 Infra、AI、Meme；
+· …]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>星球君的朋友们</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 一文看懂区块链的扩容方案和主要的二层网络（Layer]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500009&amp;idx=2&amp;sn=aa68710cd3eb1758dff8776bbc1be70e&amp;chksm=fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500009&amp;idx=2&amp;sn=aa68710cd3eb1758dff8776bbc1be70e&amp;chksm=fa01f7cecd767ed86a724a284233cca3cc0aec84d0a99ef126392305dd20f5c99976d37e6d27#rd"/>
-        <updated>2025-06-10T08:26:54.797Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+        <title type="html"><![CDATA[Syncracy Capital联创解构PumpFun：平台股权的想象与资本的现实]]></title>
+        <id>https://www.odaily.news/post/5204250</id>
+        <link href="https://www.odaily.news/post/5204250"/>
+        <updated>2025-06-10T07:17:50.000Z</updated>
+        <summary type="html"><![CDATA[来源：Unchained
+整理&编译：lenaxin，ChainCatcher
+编者按：
+本文内容整理自 Unchained 与 Syncracy Capital 联合创始人 Ryan Watkins 的视频访谈，剖析了 PumpFun 的盈利模式、估值逻辑、系统性风险与潜在转型路径。
+6 月 3 日，据@NextFuckingThing 透露，“PumpFun 计划通过 ICO 以 40 亿美元完全稀释估值融资 10 亿美元，或将向社区空投 10% 代币。”该消息引发社区强烈反响，交易员 Ansem 将其类比为"第二架飞机撞上双子塔"，其发起的投票显示 70% 参与者认为 PumpFun 对加密行业具有负面影响。
+ChianCatcher 对内容进行了整理编译。
+精彩观点
 
-作者 | JackyLHH
-出品｜白话区块链（ID：hellobtc）
-今年的“双 11”全民购物狂欢节，根据阿里云公布的数据，订单创建峰值创下了新的纪录，达到了每秒 54.4 万笔，远远超过去年的每秒 49.1 万笔，是 2009 年第一次“双11”的 1360 多倍。
-这就是中心化系统的优势。
-相比之下，去中心化的区块链技术，在性能上就相形见绌了：比特币区块链每秒只能处理大约 7 笔交易，以太坊区块链每秒能处理约十几笔交易，当初打着“百万 TPS”旗帜的 EOS 区块链在测试中的最高 TPS 也只有四五千，平时运行时的 TPS 只有两位数。
-EOS 区块链实时 TPS 只有两位数
-来源：eosflare.io
+在尚未交代资金去向的前提下，PumpFun 一边盈利，一边再融资 10 亿美元，对用户信任是一种严重消耗。
 
-虽然性能并不是区块链技术的优势，但如果成为“短板”，毫无疑问会推迟区块链技术的大规模应用。
-所以近年来，不断有技术开发人员和项目团队提出各种各样的解决方案。这些解决方案，主要可以分为两大类：链上扩容和链下扩容。
-链上扩容，就是直接在区块链上“动手术”——修改规则，包括区块大小、共识机制等等。比如，将比特币区块链的区块大小直接从 1M 扩容到 32M、128M 甚至是 2G（这就是 BTC、BCH 和 BSV 在区块大小上的分歧），再比如现在被给予厚望的、“以太坊 2.0”将会采用的技术方案——分片技术（Sharding）。如果你想了解更多关于分片技术的知识，请阅读白话之前的推文《一文看懂区块链性能解决方案：分片》。
-链下扩容，是指在主链之外建立第二层交易网络，因此链下扩容也被称为“Layer 2”。
-如果将链上扩容类比为道路的拓宽，那么链下扩容就是在旁边新建高架桥、隧道、小路等等。如果你想了解更多关于链上扩容和链下扩容的区别，请阅读白话之前的…]]></summary>
+近半交易量被机器人和第三方掌控，PumpFun 正逐渐失去对自身生态的主导权。
+
+真正留住用户的，从来不是空投，而是产品本身。
+
+代币价值靠的不是融资噱头，而是清晰用途和执行力。
+
+（一）PumpFun 为何赚了 7 亿美金，却走在信任崩塌边缘
+Laura Shin：想请教您对事件的看法，以及您如何评价市场的这种反应？
+Ryan Watkins：过去两年间，meme 币一直是加密领域最具争议性的资产类别，而 PumpFun 则成为这一争议的典型代表。该平台自 2024 年第一季度上线以来，凭借 1% 的交易手续费和绑定曲线机制，已累计实现 7 亿美元收入，成为加密经济中最具盈利能力的项目之一。
+然而这一商业成功背后却伴随着诸多问题：普通投资者亏损现象日益严重，主要源于市场操纵机器人和内幕交易等系统性风险；原本简单的社区文化已异化为复杂的"meme 币产业链"；更值得关注的是，平台在未明确资金用…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>链捕手</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 加密资产涨跌幅度的计算方式 | 246]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500146&amp;idx=2&amp;sn=9cd31efcc2aa54f59408c0c04671a220&amp;chksm=fa01f655cd767f4338680d7362f5b4db20101b373e6d34454d7900c2711edfff1212e75b25fa#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500146&amp;idx=2&amp;sn=9cd31efcc2aa54f59408c0c04671a220&amp;chksm=fa01f655cd767f4338680d7362f5b4db20101b373e6d34454d7900c2711edfff1212e75b25fa#rd"/>
-        <updated>2025-06-10T08:26:54.791Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+        <title type="html"><![CDATA[Arca怒斥Circle背叛：IPO盛宴为何抛弃加密盟友偏心华尔街？]]></title>
+        <id>https://www.odaily.news/post/5204249</id>
+        <link href="https://www.odaily.news/post/5204249"/>
+        <updated>2025-06-10T06:46:07.000Z</updated>
+        <summary type="html"><![CDATA[原文作者：Jeff Dorman，Arca 首席投资官
+原文编译：Yuliya，PANews
+Circle 作为 USDC 稳定币的发行方，其 IPO 本应成为加密行业迈向主流金融的重要里程碑，然而此次发行过程却在加密圈内引发了广泛争议。Arca 首席投资官 Jeff Dorman 在本文中以亲历者的视角，对 Circle 在 IPO 配售中倾向传统金融机构、忽视加密原生参与者的行为进行了强烈批评，并借此探讨了“利益一致”这一加密行业核心理念为何在传统 IPO 体系中屡遭背离。以下为文章原文，PANews 对此进行了编译。
 
-作者 | 阿华
-出品｜白话区块链（ID：hellobtc）
-我们在进行加密资产交易时，总会关注加密资产的当前价格和历史价格。为了方便用户交易，很多交易平台也会特意展示每种加密资产的涨跌幅：
+Circle，这家 USDC 稳定币背后的公司，在上周完成了首次公开募股（IPO），定价为每股 31 美元（高于最初 24 至 26 美元的预期区间）。首日收盘价为 84 美元，而截至一周结束时，股价已超过 107 美元。说投行对这次 IPO 定价严重失误一点都不为过。同样，说华尔街对加密资产，尤其是稳定币的投资热情高涨，也毫不夸张。
+看涨 CRCL 的理由：
 
-现在以及过去价格的对比指标，最常用的是“24小时涨幅”。当然了，不同网站叫法不一定相同，例如有的网站只叫“涨幅”，但其含义和计算原理都差不多。
-下面，我们一起聊聊“涨幅”这个指标的含义以及计算方法。
+这是目前市场上首个也是唯一一个专注于稳定币增长的上市投资标的，这种投资机会投资人已经等待了七年之久（Arca 也包括在内）。
 
+稳定币市场预计将增长至超过 1 万亿美元的管理资产规模，仅此一点就足以构成一个良好的投资故事。
 
- 01 
-确立计算标准
-在看加密资产行情时，要先弄清楚涨幅指标的计算标准。一般来说，交易平台的网站上都有说明，如果网站上没有相关指标的说明，也可以直接联系在线客服进行咨询。
+USDC 当前拥有 600 亿美元的资产管理规模，年增长率达 91% 。
 
-例如，OKEx 是以最近 24 小时来计算涨跌的，而火币则是以北京时间 0 点为基准开始计算涨跌，国外其他的加密资产交易平台，计算的时间点也各不相同。
+看空 CRCL 的理由：
 
-由于加密资产是 24 小时不间断交易，所以，根据过去 24 小时的价格走势来计算加密资产的涨跌幅，价格实时性更强一些，相对来说也更合理。大多数交易平台都采用了这种方式，不受世界时区限制，也更容易和国际接轨，方便世界各地的用户。
+这是一个完全依赖利率的商业模式，其全部收入来源于利息收入；
 
+Circle 依赖 Coinbase 作为发行代理，而 Coinbase 大约拿走了一半的利息收益；
 
- 02 
-涨幅计算方法
-由于计算标准不同，所以在计算涨幅这个指标时，所采集的加密资产历史价格也不相同。
-首先，我们看看以最近 24 小时价格为计算标准的涨幅计算方法。假如现在是 11 月 19 日中午 12 点，EOS 价格是 23 元，而 11 月 18 日中午 12 点 EOS 的开盘价格是 25 元，那么它的涨幅为：
-(23 - 25) ÷ 25 = -8%，即网站上显示的涨幅指标为 -8%，或者说跌幅为 8%。
-如果是以北京时间 0 点为基准，涨幅的计算方法则是用当前价格减去今天 0 点的价格，所得的差除以 0 点的价格，得出当前的涨幅。如果以其他时间为基准，计算方法类似。
+Circle 还依赖贝莱德，而贝莱德与许多银行都有合作关系，而这些银行正在尝试进入稳定币市场，与 Circle 和 Tether 竞争；
 
-
- 03 
-结语
-总之，由于各个交易平台以及行情软件计算涨幅的标准不同，再加上同一加密资产在不同交易平台的价格也不完全相同，所以显示出来的涨幅指标并不一定相同。
-我们在进行交易时，要清楚不同交易平台及行情软件的计算标准，只有对涨幅指标的含义有更清晰的理解，才能更好地辅助我们进行交易决策。
-除了涨幅（涨跌幅），你还关注哪些指标？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+在过去 3 年半时间里，公司几乎没有收入和盈利增长（虽然 EBIT…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>PANews</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 如何完成大额交易又不过度影响市场价格？| 236]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499736&amp;idx=2&amp;sn=9a530780447f906b072c3c3deaf08954&amp;chksm=fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499736&amp;idx=2&amp;sn=9a530780447f906b072c3c3deaf08954&amp;chksm=fa01c8ffcd7641e9e7b6451f70583fabc41b8f8253a73410ef60cc0ee314dfcbcbdc18e37c82#rd"/>
-        <updated>2025-06-10T08:26:54.785Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 阿华
-出品｜白话区块链（ID：hellobtc）
-在进行数字资产的大额买卖时，可能会因为交易数额巨大而影响市场价格，尤其是对于流动性比较差的数字资产，一个大额买单就可以拉盘。
-同样，一个大额卖单就可以砸盘。那么，有没方法既可以完成大额交易又不过度影响市场价格呢？其实，在进行交易时选择冰山委托就可以实现。
-
-
- 01 
-什么是冰山委托
-
-冰山委托是订单类型中的一种，指的是投资者在进行大额交易时，为避免对市场造成过大冲击，将大额买单/卖单拆分为多个小额买单/卖单，并且根据市场最新价格波动调整委托价格，通过连续小单委托减少大额订单对市场价格的影响。
-用白话解释就是：把大额买单或卖单拆分成多个小单进行分批交易，这样可以减少对市场造成的价格冲击。不过，并不需要手工拆分，当设置了冰山委托订单类型后，拆分过程是自动进行的。
-
-
-
- 02 
-
-冰山委托的适用范围
-
-冰山委托作为订单类型中的一种，它适用于对大额订单进行拆分交易，从而减少了对市场价格造成的影响。
-例如，在进行数字货币的大额卖出交易时，订单类型设置为冰山委托可以减少大额卖单对市场价格的影响；同样的，在进行数字货币的大额买入交易时，可以防止因大额买单造成价格提升而增加了自己的买入成本。
-目前，许多交易平台的订单类型中都有冰山委托。
-
-
- 03 
-
-冰山委托举例
-下面以某平台的冰山委托-买入为例进行说明。
-小王希望购买总量为 80万 USDT 的 BTC，但不希望由于挂单数量较大而过于影响盘面，从而增加自己的买入成本，此时他就可以把订单类型设置为冰山委托。
-小王设置买入委托的总量为 80万个 USDT；每次下单购买的平均数量可以设置为 8000个 USDT（实际每次下单数量会在 90%~110% 之间浮动）；使用委托深度控制委托单在订单簿交易深度中的位置；设置最高买入价格：8100 USDT，以控制买入价格上限。
-于是，小王的冰山委托设置如下：
-总金额：80000 USDT；
-单笔金额：8000 USDT；
-委托深度：0.1%；
-最高买入价：8000 USDT。
-
-
-
-
-
-这笔冰山委托代表什么含义呢？
-小王要买入 80 万 USDT  的 BTC，为了不过于影响盘面价格，于是使用冰山委托订单类型进行小额分批交易；每批次委托买入 8000 USDT（实际下单会在 90% ~ 110% 浮动）的 BTC；而委托买入价为：最新买1价 * (1 - 0.1%)；而且还设置了最高买入价：8100 USDT，表示买入价不会高于 8100 USDT。
-设置好以后，点击”买入”按钮，系统将为小王进行冰山委托，并按照上面设置的规则，成交一笔，再委托下一笔。
-当”最新成交价”与委托价格偏离过大时，自动撤单并重新进行委托；
-当”最新成交价”高于小王设置的”最高买入价”时，停止委托，待最新成交价低于其设置的最高买入价时恢复；
-当该委托的“总成交量”等于“委托总量”时，委托就会自动停止。
-该过程用图形表示如下：
-
-
-
-
-
-如上图所示，当最新成交价低于小王设置的”最高买入价” 8100 USDT 时，系统就会进行连续委托，当最新成交价高于小王设置的”最高买入价” 8100 USDT 时，系统就会停止委托。
-上面是冰山委托-买入，如果要进行数字货币的大额卖出交易，也可以设置冰山委托，原理和过程和上面的例子一样，这里就不赘述了。
-总之，如果要进行数字资产的大额交易又不想过于影响市场价格，订单类型选择冰山委托就可以了。
-你使用过冰山委托吗？体验怎样？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+        <title type="html"><![CDATA[MEME手册01｜打不过就跟上，OKX Wallet 「追踪」教你锁定优质地址，提升命中率]]></title>
+        <id>https://www.odaily.news/post/5204248</id>
+        <link href="https://www.odaily.news/post/5204248"/>
+        <updated>2025-06-10T06:30:30.000Z</updated>
+        <summary type="html"><![CDATA[当前炒币叙事分裂为两极：一边是 BTC 强者恒强，一边是 MEME 浪潮席卷。在 Solana、Base、BSC 等高性能公链上，成千上万的 MEME 币不断涌现，越来越多链上玩家涌入战场，人人都想从 P 小将熬成 P 元帅，抓住下一个“金狗”。
+到底有多少 P 小将在 MEME 战场里真正赚到钱？先说结论：大约只有 10% ～ 20% 。剩下的，大多死在流动性陷阱里。超过 80% 的 MEME 币生命周期不超过 24 小时——你以为抢到了“第一波”，其实只是给更早进场的 P 小将抬了轿。调研那些能冲出金狗行情的 P 元帅后，发现他们分为几大特征：绑定 KOL，用流量维持热度；自发项目，节奏清晰，第一轮拉盘吸引注意，第二轮洗盘剔除短线盘，第三轮拉高出货；流程高度工具化，扫链监控、部署机器人一条龙；抱团作战、目标明确、分工精准，完全是职业操盘手。
+所以，问题来了：还有更好地参与方式吗？有，打不过，就加入。追踪这些 P 元帅级别的地址，是进入游戏的最佳方式之一。他们的链上地址行为，是最好的 MEME 指南针。MEME 手册 01 期，先讲怎么追踪值得参考的地址，建立自己的地址情报系统。后面几期，会深入展开更多职业玩法，比如聪明钱的识别与跟单、扫链和枯坐技巧、内外盘差异、不确定信息的交叉验证、还有如何控制预期和资金分配等等。欢迎继续关注，一起少踩坑、一起练手进阶。
+多链地址追踪 电脑&手机都方便
+OKX Wallet 的「追踪」功能，是搭建并追踪链上地址库的核心工具之一。它最大优势之一就是：移动端和插件端体验几乎一致，真正做到了丝滑无缝、随时在线。这对 MEME 玩家来说非常关键，因为行情从不会等人。为了方便演示，接下来的实操以 OKX Wallet Web 端为例，路径是：登录 OKX Wallet 官网 → 连接钱包 → 进入「行情」页面 → 打开「追踪面板」。
+打开「追踪面…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>欧易OKX</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 频频出现的Libra和DECP究竟是什么？两者有何关系？|]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499989&amp;idx=2&amp;sn=e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm=fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499989&amp;idx=2&amp;sn=e9cd92e5b405d09c2c8c8bef5ec816e2&amp;chksm=fa01f7f2cd767ee4800efb301b93933d092a8d9782fbbe08e2c4d92ba5fe3fa0d992495580c4#rd"/>
-        <updated>2025-06-10T08:26:54.779Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+        <title type="html"><![CDATA[Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？]]></title>
+        <id>https://www.odaily.news/post/5204247</id>
+        <link href="https://www.odaily.news/post/5204247"/>
+        <updated>2025-06-10T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[近日，由于将在 Buildpad 平台开启社区公募，Sahara AI 在推特上又「爆」了。过去两月，加密推特对 Sahara AI 的讨论热度从未消减，尽管没有直接给 Kaito 的 Yapper 们分配代币额度，但在 Pre-TGE Mindshare 竞技场里，Sahara AI 一只榜上有名。
+Sahara AI 由 Sean Ren 和 Tyler Zhou 于去年 5 月创建，是一个去中心化 AI 网络基础设施，旨在帮助用户部署或构建自定义化、个性化的 AI 产品。早在去年 8 月，Sahara 就完成了由 Polychain Capital 领投的融资，参投方还有红杉资本、Samsung Next、Nomad Capital 等知名投资机构。当本身的实力背景遇上 Kaito 的「CT 信息革命」，SaharaAI 很自然地成为了过去一段时间里最引人瞩目的「infoFi 爆款」之一。
+相关阅读：《AI+Web3 新突破：速读 Sahara AI 交互指南》
 
-作者 | 三黎
-出品｜白话区块链（ID：hellobtc）
-自2019年6月18日起，Facebook Libra就成了区块链媒体文章中的常见词汇。而在2019年10月24日刮起了学习区块链的一场大风之后，各种新闻报道和普及文章纷纷来袭。DCEP和Libra更是经常一起出席，今天我们就来了解一下Facebook Libra和DCEP是什么？它们之间有何关联？
-
-
- 01 
-Facebook Libra是什么？
-
-Facebook是美国的一个社交网站 ，创立于2004年2月4日，主要创始人是马克·扎克伯格（Mark Zuckerberg）。2019年6月18日，这个全世界最大的社交网站发布了一个叫做“Libra”的数字货币的白皮书，引得众人关注。
-一个社交网站要发数字货币，这是怎么回事？根据白皮书的定义：
-
-Libra是一个数字货币项目，它的使命是建立一套简单、无国界的货币，并且建立为全球数十亿人服务的金融基础设施。
-
-而Facebook整个生态下将近27亿的用户数量，这可能也是为什么它受到如此广泛的关注的重要原因。据9月24日移动支付网的消息，支付宝宣布全球用户数在年中时也不过12亿，而有将近其两倍用户的Facebook可想而知，一旦货币得到应用将势不可挡。
-那么，Libra和比特币之间有何区别呢？中国人民银行支付结算司副司长穆长春在《科技金融前沿：Libra与数字货币展望》中提到Libra是比比特币更接近支付工具的数字货币。可以类比为数字货币中的稳定币。Libra是一篮子货币的资产储备。这里先对一篮子货币做个解释：
-一篮子货币就是将现有的一组货币按照一定方法组合而成的复合货币。例如，甲乙丙三个王国要物物交换，甲国黄金多、乙国盛产大米、丙国水资源丰富，他…]]></summary>
+2025 年以来，空投的叙事悄然改写，过去「撸毛」靠的是手速与勤奋，而如今这场游戏进入了一个全新阶段——算法时代，或者说，Mindshare 时代。
+Kaito AI 作为 InfoFi 网络的代表性产品，以「Yap-to-Earn」模式将链上社交行为转化为结构化数据，并通过积分和排行榜引导注意力的再分配，构建起一套全新的「嘴撸」逻辑：不再是机械式交互，而是拼内容、拼传播、拼算法权重。许多项目在引入 Kaito 机制后，其代币上线前后的社交媒体声量与市场价格呈现出高度联动。社交活跃度不再只是宣传结果，更成为影响空投分配和市场预期的关键变量。
+许多项目选择与 Kaito 合作，通过 Kaito 平台或针对 Kaito Yappers 和持有者进行空投，以激励其社区参与和推广。以下是一些已知为 Kaito 用户…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>区块律动BlockBeats","role_id":6,"introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","avatar_url":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","tovc_avatar_url":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"title":"特邀作者","qr_code_url":null,"department_belong":null,"role":{"id":6,"name":"特邀作者","description":"特邀作者","user_id_server":0,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147486423,"role_id":6}},"roles":[{"id":6,"name":"特邀作者","description":"特邀作者","user_id_server":0,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147486423,"role_id":6}}]},"summary":"Mindshare也是一种信号，但它能和市场购买力挂钩吗？\n","content":"&lt;p&gt;近日，由于将在 Buildpad 平台开启社区公募，Sahara AI&amp;nbsp;在推特上又「爆」了。过去两月，加密推特对&amp;nbsp;Sahara AI&amp;nbsp;的讨论热度从未消减，尽管没有直接给&amp;nbsp;Kaito&amp;nbsp;的&amp;nbsp;Yapper&amp;nbsp;们分配代币额度，但在&amp;nbsp;Pre-TGE Mindshare&amp;nbsp;竞技场里，Sahara AI&amp;nbsp;一只榜上有名。&lt;/p&gt;&lt;p&gt;Sahara AI&amp;nbsp;由 Sean Ren 和 Tyler Zhou 于去年 5 月创建，是一个去中心化 AI 网络基础设施，旨在帮助用户部署或构建自定义化、个性化的 AI 产品。早在去年 8 月，Sahara&amp;nbsp;就完成了由 Polychain Capital 领投的融资，参投方还有红杉资本、Samsung Next、Nomad Capital 等知名投资机构。当本身的实力背景遇上&amp;nbsp;Kaito&amp;nbsp;的「CT&amp;nbsp;信息革命」，SaharaAI&amp;nbsp;很自然地成为了过去一段时间里最引人瞩目的「infoFi&amp;nbsp;爆款」之一。&lt;/p&gt;&lt;p&gt;相关阅读：《&lt;a href=\"https://www.theblockbeats.info/news/58259\"&gt;AI+Web3 新突破：速读 Sahara AI 交互指南&lt;/a&gt;》&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250610/0e46f302-5ce2-4d27-835f-8d544f98be69.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;2025 年以来，空投的叙事悄然改写，过去「撸毛」靠的是手速与勤奋，而如今这场游戏进入了一个全新阶段——算法时代，或者说，Mindshare 时代。&lt;/p&gt;&lt;p&gt;Kaito AI 作为 InfoFi 网络的代表性产品，以「Yap-to-Earn」模式将链上社交行为转化为结构化数据，并通过积分和排行榜引导注意力的再分配，构建起一套全新的「嘴撸」逻辑：不再是机械式交互，而是拼内容、拼传播、拼算法权重。许多项目在引入 Kaito 机制后，其代币上线前后的社交媒体声量与市场价格呈现出高度联动。社交活跃度不再只是宣传结果，更成为影响空投分配和市场预期的关键变量。&lt;/p&gt;&lt;p&gt;许多项目选择与 Kaito 合作，通过 Kaito 平台或针对 Kaito Yappers 和持有者进行空投，以激励其社区参与和推广。以下是一些已知为 Kaito 用户和 Yappers 分配了空投份额的加密项目：&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://piccdn.0daily.com/202506/10050559/zyv5argpebembrv2!webp\" data-img-size-val=\"1924,627\"/\\&gt;&lt;/p&gt;&lt;p&gt;「Mindshare 时代」为加密社区和加密项目带来了新的传播模式，不过这也引出了下一个重要的问题：infoFi&amp;nbsp;是否改善了&amp;nbsp;VC&amp;nbsp;币的「不买单」困境？&lt;/p&gt;&lt;p&gt;由于&amp;nbsp;VC&amp;nbsp;筹码占比过高，过去的&amp;nbsp;VC&amp;nbsp;币往往与社区的互动较低，没有参与感，大家自然而然也不再为&amp;nbsp;VC&amp;nbsp;买单。而新的&amp;nbsp;infoFi&amp;nbsp;模式显然充分调动了加密推特与项目方本身的互动与参与程度，在这样的情况下，社区是否会更愿意为新叙事买单了呢？为此，BlockBeats&amp;nbsp;对过去的几个「infoFi&amp;nbsp;爆款」做了些简单的统计。&lt;/p&gt;&lt;h2&gt;Huma Finance (HUMA)&lt;/h2&gt;&lt;p&gt;Huma Finance 计划将代币的 0.5% 用于奖励 Huma Yappers，同时部分奖励也将分配给更广泛的 Kaito 生态系统，以推动 PayFi 和 Huma 的采用。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/9a0225f1-4b35-4d45-9440-9af0d967797a.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;根据 X 平台的推文时间分布和事件分析，5 月下旬为全年讨论最密集时段，多个利好事件叠加引发社交平台热度飙升。在此前的 4 月，Huma 2.0 的发布及其与 Solana、Jupiter、Kamino 等协议的集成，也曾短暂激活 DeFi 社群热度&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://piccdn.0daily.com/202506/10050559/9q82hhdpql7nuur4!webp\" data-img-size-val=\"696,155\"/\\&gt;&lt;/p&gt;&lt;h2&gt;LOUD&lt;/h2&gt;&lt;p&gt;LOUD 通过「初始注意力发行（IAO）」这一发布机制上线，整个参与路径紧密依赖 Kaito 的产品体系，用户需在 X 平台发帖提及 LOUD 并在 Kaito 上建立链上声誉，方有资格进入 IAO 白名单或参与公开抢购。此外，LOUD 每周的代币手续费返还机制亦基于 Kaito 的 Mindshare 排行榜进行分配。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/0b226612-b37b-4648-85bc-6a649d3c9f2a.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;根据 Grok 分析的推文时间分布数据，6 月 1 日为全年热度最高点，集中体现在代币 IAO 完成、$LOUD 上线 Meteora DEX、排行榜奖励发放与剧烈价格波动等多个事件叠加。代币上线 24 小时内暴跌 25.28%，触发「Loud 是 Meme 还是 SocialFi 正统」的激烈争议。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/9b42f56f-7d7f-411a-b8de-7f6d9dfeb0f8.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;h2&gt;Story (IP)&lt;/h2&gt;&lt;p&gt;Story 项目针对 Kaito 的空投奖励包括 Kaito Genesis NFT 持有者以及与 Story 相关的高质量内容创作者，奖励基于 2023 年以来的长期贡献数据。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/2c3eb743-bd58-4afe-89c4-78cb4487daf2.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;2025 年，Story 借助主网发布与 $IP 代币上线，迅速成为 X 平台上的热议项目。根据推文时间分布及核心事件分析，2 月中旬（2 月 11 日至 27 日）为全年讨论热度的顶峰阶段，平台官方与核心用户的连续发帖，以及交易所上线、空投活动和市场情绪的同步释放，共同将项目推向社交关注的高位。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/17830d06-4677-457d-a021-c44f9f356379.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;h2&gt;Berachain (BERA)&lt;/h2&gt;&lt;p&gt;Berachain 向社交贡献者分发了 125 万$BERA，并明确指出获得社交空投资格并持有 Kaito Yaps 账户的用户将获得额外奖励。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/68d0670e-29a7-4655-8204-ee1b5f234768.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;根据 X 平台上的数据，在 2 月 Berachain 主网正式上线及 $BERA 空投发布期间，社交互动与市场情绪同步升温，构成全年声量的顶峰时段。&lt;/p&gt;&lt;p&gt;主网上线当天，Berachain 同步启动 $BERA 的大规模空投（占总供应量的 15.8%，市值达 6.32 亿美元），并实现包括 Binance、Coinbase、OKX 在内的多家交易所同步上线，日内最高价格冲至 $14.99。交易活跃、空投参与门槛与价格波动共同驱动了社交平台上的强关注度，推文浏览量估算达百万级别，市场话题占比超过 70%。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://piccdn.0daily.com/202506/10050610/e1gw1dk6kvbjlk58!webp\" data-img-size-val=\"697,229\"/\\&gt;&lt;/p&gt;&lt;h2&gt;Wayfinder (PROMPT)&lt;/h2&gt;&lt;p&gt;Wayfinder 将其 PROMPT 代币的 40% 分配给了社区，其中包括为 Kaito AI 的社交任务计划分配的 500 万 PROMPT。其中，&amp;nbsp;400 万 PROMPT 分配给了达到「新兴 Yapper」级别（100+帖子）并分享相关内容的用户，另外 100 万 PROMPT 分配给了 Yaps 积分低于 90 但高于 0 的「新兴 Yapper」，KAITO 持有者还获得了 30% 的额外奖励。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/025a8a01-f9ba-4292-a606-a5ec45651a08.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;根据时间分布与讨论密度分析，4 月中旬为 Wayfinder 全年社交声量最高峰，主因包括 $PROMPT 正式上线、多个平台交易激活、空投领取开放，以及随后 Wayfinder 对 MEV 攻击事件的积极响应。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://piccdn.0daily.com/202506/10050600/epayxb223jkitvgz!webp\" data-img-size-val=\"772,219\"/\\&gt;&lt;/p&gt;&lt;h2&gt;Initia（INIT）&lt;/h2&gt;&lt;p&gt;Initia 的空投细则中称 5% 的代币分配给 Twitter 活跃用户，结合 Kaito 的激励方式，这一部分便是 Initia 拨给 Kaito 用户的空投份额。&lt;/p&gt;&lt;p&gt;2025 年上半年，模块化区块链项目 Initia 凭借其主网上线、代币发行（$INIT）以及 Binance Launchpool 加持，一度登上 X 平台热门话题榜。根据平台公开动态与主流加密媒体资料可见，&amp;nbsp;4 月中下旬为其社交声量的绝对高峰期，关键事件集中爆发，包括主网上线、$INIT 在多家交易所上市、空投开放及高达 8.16 亿美元的日交易量，令该项目在短时间内实现市场关注度与流动性的双重跃升。&lt;/p&gt;&lt;p&gt;从讨论内容来看，&amp;nbsp;4 月份的热度主要由「主网发布 + 空投 + 币价上涨」三要素驱动，占整体话题比重近 65%&amp;nbsp;。进入 5 月，讨论重心逐步转向治理议题，特别是围绕 Proposal 39 的质疑声，引发社群对 Initia 基金会治理透明度的广泛讨论，平台官方亦数次回应并修订提案，维系社群信任。与此同时，$INIT 于 5 月 13 日创下历史高点 $&amp;nbsp;1.44 后回调，截至 6 月初报 $&amp;nbsp;0.6975&amp;nbsp;，显示市场热度有所降温，社交讨论也趋于平稳。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Sahara AI发币在即，「InfoFi爆款」们TGE后表现都怎么样？\" src=\"https://image.blockbeats.cn/file_v6/20250609/adf6e78b-7e21-4464-a5ce-b61b9eaab79d.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\" data-img-size-val=\"602,200\"/\\&gt;&lt;/p&gt;","extraction_tags":"","source_type":"original","source_urls":"","next_post":{"title":"SEC新主席连下多道“免死金牌”，DeFi又一春要来了？","entity_id":5204243,"id":5204243},"keywords":"[{\"name\":\"Sahara\"},{\"name\":\"AI\"},{\"name\":\"\\u53d1\\u5e01\"},{\"name\":\"\\u5728\"},{\"name\":\"\\u5373\"},{\"name\":\"\\uff0c\\u300c\"},{\"name\":\"InfoFi\"},{\"name\":\"\\u7206\\u6b3e\"},{\"name\":\"\\u300d\"},{\"name\":\"\\u4eec\"},{\"name\":\"TGE\"},{\"name\":\"\\u540e\"},{\"name\":\"\\u8868\\u73b0\"},{\"name\":\"\\u90fd\"},{\"name\":\"\\u600e\\u4e48\\u6837\"},{\"name\":\"\\uff1f\"}]"},"user":{"type":"SET_POST_USER","id":2147486423,"avatar":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","name":"区块律动BlockBeats","introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","title":"特邀作者","total":"2092"},"comments":[],"counters":{"view_count":87,"pv":58,"pv_mobile":21,"pv_app":1,"favorite":0,"comment":0,"like":0},"secondary":[{"secondary_tag":458,"column_id":null,"name":"空投","slug":"635650d07dcc4","type":2},{"secondary_tag":493,"column_id":null,"name":"AI","slug":"63cf4144a723f","type":2},{"secondary_tag":541,"column_id":null,"name":"InfoFi","slug":"6846d14f4d2ea","type":2}],"articleList":[{"id":5204250,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":3405,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/10071737/f93je2229eb4zx1t"],"template_title":"Syncracy Capital联创解构PumpFun：平台股权的想象与资本的现实"},"stat_belong":"","title":"Syncracy Capital联创解构PumpFun：平台股权的想象与资本的现实","title_mobile":null,"catch_title":"","summary":"PumpFun拟以40亿美元估值融资10亿美元并空投代币，但平台控制力下降、商业模式存疑，其成败或影响Solana生态信誉，引发行业警惕。","cover":"https://piccdn.0daily.com/202506/10071737/f93je2229eb4zx1t","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147485799,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-10 15:17:49","published_at":"2025-06-10 15:17:50","updated_at":"2025-06-10 15:17:50","created_at":"2025-06-10 15:12:29","pin":0,"pushed_at":null,"keywords":[{"name":"Syncracy"},{"name":"Capital"},{"name":"联创"},{"name":"解构"},{"name":"PumpFun"},{"name":"："},{"name":"平台"},{"name":"股权"},{"name":"的"},{"name":"想象"},{"name":"与"},{"name":"资本"},{"name":"的"},{"name":"现实"}],"secondary_tag1":"[{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"}]","_type":"post","user":{"user_id_old":0,"id":2147485799,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"链捕手","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15581662856","wechat":null,"crm_email":null,"realname":null,"nickname":"链捕手","avatar_url":"https://piccdn.0daily.com/202105/17/a82d8ac298510a57f0104b166485ee52.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"主打深度、前沿的区块链品牌媒体。","sex":null,"job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147489084,"created_at":"2018-09-21 14:34:22","updated_at":"2021-05-17 23:35:14","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204239,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":4016,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/10013158/780oj6kqy142lqhe"],"template_title":"24H热门币种与要闻 | 特朗普称尚未考虑与马斯克会谈；Plasma公募5亿美元额度数分钟内售罄（6月10日）"},"stat_belong":"","title":"24H热门币种与要闻 | 特朗普称尚未考虑与马斯克会谈；Plasma公募5亿美元额度数分钟内售罄（6月10日）","title_mobile":null,"catch_title":"","summary":"美国SEC主席Paul Atkins：正在为DeFi平台制定“创新豁免”政策。","cover":"https://piccdn.0daily.com/202506/10013158/780oj6kqy142lqhe","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"24H\\u70ed\\u95e8\\u5e01\\u79cd\\u4e0e\\u8981\\u95fb | \\u7279\\u6717\\u666e\\u79f0\\u5c1a\\u672a\\u8003\\u8651\\u4e0e\\u9a6c\\u65af\\u514b\\u4f1a\\u8c08\\uff1bPlasma\\u516c\\u52df5\\u4ebf\\u7f8e\\u5143\\u989d\\u5ea6\\u6570\\u5206\\u949f\\u5185\\u552e\\u7f44\\uff086\\u670810\\u65e5\\uff09\",\"android_content\":\"\\u7f8e\\u56fdSEC\\u4e3b\\u5e2dPaul Atkins\\uff1a\\u6b63\\u5728\\u4e3aDeFi\\u5e73\\u53f0\\u5236\\u5b9a\\u201c\\u521b\\u65b0\\u8c41\\u514d\\u201d\\u653f\\u7b56\\u3002\",\"ios_title\":\"24H\\u70ed\\u95e8\\u5e01\\u79cd\\u4e0e\\u8981\\u95fb | \\u7279\\u6717\\u666e\\u79f0\\u5c1a\\u672a\\u8003\\u8651\\u4e0e\\u9a6c\\u65af\\u514b\\u4f1a\\u8c08\\uff1bPlasma\\u516c\\u52df5\\u4ebf\\u7f8e\\u5143\\u989d\\u5ea6\\u6570\\u5206\\u949f\\u5185\\u552e\\u7f44\\uff086\\u670810\\u65e5\\uff09\",\"ios_content\":\"\\u7f8e\\u56fdSEC\\u4e3b\\u5e2dPaul Atkins\\uff1a\\u6b63\\u5728\\u4e3aDeFi\\u5e73\\u53f0\\u5236\\u5b9a\\u201c\\u521b\\u65b0\\u8c41\\u514d\\u201d\\u653f\\u7b56\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-06-10 09:33:00\"}","user_id":2147660893,"user_id_edited":2147486555,"user_id_created":2147486555,"user_id_tagged":0,"edited_at":"2025-06-10 09:32:40","published_at":"2025-06-10 09:32:13","updated_at":"2025-06-10 09:33:46","created_at":"2025-06-10 09:00:04","pin":0,"pushed_at":"2025-06-10 09:33:00","keywords":null,"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"8\",\"name\":\"ETH\",\"slug\":\"5c949afb89cc4\",\"is_post_show\":\"1\"},{\"id\":\"18\",\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\",\"is_post_show\":\"0\"},{\"id\":\"57\",\"name\":\"\\u5e01\\u5b89\",\"slug\":\"5dd75cd41205a\",\"is_post_show\":\"1\"},{\"id\":\"84\",\"name\":\"SEC\",\"slug\":\"5e549a2164134\",\"is_post_show\":\"1\"},{\"id\":\"187\",\"name\":\"Solana\",\"slug\":\"6008f9cebb6a9\",\"is_post_show\":\"1\"},{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"},{\"id\":\"503\",\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\",\"is_post_show\":\"1\"},{\"id\":\"534\",\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"ETH\",\"slug\":\"5c949afb89cc4\"},{\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\"},{\"name\":\"\\u5e01\\u5b89\",\"slug\":\"5dd75cd41205a\"},{\"name\":\"SEC\",\"slug\":\"5e549a2164134\"},{\"name\":\"Solana\",\"slug\":\"6008f9cebb6a9\"},{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"},{\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\"},{\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\"}]","_type":"post","user":{"user_id_old":0,"id":2147660893,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Asher","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18801077830","wechat":null,"crm_email":null,"realname":null,"nickname":"Asher","avatar_url":"https://piccdn.0daily.com/202312/11/47eab1f028e1ebe1696cf92de5f6950c.jpeg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"ODAILY 研究员 | 加密爱好者 | 个人推特：@Asher_0210","sex":"male","job":"自由职业者","industry":"金融","birthday":"1996-12-15 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2023-12-04 11:25:05","updated_at":"2024-10-14 14:18:25","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204227,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2971,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09084337/2zkx43iizuegndyp"],"template_title":"注意力经济下的InfoFi困境"},"stat_belong":"","title":"注意力经济下的InfoFi困境","title_mobile":null,"catch_title":"","summary":"InfoFi是一项设计和运营新经济结构的重要实验。当它发展成为有价值的信息和见解得以共享的结构时，它的潜力才能得以充分发挥。","cover":"https://piccdn.0daily.com/202506/09084337/2zkx43iizuegndyp","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147512995,"user_id_edited":2147503370,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-09 23:08:36","published_at":"2025-06-09 20:00:00","updated_at":"2025-06-09 23:08:37","created_at":"2025-06-09 16:38:30","pin":0,"pushed_at":null,"keywords":[{"name":"注意力"},{"name":"经济"},{"name":"下"},{"name":"的"},{"name":"InfoFi"},{"name":"困境"}],"secondary_tag1":"[{\"id\":\"43\",\"name\":\"Web3.0\",\"slug\":\"5d5ceb503be00\",\"is_post_show\":\"1\"},{\"id\":\"541\",\"name\":\"InfoFi\",\"slug\":\"6846d14f4d2ea\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"Web3.0\",\"slug\":\"5d5ceb503be00\"},{\"name\":\"InfoFi\",\"slug\":\"6846d14f4d2ea\"}]","_type":"post","user":{"user_id_old":0,"id":2147512995,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Foresight News","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18918342550","wechat":null,"crm_email":null,"realname":null,"nickname":"Foresight News","avatar_url":"https://piccdn.0daily.com/202204/28/cf367efb2e5a0da46dd14c9e01057b4c.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Web 3.0 &amp; 区块链时代全球资讯前沿站，一起「遇见」未来。","sex":"male","job":"其他","industry":"互联网","birthday":"2022-02-02 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2022-02-28 15:22:00","updated_at":"2022-04-28 14:08:55","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204234,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2106,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/10040025/yqfu1lkghveex51d"],"template_title":"一周融资速递 | 13家项目获投，已披露融资总额为2.28亿美元（6.02-6.08）"},"stat_belong":"","title":"一周融资速递 | 13家项目获投，已披露融资总额为2.28亿美元（6.02-6.08）","title_mobile":null,"catch_title":"","summary":"Scalable Capital 完成 1.55 亿欧元融资；IOST 完成 2100 万美元战略轮融资。","cover":"https://piccdn.0daily.com/202506/10040025/yqfu1lkghveex51d","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147506131,"user_id_edited":2147503370,"user_id_created":2147506131,"user_id_tagged":0,"edited_at":"2025-06-10 12:00:28","published_at":"2025-06-09 19:10:16","updated_at":"2025-06-10 12:00:28","created_at":"2025-06-09 18:19:26","pin":0,"pushed_at":null,"keywords":[{"name":"一周"},{"name":"融资"},{"name":"速递"},{"name":"13"},{"name":"家"},{"name":"项目"},{"name":"获投"},{"name":"，"},{"name":"已"},{"name":"披露"},{"name":"融资"},{"name":"总额"},{"name":"为"},{"name":"2.28"},{"name":"亿美元"},{"name":"（"},{"name":"6.02"},{"name":"6.08"},{"name":"）"}],"secondary_tag1":"[{\"id\":\"24\",\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\",\"is_post_show\":\"0\"},{\"id\":\"493\",\"name\":\"AI\",\"slug\":\"63cf4144a723f\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\"},{\"name\":\"AI\",\"slug\":\"63cf4144a723f\"}]","_type":"post","user":{"user_id_old":0,"id":2147506131,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"叮当","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15985834904","wechat":null,"crm_email":null,"realname":null,"nickname":"叮当","avatar_url":"https://piccdn.0daily.com/202503/05/c1aae4529b721287f6370ad62468ca65.jpeg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"好想做一个有趣的人～","sex":null,"job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2021-09-02 14:50:53","updated_at":"2025-03-18 18:56:32","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204229,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":5687,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09085319/es7rzvj29ij2wmdx"],"template_title":"InfoFi掘金指南：除了Kaito，还有哪些Alpha玩法？"},"stat_belong":"","title":"InfoFi掘金指南：除了Kaito，还有哪些Alpha玩法？","title_mobile":null,"catch_title":"","summary":"深度拆解InfoFi内核，把握下一个Alpha金矿。","cover":"https://piccdn.0daily.com/202506/09085319/es7rzvj29ij2wmdx","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147525238,"user_id_edited":2147503370,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-09 23:08:51","published_at":"2025-06-09 18:15:00","updated_at":"2025-06-09 23:08:52","created_at":"2025-06-09 16:48:24","pin":0,"pushed_at":null,"keywords":[{"name":"InfoFi"},{"name":"掘金"},{"name":"指南"},{"name":"："},{"name":"除了"},{"name":"Kaito"},{"name":"，"},{"name":"还有"},{"name":"哪些"},{"name":"Alpha"},{"name":"玩法"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"493\",\"name\":\"AI\",\"slug\":\"63cf4144a723f\",\"is_post_show\":\"1\"},{\"id\":\"541\",\"name\":\"InfoFi\",\"slug\":\"6846d14f4d2ea\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"AI\",\"slug\":\"63cf4144a723f\"},{\"name\":\"InfoFi\",\"slug\":\"6846d14f4d2ea\"}]","_type":"post","user":{"user_id_old":0,"id":2147525238,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Biteye","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18261740656","wechat":null,"crm_email":null,"realname":null,"nickname":"Biteye","avatar_url":"https://piccdn.0daily.com/202305/04/a00f7bad7a148017c5efa18f9633ad4d.jpg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Biteye是亚洲领先的Web3研究社区，通过社区驱动和人工智能的方式产生投研内容和工具。","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2023-05-04 14:56:42","updated_at":"2023-05-04 15:24:03","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204209,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":836,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09065525/tucql9xvvhncsr1o"],"template_title":"懒人理财攻略｜Huma 2.0重新开门；BounceBit启动USD1激励活动（6月9日）"},"stat_belong":"","title":"懒人理财攻略｜Huma 2.0重新开门；BounceBit启动USD1激励活动（6月9日）","title_mobile":null,"catch_title":"","summary":"融资300万美元新矿上线，团队明牌“存款即可拿币”。","cover":"https://piccdn.0daily.com/202506/09065525/tucql9xvvhncsr1o","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"\\u61d2\\u4eba\\u7406\\u8d22\\u653b\\u7565\\uff5cHuma 2.0\\u91cd\\u65b0\\u5f00\\u95e8\\uff1bBounceBit\\u542f\\u52a8USD1\\u6fc0\\u52b1\\u6d3b\\u52a8\\uff086\\u67089\\u65e5\\uff09\",\"android_content\":\"\\u878d\\u8d44300\\u4e07\\u7f8e\\u5143\\u65b0\\u77ff\\u4e0a\\u7ebf\\uff0c\\u56e2\\u961f\\u660e\\u724c\\u201c\\u5b58\\u6b3e\\u5373\\u53ef\\u62ff\\u5e01\\u201d\\u3002\",\"ios_title\":\"\\u61d2\\u4eba\\u7406\\u8d22\\u653b\\u7565\\uff5cHuma 2.0\\u91cd\\u65b0\\u5f00\\u95e8\\uff1bBounceBit\\u542f\\u52a8USD1\\u6fc0\\u52b1\\u6d3b\\u52a8\\uff086\\u67089\\u65e5\\uff09\",\"ios_content\":\"\\u878d\\u8d44300\\u4e07\\u7f8e\\u5143\\u65b0\\u77ff\\u4e0a\\u7ebf\\uff0c\\u56e2\\u961f\\u660e\\u724c\\u201c\\u5b58\\u6b3e\\u5373\\u53ef\\u62ff\\u5e01\\u201d\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-06-09 15:01:00\"}","user_id":2147486555,"user_id_edited":476606870,"user_id_created":2147486555,"user_id_tagged":0,"edited_at":"2025-06-09 15:01:07","published_at":"2025-06-09 15:01:08","updated_at":"2025-06-09 15:01:48","created_at":"2025-06-09 11:17:35","pin":0,"pushed_at":"2025-06-09 15:01:00","keywords":[{"name":"懒人"},{"name":"理财"},{"name":"攻略"},{"name":"Huma"},{"name":"2.0"},{"name":"重新"},{"name":"开门"},{"name":"；"},{"name":"BounceBit"},{"name":"启动"},{"name":"USD1"},{"name":"激励"},{"name":"活动"},{"name":"（"},{"name":"6"},{"name":"月"},{"name":"9"},{"name":"日"},{"name":"）"}],"secondary_tag1":"[{\"id\":\"18\",\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\",\"is_post_show\":\"0\"},{\"id\":\"211\",\"name\":\"Bounce\",\"slug\":\"601fb068547a6\",\"is_post_show\":\"1\"},{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"},{\"id\":\"525\",\"name\":\"BounceBit\",\"slug\":\"65c1c40aa64c6\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\"},{\"name\":\"Bounce\",\"slug\":\"601fb068547a6\"},{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"},{\"name\":\"BounceBit\",\"slug\":\"65c1c40aa64c6\"}]","_type":"post","user":{"user_id_old":0,"id":2147486555,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Azuma","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18202718386","wechat":null,"crm_email":null,"realname":null,"nickname":"Azuma","avatar_url":"https://piccdn.0daily.com/202202/18/190fe3858d8368b57a2d4953e1d86541.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"个人微信@z18202718386。","sex":"male","job":"其他","industry":"传媒","birthday":"1994-05-26 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":1,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2018-11-30 19:21:25","updated_at":"2023-06-07 16:54:25","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204200,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2351,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09013556/dvv1d9iuy7mkk0iu"],"template_title":"24H热门币种与要闻 | 全智贤老公炒币亏损150亿韩元登上热搜；美国副总统万斯：希望马斯克能回归（6.9）"},"stat_belong":"","title":"24H热门币种与要闻 | 全智贤老公炒币亏损150亿韩元登上热搜；美国副总统万斯：希望马斯克能回归（6.9）","title_mobile":null,"catch_title":"","summary":"纳斯达克向美SEC申请将XRP、SOL、ADA、XLM添加到加密货币指数中。","cover":"https://piccdn.0daily.com/202506/09013556/dvv1d9iuy7mkk0iu","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"24H\\u70ed\\u95e8\\u5e01\\u79cd\\u4e0e\\u8981\\u95fb | \\u5168\\u667a\\u8d24\\u8001\\u516c\\u7092\\u5e01\\u4e8f\\u635f150\\u4ebf\\u97e9\\u5143\\u767b\\u4e0a\\u70ed\\u641c\\uff1b\\u7f8e\\u56fd\\u526f\\u603b\\u7edf\\u4e07\\u65af\\uff1a\\u5e0c\\u671b\\u9a6c\\u65af\\u514b\\u80fd\\u56de\\u5f52\\uff086.9\\uff09\",\"android_content\":\"\\u7eb3\\u65af\\u8fbe\\u514b\\u5411\\u7f8eSEC\\u7533\\u8bf7\\u5c06XRP\\u3001SOL\\u3001ADA\\u3001XLM\\u6dfb\\u52a0\\u5230\\u52a0\\u5bc6\\u8d27\\u5e01\\u6307\\u6570\\u4e2d\\u3002\",\"ios_title\":\"24H\\u70ed\\u95e8\\u5e01\\u79cd\\u4e0e\\u8981\\u95fb | \\u5168\\u667a\\u8d24\\u8001\\u516c\\u7092\\u5e01\\u4e8f\\u635f150\\u4ebf\\u97e9\\u5143\\u767b\\u4e0a\\u70ed\\u641c\\uff1b\\u7f8e\\u56fd\\u526f\\u603b\\u7edf\\u4e07\\u65af\\uff1a\\u5e0c\\u671b\\u9a6c\\u65af\\u514b\\u80fd\\u56de\\u5f52\\uff086.9\\uff09\",\"ios_content\":\"\\u7eb3\\u65af\\u8fbe\\u514b\\u5411\\u7f8eSEC\\u7533\\u8bf7\\u5c06XRP\\u3001SOL\\u3001ADA\\u3001XLM\\u6dfb\\u52a0\\u5230\\u52a0\\u5bc6\\u8d27\\u5e01\\u6307\\u6570\\u4e2d\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-06-09 09:40:00\"}","user_id":2147660893,"user_id_edited":2147660893,"user_id_created":2147660893,"user_id_tagged":0,"edited_at":"2025-06-09 09:39:56","published_at":"2025-06-09 09:39:56","updated_at":"2025-06-09 09:40:24","created_at":"2025-06-09 09:20:34","pin":0,"pushed_at":"2025-06-09 09:40:00","keywords":null,"secondary_tag1":"[{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"},{\"id\":\"503\",\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"},{\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\"}]","_type":"post","user":{"user_id_old":0,"id":2147660893,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Asher","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18801077830","wechat":null,"crm_email":null,"realname":null,"nickname":"Asher","avatar_url":"https://piccdn.0daily.com/202312/11/47eab1f028e1ebe1696cf92de5f6950c.jpeg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"ODAILY 研究员 | 加密爱好者 | 个人推特：@Asher_0210","sex":"male","job":"自由职业者","industry":"金融","birthday":"1996-12-15 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2023-12-04 11:25:05","updated_at":"2024-10-14 14:18:25","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204198,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2179,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/08095858/7yl91yg705ezgztg"],"template_title":"空投周报 | Farcaster将于下周为前1万名Pro订阅用户空投NFT；Skate将于6月9日开放空投申领（6.2-6.8）"},"stat_belong":"","title":"空投周报 | Farcaster将于下周为前1万名Pro订阅用户空投NFT；Skate将于6月9日开放空投申领（6.2-6.8）","title_mobile":null,"catch_title":"","summary":"本周共有5个空投可申领/查询项目。","cover":"https://piccdn.0daily.com/202506/08095858/7yl91yg705ezgztg","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"\\u7a7a\\u6295\\u5468\\u62a5 | Farcaster\\u5c06\\u4e8e\\u4e0b\\u5468\\u4e3a\\u524d1\\u4e07\\u540dPro\\u8ba2\\u9605\\u7528\\u6237\\u7a7a\\u6295NFT\\uff1bSkate\\u5c06\\u4e8e6\\u67089\\u65e5\\u5f00\\u653e\\u7a7a\\u6295\\u7533\\u9886\\uff086.2-6.8\\uff09\",\"android_content\":\"\\u672c\\u5468\\u5171\\u67095\\u4e2a\\u7a7a\\u6295\\u53ef\\u7533\\u9886\\/\\u67e5\\u8be2\\u9879\\u76ee\\u3002\",\"ios_title\":\"\\u7a7a\\u6295\\u5468\\u62a5 | Farcaster\\u5c06\\u4e8e\\u4e0b\\u5468\\u4e3a\\u524d1\\u4e07\\u540dPro\\u8ba2\\u9605\\u7528\\u6237\\u7a7a\\u6295NFT\\uff1bSkate\\u5c06\\u4e8e6\\u67089\\u65e5\\u5f00\\u653e\\u7a7a\\u6295\\u7533\\u9886\\uff086.2-6.8\\uff09\",\"ios_content\":\"\\u672c\\u5468\\u5171\\u67095\\u4e2a\\u7a7a\\u6295\\u53ef\\u7533\\u9886\\/\\u67e5\\u8be2\\u9879\\u76ee\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-06-08 18:09:00\"}","user_id":2147666375,"user_id_edited":2147666375,"user_id_created":2147666375,"user_id_tagged":0,"edited_at":"2025-06-08 18:08:52","published_at":"2025-06-08 18:08:53","updated_at":"2025-06-08 18:10:06","created_at":"2025-06-08 16:19:27","pin":0,"pushed_at":"2025-06-08 18:09:00","keywords":null,"secondary_tag1":"[{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"}]","_type":"post","user":{"user_id_old":0,"id":2147666375,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"golem","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"13896494253","wechat":null,"crm_email":null,"realname":null,"nickname":"golem","avatar_url":"https://piccdn.0daily.com/202404/17/71e6d33593def8caaa96fd55a7c9f25b.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"个人X：@web3_golem;\n个人微信：golem_3;\n欢迎内幕爆料、项目分享😁","sex":"male","job":"企业老板","industry":"传媒","birthday":"2002-08-01 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2024-04-17 15:36:31","updated_at":"2025-03-12 18:56:06","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204197,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2206,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/08073324/9yhdic7cpykt05rq"],"template_title":"下周必关注｜GENIUS法案有望迎来参议院最终表决；5月份CPI数据公布（6.9-6.15）"},"stat_belong":"","title":"下周必关注｜GENIUS法案有望迎来参议院最终表决；5月份CPI数据公布（6.9-6.15）","title_mobile":null,"catch_title":"","summary":"币安Alpha将上线Skate（SKATE）、Resolv（RESOLV）、Defi App （HOME）空投。","cover":"https://piccdn.0daily.com/202506/08073324/9yhdic7cpykt05rq","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"\\u4e0b\\u5468\\u5fc5\\u5173\\u6ce8\\uff5cGENIUS\\u6cd5\\u6848\\u6709\\u671b\\u8fce\\u6765\\u53c2\\u8bae\\u9662\\u6700\\u7ec8\\u8868\\u51b3\\uff1b5\\u6708\\u4efdCPI\\u6570\\u636e\\u516c\\u5e03\\uff086.9-6.15\\uff09\",\"android_content\":\"\\u5e01\\u5b89Alpha\\u5c06\\u4e0a\\u7ebfSkate\\uff08SKATE\\uff09\\u3001Resolv\\uff08RESOLV\\uff09\\u3001Defi App \\uff08HOME\\uff09\\u7a7a\\u6295\\u3002\",\"ios_title\":\"\\u4e0b\\u5468\\u5fc5\\u5173\\u6ce8\\uff5cGENIUS\\u6cd5\\u6848\\u6709\\u671b\\u8fce\\u6765\\u53c2\\u8bae\\u9662\\u6700\\u7ec8\\u8868\\u51b3\\uff1b5\\u6708\\u4efdCPI\\u6570\\u636e\\u516c\\u5e03\\uff086.9-6.15\\uff09\",\"ios_content\":\"\\u5e01\\u5b89Alpha\\u5c06\\u4e0a\\u7ebfSkate\\uff08SKATE\\uff09\\u3001Resolv\\uff08RESOLV\\uff09\\u3001Defi App \\uff08HOME\\uff09\\u7a7a\\u6295\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-06-08 15:35:00\"}","user_id":2147486555,"user_id_edited":2147486555,"user_id_created":2147486555,"user_id_tagged":0,"edited_at":"2025-06-08 15:35:39","published_at":"2025-06-08 15:35:18","updated_at":"2025-06-08 15:36:09","created_at":"2025-06-08 15:24:52","pin":0,"pushed_at":"2025-06-08 15:35:00","keywords":[{"name":"下周"},{"name":"必"},{"name":"关注"},{"name":"GENIUS"},{"name":"法案"},{"name":"有望"},{"name":"迎来"},{"name":"参议院"},{"name":"最终"},{"name":"表决"},{"name":"；"},{"name":"5"},{"name":"月份"},{"name":"CPI"},{"name":"数据"},{"name":"公布"},{"name":"（"},{"name":"6.9"},{"name":"6.15"},{"name":"）"}],"secondary_tag1":"[{\"id\":\"3\",\"name\":\"\\u94b1\\u5305\",\"slug\":\"5c949ab983d27\",\"is_post_show\":\"0\"},{\"id\":\"57\",\"name\":\"\\u5e01\\u5b89\",\"slug\":\"5dd75cd41205a\",\"is_post_show\":\"1\"},{\"id\":\"84\",\"name\":\"SEC\",\"slug\":\"5e549a2164134\",\"is_post_show\":\"1\"},{\"id\":\"105\",\"name\":\"Coinbase\",\"slug\":\"5f0e916329fb4\",\"is_post_show\":\"1\"},{\"id\":\"333\",\"name\":\"\\u521b\\u59cb\\u4eba\",\"slug\":\"61c92bf9a021d\",\"is_post_show\":\"1\"},{\"id\":\"458\",\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\",\"is_post_show\":\"1\"},{\"id\":\"534\",\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u94b1\\u5305\",\"slug\":\"5c949ab983d27\"},{\"name\":\"\\u5e01\\u5b89\",\"slug\":\"5dd75cd41205a\"},{\"name\":\"SEC\",\"slug\":\"5e549a2164134\"},{\"name\":\"Coinbase\",\"slug\":\"5f0e916329fb4\"},{\"name\":\"\\u521b\\u59cb\\u4eba\",\"slug\":\"61c92bf9a021d\"},{\"name\":\"\\u7a7a\\u6295\",\"slug\":\"635650d07dcc4\"},{\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\"}]","_type":"post","user":{"user_id_old":0,"id":2147486555,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Azuma","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18202718386","wechat":null,"crm_email":null,"realname":null,"nickname":"Azuma","avatar_url":"https://piccdn.0daily.com/202202/18/190fe3858d8368b57a2d4953e1d86541.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"个人微信@z18202718386。","sex":"male","job":"其他","industry":"传媒","birthday":"1994-05-26 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 与区块链的诞生息息相关的密码极客和密码朋克？| 2]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499875&amp;idx=3&amp;sn=58bbe9c8792699b2755d8997555c780e&amp;chksm=fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499875&amp;idx=3&amp;sn=58bbe9c8792699b2755d8997555c780e&amp;chksm=fa01f744cd767e526827c23c645f08bbc647ff3964bb237e82415d96a433e13b7362af5960ed#rd"/>
-        <updated>2025-06-10T08:26:54.755Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+        <title type="html"><![CDATA[SEC新主席连下多道“免死金牌”，DeFi又一春要来了？]]></title>
+        <id>https://www.odaily.news/post/5204243</id>
+        <link href="https://www.odaily.news/post/5204243"/>
+        <updated>2025-06-10T05:07:07.000Z</updated>
+        <summary type="html"><![CDATA[原创 | Odaily 星球日报（@OdailyChina）
+作者｜Azuma（@azuma_eth）
 
-作者 | 三黎
-出品｜白话区块链（ID：hellobtc）
-时至今日，生活中依赖网络的事情越发增多，互联网里的匿名性逐渐被弱化，隐私需要加密的问题亟待解决。无论是国家还是个人，都把眼光看向了区块链技术，对之寄予厚望。
-在很多区块链密码学的相关文章中，我们经常会看到“密码极客”、“密码朋克”这样的字眼，究竟是什么意思呢？今天，我们就来了解一下这两个小知识。
+昨日晚间，美国证券交易委员会（SEC）召开了一场以“DeFi 与美国精神”为主题的圆桌会议。
+在本场会议之前，SEC 已召开过四场加密货币主题的圆桌会议，但或是受限于 SEC 新任主席 Paul Atkins 的履职进度，之前几场会议中并未流出太多具象且清晰的政策导向性内容。
 
+Odaily 注： Paul Atkins 于 4 月 22 日正式履任，之后在第三次会议（上任刚 4 天）进行了极短的开场致辞，并在第四次会议时首次以 SEC 主席的身份就加密货币发表了长篇演讲（详见《SEC 新任主席首场 Crypto 主题演讲，透露了哪些信号？》），但该场演讲只是整体概述了其作为 SEC 主席的工作规划，并未对涉及到具体某个细分板块的监管问题进行过多解释。
 
- 01 
- 密码极客是什么？
+但昨日晚间的会议则截然不同。Paul Atkins 在演讲中接连抛出多个重磅炸弹，几乎是在以叠 BUFF 的形式给 DeFi 上了一道又一道的“免死金牌”。
+受此利好影响，DeFi 板块也迎来了久违的暴力拉升。截至今日 11: 20 ，主流 DeFi 代币表现如下：
 
-“极客”一词，来自“Geek”的音译，意为智力超群、善于钻研但不懂与人交往的怪才，一般指那些依靠计算机技术连接在一起的社会性人群，他们把大量社交时间花费在电脑上，是一种新的“精英亚文化群”。
-密码极客就是研究与密码相关的人群，而密码学又在区块链、加密资产中必不可少，所以在网络上终日热衷于钻研区块链技术的人，也被称为密码极客。
-区块链行业中的密码极客，最著名的是一群来自前阿里、蚂蚁金服的技术人员与阿里创业帮一起发起的区块链技术创投社群，也是杭州最大的区块链技术创业社群。 
+AAVE 暂报 289.15 USDT， 24 小时涨幅 15.54% ；
 
+UNI 暂报  7.045 USDT， 24 小时涨幅 12.85% ；
 
- 02 
-密码朋克是什么？
+HYPE 暂报 39.15 USDT， 24 小时涨幅 11.2% ；
 
-提起朋克，就会联想到反抗、自由，在普通的书中还是常见的，因此算不上陌生词汇。它是上世纪六七十年代的一种西方文化思潮，最初是奇装异服、反叛摇滚的象征，指年轻人为了反对而反抗的一种行为，称为朋克精神。
-密码朋克的英文为 Cypherpunk，1993 年首次出现在埃里克·休斯出版的《密码朋克宣言》中，指反对任何国家规则的密码系统，没有正式的领导阶层，一般通过加密邮件列表进行联系的极客群体，中本聪就是其成员之一。
-区块链技术与密码朋克也有一些关联。
-每一种新技术在发展之初甚至萌芽之际，都有一批开拓者为其摇旗呐喊或是默默耕耘，区块链作为一个“信任机器”和“去中心化数据库”，无论是愿景还是技术支撑，“加密”都是其重要组成部分，而这一切都是为了“隐私”而战。
-区块链起源就是从密码朋克运动开始的，中本聪的比特币白皮书最早发布于“密码朋克”邮件列表，并且在比特币出现之前，密码朋克发表有数十种数字货币，大多都已失败告终。
+PENDLE 暂报 4.355 USDT， 24 小时涨幅 14.2% ；
 
+MKR 暂报 1980 USDT， 24 小时涨幅 13.66% ；
 
- 03 
-小结
-总之，密码极客就是研究密码相关行业的天才、怪才，而密码朋克即指因反对任何规则系统而研究密码相关行业的群体。
-尽管今天的比特币等加密资产和区块链技术如火如荼，但密码朋克对于网络隐私权的乌托邦理想可能才是其发展的初衷。
-你知道当时的密码朋克成员，除了中本聪还有些谁吗？欢迎在留言区分享你的观点。
-
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+Paul Atkins 演讲全文
+感谢各位，下午好。今天非常荣幸与诸位相聚。首先我要感谢 Peirce 委员及加密货币工作组筹办本次活动，同时感谢 Crenshaw 委员与 Uyed…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>Azuma</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 比特币减半和牛市有何关系？| 230]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499493&amp;idx=2&amp;sn=d5803f85e0ab382e1afe136ea02b2938&amp;chksm=fa01c9c2cd7640d4b7abf0950ef65c747db99bff3885f639b5249f073028128079e0a74486c8#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499493&amp;idx=2&amp;sn=d5803f85e0ab382e1afe136ea02b2938&amp;chksm=fa01c9c2cd7640d4b7abf0950ef65c747db99bff3885f639b5249f073028128079e0a74486c8#rd"/>
-        <updated>2025-06-10T08:26:54.753Z</updated>
-        <summary type="html"><![CDATA[在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
+        <title type="html"><![CDATA[投资抉择：买比特币还是以太坊？]]></title>
+        <id>https://www.odaily.news/post/5204215</id>
+        <link href="https://www.odaily.news/post/5204215"/>
+        <updated>2025-06-10T04:30:00.000Z</updated>
+        <summary type="html"><![CDATA[关键要点
 
-作者 | 浮生若梦
-出品｜白话区块链（ID：hellobtc）
-比特币近期的利好消息就是减半，很多人都说比特币减半后的价格必然会有一波上涨，真的是这样吗？
+– 截然不同的起源与理念：比特币（BTC）诞生于 2009 年，被称作“数字黄金”，侧重稀缺性与安全性；以太坊（ETH）上线于 2015 年，定位“全球计算机”，主打可编程金融和各种去中心化应用。
 
+– 技术权衡：比特币采用稳健的 PoW 共识，去中心化程度最高但吞吐有限；以太坊自“合并”后转为 PoS，再加上 Layer-2 方案，能更快、更灵活地处理链上交易。
 
- 01 
-比特币是如何减半的？
+– 生态应用差异：比特币是主流机构与散户青睐的价值储存工具（现货、ETF、企业金库），而以太坊则是 DeFi、GameFi 的发动机，开发者社区活跃。
 
+– 展望未来：比特币路线图聚焦 Lightning、隐私和更多 ETF 批准；以太坊则以分片和 Rollup 为主攻方向，推动更丰富的 DeFi/Web3 应用，但都面临竞争与监管考验。
 
-什么是比特币减产？这个就要追溯到中本聪所设定的规则了。比特币的诞生缘由是因为国家无限制增发货币，中本聪希望有一种货币不会受到任何人的控制，任意两个节点之间就能完成价值转移，于是设计出来这种点对点的交易体系。
-当初刚设计出来的比特币没有多少人知晓，更没有多少人参与，为了让更多的人在早期就参与，于是设计了“越早参与收益越高”的机制，也就是人们所说的“早鸟效应”。
-这个机制是如何实现的？很简单，在某个节点之前挖矿每个区块获得的收益是50 个比特币，在这个节点之后是 25 个，下一轮继续减半为 12.5 个比特币。目前的节点出块奖励就是12.5 个比特币，预计 2020 年 5 月减产后比特币的出块奖励就变成了每个区块 6.25 个。
-就像一块木材每天劈一半，可以劈到无穷尽，理论上比特币的减产也是无穷尽的。但是因为比特币总量限制为 2100 万枚，后期的减半后的收益会无限低，因此大约在 2140 年，比特币就会被挖净，以后挖矿收益就只有手续费没有出块奖励。
-以上就是比特币的减产机制，因为数量的减少，很多人就认为未来比特币必然会有一波大牛市。
+比特币与以太坊共同定义了当下加密领域，但它们服务的目标却截然不同。“到底哪个更值得买？”是每个投资者都关心的问题。本文将从六大维度展开：历史渊源、技术差异、生态与应用、市场表现、风险轮廓以及未来路线，帮助你在 BTC 与 ETH 之间做好资产配置。
+目录
+历史渊源与核心基础
+技术协议差异
+生态与应用场景
+市场表现与投资指标
+风险因素与波动特征
+未来前景与路线图
+历史渊源与核心基础
+起源与定位
+2009 年 1 月，比特币（BTC）横空出世，最初定位点对点电子现金，迅速因去中心化、稀缺性被视作“数字黄金”，价格也一路从几美分飙升至数万美元。
+2015 年 7 月，以太坊（ETH）上线，目标是为智能合约和 dApp 提供通用公链，实现更丰富的链上应用。
+货币政策与供应机制
 
+– 比特币：总量上限 2100 万枚，区块奖励每约四年减半一次。2024 年 4 月减半后，年发行量降至总供应量的 1% 以下，进一步强化稀缺性。
 
- 02 
-比特币减半和牛市有何关系？
-
-
-很多人对比特币的价格的推论是这样的：
-第一种：以太坊白皮书翻译者鲁斌的文章中提到
-
-“从 2011 年 6 月到 2017 年 12 月，共 78 个月，比特币价格每月增长的几何平均数为 8.64%。如果按照历史的涨幅推算未来，那么未来 4 年大概是 53 倍……
-那么估算总体数字资产的市值为 7.42 万亿 / 0.3 = 24.7 万亿美元。这个数字可能会过于乐观，因为前提假设是加密资产在未来 4 年仍然会按照过去的指数级增长……对 24.7 万亿这个数打 3 折，7.4 万亿美元，会更贴近现实”。
-
-第二种:比特币从当初的 0.001 美元暴涨 2000 万倍花了不到十年的时间。这十年中没有任何投资标的有这样的涨幅，按照这样的涨幅，在未来比特币必然还会继续升值。
-第三种：很多持币大户认为未来会一币一个别墅、未来看比特币的价格就是一条直线等等。
-其实，世界上除了年龄会只涨不跌，再也没有只涨不跌的投资标的。
-比特币从 1 美元涨到 8000 美元，产品从 8000美 元涨到 80000 美元，两者之间的难度是不同的，虽然一个是涨 8000 倍，还有一个是涨 10 倍。
-
-2012 年比特币价格为 300 美元的时候，涨十倍到 3000 美元需要的资金量是 2700 美元一枚；
-2016 年，3000 美元的时候涨十倍，需要 27000 美元的资金量；
-2019年，8000 美元的时候再涨十倍，需要的资金量已经高达 72000 美元了。倍数还是线性增加，然而需要的资金早已经变成指数增长了。
-不同的底数翻十倍需要的资金量是远远不同的。最简单的例子，从 1 分涨到 10 元是 1000 倍，需要的资金是 9.99 元；从 10 元涨到 100 元，仅仅涨了十倍，需要的资金量已经是 90 元了，相比从 0.01 元涨 1000 倍需要的资金量已经翻了将近 10 倍了。
-所以说，当前的比特币价格 8000 美元，想翻十倍，需要的资金量是十分恐怖的。即使是目前 8000 美元的比特币再翻倍，需要的资金量也是非常惊人的。以太坊英文白皮书的翻译者鲁斌依照比特币月增长的平均数来算，却没有考虑需要的资金量。
-综合看来，比特币的价格要想像过去十年那样一路上扬，是非常困难的，因为需要的资金量太大了。
-你怎么看待比特币减半会带来新一轮牛市这一说法呢？为什么？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+– 以太坊：最初无固定上限，挖矿奖励铸造新币…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>XT研究院</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 加密货币的投资和投机有何区别？如何做到鱼和熊掌]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499359&amp;idx=2&amp;sn=2afe6ad2a38b55c97001422ed03885c6&amp;chksm=fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499359&amp;idx=2&amp;sn=2afe6ad2a38b55c97001422ed03885c6&amp;chksm=fa01c978cd76406e48cb6c31eed3c5c90b390ade638b79a3a8c271ea491f2456e323d92724fc#rd"/>
-        <updated>2025-06-10T08:26:54.750Z</updated>
-        <summary type="html"><![CDATA[友情提示：国庆期间小伙伴投稿中奖的文章，会在本周陆续推出，非常感谢大家的积极支持。另外，在此期间，我们依旧对外征稿，欢迎大家踊跃参与。
+        <title type="html"><![CDATA[对等关税战新回合，全球为何加速拥抱加密货币？]]></title>
+        <id>https://www.odaily.news/post/5204245</id>
+        <link href="https://www.odaily.news/post/5204245"/>
+        <updated>2025-06-10T03:55:15.000Z</updated>
+        <summary type="html"><![CDATA[5 月 12 日中美日内瓦经贸会谈超预期，美股和加密货币在政策利好与市场预期下上涨。但月底美国国际贸易法院的裁定又削弱关税战的“合法性基础”，引发政策博弈，全球贸易规则重构进入 “司法 - 行政角力” 阶段，关税长期影响仍存担忧。而加密资产去中心化、跨主权的抗政策干预属性，愈发受到投资者青睐。
+美国政府在 5 月尝到了经济数据的甜蜜：最新公布的 4 月非农就业数据增长达到 17.7 万人，好于预期，表明劳动力市场依然稳健。中美日内瓦经贸会谈达成 “关税暂停期” 协议，缓解了市场对全球供应链断裂的担忧，消费者对进口商品价格（如电子产品、日用品）的通胀预期下降，推动零售消费意愿回升，因此也带来了更为亮眼的信心指数：世界大型企业研究会（The Conference Board） 27 日发布的数据显示，美国 5 月消费者信心指数意外飙升至 98 ，较 4 月的 85.7 大幅反弹 12.3 点，创下四年来最大单月升幅，显示关税缓和对消费端的积极传导。
 
-作者 | Wayne
-出品｜白话区块链（ID：hellobtc）
-一些金融专家认为，加密货币将成为我们时代最重要的资产类别。就是说，尽管关于区块链和哈希的讨论似乎还都是不着边际，但很多人仍可能想调查一下加密货币是否是最佳投资机会。
-毕竟，最好的投资是您可以放心管理的投资，而信心来自了解。那么，在区块链和加密货币领域的投资和投机有何差异？
-
-
- 01 
-投资
-
-
-对于大多数人来说，投资和投机之间的区别归结为风险、回报和时间长度。牛津词典对投资的定义是：“将钱投入财务计划、股票、房地产和商业企业，以期获得利润。”
-投资者通常会长期参与其中，因此，投资者决定将其资金投入公司之前，需要花费大量时间进行研究和分析，必须确保它是安全可靠的，并且可能的回报值得承担风险。
-通常，投资者会将钱投入到较低风险的投资中，这些投资自然会在较长的时间内带来较低的回报。本杰明·格雷厄姆在他的《聪明的投资者》一书中将这些列为投资规则：在购买股票之前，您必须彻底分析一家公司及其基础业务的健康性。您必须有意保护自己免受严重损失。您必须追求足够的表现，而不是非凡的表现。
-如果我们将其分解，可以看到格雷厄姆倡导在购买股票之前进行全面的分析和尽职调查。对于股票，这通常涉及基本面分析、定量分析、定性分析和内在价值检验。格雷厄姆还重视谦卑和深思熟虑，这意味着不要承担过多的风险，并要获得可观的回报。
-
- 02 
-投机
-
-相比之下，投机通常会在较短的时间框架内带来更高的风险和回报。对投机的定义是“投资股票、房地产或其他企业，以期获得收益，但有亏损的风险。”如果我们从更广泛的非财务角度来看是：“在没有确凿证据的情况下形成理论或对某个主题进行猜想。”
-显然，这适用于许多加密货币领域，那里有无数的交易者根本没有研究基本面就梭哈，而坐在家里的无数“投资者“则把钱投向任何一个外表光鲜的币种。
-但是投机不仅限于加密货币。
-世界上最大的货币和股票市场上的日间交易员都是投机者，他们每天都在利用市场效率低下和波动来努力赚取很少的一部分收益。小型矿业公司中的“投资者”也是投机者，他们把赌注押在一个新发现的油田上，而该油田几乎不能保证会有足够的产量或回报。
-
-
- 03 
-投资者与投机者
-
-在加密货币市场进行投资和投机都是可能的，它只是取决于在考虑向市场投入资金时所采用的方法。投资者可能会发现一个可靠的加密货币项目，该项目符合他们调研中的所有要求，并且似乎被低估了，他们购买的目的是长期持有。这些类型的项目将塑造未来，可能成为下一个苹果、亚马逊、甚至是互联网3.0。这类投资者会尽职调查，并且会长期参与其中。
-投资组合分为投资和投机两大块仍然可以进行尽职调查，并在长期持有时继续进行单个项目的研究，同时将一小部分投资组合放在一边进行投机。
-您可以资金的 80–90％ 用于投资，在此投资组合中，您可以通过将资金分配给 5 个、10 个、或者 20 个项目，以进行分散投资，但是您需要对每个项目进行深入研究。用 10％至 20％的资金进行投机。在这个投资组合中，您仍然可以通过将资金分成 10 个分配来进行分散投资。
-通过这样做，我们的目标是：投资：选择长期受益，而忽略市场波动。这些项目将有好有坏的日子，但这并不重要，因为您是 HODLer；投机：对小额收益见好就收，充分利用加密货币市场波动赚钱。
-降低任何投资风险的方法是通过多元化，通过采用同时利用投资和投机的策略，您可以在牛市期间大赚，在熊市期间少赔。最后还是一句老话：“投机金额不要超过您愿意承受的金额。”
-在购买加密货币时，你通常会考虑投资还是投机呢，它们之间最大的区别是什么呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+然而“福无双至”，美债的苦涩也已送到了嘴边。“特朗普 2.0 ”拉开大幕后，美债市场的巨震也成了家常便饭。5 月下旬， 30 年期美债收益率飙升至 5.1% 以上，接近 20 年来的最高水平。存在着日债、贸易谈判进展等一系列影响美债走势的因素，但其实我们都知道，美国的财政前景才是最关键的，而新的变量已经现身： 5 月末，特朗普政府的《美丽大法案》（One Big Beautiful Bill Act，我们在下文会继续分析）在众议院通过，拟将美国债务上限从目前的 1 万美元提高到 4 万美元，《纽约时报》引用的预测显示，该法案将推动美国债务占 GDP 比例从当前约 98% 飙升至 125% ，目前该法案正待参议院审议。
+此外，美联储的降息也依旧不明朗。2025 年 5 月 28 日公布的美联储 5 月会议纪要显示，参与美联储政策会议…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>R3PO</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[▪ 比特币总量恒定2100万，挖完以后怎么办？| 239]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499858&amp;idx=2&amp;sn=8f46438a8c3cfc61346c9e060760bb57&amp;chksm=fa01f775cd767e632e216f7f98397252544f7caedef1cbe13a602bb21b64b6fc35d1443f18b5#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499858&amp;idx=2&amp;sn=8f46438a8c3cfc61346c9e060760bb57&amp;chksm=fa01f775cd767e632e216f7f98397252544f7caedef1cbe13a602bb21b64b6fc35d1443f18b5#rd"/>
-        <updated>2025-06-10T08:26:54.748Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
+        <title type="html"><![CDATA[BTC短线再破11万美元大关，行情下一步怎么走？]]></title>
+        <id>https://www.odaily.news/post/5204240</id>
+        <link href="https://www.odaily.news/post/5204240"/>
+        <updated>2025-06-10T03:12:05.000Z</updated>
+        <summary type="html"><![CDATA[原创 | Odaily星球日报
+作者 | Azuma
 
-作者 | 三黎
-出品｜白话区块链（ID：hellobtc）
-在近期的留言中，很多新入门的小伙伴都在问比特币约四年减半一次，挖完之后怎么办呢？矿工奖励从哪里来，奖励的是什么币？总量恒定不够用了怎么办？今天我们就来聊聊比特币总量和矿工奖励的事情。
+随着“明牌”巨鲸 James Wynn 的仓位被狙击一空，市场似乎再次回到了正轨。（详见《从巨鲸到蚂蚁，链上合约传奇 James Wynn 陨落？》）
+昨晚至今晨，市场再次迎来大幅上涨。欧易 OKX 行情显示，BTC 短时突破 110000 USDT，最高一度触及 110650 USDT， 24 小时涨幅 3.95% ；ETH 这次也是硬了起来，强势突破 2700 USDT，最高一度触及 2727.9 USDT， 24 小时涨幅 8.36% ；近期表现相对平淡的 SOL 短线也突破了 160 USDT，最高一度触及 161.83 USDT， 24 小时涨幅 5.21% 。
 
+除 BTC、ETH、SOL 外，山寨币也呈现出普涨态势，或受“SEC 主席强调正在为 DeFi 制定豁免政策”影响，DeFi 板块涨幅格外突出。截至发文，AAVE 暂报 288.2 USDT， 24 小时涨幅 13.87% ；UNI 暂报  7.2 USDT， 24 小时涨幅 13.5% ；MKR 暂报 2012 USDT， 24 小时涨幅 14.2% 。
 
- 01 
-比特币总量是多少？是如何得知的？
+行业上涨的同时，加密货币总市值也迅猛增长。CoinGecko 数据显示，目前加密总市值突破 3.563 万亿美元， 24 小时上涨 2.1% 。加密用户交易热情亦明显上升，今日恐慌与贪婪指数已达 71 ，等级为“贪婪”。
+衍生品交易方面，Coinglass 数据显示，过去 24 小时全网爆仓 4.36 亿美元，其中绝大部分为空单爆仓，数额达 3.81 亿美元。从币种来看，其中 BTC 爆仓 2.01 亿美元，ETH 爆仓 1.05 亿美元。
 
-2009 年，中本聪挖出了比特币的创世区块，生成了 50 个比特币，根据比特币的机制规定：每隔大约 10 分钟会出现下一个区块，每隔约 210000 个区块奖励就会减半。
-也就是说，前 210000 个区块的奖励是 50 个比特币；从第 210001 区块到第 420000 区块，每个区块的奖励则是 25 个比特币。按照每个区块的产出时间约为 10 分钟计算，每 210000 个区块的产出时间大约是 4 年，即常提到的 4 年减半。
-四年一次变化，每个四年间都会产生约 21 万个区块。第一个四年每个区块是 50 个比特币，；第二个四年每个区块是 25 比特币；第三个四年每个区块是12.5 比特币，以此类推直到全部被挖完。
-也就是（50+25+12.5+6.25+3.125+1.5625+……+0.00000001 ）×210000≈21000000，直到约 2140 年左右全部挖完。
+上涨原因剖析
 
-
- 02 
-除了比特币，别的币可以挖吗？
-
-除了比特币，别的币也是可以挖的。不过不同的矿机可以挖的币不同，如果两种币的算法机制相同，则可以用一个矿机挖不同的币。否则，是没办法用一台矿机同时挖不同类型的币种，或者挖矿效率很低，因为矿机都是根据特定算法定制的。
-另外，矿工挖比特币奖励的就会是比特币，挖莱特币就会奖励莱特币，所以奖励的币取决于你挖的币是什么。
-
-
- 03 
-挖完之后不够用怎么办？
-
-各国无限制的发行货币导致钱变得越来越不值钱，比特币的出现给通货膨胀的这一问题带来了解决方向。
-随着它越来越为公众所熟知，比特币总量恒定 2100 万，可以避免通货膨胀，以后如果成功了，要大量应用，即便在 2140 年左右全挖出来，不够用怎么办，会不会导致通货紧缩呢？
-前面介绍过，比特币的最小单位是聪，只有一枚比特币的亿分之一，比特币的价值是可以细分到很小的，短期内是不必担心的。
-另外，假若真到了 2140 年，面临挖完的局面，比特币是只是数字货币发展至今的一种形式，除此之外，还有以太坊、EOS 等可以使用。但如果可以无限制增发，又会和法币一样了，失去了其价值。
-另外，比特币挖完之后的矿工奖励问题，中本聪曾提过：
-
-只要既定数量的电子货币已经进入流通，那么激励机制就可以逐渐转换为完全依靠交易费。”
-
-因此，即便币都被挖完了，矿工到时候也可以通过手续费继续维护整个网络系统。
-你怎么看待比特币总量恒定会导致通货紧缩这一看法呢？欢迎在留言区分享你的观点。
-
-
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
+关于本次行情上涨的具体原因，除了 DeFi 板块的明确利好外，似乎并没有太多关于整体行情的消息面动态。与此相对应的是，传统金融市场昨日也…]]></summary>
         <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 为什么 DApp 经常会遭遇随机数攻击？| 224]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499282&amp;idx=2&amp;sn=aede7af4ddd72536c6f98bbe279e4f28&amp;chksm=fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499282&amp;idx=2&amp;sn=aede7af4ddd72536c6f98bbe279e4f28&amp;chksm=fa01c935cd7640230f662a8e13b77c89ccc78d3f988f4d35e7adb7ae4d136054526b19ca2853#rd"/>
-        <updated>2025-06-10T08:26:54.743Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 李火华
-出品｜白话区块链（ID：hellobtc）
-9 月 14 日，一款名为“EOSPlay”的 DApp 游戏遭遇了新型随机数攻击，一共损失了数万个 EOS。
-或许很多人对「随机数攻击」这个词已经司空见惯了，因为在 DApp 遭遇黑客攻击的事件中，随机数攻击占了很大一部分，很多 DApp 的随机数被黑客破解了。
-你或许会问，随机数不是随机的吗？随机意味着不可预测，为什么还会被黑客破解呢？
-这还得从随机数说起。
-随机数可以分为真随机数和伪随机数。真随机数需要同时满足随机性、不可预测性、不可重现性，而伪随机数只需要满足随机性，或者是随机性和不可预测性即可。
-真随机数只存在于物理世界中，一般需要通过物理手段（包括量子过程）获得，比如我们日常见到的抛硬币、掷骰子，生成的随机数就是真随机数。但是，抛硬币、掷骰子这种随机数生成方法的缺点非常明显，那就是耗时、耗力，而且也无法满足现代的计算机世界对随机数的需求。
-因为效率的缘故，现代的计算机软件主要依赖伪随机数。最早的伪随机数生成器由 20 世纪最重要的数学家之一冯·诺依曼创造，通过一个确定的随机数种子，由确定的算法生成伪随机数序列。现在的主流计算机编程语言，默认的是将 1997 年发明的梅森旋转算法作为生成伪随机数的方法。
-伪随机数最大的缺陷是，只要种子不变，生成的伪随机数序列也不会变。换句话说，只要你能拿到种子，你就可以破解随机数。
-计算机生成伪随机数的过程，或多或少与这台计算机的物理状态或运算状态有关。也就是说，同一套随机数算法，不同的计算机，或是同一台计算机在不同的时刻，生成的随机数是不一样的。
-然而，这种传统的计算机伪随机数生成方法虽然足够安全，却并不适用于区块链。区块链是一个分布式的系统，同一…]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 美国、德国和日本对于区块链的态度变化| 244]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500084&amp;idx=2&amp;sn=8e27bb3f47a037c8f5fbf1450a4b3d97&amp;chksm=fa01f613cd767f05488f4e94db1a2cd4f38f30331ce309b9cc4cb0ab960cafc8cefe85b220a0#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500084&amp;idx=2&amp;sn=8e27bb3f47a037c8f5fbf1450a4b3d97&amp;chksm=fa01f613cd767f05488f4e94db1a2cd4f38f30331ce309b9cc4cb0ab960cafc8cefe85b220a0#rd"/>
-        <updated>2025-06-10T08:26:54.740Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 听风
-出品｜白话区块链（ID：hellobtc） 
-近年来，我国对区块链技术的态度逐渐趋于明朗，今年10月份国家领导人表示"要把区块链作为核心技术和自主创新的重要突破口，明确主攻方向，加大投入力度……",让区块链一下成为家喻户晓的热词，区块链不再是妖魔鬼怪。
-其实全球各国对区块链的态度也并非总是一成不变，今天就来聊聊几个典型国家对区块链的态度。
-
-
- 01 
-日本：从鼓励到谨慎监督
-
-日本对区块链和比特币的接受度是较早的，在2016年3月份，日本内阁就通过投票将比特币和数字货币均视为数字等价货币，成为第一个为加密货币交易提供法律保障的国家。
-
-2017年4月，日本实施了《支付服务法案》，正式承认比特币是一种合法的支付方式，对于数字资产交易所提出了明确的监管要求。2017年，日本的央行宣布将尝试发展区块链项目，主要推动针对比特币等数字资产的应用。
-2018年，日本金融厅(FSA)公布了2018工作年度(2018年7月至2019年6月)的财务管理政策。FSA指出,对于虚拟货币,将严格进行注册审查和监控,以应对虚拟货币从交易平台被盗的问题。
-
-
- 02 
-美国：重点监管
-
-美国虽然各个州的法律有所不同，但对区块链和数字货币的监管一直很严格，美国对于区块链的监管主要体现在货币监管、投资活动等方面。
-早在2014年7月，纽约州金融服务管理局（NYDFS）就虚拟货币活动提出了一个名为“数字货币许可证制度”的全面监管框架。2015年6月3日，该框架开始正式执行。
-2019年1月3日，美国纽约州政府成立数字货币研究工作组。1月30日，美国国会通过了一项研究加密货币用于非法交易的法案。
-而在监管加密货币的同时，美国也并未放松对Libra的关注。对于区块链技术，2019年美国能源部资助区块链研究项目。美国华盛顿特区提出法案，鼓励发展区块链技术。
-
- 03 
-德国：积极拥抱
-
-德国是最早将比特币等数字资产认定为私有财产，将发展区块链技术作为国家战略的国家。早在2013年8月承认比特币的合法地位，已经纳入国家监管体系。
-2016年11月，联合德意志联邦银行和法兰克福金融管理学院召开区块链技术机遇与挑战的大会，大会的主要目的都是对分布式账本的潜在运用展开研究，包括跨境支付跨行转账以及贸易数据的存储等等。
-2019年德国政府已经通过了一项全新国家战略政策，旨在概述该国使用区块链技术的方式。德国总理默克尔批准了该战略，确定政府在区块链领域里的优先职责，包括数字身份、证券和企业融资等，可以算是在全力支持区块链了。
-区块链技术虽离广泛应用还有一段距离，但各国已在积极响应发展号召。尤其是中国明确区块链发展战略后，世界各国已经摩拳擦掌。
-你还想知道或者已经知道哪些国家对区块链的态度呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 矿池和矿场有何区别？| 247]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500193&amp;idx=2&amp;sn=7004871802ef941df299e617811cfa55&amp;chksm=fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500193&amp;idx=2&amp;sn=7004871802ef941df299e617811cfa55&amp;chksm=fa01f686cd767f90d38d2116c48e5141649d0cd5d41c034d83c21038bf9e04da01c20512a273#rd"/>
-        <updated>2025-06-10T08:26:54.734Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 |宇星
-出品｜白话区块链（ID：hellobtc）
-大白有个朋友看见比特币价值不菲，而且听说比特币是挖出来的，就两眼发光，兴致勃勃地也想去挖矿。但无奈入矿圈没那么容易，有许多知识需要了解。今天就让大白来介绍一下什么是挖矿，以及矿池和矿场的区别到底是什么？
-
- 01 
-挖矿
-在《比特币的矿工和挖矿是什么意思？》一文中谈到，在比特币世界中，比特币就好比是“数字黄金”，像黄金是从金矿里面挖出来那样，我们想把比特币从数字里面“挖”出来以此来获得比特币奖励，而挖矿的过程实则就是解决计算难题的过程。而挖矿的实施者则称为矿工。
-挖矿再详细点其实就是不停地进行哈希运算，直到得到的哈希运算后的结果比目标值小。这里看不懂，先别慌，请继续听着大白往下讲。
-
-其实这挖矿的过程就和掷色子类似，比如，游戏规则是让大白同时扔3个色子，扔出的数字序列小于112算胜利，假设大白某一次扔出的色子序列为111（第一个色子正面向上的数字是1，第二个色子是1，第三个色子是1），那么就表示胜利，并获得游戏奖励。
-在比特币世界中，我们把“掷色子”的这个过程交给了我们的一些计算能力的机器（矿机）去做。上面的例子是3个色子同时扔，而我们的比特币中的哈希值是256位，也就是说相当于同时扔256个色子，而且上面的例子中一个色子只有6面，也就6种可能，但是比特币世界中的一个”色子“相当于硬币有2面（一面是0，一面为1），因此会有10的77次方以上的可能情况产生。因此如果一个矿机挖矿的话，挖到的概率还是非常小的。
-在比特币世界中，计算机会不断地“掷色子”，直到得到的色子序列比目标值小时，就会出一个区块，而且第一个计算出这个结果的矿工将会获得一定的奖励。这也是激励矿工去挖矿的一种的机制。
-
-
- 02 
-矿池…]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 区块链转账是怎么收费的？| 245]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500118&amp;idx=3&amp;sn=30a3f41b958958a1fec5af3172de8b94&amp;chksm=fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247500118&amp;idx=3&amp;sn=30a3f41b958958a1fec5af3172de8b94&amp;chksm=fa01f671cd767f67a27c17a11bd5f6d067c95984afa2745f5a0f33926c75d3f1a4cb95dce0a5#rd"/>
-        <updated>2025-06-10T08:26:54.733Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 听风
-出品｜白话区块链（ID：hellobtc）
-早年银行间转账都是收手续费的，一般按照转账金额的一定比例收取。而跨国转账，由于货币国与国之间的壁垒及外汇管制等，除了支付以上手续费和支付200元左右的电报费，另外还耗时几个工作日。
-然而，这些壁垒和管制在区块链的世界里都不复存在。你只需要轻轻发送一个转账请求，基本能够实现一小时内到账，那么区块链转账手续费是如何收取的呢？
-
-
- 01 
-比特币网络转账
-
-最早的比特币网络转账是按字节收费的（BTC矿工费=Fees（聪/byte） * Site（byte））。比特币转账是从一个比特币地址转移到另一个比特币地址，在实际交易过程中，如果A要转账给B，包含这笔交易的区块向区块链中的所有用户发布广播，矿工平均每隔10分钟会将比特币网络中未被记账的交易打包进一个区块，这就完成了一次确认，经过6次确认后，这笔转账就被认为不能逆转了。
-所以这里转账的手续费实际上是支付给矿工记账的报酬。一笔交易（不分金额）是250字节甚至更多，手续费一般为0.0001-0.0015个比特币。而比特币一个区块的容量就1M，一个区块每秒大约只能处理7笔交易，所以比特币上的交易是非常拥堵缓慢的，为了获得优先记账权，可以多付些手续费。
-
-
- 02 
-以太坊的转账
-
-以太坊的转账是按消耗Gas（燃料）计算的 （ETH矿工费 = Gas Limit * Gas Price） 。与BTC一样，ETH转账也是需要支付区块链矿工费的。
-不同的是，以太坊的转账我们称消耗了Gas（燃料），这个值是由Gas Price（单价）和消耗的 Gas Limit（数量）来确定的，Gas limit的数量一般是根据ETH智能合约内容来决定的，因此发起方设置的Gas Price的价格越高，其发起的交易就能越快被打包。不过ETH的Gas用不完是可以退回的。
-
-
- 03 
-EOS转账
-
-不同于BTC和ETH，EOS转账几乎“免费”。EOS 转账过程中会消耗一定网络带宽资源（NET）、CPU计算资源(CPU)。
-但NET和CPU都是可再生资源，用户可以通过抵押EOS的方式获得，EOS账号信息、智能合约执行信息存储需要消耗运行内存资源（RAM）, RAM是稀缺资源，需要购买，所以说EOS转账是免费的，但是还是需要消耗需要购买的RAM。
-传统的支付转账系统都是依赖于第三方机构作为信用背书，而在区块链的世界里，是点对点的去中心化交易，它速度更快，成本更低，具有更大的优势。
-你认为区块链转账相比传统行业还有哪些优势和弊端呢？欢迎在留言区分享你的观点。
-
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。文章版权和最终解释权归白话区块链所有。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 什么是加密货币ETP、 ETF？两者有什么区别？| 232]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499559&amp;idx=2&amp;sn=a927a16664842d727e06b5bc420c2a58&amp;chksm=fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499559&amp;idx=2&amp;sn=a927a16664842d727e06b5bc420c2a58&amp;chksm=fa01c800cd7641162c2e63824e57758c92c08bcdd0b00b9b909313ae652083d5805945c7be5b#rd"/>
-        <updated>2025-06-10T08:26:54.727Z</updated>
-        <summary type="html"><![CDATA[友情提示：进入科普目录从0开始学习噢！扫描文末二维码，新入门的小伙伴可以看200多期入门连载哦！公众号回复 福利 获取学习礼包~
-
-作者 | Wayne
-出品｜白话区块链（ID：hellobtc）
-就在美国证监会（SEC）拒绝了 Bitwise 提交的比特币 ETF 之际，币安对外宣布称已携手 Amun 在瑞士证券交易平台推出了 BNB ETP。
-很多人看不明白，ETF 与 ETP 有什么区别呢？为什么 ETF 被拒，ETP 却可以通过呢？今天，我们就来看下两者的区别。
-
-
- 01 
-比特币ETF
-
-ETF 的全文是 Exchange Traded Funds，即交易平台交易基金。按字面理解，就是可以在交易平台交易的基金，简单说就是追踪大盘走势的一篮子标的。
-你可以把 ETF 当作是一篮子股票，它们是根据一些指示股票走势的指数选的，比如标普 500，它记录了 500 家公司股票的整体走势。那么，ETF 里的一篮子股票就是这 500 家公司的股票。
-需要提出的一点是，你实际上并不直接拥有那 500 只股票， 你拥有的是一个凭证，来证明你拥有这个 ETF。最著名的 ETF 是 SPY ETF，它是全球最大的交易平台交易基金，跟踪的就是标准普尔 500 股市指数的总体水平。
-比特币 ETF 就是基于比特币的 ETF。如果你购买了比特币 ETF，你就相当于间接投资了比特币，拥有的是可以交易的比特币基金，而并非直接拥有比特币。但是，你买比特币 ETF 和直接买比特币，在收益上没有任何区别，因为比特币 ETF 追踪的就是比特币的价格，比特币涨了，这个 ETF 也就涨了，反之亦然。
-ETF 不过就是换了一种投资比特币的方式而已。唯一的区别是我们不用再去担心比特币会不会被盗了，不再担心把比特币存放在哪里了，也无需走繁琐的程序。
-
-
- 02 
-ETP
-
-ETP 的全文是 Exchange T…]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 加密货币的钱包、公钥和私钥都是怎么回事？| 233]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499590&amp;idx=2&amp;sn=f49b823ac6ef79bbc9778eaa748797cf&amp;chksm=fa01c861cd7641779ebf9615c7612c944e283bbfddb29f0a62335b86e390017508403135f968#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499590&amp;idx=2&amp;sn=f49b823ac6ef79bbc9778eaa748797cf&amp;chksm=fa01c861cd7641779ebf9615c7612c944e283bbfddb29f0a62335b86e390017508403135f968#rd"/>
-        <updated>2025-06-10T08:26:54.726Z</updated>
-        <summary type="html"><![CDATA[在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
-
-作者 | 错皮
-出品｜白话区块链（ID：hellobtc）
-判断一个人是否真的了解区块链，可以先问一句：“我转 Token 给你，你的钱包地址是什么呢？”这个试金石可以轻松地区分很多人。在区块链世界，没有自己的钱包地址就是一个旁观者。
-要创建一个钱包，需要先获得自己的钱包地址。比如，这就是一个合法的比特币地址：
-1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm
-就像银行账户一样，有了它，任何人都可以给你转账。其实，任何人都可以独立地、不联网地生成自己的钱包。这是怎么做到的呢？
-
-
-
- 01 
-公钥和私钥
-
-这涉及到一个密码学上的一个基本概念：公钥加密技术。
-公钥加密技术中，公钥和私钥成对出现，公钥加密的东西可以拿私钥解开，私钥加密的东西可以用公钥解开。两者的关系，大家可以想象成一个带锁的盒子和一把钥匙之间的关系。这个特性用来加密和签名。
-加密的过程，就像是把要寄的信放到盒子里，锁上并写上地址，然后寄出去。寄件人和收件人都很放心，因为其他人无法打开盒子。
-签名的过程，类似于对外展示钥匙的过程。锁上的盒子只有你可以打开，如果有人拿着你发的钥匙打开了盒子，那盒子里的东西一定是你发的。
-你手里面握着私钥，无论如何都不能泄露；你的钱包地址，是满世皆知的转换后的公钥。钥匙信息可以被公钥打开，则说明是知道私钥的人加密的。所以，任何的交易一旦用你的私钥加密了，收到的人用你的公钥可以解密，那就认为是你授权的操作。
-
-
-
- 02 
-钱包地址的生成
-
-比特币世界几个关键的信息是按照这个顺序生成的：先生成私钥，再由私钥算出公钥，再由公钥经过一系列哈希算出钱包地址。
-
-私钥 → 公钥 → 钱包地址
-上面的推导次序是单向的，反向不可能。也就是说，从钱包地址无法得到公钥，从公钥无法得到私钥。比特币的公钥变形出来的钱包地址，可以想象成用户名，这全世界都可以知道；私钥可以想象成密码，这个只有自己知道。
-私钥是一切的开端。私钥是一个大于零、小于 2 的 256 次方的任意数字，比如下面这个私钥：
-00000000000000000000000000000001（也就是数字 1）
-需要注意的是，不是随机生成的私钥，风险非常大！
-然后，私钥通过椭圆曲线函数，生成对应的公钥，比如下面这个：
-0479BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8
-经过一系列哈希加密之后，最终形成比特币地址，比如下面这个：1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm
-私钥就像《阿里巴巴和四十大盗》故事里面的“芝麻开门”。世界上任何人只要知道“芝麻开门”这个咒语，就可以在那座大山里面找到那个山洞并且打开大门。一个人是否拥有账户，只看他知不知道那个咒语。四十大盗知道咒语后可以取走宝贝，阿里巴巴知道后也可以取走，至于那个山洞里面有没有金银财宝，则是另外一件事情了。
-看这篇文章的你，在知道了本文举例中的比特币私钥（即数字 1），这意味着我们对这个地址里面的“钱”都拥有控制权。
-在比特币的世界，虽然无法知道地址背后的人是谁，但这个地址历史上所有的交易都是公开的，可以通过区块链浏览器查询。
-区块链行业中，你还想了解什么相关小知识呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 一文说透比特币ETF| 235]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499671&amp;idx=2&amp;sn=0d8ad7559420a996a3dd636d876a0c4c&amp;chksm=fa01c8b0cd7641a6474c0fde9ff7968d656e792e902a4a912ebc01a299512e1be3f55207fc8b#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499671&amp;idx=2&amp;sn=0d8ad7559420a996a3dd636d876a0c4c&amp;chksm=fa01c8b0cd7641a6474c0fde9ff7968d656e792e902a4a912ebc01a299512e1be3f55207fc8b#rd"/>
-        <updated>2025-06-10T08:26:54.723Z</updated>
-        <summary type="html"><![CDATA[友情提示：入门连载已经 200 多期了，大白建议新入门的小伙伴们可以去文末扫描二维码，进入科普目录从 0 开始学习噢！
-
-作者 | 崔晗
-出品｜白话区块链（ID：hellobtc）
-前段时间，美国 SEC 宣布，Bitwise 提交的关于在纽交所高增长板市场（ NYSE Arca）上市比特币 ETF 的提案，因为不符合“防止市场操纵及其他非法活动”的法律要求而被拒绝。
-尽管在之前我们已经就比特币 ETF 的魔咒进行了介绍，但是究竟什么是 ETF 以及什么是比特币 ETF？还是令人费解，今天就让我们聊聊 ETF。
-
-
- 01 
-什么是 ETF？
-
-
-
-ETF 的全称是 Exchange Traded Fund，中文翻译为交易平台交易基金。
-大家可能对基金到底是啥又犯难了，但是当提到股票大家应该就很熟悉了。
-一般投资人想着入手股票，肯定需要对股票背后公司的发展前景、资金状况有一定的了解，然后在成千上万的股票种类中选择购入的股票，这对于买家来说需要耗费太多的时间和精力。
-基金出现的初衷就是为了简化普通投资者的投资过程。大家只需要把钱交给一个基金经理，通过基金经理把这笔钱用于投资购买，到了期限后，只需支付一定的服务费给基金经理，剩下的本金和收益就归投资人所有。
-这相对于散户投资来说节省了时间精力、降低了投资风险，但是基金相对于股票来说，投资者的买卖自由度降低了，投资人不能随意地变动这部分资产。
-在此之上出现了 ETF，相当于给基金赋予了一种股票的功能，让基金像股票一样可以在交易平台进行挂牌，可以自由买卖。ETF 是一种指数基金，是追踪股票大盘走势的一篮子股票，合在一起包装成基金。
-
-可以理解成一种套餐，用户投资 ETF，就相当于购买了套餐里的每个产品。这样一篮子股票可以有效避免投资者踩雷，分散了风险。而且购买这个套餐，相当于购买整个板块，节省了研究每支股票的时间。
-
-
-
-
- 02 
-
-什么是比特币 ETF？
-
-
-
-说完 ETF，那么比特币 ETF 就很好理解了，它是基于比特币的交易平台交易基金。如果你购买了比特币 ETF 就等于你间接的购买了比特币。你拥有的是一个可以跟踪比特币的基金而并不是你拥有了比特币，但是两者在收益上是一样的。
-比特币 ETF 追踪的就是比特币的价格 ，比特币 ETF 的价格涨了那么比特币的价格就涨了；相反若比特币的价格降低了，那么比特币 ETF 的价格就下降了。
-在这里人们可能会有疑问，比特币和比特币 ETF 不就是一样的吗？比特币 ETF 不还是在这里买卖比特币而已吗？实际上两者之间唯一的区别就是：我们不用担心自己钱包里的比特币会被黑客盗走，不用担心自己的比特币应该存放在什么地方。这是在技术层面上的一种促进作用，购买了比特币 ETF 我们就不用再去学习如何在电脑上操作比特币了。
-
-
- 03 
-
-比特币 ETF 有何影响？
-
-
-
-1、降低了投资门槛，吸引了大量的散户投资者。这些散户通常指对比特币投资感兴趣，却又受制于电脑技术层面的人。
-2、为机构投资者提供了投资比特币的通道：带来更多的进场资金，并将产生更多的衍生品需求。
-比如，通过比特币 ETF，传统的基金公司也可以间接的持有比特币。投资者买入一个传统基金，这个基金的资金经理可以用一部分投资者的资金去购入一小部分的比特币 ETF，这种情况下就相当于增加了投资比特币的资金。
-3、如果 ETF 申请成功，意味着纳入监管，其合法合规性得到了官方认可，也将为比特币甚至加密货币的发展带来积极的推动作用。
-现在你对比特币 ETF 有了一定了解了吗？对比特币 ETF 项目到底能不能通过美国 SEC 的审核你有什么看法呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 到底有多少人持有或者使用过加密货币？| 227]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499376&amp;idx=2&amp;sn=a39e0427cd1a77e6430dda53ab33d21b&amp;chksm=fa01c957cd764041545048534dd9bc86625ad212af14ba070b355ffea34582591c5538813461#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499376&amp;idx=2&amp;sn=a39e0427cd1a77e6430dda53ab33d21b&amp;chksm=fa01c957cd764041545048534dd9bc86625ad212af14ba070b355ffea34582591c5538813461#rd"/>
-        <updated>2025-06-10T08:26:54.722Z</updated>
-        <summary type="html"><![CDATA[友情提示：在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
-
-作者 | 慕容垂
-出品｜白话区块链（ID：hellobtc）
-不久前，白话区块链发文称全球有 2% 的人真正了解区块链。按照全球 70 亿人口计算，那么，全球真的有 1.4 亿人参与数字货币和区块链吗？
-今天，我们不妨用一些数据粗略地估算下，区块链行业到底有多少加密货币参与者。
-估算区块链行业的用户数量，很多人第一时间想到了比特币、以太币的持币地址数量。比特币是加密货币中龙头，任何进入加密货币圈子的人，首先是被比特币吸引过来的；以太坊的应用范围更为广泛，很多项目的 Token 都是基于以太坊的智能合约发行的。
-所以，比特币和以太币的持币地址数量，比较能说明问题。
-
-
- 01 
-比特币持币地址数量
-比特币的地址中，绝大部分没有任何数量的币（因为没有被人启用），所以只有持币地址才能说明问题。然而，任何人都可以创建无数个比特币地址，这是用比特币持币地址数量估算用户数的一个缺陷。
-比特币的持币地址数量，可以通过比特币区块链浏览器查询。
-
-通过上图 bitinfocharts.com 的数据，我们很容易就能算出比特币的持币地址数量约为 2783 万个。
-考虑到很多比特币巨鲸不会把所有的鸡蛋放在同一个篮子里，他们可能会有多个账户，再考虑到很多人的比特币都放在交易平台，自己并没有比特币钱包，2783 万这个数量会比实际用户数量偏少。
-
-
- 02 
-以太坊的持币地址数量
-以太坊的地址，可以从以太坊区块链浏览器 etherscan.com 上查询。
-截至 10 月 20 日，以太坊的地址数量有约 7810 万，每日新增地址约为 6.6 万。按照这样的增速，大概还要一年的时间，以太坊的总地址数量才能增加到 1 亿个。
-
-由于以太坊的地址创建非常方便，不需要费用，所以为了获得空投或是“撸糖果”，很多人都创建了多个以太坊地址，有的投资者甚至用程序创建了上千个。
-所以，有一点可以确定的是，以太坊的地址数量比以太坊的真实用户数量多。
-
-
-
- 03 
-其他估算方法
-
-除了通过地址数量来估计外，还可以通过交易平台的用户数量进行估算。
-由于区块链认知门槛高，很多人其实不太熟悉钱包的操作，所以大部分的操作都在中心化的交易平台进行。所以，交易平台的用户数量从一定程度上可以作为加密货币参与者的数量估算依据。
-然而，由于具体的真实用户数据属于商业秘密，交易平台一般只会公布大概的数量级，比如币安就曾对外公布过平台的注册用户超过千万的消息。不久前，OKEx CEO 在回应一名用户的质疑时，提到了平台用户有几千万之多。
-
-
-
- 04 
-小结
-综合看来，加密货币的用户数量，比 BTC 持币地址数量 2783 万多，比 ETH 地址数量 7810 万少。如果按照所有的用户中，有 30% 的人没有 BTC、有 80% 的人拥有 2 个 ETH 地址的假设，那么，推算出来的用户数量为 4000 多万。
-2018 年的时候，火币区块链研究院院长袁煜明表示：“从我统计和判断来说，整体全球区块链的用户数也就是2000万，有可能还不到，中国大概率只有几百万的用户规模，这个用户规模是非常小的。”
-考虑到时间的变化，4000 多万的用户数量估算是合理的，与袁煜明的“2000 万”估算也在同一数量级上。
-你认为参与加密货币的用户数量大概有多少万？欢迎在留言区分享你的预测。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 从偶遇比特币到老韭菜，独闯币圈6年的故事| 228]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499418&amp;idx=3&amp;sn=d190abc251de61a2e48fc50662075337&amp;chksm=fa01c9bdcd7640ab9adb24980b98486c3b0eb46f385d116f98abf75f41802ad922f9d2a9722a#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499418&amp;idx=3&amp;sn=d190abc251de61a2e48fc50662075337&amp;chksm=fa01c9bdcd7640ab9adb24980b98486c3b0eb46f385d116f98abf75f41802ad922f9d2a9722a#rd"/>
-        <updated>2025-06-10T08:26:54.695Z</updated>
-        <summary type="html"><![CDATA[在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
-
-作者 | 内含子
-出品｜白话区块链（ID：hellobtc）
-人生就像一张空白纸，每个人都在上面书写着自己的故事。与区块链的相逢，让我的纸上多了些色彩，回过头来细细品味，感触良多……
-
-
- 01 
-偶遇比特币
-2013 年还是学生的我，在网络上就看到过比特币，与之相关的内容更多的是：泡沫、骗局。
-2016 年 11 月 3 日，我真正接触到比特币。罗辑思维公众号的文章《买不起房地产？不如做这笔小而美的投资》中，王煜全推荐买入比特币作为投资品，并给出了 5 年的时间会有至少 5 倍的涨幅。
-当时刚参加工作的我，虽只有微薄的积蓄，但也想利用这些钱来做些投资。当时的罗辑思维已经是知识界头部 IP，在千万人关注的公众号上为比特币做“推广”，是需要些底气的。
-有了罗辑思维的“背书”，在床上躺着刷手机的我，立马翻身起床，上网查阅资料，并在一个月的时间内读完了当时可以买到的所有关于区块链的书籍。
-
-我被比特币的“价格”震惊，由一文不值变到 6000 人民币左右（2016 年 12 月）；也对比特币底层的区块链技术着迷，这种基于去中心化的分布式账本数据库的技术产生的应用有可能超乎我们的想象。
-比特币相当于区块链技术的第一个应用。如果区块链是水，比特币就只是这水里生长的一种鱼，在这水里还会生长其他鱼。在这片“水”里，后来我见到了“彩色币”，“分叉币”，“主流币”，“山寨币”，“归零币” ……
-
-初识区块链之后，我便踏入了”币圈一日，人间十年；币圈一日，股市一年“的数字资产交易市场。
-
- 02 
-独”闯“币圈
-进入数字资产市场后，毫无疑问是幸运的。赶上17 年初”牛市“启动，享受了那一波红利。经历了“94”血洗，也见证了 17 年 12…]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[▪ 入行区块链后，你有什么感触？| 231]]></title>
-        <id>http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499540&amp;idx=2&amp;sn=3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm=fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd</id>
-        <link href="http://mp.weixin.qq.com/s?__biz=MzUyNzE4MDM2MA==&amp;mid=2247499540&amp;idx=2&amp;sn=3cb6a561daa9bb0c4109bbb2fa45b5cd&amp;chksm=fa01c833cd7641259a1802d30ce2045503eae74526124389a67647f712fa1dd5ade0e1fe113f#rd"/>
-        <updated>2025-06-10T08:26:54.694Z</updated>
-        <summary type="html"><![CDATA[在白话区块链成立 2 周年之际，我们举办了「有奖征文」活动，本文是获得二等奖的征文（点此查阅所有中奖名单）。征文活动截至 11 月 11 日，欢迎继续来稿。
-
-作者 | Lesley
-出品｜白话区块链（ID：hellobtc）
-比特币诞生已十年有余，无论你是从哪一年接触到它，或是了解到区块链这个行业，现在都应该有自己的一些感触和认识了。
-今天，我们就来聊聊一些入行后的个人感受。
-
-
- 01 
-行业仍在早期阶段，投资逐渐趋于理性
-从 2017 年 7 月至今，行业内基本无明显进展，落地项目寥寥无几，更谈不上项目创造现金流或拥有自我造血能力。行业内倒是热点不断，如 1C0、比特币分叉币、主网上线、交易挖矿、菠菜类 DApp、Staking、平台币等，资金跟随热点轮番炒作。
-今年上半年 BTC 和主流平台币表现亮眼，交易平台是除了挖矿之外能找到为数不多产生现金流的行业，资金重点关注此类项目，说明曾经的火爆场景回归冷静，投资逐渐趋于理性。
-
-
- 02 
-投资周期短，波动幅度大
-“圈内一天，人间一年”，24 小时的全天候交易，赶上一周的股票交易时间。在加密资产投资圈内，周期短，波动幅度大，自然造成了投机氛围重。
-
-
- 03 
-值得规避的常见合约交易错误
-期货合约是非常专业的金融衍生品，作为新手，很容易犯以下错误：
-1、梭哈或重仓
-初生牛犊不怕虎，重仓参与合约交易，把交易成败寄托于一次机会中，不给自己留有余地，这是非常危险的。
-2、高杠杆
-杠杆是把收益放大的同时，也会把风险同比例的放大；再加上加密资产本身波动剧烈，放大效应更为显著，高杠杆交易往往在短期无序波动中快速亏损本金。
-3、逆势开单，或亏损情况下加仓
-在上涨阶段时猜测应该跌了，于是上涨阶段开空单即为逆势开单。与此类似的是在亏损的情况下继续加仓，亏损已经说明了这单交易是错误的，亏损加仓就是错上加错。
-4、每单交易价值不等
-交易获利容易给人带来无往不胜的错觉，情不自禁地加大单笔交易的仓位，殊不知这一次交易和上一次交易毫无联系，即使两次交易盈亏比例相同，但因加大仓位亏损增加，最终仍是亏损的。
-5、频繁开单交易或缺乏止损计划
-每单交易都要交手续费，如果过于频繁开单容易陷入磨损本金、给“交易平台打工”的困境。而止损计划的意义在于让错误或亏损停止，若开单没有止损计划的话，容易造成扛单，扛单则会助推爆仓的发生。
-
-
- 04 
-合约交易正确姿势
-合约交易需要非常多的知识，背后有一套严密的方法论指导。在掌握分析、仓位、风控概念的前提下，寻找具有盈亏比优势的点位开单，并设定止盈止损位至关重要。
-另外，交易心态也需要历练，树立概率和客观的认识，并及时的交易总结和反思，修正自己的交易习惯。
-
-在区块链行业的这么多年，你有什么经验想告诉大家呢？欢迎在留言区分享你的观点。
-
-「白话区块链入门系列」互动有奖
-
-本文发布24小时后，将精选一名留言者，奖励8.8元红包；
-
-指出本文事例、逻辑等重大错误、并提出优秀建议的留言，一经采纳，奖励50元；
-
-本系列长期接受投稿，稿酬丰厚。后台回复「投稿」获取详细信息。
-
-
-
-
-
-往期内容精选
-♢006 比特币的矿工和挖矿是什么意思？
-♢014 虚拟货币价值的本质是什么？
-♢015 神奇而有趣的比特币
-♢018 被称为“区块链2.0”的以太坊是什么？
-♢021 被称为“区块链3.0”的EOS是什么？
-★后台回复「入门」获取完整目录！★
-
-
-
-
-——End——
-
-
-『声明：本系列内容仅供区块链科普入门学习，不构成任何投资意见或建议。如有任何错漏，敬请留言指出。』
-
-
-亲，据说99.9%有品位的人都点了「在看」👇]]></summary>
-        <author>
-            <name>白话区块链 - 科普 最新</name>
+            <name>Azuma</name>
         </author>
     </entry>
     <entry>
@@ -1442,74 +434,6 @@ Web3 从不是单个地区的专属游戏，而是全球金融与技术协同竞
 简单来说，在新兴市场，稳定币正构建起全新的金融基础设施；而在西方市场，稳定…]]></summary>
         <author>
             <name>Nathan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[24H热门币种与要闻 | 特朗普称尚未考虑与马斯克会谈；Plasma公募5亿美元额度数分钟内售罄（6月10日）]]></title>
-        <id>https://www.odaily.news/post/5204239</id>
-        <link href="https://www.odaily.news/post/5204239"/>
-        <updated>2025-06-10T01:32:13.000Z</updated>
-        <summary type="html"><![CDATA[1、CEX 热门币种
-CEX 成交额 Top 10 及 24 小时涨跌幅：
-
-BTC：+ 3.82% 
-
-
-ETH：+ 8.11% 
-
-SOL：+ 5.42% 
-
-XRP：+ 2.57% 
-
-PEPE：+ 8.97% 
-
-HUMA：- 6.54% 
-
-DOGE：+ 6.36% 
-
-SUI：+ 5.85% 
-
-TRX：+ 1.84% 
-
-BNB：+ 2.29% 
-
-24 H 涨幅榜单（数据来源为 OKX）：
-
-BORA：+ 34.55% 
-
-RVN：+ 31.01% 
-
-KAIA：+ 24.4% 
-
-UMA：+ 19.57% 
-
-ANIME：+ 18.92% 
-
-KDA：+ 18.32% 
-
-LQTY：+ 17.1% 
-
-WIF：+ 15.09% 
-
-DEGEN：+ 14.86% 
-
-GOG：+ 14.81% 
-
-2、 24 H 热搜币种
-
-Skate （SKATE）：币安 Alpha 上新项目。Skate 是一个基础设施层，通过将用户连接到所有虚拟机（EVM、TonVM、SolanaVM），使其能够与原生链无缝交互。
-
-Verse World（VERSE）：Moonshot 昨夜宣布上线的元宇宙项目，昨晚市值一度突破 10 亿美元，暂报 5.46 亿美元。
-
-头条
-美国总统特朗普：尚未考虑与马斯克进行会谈
-
-Odaily星球日报讯 美国总统特朗普：尚未考虑与马斯克进行会谈，认为马斯克可能希望与我进行会谈。（金十）
-美 SEC 主席称正为 DeFi 平台制定“创新豁免”政策
-Odaily星球日报讯 美国证券交易委员会主席 Paul Atkins 在加密圆桌会议上表示，SEC 正在制定针对 DeFi 平台的“创新豁免”政策。Atkins 称已要求工作人员研究修改规则，为链上金融系统提供监管豁免，允许受 SEC 管辖的实体快速推出链上产品。
-SEC 加密工作组负责人 Hester…]]></summary>
-        <author>
-            <name>Asher</name>
         </author>
     </entry>
     <entry>
@@ -1673,61 +597,6 @@ Verse World 于 6 月 5 日发布内容官宣该项目：Verse 是一个致
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[上市公司都在购买加密资产，究竟谁在赚钱？]]></title>
-        <id>https://www.odaily.news/post/5204228</id>
-        <link href="https://www.odaily.news/post/5204228"/>
-        <updated>2025-06-09T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[原文作者：Jeff Dorman, CFA
-原文编译：深潮 TechFlow
-
-加密金库公司：事实与误解
-在连续六周的上涨后，彭博银河加密指数（Bloomberg Galaxy Crypto Index, BGCI）上周终于回调，而与此同时，股票和美国国债却双双上涨。尽管关于美国国债市场“失灵”的讨论不绝于耳，但值得注意的是，过去两年里，美国 10 年期国债收益率实际上一直在 100 个基点的区间内波动，这又是一个叙事主导事实的典型例子。
-
-谈到叙事，越来越多的美国上市公司购买比特币和其他数字资产无疑成为了市场热点。但正如往常一样，这一趋势也伴随着许多误解。因此，我们将尽力厘清这些新型数字资产买家背后的事实与误区。
-一些人将这些公司称为“比特币库公司”（Bitcoin Treasury Companies），而另一些人则称其为 DATs（数字资产库公司，Digital Asset Treasury Companies）。无论称呼如何，这些公司本质上只是用于持有数字资产的新型壳公司。这与最初的比特币库公司有所不同。在过去五年多的时间里，我们一直在讨论一些公开上市公司出于各种原因将比特币纳入其资产负债表的现象。
-这些公司可以分为几类：
-
-一些是普通公司，它们尝试性地持有比特币，例如特斯拉（Tesla）和 Block（原 Square）；
-
-一些是加密原生公司，如 Coinbase 和 Galaxy，它们通过自身主营业务自然地持有这些资产；
-
-还有一些是比特币挖矿公司，其核心业务就是持有比特币。
-
-这些公司资产负债表上比特币的增长是易于追踪的，有时甚至会推动股价上涨。但大多数情况下，比特币的持有量并未掩盖其核心业务。此外，直到最近，美国财务会计准则委员会（FASB）关于持有比特币的会计标准对每股收益（EPS）带来的下行风险显著高于上行收益。
-相反，这些公司对比特币价格的推动作用通…]]></summary>
-        <author>
-            <name>深潮TechFlow</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[注意力经济下的InfoFi困境]]></title>
-        <id>https://www.odaily.news/post/5204227</id>
-        <link href="https://www.odaily.news/post/5204227"/>
-        <updated>2025-06-09T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[原文作者：Jay Jo，Tiger Research
-原文编译：AididiaoJP，Foresight News
-TL;DR
-
-InfoFi 是一种量化用户注意力和活动并将其与奖励联系起来的结构化尝试。
-
-InfoFi 目前存在一些结构化问题，包括内容质量下降和奖励集中化。
-
-这些并非 InfoFi 模型本身的局限性，而是评估标准和奖励分配方式的设计问题，急需改善。
-
-注意力即代币的时代
-注意力已成为现代产业中最稀缺的资源之一。互联网时代信息泛滥，而人类处理信息的能力却极其有限。这种稀缺性促使众多企业展开激烈竞争，争夺用户注意力的能力已成为企业的核心竞争优势。
-加密行业以更为极端的形式展现了注意力竞争程度。注意力占有率在代币定价和流动性形成中发挥着重要作用，这也成为决定项目成败的关键因素。即使是技术领先的项目，如果未能吸引市场关注，也常常会被市场淘汰。
-这种现象源于加密市场的结构性特征。用户不仅是参与者，更是投资者，他们的注意力直接带来代币的实际购买行为，从而创造更大的需求和网络效应。在注意力集中的地方就会创造流动性，而叙事在此流动性基础上得以发展。这些既定的叙事随后吸引新的关注，并形成良性循环，推动市场发展。
-InfoFi：将注意力代币化的系统性尝试
-市场是基于关注度而运转的。这种结构引出了一个关键问题：谁能从这些关注度中真正受益？用户通过社区活动和内容创作来产生关注度，但这些行为难以衡量，也没有明确的直接奖励机制。到目前为止，普通用户只能通过买卖代币来获得间接收益。对于真正创造关注度的贡献者，目前尚无任何奖励机制。
-
-Kaito 的 InfoFi 网络，来源：Kaito
-InfoFi 是解决这个问题的一种尝试。InfoFi 将信息与金融相结合，创建了根据用户内容产生的关注度（例如浏览量、评论量和分享量）来评估用户贡献，并将其与代币奖励挂钩的机制。Kaito 的成功将这…]]></summary>
-        <author>
-            <name>Foresight News</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[IOSG｜Binance 上线路径研究：Alpha、IDO、Futures、Spot 全拆解]]></title>
         <id>https://www.techflowpost.com/article/detail_26185.html</id>
         <link href="https://www.techflowpost.com/article/detail_26185.html"/>
@@ -1822,58 +691,6 @@ Spot：覆盖 Infra、Meme、A…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[SignalPlus宏观分析特别版：Quiet Calm]]></title>
-        <id>https://www.odaily.news/post/5204233</id>
-        <link href="https://www.odaily.news/post/5204233"/>
-        <updated>2025-06-09T11:26:35.000Z</updated>
-        <summary type="html"><![CDATA[5 月非农就业报告稳健，就业人口新增 13.9 万人，高于华尔街预期的 12.6 万人，但新增职位主要集中于休闲娱乐与医疗保健领域，政府部门与制造业则出现净流失。数据细节略显疲弱，失业率自 4.19% 升至 4.24% ，若非劳动参与率下降，失业率可能会接近 4.6% 。
-
-非农就业数据表现优于近期的失业救济申请数据，股市与美债收益率同步上涨，尽管硬数据终于开始与疲软的调查数据趋于一致。此外，随著「解放日」以来地缘政治风险降温，加上 Trump 阵营内部的紧张局势，市场再次进入「坏消息 = 好消息」的模式，持续寻求美联储进一步降息的理由。
-
-虽然「Big Beautiful Bill」法案的通过仍存在风险，不过市场情绪已回升至高点，波动率指数与信用利差双双回落至历史低位。VIX 的暴跌速度为史上最快之一，甚至超过疫情期间，主要受害者则为因解放日后政策反复而大幅走弱的美元。
-
-谈及美元，我们正进入一个新的关联机制，股价开始与美元正向联动，这种情况极为罕见，也是自疫情以来首次出现持续性的结构性变化。这反映出市场关注 Trump 政策反复对美国资产的潜在意涵，使得当前美股的价格表现更大程度上受国际资金流向影响，而非美联储利率变动的预期。
-
-债市方面，在非危机环境下，收益率通常会与美元同步变动，但自「解放日」以来，这种关联已被打破，收益率在美元走弱的情况下持续走高，而美元走弱历来意味著美联储未来利率的下调。这一背离现象可能会持续，直到预算支出法案及 Trump 政府在未来几个月是否能达成贸易协议有更明确的结果。
-
-本周将成为市场风险的重要试金石。周中将迎来长天期美债标售，并伴随著近期局势升级后重启的美中贸易谈判。贸易谈判的任何进展预计都将聚焦于稀土供应相关的突破，而债市则需同时应对即将公布的 CPI 数据以及 10 年期与 30 年期债券的供给压力。
-市场目前预期核心 CPI 环比增长 0.25% ，而关税带来的成本推升效应可能要到夏季后期才会显现，这也为美联储在今年第三季末至第四季初重启降息提供了依据。
-
-加密货币方面，上周整体波动较大，区块链原生领域并无太多亮点，主要焦点集中在传统金融领域，包括 Circle 的 IPO 以及银行业务的动态。ETF 资金流在 BTC 方面涨跌互现，ETH 表现则较为正面，连续 14 天录得资金净流入，总额超过 8 亿美元，同时 CME 的 ETH 期货未平仓量也攀升至历史新高。
-
-Circle 的 IPO 取得了巨大成功，上市后股价飙升近 4 倍，市值达约 320 亿美元。加密货币银行业务亦十分活跃，Robinhood 完成对 Bitstamp 的 2 亿美元收购，Gemini 也在火热的公开市场氛围下提出 IPO 申请。
-
-值得注意的是，我们并不认为这对 BTC 或 ETH 等资产构成单边看多的理由，因为现在一般投资者已有更多方式可以接触加密货币资产，不论是通过 ETF、MSTR 或是其他 BTC 代理工具，合规交易所与受监管的稳定币发行机构也即将出现。随著加密货币资产逐步成熟，成为可投资的宏观资产类别，当前的周期只会更加复杂多元。
-祝各位本周交易顺利、好运相伴！
-
-您可免费使用 SignalPlus 交易风向标功能 t.signalplus.com/crypto-news/all，通过 AI 整合市场信息，市场情绪一目了然。
-如果想即时收到我们的更新，欢迎关注我们的推特账号@SignalPlusCN，或者加入我们的微信群（添加小助手微信，请删除英文和数字中间的空格：SignalPlus 666）、Telegram 群以及 Discord 社群，和更多朋友一起交流互动。
-SignalPlus Official Website：https://www.signalplus.com]]></summary>
-        <author>
-            <name>SignalPlus</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一周融资速递 | 13家项目获投，已披露融资总额为2.28亿美元（6.02-6.08）]]></title>
-        <id>https://www.odaily.news/post/5204234</id>
-        <link href="https://www.odaily.news/post/5204234"/>
-        <updated>2025-06-09T11:10:16.000Z</updated>
-        <summary type="html"><![CDATA[据 Odaily 星球日报不完全统计， 6 月 2 日至 6 月 8 日期间，全球共披露 13 起区块链领域融资事件，较前一周的 11 起略有上升。融资总额约为 2.28 亿美元，环比增长超过一倍，远高于上周的 9, 850 万美元。
-本周最大一笔融资来自 AI 驱动的投资组合管理服务商 Scalable Capital，完成融资金额高达 1.55 亿欧元；其次，公链项目 IOST 宣布完成 2100 万美元战略轮融资。整体来看，本周融资亮点在于多数获投项目聚焦于 CeFi 赛道，中心化主体仍然更具投资吸引力。
-以下为具体融资事件（注： 1. 依照已公布金额大小排序；2. 不含基金募资及并购事件；3. *为部分业务涉及区块链的“传统”领域公司）：
-
-Scalable Capital 完成 1.55 亿欧元融资，Noteus Partners 领投
-6 月 3 日，AI 驱动的投资组合管理工具服务提供商 Scalable Capital 宣布完成 1.55 亿欧元融资，Noteus Partners 领投，Balderton Capital、腾讯和 HV Capital 参投。Scalable Capital 由 Erik Podzuweit 和 Florian Prucker 于 2014 年在慕尼黑创立，支持客户投资超过 8, 000 只股票、 2, 500 只 ETF、 3, 500 只基金和加密货币。
-
-IOST 完成 2100 万美元战略轮融资，DWF Labs 等参投
-6 月 6 日，IOST 宣布完成 2100 万美元战略轮融资，DWF Labs、Presto 和 Rollman Management Groups 等参投，新资金旨在协调激励措施，支持可持续的网络增长，并进一步去中心化验证者和生态系统基础设施。
-
-加密交易所 Rails 完成 1400 万美元新…]]></summary>
-        <author>
-            <name>叮当</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[传统支付碰撞加密，“稳定币无用论”引争议]]></title>
         <id>https://www.techflowpost.com/article/detail_26184.html</id>
         <link href="https://www.techflowpost.com/article/detail_26184.html"/>
@@ -1937,28 +754,6 @@ IOST 完成 2100 万美元战略轮融资，DWF Labs 等参投
         <summary type="html"><![CDATA[Sui DEX Cetus Protocol 在从 2.23 亿美元的漏洞中恢复后重启平台]]></summary>
         <author>
             <name>TokenInsight 新闻</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[稳定币公链Plasma公募今晚开门，5亿美元估值还要参与吗？]]></title>
-        <id>https://www.odaily.news/post/5204220</id>
-        <link href="https://www.odaily.news/post/5204220"/>
-        <updated>2025-06-09T10:06:11.000Z</updated>
-        <summary type="html"><![CDATA[原创 | Odaily 星球日报（@OdailyChina）
-作者｜Azuma（@azuma_eth）
-
-备受关注的“稳定币公链” Plasma 将于北京时间今晚 21: 00 正式开放公募存款，在为期数周的存款阶段（具体时长暂时未定）结束后，参与用户将基于时间加权后的存款占比获得相应的公募份额，继而以 5 亿美元的全流通估值（FDV）参与该项目的公募。
-Plasma：Bitfinex、Tether、Peter Thiel等背书的稳定币公链
-Plasma 的定位是一个专为稳定币构建的高性能区块链，其核心特点包括：每秒可支持数千笔交易；支持零手续费 USDT 转账；依赖比特币网络进行结算（可理解为比特币侧链）；100% 兼容 EVM；可自定义 gas 代币（比如 USDT、BTC）；在不损害合规性的同时支持隐私交易。
-从市场角度看，Plasma 之所以获得如此高的热度，重点则是在于其极快的融资进度以及堪称豪华的资方背书。
-
-2024 年 10 月，Plasma 在首次亮相时便曾宣布完成 350 万美元融资，Bitfinex 领投，Christian Angermayer 以及风险投资公司 Split Capital、Anthos Capital、Karatage 和 Manifold Trading 参投，Bitfinex 首席技术官兼 Tether 首席执行官 Paolo Ardoino 也支持了该项目。
-
-2025 年 2 月，Plasma 再次宣布完成 2400 万美元融资（2000 万美元 A 轮融资和 400 万美元种子轮融资），Framework Ventures 领投， Bitfinex 和 Paolo Ardoino 再次参投，硅谷风投大神、Paypal 联合创始人 Peter Thiel 的名字也出现在了投资名单中。
-
-2025 年 5 月，Plasma 再…]]></summary>
-        <author>
-            <name>Azuma</name>
         </author>
     </entry>
     <entry>
@@ -2310,24 +1105,6 @@ Web3 是由区块链驱动的去中心化生态系统，提供了无数赚钱途
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[浅谈比特币Core交易中继争议，为何要支持它？]]></title>
-        <id>https://www.odaily.news/post/5204225</id>
-        <link href="https://www.odaily.news/post/5204225"/>
-        <updated>2025-06-09T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[原文作者：0xTodd，Nothing Research 合伙人
-Core 组发布了最新声明，比特币核心开发圈都炸锅了，我看华语讨论不多，我来分析一下故事背景，以及我个人的强烈观点。首先，昨天 Bitcoin Core 发布了一个声明，叫做《Bitcoin Core 开发与交易中继政策》，被反对者怒斥臭名昭著如《纽约协议》。
-
-那这个声明到底说了什么呢？比特币 Core 要推一个自己内置的交易中继。我认为，这个交易中继就是在给之前的取消 OP-Return 区限制铺路。这东西为什么会激起大量讨论呢？
-是因为故事背景还有一个故事背景，这个我之前也聊过——就是 2 年前，铭文开始大行其道，但是这些铭文、符文是通过一种类似于「卡 Bug」的形式，把自己的内容偷摸存到了比特币区块里的 OP-Return 区，这样变相突破了比特币区块上限。
-结果，现在比特币里分为右派和极右派。铭文引起了极右派的反感，于是在 Luke 等人的号召下，比特币排名第二的客户端 Knots 推出了垃圾过滤器，把这些铭文交易直接视为垃圾交易，并且拒绝打包。如果你还有印象的话，这个当时甚至引起了 Ordi 暴跌。但是普通右派，也就是比特币 Core 组认为，反正铭文已经可以卡 Bug 上链了，与其让它们继续卡 Bug 还不如正名化所。
-以最近几个月 Core 组提出了新的 PR，想把 OP-Return 从 80 KB 改成无上限，相对于对铭文的限制直接取消，让他们光明正大地上链。尽管铭文基本都浇给了，但是我认为这多多少少都是对于矿工的一些额外补贴，毕竟多赚点才能让比特币网络更安全一些。
-聊完背景的背景，让我们说回来——这个「交易中继」到底是什么东西。理论上，比特币是个 P2P 网络，也就是所有矿工和矿工之间都是单线联系的。不过这个东西呢，是理论上最安全的做法，因为目前网络环境蛮安全的，倒也没必要做到这么绝。
-…]]></summary>
-        <author>
-            <name>星球君的朋友们","role_id":1,"introduction":"优质区块链文章转载","avatar_url":"https://piccdn.0daily.com/201807/09/20c7c4fc7da2660aef23882fc3447417.png","tovc_avatar_url":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"title":"特邀作者","qr_code_url":null,"department_belong":null,"role":{"id":1,"name":"特邀作者","description":"特邀作者","user_id_server":720,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147483198,"role_id":1}},"roles":[{"id":1,"name":"特邀作者","description":"特邀作者","user_id_server":720,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147483198,"role_id":1}},{"id":4,"name":"writer","description":"资深作者","user_id_server":0,"pivot":{"user_id":2147483198,"role_id":4},"server":null}]},"summary":"真正的物理黄金，都可以用来雕刻留下记录，我们电子黄金也同样应该默许这一点。\n","content":"&lt;p&gt;原文作者：&lt;span class=\"removespaces\"&gt;0xTodd&lt;/span&gt;，Nothing Research 合伙人&lt;/p&gt;&lt;p&gt;Core 组发布了最新声明，比特币核心开发圈都炸锅了，我看华语讨论不多，我来分析一下故事背景，以及我个人的强烈观点。首先，昨天 Bitcoin Core 发布了一个声明，叫做《Bitcoin Core 开发与交易中继政策》，被反对者怒斥臭名昭著如《纽约协议》。&lt;/p&gt;&lt;p class=\"ql-align-center\"&gt;&lt;img alt=\"浅谈比特币Core交易中继争议，为何要支持它？\" src=\"https://img.foresightnews.pro/202506/4-1749449314128?x-oss-process=style/scale70\" data-img-size-val=\"766,294\"/\\&gt;&lt;/p&gt;&lt;p&gt;那这个声明到底说了什么呢？比特币 Core 要推一个自己内置的交易中继。我认为，这个交易中继就是在给之前的取消 OP-Return 区限制铺路。这东西为什么会激起大量讨论呢？&lt;/p&gt;&lt;p&gt;是因为故事背景还有一个故事背景，这个我之前也聊过——就是 2 年前，铭文开始大行其道，但是这些铭文、符文是通过一种类似于「卡 Bug」的形式，把自己的内容偷摸存到了比特币区块里的 OP-Return 区，这样变相突破了比特币区块上限。&lt;/p&gt;&lt;p&gt;结果，现在比特币里分为右派和极右派。铭文引起了极右派的反感，于是在 Luke 等人的号召下，比特币排名第二的客户端 Knots 推出了垃圾过滤器，把这些铭文交易直接视为垃圾交易，并且拒绝打包。如果你还有印象的话，这个当时甚至引起了 Ordi 暴跌。但是普通右派，也就是比特币 Core 组认为，反正铭文已经可以卡 Bug 上链了，与其让它们继续卡 Bug 还不如正名化所。&lt;/p&gt;&lt;p&gt;以最近几个月 Core 组提出了新的 PR，想把 OP-Return 从 80&amp;nbsp;KB 改成无上限，相对于对铭文的限制直接取消，让他们光明正大地上链。尽管铭文基本都浇给了，但是我认为这多多少少都是对于矿工的一些额外补贴，毕竟多赚点才能让比特币网络更安全一些。&lt;/p&gt;&lt;p&gt;聊完背景的背景，让我们说回来——这个「交易中继」到底是什么东西。理论上，比特币是个 P2P 网络，也就是所有矿工和矿工之间都是单线联系的。不过这个东西呢，是理论上最安全的做法，因为目前网络环境蛮安全的，倒也没必要做到这么绝。&lt;/p&gt;&lt;p&gt;所以「交易中继」应运而生，大家可以先把交易发给中继（注意不是强制，它是自愿的），这样有两大好处：&lt;/p&gt;&lt;p&gt;1. 有利于防止 DoS 攻击，那些乱发 0 费的交易不会把矿工的点对点服务器撑爆；&lt;/p&gt;&lt;p&gt;2. 加快交易区块传播速度，降低延迟有助于防止大型矿工获得不公平的优势。&lt;/p&gt;&lt;p&gt;其实很好的一件事。过去，交易中继们也有不同的策略，有的过滤垃圾交易严格，有的则完全自由。&lt;/p&gt;&lt;p&gt;PS：我不认为这是交易审查，它更多是过滤垃圾交易，而且用户可以不使用这些功能。其实右派（Core 组）和极右派（Luke 等人），两者对于都有过滤垃圾交易的诉求，但是核心矛盾是——大家对于垃圾交易的定义完全不一样。&lt;/p&gt;&lt;p class=\"ql-align-center\"&gt;&lt;img alt=\"浅谈比特币Core交易中继争议，为何要支持它？\" src=\"https://img.foresightnews.pro/202506/4-1749449315907?x-oss-process=style/scale70\"/\\&gt;&lt;/p&gt;&lt;p&gt;极右派认为，铭文就是垃圾交易，应该杜绝，比特币不应该成为存储链。右派则认为，我们不应该审查（铭文），限制某些交易上链。过滤器只应该过滤那些纯 DoS 攻击。PS：我这里虽然使用了极右派，但是并不代表【极右派】是个含有贬义的词。前者是激进垃圾过滤，后者则是温和垃圾过滤。&lt;/p&gt;&lt;p&gt;而过去，这些交易中继算是为爱发电，由志愿者维护的，尤其是【激进垃圾过滤规则】，因为这些志愿者的信念非常充足——那就是厌恶铭文。然而，一旦 Core 组亲自在比特币客户端加入了【温和垃圾过滤规则】，或许意味着过去那些【激进垃圾过滤规则】市场份额遭到极大萎缩。&lt;/p&gt;&lt;p&gt;如果看到这里你有点蒙，我打个比喻——有种官方突然官宣 CP，降维打击同人拉郎配 CP 的感觉，也就是官方逼死同人。当然，尽管目前 Core 的市占率超过 90%&amp;nbsp;，Core 不认为它们自己是「官」方。&lt;/p&gt;&lt;p class=\"ql-align-center\"&gt;&lt;img alt=\"浅谈比特币Core交易中继争议，为何要支持它？\" src=\"https://img.foresightnews.pro/202506/4-1749449316664?x-oss-process=style/scale70\"/\\&gt;&lt;/p&gt;&lt;p&gt;因为 Bitcoin 是一个由其用户定义的网络，用户拥有最终的自由选择使用何种软件以及实施任何他们希望的政策。Bitcoin Core 贡献者无权强制规定这些内容，为了避嫌，他们甚至避免软件自动更新。&lt;/p&gt;&lt;p class=\"ql-align-center\"&gt;&lt;img alt=\"浅谈比特币Core交易中继争议，为何要支持它？\" src=\"https://img.foresightnews.pro/202506/4-1749449317684?x-oss-process=style/scale70\"/\\&gt;&lt;/p&gt;&lt;p&gt;我个人其实是支持 Core 组这样的更新的。还是那句话，如果你家的篱笆墙只有 10 厘米高，其他人自由进出，那你还不如拆了省事。我个人虽然对铭文无感，但我不认为它们是垃圾交易，只要正常付费就是好的交易。&lt;/p&gt;&lt;p&gt;铭文也正常按照体积缴费，没必要和钱过不去，而且给矿工带来了额外的收入，有助于让比特币在 N 次减半后依然保持强劲的安全性。而且我坚决反对交易审查，比特币半官方性质的 Core 带头对于正常支付手续费的交易有任何的歧视，因为交易歧视会慢慢变成交易审查。&lt;/p&gt;&lt;p&gt;比特币最引以为傲的属性之一就是安全性和无交易审查。而采用温和的垃圾过滤规则，它对这两个特性同时有益。反对者抨击，这是 Core 组向矿工的妥协（因为考虑了矿工的收入），而放弃它的用户。我不同意这样的观点——铭文用户，也是比特币的用户。&lt;/p&gt;&lt;p&gt;时代进步了，不再是 2008 年的硬件环境，倘若 2025 年的比特币的区块链存一些文字图片，对于节点来说也并非难事，而且中本聪自己就在传世区块刻下了当年的新闻。比特币永远不会变成存储链，但是在不对底层动刀的情况下，把存一些数据作为一项兼职，又有何妨呢？&lt;/p&gt;&lt;p&gt;真正的物理黄金，都可以用来雕刻留下记录，我们电子黄金也同样应该默许这一点。所以我非常支持 Core 组的提案。&lt;/p&gt;","extraction_tags":"","source_type":"contribution","source_urls":"","next_post":{"title":"Airwallex CEO质疑稳定币价值根基：代表「旧势力」的既得利益者慌了？","entity_id":5204224,"id":5204224},"keywords":"[{\"name\":\"\\u6d45\\u8c08\"},{\"name\":\"\\u6bd4\\u7279\"},{\"name\":\"\\u5e01\"},{\"name\":\"Core\"},{\"name\":\"\\u4ea4\\u6613\"},{\"name\":\"\\u4e2d\\u7ee7\"},{\"name\":\"\\u4e89\\u8bae\"},{\"name\":\"\\uff0c\"},{\"name\":\"\\u4e3a\\u4f55\"},{\"name\":\"\\u8981\"},{\"name\":\"\\u652f\\u6301\"},{\"name\":\"\\u5b83\"},{\"name\":\"\\uff1f\"}]"},"user":{"type":"SET_POST_USER","id":2147483198,"avatar":"https://piccdn.0daily.com/201807/09/20c7c4fc7da2660aef23882fc3447417.png","name":"星球君的朋友们","introduction":"优质区块链文章转载","title":"特邀作者","total":"6155"},"comments":[],"counters":{"view_count":288,"pv":201,"pv_mobile":57,"pv_app":30,"favorite":0,"comment":0,"like":0},"secondary":[{"secondary_tag":7,"column_id":null,"name":"BTC","slug":"5c949aef62a92","type":2}],"articleList":[{"id":5204233,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":1241,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09104126/6ptd269z3b5soyfq"],"template_title":"SignalPlus宏观分析特别版：Quiet Calm"},"stat_belong":"","title":"SignalPlus宏观分析特别版：Quiet Calm","title_mobile":null,"catch_title":"","summary":"5月非农就业报告稳健，就业人口新增13.9万人，高于华尔街预期的12.6万人，但新增职位主要集中于休闲娱乐与医疗保健领域，政府部门与制造业则出现净流失。","cover":"https://piccdn.0daily.com/202506/09104126/6ptd269z3b5soyfq","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147520128,"user_id_edited":2147503370,"user_id_created":2147520128,"user_id_tagged":0,"edited_at":"2025-06-09 19:26:35","published_at":"2025-06-09 19:26:35","updated_at":"2025-06-09 19:26:35","created_at":"2025-06-09 18:10:07","pin":0,"pushed_at":null,"keywords":[{"name":"SignalPlus"},{"name":"宏观"},{"name":"分析"},{"name":"特别版"},{"name":"："},{"name":"Quiet"},{"name":"Calm"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"8\",\"name\":\"ETH\",\"slug\":\"5c949afb89cc4\",\"is_post_show\":\"1\"},{\"id\":\"24\",\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\",\"is_post_show\":\"0\"},{\"id\":\"54\",\"name\":\"\\u8d27\\u5e01\",\"slug\":\"5dd376d748fca\",\"is_post_show\":\"0\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"ETH\",\"slug\":\"5c949afb89cc4\"},{\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\"},{\"name\":\"\\u8d27\\u5e01\",\"slug\":\"5dd376d748fca\"}]","_type":"post","user":{"user_id_old":0,"id":2147520128,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"SignalPlus","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"13058704689","wechat":null,"crm_email":null,"realname":null,"nickname":"SignalPlus","avatar_url":"https://piccdn.0daily.com/202303/22/a3c1eda01a248ca58d4055ea40cc8e62.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"SignalPlus是一家专业的加密期权交易工具平台。","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2022-11-03 10:55:56","updated_at":"2023-03-22 13:39:48","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204207,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2113,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09024457/5ab82pycomfef8zd"],"template_title":"非农数据略超预期，迎来一波利润变现后，BTC于高位盘整（06.02~06.08）"},"stat_belong":"","title":"非农数据略超预期，迎来一波利润变现后，BTC于高位盘整（06.02~06.08）","title_mobile":null,"catch_title":"","summary":"真正突破新的台阶还需要“对等关税战”、“加密货币政策”或美联储降息取得更大进展。","cover":"https://piccdn.0daily.com/202506/09024457/5ab82pycomfef8zd","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147527728,"user_id_edited":2147503370,"user_id_created":2147527728,"user_id_tagged":0,"edited_at":"2025-06-09 14:54:11","published_at":"2025-06-09 14:54:12","updated_at":"2025-06-09 14:54:12","created_at":"2025-06-09 10:39:40","pin":0,"pushed_at":null,"keywords":[{"name":"非农"},{"name":"数据"},{"name":"略超"},{"name":"预期"},{"name":"，"},{"name":"迎来"},{"name":"一波"},{"name":"利润"},{"name":"变现"},{"name":"后"},{"name":"，"},{"name":"BTC"},{"name":"于"},{"name":"高位"},{"name":"盘整"},{"name":"（"},{"name":"06.02"},{"name":"06.08"},{"name":"）"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"}]","_type":"post","user":{"user_id_old":0,"id":2147527728,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"EMC Labs","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"13120355793","wechat":null,"crm_email":null,"realname":null,"nickname":"EMC Labs","avatar_url":"https://piccdn.0daily.com/202309/05/05f4ef10d8869d5a5e9eeabff55f61c7.jpg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"由加密資產投資人與數據科學家創立，核心競爭力是產業研究與數據挖掘，致力為全球領先的加密投研機構。","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2023-08-10 10:12:16","updated_at":"2024-03-20 11:21:08","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204212,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":3051,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09053853/aufez7xshk186dse"],"template_title":"CoinW研究院周报（2025.6.2-2025.6.8期） "},"stat_belong":"","title":"CoinW研究院周报（2025.6.2-2025.6.8期） ","title_mobile":null,"catch_title":"","summary":"全球加密货币总市值为3.42万亿美元，较上周3.43万亿美元，本周内加密货币总市值跌幅为0.3% 。","cover":"https://piccdn.0daily.com/202506/09053853/aufez7xshk186dse","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147671297,"user_id_edited":2147501183,"user_id_created":2147676038,"user_id_tagged":0,"edited_at":"2025-06-09 13:48:35","published_at":"2025-06-09 13:48:36","updated_at":"2025-06-09 13:48:36","created_at":"2025-06-09 13:27:55","pin":0,"pushed_at":null,"keywords":[{"name":"CoinW"},{"name":"研究院"},{"name":"周报"},{"name":"（"},{"name":"2025.6.2"},{"name":"2025.6.8"},{"name":"期"},{"name":"）"}],"secondary_tag1":"[{\"id\":\"4\",\"name\":\"\\u4ea4\\u6613\\u6240\",\"slug\":\"5c949ac44c626\",\"is_post_show\":\"0\"},{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"11\",\"name\":\"\\u516c\\u94fe\",\"slug\":\"5c98b5e177caa\",\"is_post_show\":\"0\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u4ea4\\u6613\\u6240\",\"slug\":\"5c949ac44c626\"},{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u516c\\u94fe\",\"slug\":\"5c98b5e177caa\"}]","_type":"post","user":{"user_id_old":0,"id":2147671297,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"CoinW研究院","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"17607270029","wechat":null,"crm_email":null,"realname":null,"nickname":"CoinW研究院","avatar_url":"https://piccdn.0daily.com/202411/20/bb094bd8078fa456504ba0a711bed4e9.jpeg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"TA还在犹豫如何开场","sex":null,"job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2024-11-20 18:42:15","updated_at":"2024-11-20 19:10:56","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204205,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":3621,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09023127/f0vkmwiluhz51aid"],"template_title":"长期持有者获利了结，比特币新高后出现「逃顶」信号？"},"stat_belong":"","title":"长期持有者获利了结，比特币新高后出现「逃顶」信号？","title_mobile":null,"catch_title":"","summary":"持仓超1年的群体在近期卖出中占主导地位。未来几周对于确定这是中期盘整还是更广泛顶部形成的开始至关重要。\n","cover":"https://piccdn.0daily.com/202506/09023127/f0vkmwiluhz51aid","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147487310,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-09 10:32:06","published_at":"2025-06-09 11:00:00","updated_at":"2025-06-09 11:00:04","created_at":"2025-06-09 10:24:35","pin":0,"pushed_at":null,"keywords":[{"name":"长期"},{"name":"持有者"},{"name":"获利"},{"name":"了结"},{"name":"，"},{"name":"比特"},{"name":"币"},{"name":"新高"},{"name":"后"},{"name":"出现"},{"name":"「"},{"name":"逃顶"},{"name":"」"},{"name":"信号"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"}]","_type":"post","user":{"user_id_old":0,"id":2147487310,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"PANews","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18210507277","wechat":null,"crm_email":null,"realname":null,"nickname":"PANews","avatar_url":"https://piccdn.0daily.com/202211/16/3f8bf92de7060724bc33d7a93acaed0e.png","tovc_avatar_url":"https://piccdn.0daily.com/202210/14025530/rn59bcuoyooeltti.png","qr_code_url":null,"slug":null,"introduction":"探寻真相，链接未来。更多资讯在官网 PANewsLab.com","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147486374,"created_at":"2019-03-06 16:17:08","updated_at":"2022-10-14 11:27:00","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204189,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":833,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/06084413/ncaoqbvcszp5a2bq"],"template_title":"Matrixport投研：夏季盘整背后的经济逻辑"},"stat_belong":"","title":"Matrixport投研：夏季盘整背后的经济逻辑","title_mobile":null,"catch_title":"","summary":"BTC或将进入夏季盘整，市场环境动荡明显。\n","cover":"https://piccdn.0daily.com/202506/06084413/ncaoqbvcszp5a2bq","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147667574,"user_id_edited":2147501183,"user_id_created":2147667574,"user_id_tagged":0,"edited_at":"2025-06-06 17:06:23","published_at":"2025-06-06 17:06:24","updated_at":"2025-06-06 17:06:24","created_at":"2025-06-06 16:42:56","pin":0,"pushed_at":null,"keywords":[{"name":"Matrixport"},{"name":"投研"},{"name":"："},{"name":"夏季"},{"name":"盘整"},{"name":"背后"},{"name":"的"},{"name":"经济"},{"name":"逻辑"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"24\",\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\",\"is_post_show\":\"0\"},{\"id\":\"27\",\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\",\"is_post_show\":\"0\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\"},{\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\"}]","_type":"post","user":{"user_id_old":0,"id":2147667574,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Matrixport","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"65789750","wechat":null,"crm_email":null,"realname":null,"nickname":"Matrixport","avatar_url":"https://piccdn.0daily.com/202410/11/8df9fd72cf7e813152905ece7f5f0f31.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"TA还在犹豫如何开场","sex":"male","job":null,"industry":"金融","birthday":"2019-02-01 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2024-05-29 17:41:03","updated_at":"2024-10-12 11:08:46","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204184,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2410,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/06074503/y3zmwislj7apxw3k"],"template_title":"James Wynn：我，只是个贪婪的白痴"},"stat_belong":"","title":"James Wynn：我，只是个贪婪的白痴","title_mobile":null,"catch_title":"","summary":"2025年加密世界最疯狂的演出，赢家永远有合约剧场Hyperliquid的席位。\n","cover":"https://piccdn.0daily.com/202506/06074503/y3zmwislj7apxw3k","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147512995,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-06 15:45:56","published_at":"2025-06-06 16:20:00","updated_at":"2025-06-06 16:20:01","created_at":"2025-06-06 15:43:34","pin":0,"pushed_at":null,"keywords":[{"name":"James"},{"name":"Wynn"},{"name":"："},{"name":"我"},{"name":"，"},{"name":"只是"},{"name":"个"},{"name":"贪婪"},{"name":"的"},{"name":"白痴"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"}]","_type":"post","user":{"user_id_old":0,"id":2147512995,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Foresight News","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18918342550","wechat":null,"crm_email":null,"realname":null,"nickname":"Foresight News","avatar_url":"https://piccdn.0daily.com/202204/28/cf367efb2e5a0da46dd14c9e01057b4c.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Web 3.0 &amp; 区块链时代全球资讯前沿站，一起「遇见」未来。","sex":"male","job":"其他","industry":"互联网","birthday":"2022-02-02 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2022-02-28 15:22:00","updated_at":"2022-04-28 14:08:55","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204173,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":1720,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/06040255/vznaghvvidny9z3x"],"template_title":"特朗普与马斯克「吵架」市场买单，后续走势如何？"},"stat_belong":"","title":"特朗普与马斯克「吵架」市场买单，后续走势如何？","title_mobile":null,"catch_title":"","summary":"持有BTC至少12个月的投资者上周实现了超过10亿美元的日均收益。\n","cover":"https://piccdn.0daily.com/202506/06040255/vznaghvvidny9z3x","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147512995,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-06 12:03:49","published_at":"2025-06-06 12:03:50","updated_at":"2025-06-06 12:03:50","created_at":"2025-06-06 12:00:02","pin":0,"pushed_at":null,"keywords":[{"name":"特朗普"},{"name":"与"},{"name":"马斯克"},{"name":"「"},{"name":"吵架"},{"name":"」"},{"name":"市场"},{"name":"买单"},{"name":"，"},{"name":"后续"},{"name":"走势"},{"name":"如何"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"534\",\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\",\"is_post_show\":\"1\"},{\"id\":\"503\",\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\"},{\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\"}]","_type":"post","user":{"user_id_old":0,"id":2147512995,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Foresight News","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18918342550","wechat":null,"crm_email":null,"realname":null,"nickname":"Foresight News","avatar_url":"https://piccdn.0daily.com/202204/28/cf367efb2e5a0da46dd14c9e01057b4c.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Web 3.0 &amp; 区块链时代全球资讯前沿站，一起「遇见」未来。","sex":"male","job":"其他","industry":"互联网","birthday":"2022-02-02 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2022-02-28 15:22:00","updated_at":"2022-04-28 14:08:55","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204145,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":7248,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/05063643/xgzwi6bo3vs0isip"],"template_title":"GENIUS法案的通过进一步强化思想钢印，让BTC的10年慢牛成为可能"},"stat_belong":"","title":"GENIUS法案的通过进一步强化思想钢印，让BTC的10年慢牛成为可能","title_mobile":null,"catch_title":"","summary":"比特币的长周期慢牛结构并非线性，也不会天天上涨，而是由数次政策切换、地缘冲突、技术变革和市场情绪所构成的波段路径。但只要比特币的“资产属性演化”路径持续清晰，它就具备成为这一轮全球资本重估浪潮中最确定的参与标的。","cover":"https://piccdn.0daily.com/202506/05063643/xgzwi6bo3vs0isip","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147675804,"user_id_edited":2147503370,"user_id_created":2147675804,"user_id_tagged":0,"edited_at":"2025-06-05 17:01:53","published_at":"2025-06-05 17:01:54","updated_at":"2025-06-05 17:01:54","created_at":"2025-06-05 14:35:18","pin":0,"pushed_at":null,"keywords":[{"name":"GENIUS"},{"name":"法案"},{"name":"的"},{"name":"通过"},{"name":"进一步"},{"name":"强化"},{"name":"思想"},{"name":"钢印"},{"name":"，"},{"name":"让"},{"name":"BTC"},{"name":"的"},{"name":"10"},{"name":"年慢"},{"name":"牛"},{"name":"成为"},{"name":"可能"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"18\",\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\",\"is_post_show\":\"0\"},{\"id\":\"19\",\"name\":\"\\u91d1\\u878d\",\"slug\":\"5cce5347bb17e\",\"is_post_show\":\"0\"},{\"id\":\"27\",\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\",\"is_post_show\":\"0\"},{\"id\":\"434\",\"name\":\"Aptos\",\"slug\":\"62de67ed4ecea\",\"is_post_show\":\"1\"},{\"id\":\"534\",\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u7a33\\u5b9a\\u5e01\",\"slug\":\"5cce51cce716f\"},{\"name\":\"\\u91d1\\u878d\",\"slug\":\"5cce5347bb17e\"},{\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\"},{\"name\":\"Aptos\",\"slug\":\"62de67ed4ecea\"},{\"name\":\"\\u7279\\u6717\\u666e\",\"slug\":\"678dfeb982d9e\"}]","_type":"post","user":{"user_id_old":0,"id":2147675804,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Movemaker","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"13199066575","wechat":null,"crm_email":null,"realname":null,"nickname":"Movemaker","avatar_url":"https://piccdn.0daily.com/202503/14/7a49a339bb47699c3d54911438dceac4.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Movemaker致力于打造一个多元、开放、繁荣的 Aptos生态系统。","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2025-03-14 18:39:46","updated_at":"2025-03-14 19:09:51","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5204147,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2783,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/05070726/ae8tku75qwjw317h"],"template_title":"加密财库热潮暗藏危机，会重演灰度GBTC「爆雷」剧本吗？"},"stat_belong":"","title":"加密财库热潮暗藏危机，会重演灰度GBTC「爆雷」剧本吗？","title_mobile":null,"catch_title":"","summary":"微策略引来一批模仿者，但高溢价背后的杠杆风险如何？","cover":"https://piccdn.0daily.com/202506/05070726/ae8tku75qwjw317h","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147487310,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-05 15:11:25","published_at":"2025-06-05 15:11:25","updated_at":"2025-06-05 15:11:25","created_at":"2025-06-05 15:07:00","pin":0,"pushed_at":null,"keywords":[{"name":"加密"},{"name":"财库"},{"name":"热潮"},{"name":"暗藏"},{"name":"危机"},{"name":"，"},{"name":"会"},{"name":"重演"},{"name":"灰度"},{"name":"GBTC"},{"name":"「"},{"name":"爆雷"},{"name":"」"},{"name":"剧本"},{"name":"吗"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"536\",\"name\":\"Strategy\",\"slug\":\"67e8efad4cb9a\",\"is_post_show\":\"1\"},{\"id\":\"86\",\"name\":\"\\u7070\\u5ea6\",\"slug\":\"5e54a032e7f29\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u7070\\u5ea6\",\"slug\":\"5e54a032e7f29\"},{\"name\":\"Strategy\",\"slug\":\"67e8efad4cb9a\"}]","_type":"post","user":{"user_id_old":0,"id":2147487310,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"PANews","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18210507277","wechat":null,"crm_email":null,"realname":null,"nickname":"PANews","avatar_url":"https://piccdn.0daily.com/202211/16/3f8bf92de7060724bc33d7a93acaed0e.png","tovc_avatar_url":"https://piccdn.0daily.com/202210/14025530/rn59bcuoyooeltti.png","qr_code_url":null,"slug":null,"introduction":"探寻真相，链接未来。更多资讯在官网 PANewsLab.com","sex":"male","job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Circle和Tether或许不是同一物种的竞争，稳定币价值实现层级模型如是说]]></title>
         <id>https://www.odaily.news/post/5204222</id>
         <link href="https://www.odaily.news/post/5204222"/>
@@ -2346,50 +1123,6 @@ Core 组发布了最新声明，比特币核心开发圈都炸锅了，我看华
 稳定币的两大用户群…]]></summary>
         <author>
             <name>叮当</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Airwallex CEO质疑稳定币价值根基：代表「旧势力」的既得利益者慌了？]]></title>
-        <id>https://www.odaily.news/post/5204224</id>
-        <link href="https://www.odaily.news/post/5204224"/>
-        <updated>2025-06-09T08:45:00.000Z</updated>
-        <summary type="html"><![CDATA[整理：Fairy，ChainCatcher
-编辑：TB，ChainCatcher
-“稳定币无法降低主流货币间的汇款成本，加密货币过去 15 年未展现明确的实际用例。”
-6 月 7 日，Airwallex 创始人兼 CEO Jack Zhang 的一则推文引发了关于稳定币实际价值的激烈讨论。这番“唱空”之声之所以引人关注，正是因为 Jack Zhang 身处全球金融科技的核心位置。
-Airwallex 是全球领先的企业跨境支付平台，业务覆盖超过 50 个国家，核心产品包括国际收款账户、多币种公司卡、全球转账等。今年 5 月，Airwallex 完成 F 轮融资，估值升至 62 亿美元，累计融资达 12 亿美元，背后投资方包括腾讯、红杉中国、DST、高瓴等知名资本。
-在稳定币步入主流金融视野的当下，Jack Zhang 的“声调”显得格外刺耳。但他的观点并非孤例，而是映射出部分传统支付从业者、甚至金融精英阶层对稳定币崛起的看法。
-以下是 Jack Zhang 的推文（由 ChainCatcher 编译）：
-投资者总是问我关于稳定币的问题，以及它如何能减少外汇费用；但如果你是从美元汇款到欧元，而且收款方仍要求收到的是银行账户中的欧元，那我实在看不出稳定币有什么方式能降低费用 —— 从稳定币换出到收款货币的成本，远高于传统的银行间外汇市场。
-加密货币是我一直没能理解的领域。过去 15 年里，我仍然没看到加密货币在哪些方面真正带来了帮助。即便是稳定币波动性较小，我也看不出它在 B2B 交易中能带来什么好处，除非是用于一些非常小众的货币市场，但这些市场的流动性本身就非常低。
-不像人工智能，它的应用是实实在在的，我们每个人、每天都在使用各种 AI 工具。稳定币呢？有多少人真的在用？
-我还记得在 2021 年的时候，我像个傻子一样，看着大家都在谈论加密货币，市场也因此疯狂上涨，连 a16z…]]></summary>
-        <author>
-            <name>链捕手</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[从巨鲸到蚂蚁，链上合约传奇James Wynn陨落？]]></title>
-        <id>https://www.odaily.news/post/5204217</id>
-        <link href="https://www.odaily.news/post/5204217"/>
-        <updated>2025-06-09T08:25:51.000Z</updated>
-        <summary type="html"><![CDATA[原创｜Odaily星球日报（@OdailyChina）
-作者｜Wenser（@wenser 2010 ）
-
-谁也没想到，在短短的 2 周时间内，曾经开出 10 亿美元级别仓位的“传奇交易员”、加密巨鲸 James Wynn 就已沦落到满盘皆输、只能开出数百美元的蚂蚁仓的地步。此前，其曾发长文自白，痛陈自己是如何从“狂赚 1 亿美元”到输到浑身精光，以自身为反面案例向市场大众揭秘了“贪婪”二字的可怕。
-这篇文章，Odaily星球日报将结合 James Wynn 近期操作及本人发言深扒其人其事，且一探“James Wynn 是否为 Hyperliquid 平台白手套”的背后疑云。
-关于 James 其人，推荐阅读《谁是 James Wynn：小镇走出的交易天才，豪赌 10 亿的疯狂巨鲸》一文。
-机关算尽太贪婪，反误了 James“链上性命”
-
-6 月 6 日凌晨，James Wynn 多单仓位再次被强平，爆仓损失达 155.38 枚比特币，按当时市值约合 1614 万美元。从链上数据可见，该爆仓发生于 BTC-USDT 合约价格大幅下跌期间，清算价格约为 103, 981 美元。本轮强平可能与市场短期剧烈波动相关。
-或许是这次爆仓终于成了“压倒骆驼的最后一根稻草”，当日上午，James Wynn 发布了一篇长文自白，对自己的成名史以及现状进行了首次公开分享——
-
-我从今年三月份刚开始参与永续合约交易，之前从没正经交易过，最多就炒炒 Meme 币（此前曾因在 60 万市值时发现 PEPE 并赚取 8 位数利润闻名）。曾在短短一个月时间内将 300 万美元滚仓到 1 个亿，然后在 HyperLiquid 上一周亏光。
-当时只是自己瞎玩，但链上数据公开，几十万人围观自己账户暴涨暴跌，索性就放飞自我了。
-后来事情逐渐失控。
-自己明白这本质上就是在赌博，既想挽回亏损，也怕被人嘲笑“赚 1…]]></summary>
-        <author>
-            <name>Wenser</name>
         </author>
     </entry>
     <entry>
@@ -2613,29 +1346,6 @@ Jack Zhang 认为，在 G10 货币之…]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Polycule操作指南：快速玩转Polymarket的Telegram Bot]]></title>
-        <id>https://www.odaily.news/post/5204223</id>
-        <link href="https://www.odaily.news/post/5204223"/>
-        <updated>2025-06-09T07:55:44.000Z</updated>
-        <summary type="html"><![CDATA[随着加密原生用户的移动端需求日益增长，预测市场平台 Polymarket 迎来了一款更易上手的访问工具。
-Polycule 是一个专为 Polymarket 打造的轻量化 Telegram 机器人，旨在简化预测市场交易流程，降低操作门槛。用户无需打开网页或安装额外应用，即可通过 Telegram 指令直接参与链上 YES/NO 投注，涵盖政治、体育、加密货币等热门话题。
-6 月 7 日，Polycule 创始人 krish 在 X 平台宣布，项目已获得来自 Alliance 的 56 万美元投资。Alliance 是 Web3 领域最具影响力的创业加速器之一，此轮融资将用于产品打磨与生态拓展。
-
-此消息一经发出，便引起了市场的激烈反响。截至撰稿时，其平台代币 $PCULE 价格在 24 小时内一路冲高，实现了近 200% 的涨幅，随后横盘整理。该代币由 Polycule 创始人 krish 于 5 月 18 日 bellive 平台上发布。
-
-从聊天交易到代币飞轮
-移动交易 + 群组社交，构建预测市场新入口
-不同于传统网页端的交易体验，Polycule 将预测市场迁移至 Telegram 聊天环境中。用户只需添加机器人 @polycule_bot，便可通过指令完成全链交易操作。例如：
-1、将任意 Polymarket 市场链接粘贴到对话框中，机器人会自动加载对应市场
-2、输入 /trending，即可查看前的热门市场列表
-3、输入 /buy YES 50 ，即可下注 50 美元买入「YES」选项
-4、输入 /positions，即可查看当前你的持仓情况
-Polycule 的一大亮点在于其强大的群组支持和社交交易功能。区别于传统交易界面，Polycule 在群组中支持「社交广播」功能。用户将机器人添加至 Telegram 群组后，所有交易操作都被自动广播，方便成员交流策略、追…]]></summary>
-        <author>
-            <name>区块律动BlockBeats","role_id":6,"introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","avatar_url":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","tovc_avatar_url":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"title":"特邀作者","qr_code_url":null,"department_belong":null,"role":{"id":6,"name":"特邀作者","description":"特邀作者","user_id_server":0,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147486423,"role_id":6}},"roles":[{"id":6,"name":"特邀作者","description":"特邀作者","user_id_server":0,"available_domain_ids":"[]","server":null,"pivot":{"user_id":2147486423,"role_id":6}}]},"summary":"为预测市场打开了新的入口，也为Telegram用户提供了低门槛参与链上金融的方式。","content":"&lt;p&gt;随着加密原生用户的移动端需求日益增长，预测市场平台 Polymarket 迎来了一款更易上手的访问工具。&lt;/p&gt;&lt;p&gt;Polycule 是一个专为 Polymarket 打造的轻量化 Telegram 机器人，旨在简化预测市场交易流程，降低操作门槛。用户无需打开网页或安装额外应用，即可通过 Telegram 指令直接参与链上 YES/NO 投注，涵盖政治、体育、加密货币等热门话题。&lt;/p&gt;&lt;p&gt;6 月 7 日，Polycule 创始人 krish 在 X 平台宣布，项目已获得来自 Alliance 的 56 万美元投资。Alliance 是 Web3 领域最具影响力的创业加速器之一，此轮融资将用于产品打磨与生态拓展。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/4ca4f592-f68e-4102-9d1b-d40b43b3b60e.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;此消息一经发出，便引起了市场的激烈反响。截至撰稿时，其平台代币 $PCULE 价格在 24 小时内一路冲高，实现了近 200% 的涨幅，随后横盘整理。该代币由 Polycule 创始人 krish 于 5 月 18 日 bellive 平台上发布。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/e4bca76d-ba97-4158-8051-d960f29437ef.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;h2 class=\"customstyle_text\" style=\"\"&gt;从聊天交易到代币飞轮&lt;/h2&gt;&lt;h3 class=\"customstyle_text\" style=\"\"&gt;移动交易 + 群组社交，构建预测市场新入口&lt;/h3&gt;&lt;p&gt;不同于传统网页端的交易体验，Polycule 将预测市场迁移至 Telegram 聊天环境中。用户只需添加机器人 @polycule_bot，便可通过指令完成全链交易操作。例如：&lt;/p&gt;&lt;p&gt;1、将任意 Polymarket 市场链接粘贴到对话框中，机器人会自动加载对应市场&lt;/p&gt;&lt;p&gt;2、输入 /trending，即可查看前的热门市场列表&lt;/p&gt;&lt;p&gt;3、输入 /buy YES 50&amp;nbsp;，即可下注 50 美元买入「YES」选项&lt;/p&gt;&lt;p&gt;4、输入 /positions，即可查看当前你的持仓情况&lt;/p&gt;&lt;p&gt;Polycule 的一大亮点在于其强大的群组支持和社交交易功能。区别于传统交易界面，Polycule 在群组中支持「社交广播」功能。用户将机器人添加至 Telegram 群组后，所有交易操作都被自动广播，方便成员交流策略、追踪他人动态，形成实时协同的交易氛围。这一机制使得预测市场从一项单独的活动转变为一种集体体验，用户可以实时学习彼此的策略和见解。&lt;/p&gt;&lt;p&gt;同时，Polycule 突破了地域限制。当前，Polymarket 在美国等地区受到使用限制，且官方缺乏原生移动端体验。Polycule 利用 Telegram 的全球普及性，突破了地域与设备限制，使交易可以在任何时间、任何设备上进行。&lt;/p&gt;&lt;p&gt;此外，Polycule 支持 Polygon 链上交易，用户可在聊天界面内完成充值、提币与代币兑换等操作。功能上也涵盖了限价单、价格图表、市场提醒等进阶选项，满足不同层次的交易需求。&lt;/p&gt;&lt;h3 class=\"customstyle_text\" style=\"\"&gt;PCULE 代币机制与回购模型&lt;/h3&gt;&lt;p&gt;PCULE 是 Polycule 平台的原生代币，持有可享手续费折扣，从 0.05% 降至最低 0.01%&amp;nbsp;。此外，Polycule 每当手续费收入累计超过 1 万美元，就会启动代币回购并销毁机制，推动代币稀缺性上升。这一机制结合群体交易活跃度，形成一个自增强的飞轮模型。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/b1d05a55-a11a-479d-8cb4-3b4569bbe6b4.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;在交易活跃、代币上涨、用户涌入的正反馈下，Polycule 正迅速成为预测市场用户的主要入口。接下来，团队还将上线策略复制、Solana 跨链充值与更丰富的群组工具，进一步拓展场景覆盖。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/f3b5ef8f-76f8-4872-9b26-41734e5afbce.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p class=\"img-desc customstyle_text\" style=\"\"&gt;图源 Polycule 项目白皮书&lt;/p&gt;&lt;p&gt;据官方透露，Polycule 未来将拓展至更多消息平台，引入策略跟单、交易员排行榜、Solana 等链的跨链充值支持，并优化 UI 与交易速度。&lt;/p&gt;&lt;p&gt;Polycule 的推出，为预测市场打开了新的入口，也为 Telegram 用户提供了低门槛参与链上金融的方式。随着社交化交易方式的兴起，预测市场正在从边缘工具，逐渐转变为社群共识实验场。&lt;/p&gt;&lt;h2 class=\"customstyle_text\" style=\"\"&gt;新用户如何开始使用 Polycule？&lt;/h2&gt;&lt;p&gt;1、启动机器人：打开&lt;a href=\"http://www.polycule.trade/\"&gt;官网&lt;/a&gt;，或在 Telegram 中搜索&amp;nbsp;&lt;a href=\"https://t.me/polycule_bot\"&gt;@polycule_bot&lt;/a&gt;，点击 Start 启动交互。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/60c1b2f5-efe6-4ccd-ad49-61a95a70f3d8.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;2、创建或导入钱包：机器人会自动生成 Polygon 网络钱包，或允许导入已有地址。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/549b6466-76ca-42e8-a061-6c4f9bb146b4.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;3、充值资产：向生成的钱包地址转入 USDC（Polygon 网络），用于参与市场交易。&lt;/p&gt;&lt;p&gt;4、浏览与交易市场：通过指令查看市场或直接下单。机器人会提供简洁的界面显示价格、流动性与成交量信息。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/a5abadf6-2afc-439c-a478-99d3b77fbb7f.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;5、加入社交交易：将机器人添加至群组，自动开启群内交易广播功能，适用于 DAO、分析社群或兴趣组跟单场景。&lt;/p&gt;&lt;p&gt;&lt;img alt=\"Polycule操作指南：快速玩转Polymarket的Telegram Bot\" src=\"https://image.blockbeats.cn/file_v6/20250609/85bb6ee4-4415-4cb2-ba6c-0871dc73539d.png?x-oss-process=image/quality,q_50/format,webp\" alt=\"\" data-href=\"\"/\\&gt;&lt;/p&gt;&lt;p&gt;6、管理资产：用户可通过 /wallet 查看余额，使用 /withdraw 提币，或通过 /swap 实现 USDC 与 PCULE 的兑换。&lt;/p&gt;","extraction_tags":"","source_type":"original","source_urls":"","next_post":{"title":"BitMart市场行情周报（6.02-6.08）","entity_id":5204221,"id":5204221},"keywords":"[{\"name\":\"Polycule\"},{\"name\":\"\\u64cd\\u4f5c\"},{\"name\":\"\\u6307\\u5357\"},{\"name\":\"\\uff1a\"},{\"name\":\"\\u5feb\\u901f\"},{\"name\":\"\\u73a9\\u8f6c\"},{\"name\":\"Polymarket\"},{\"name\":\"\\u7684\"},{\"name\":\"Telegram\"},{\"name\":\"Bot\"}]"},"user":{"type":"SET_POST_USER","id":2147486423,"avatar":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","name":"区块律动BlockBeats","introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","title":"特邀作者","total":"2091"},"comments":[],"counters":{"view_count":291,"pv":219,"pv_mobile":39,"pv_app":30,"favorite":0,"comment":0,"like":0},"secondary":[{"secondary_tag":530,"column_id":null,"name":"预测市场","slug":"66a3463cc2800","type":2}],"articleList":[{"id":5204213,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":2383,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202506/09055351/ixtc1xoqw8hf8cgq"],"template_title":"X与Polymarket合作，马斯克离「万物App」又近了一步"},"stat_belong":"","title":"X与Polymarket合作，马斯克离「万物App」又近了一步","title_mobile":null,"catch_title":"","summary":"Grok 已在使用 Polymarket 的数据预测现实世界中存在不确定性的事件。\n","cover":"https://piccdn.0daily.com/202506/09055351/ixtc1xoqw8hf8cgq","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147486423,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-06-09 13:54:32","published_at":"2025-06-09 13:54:33","updated_at":"2025-06-09 13:54:33","created_at":"2025-06-09 13:51:25","pin":0,"pushed_at":null,"keywords":[{"name":"X"},{"name":"与"},{"name":"Polymarket"},{"name":"合作"},{"name":"，"},{"name":"马斯克"},{"name":"离"},{"name":"「"},{"name":"万物"},{"name":"App"},{"name":"」"},{"name":"又"},{"name":"近"},{"name":"了"},{"name":"一步"}],"secondary_tag1":"[{\"id\":\"503\",\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\",\"is_post_show\":\"1\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u9a6c\\u65af\\u514b\",\"slug\":\"63db3013690e3\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147486423,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"区块律动BlockBeats","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"17611305985","wechat":null,"crm_email":null,"realname":null,"nickname":"区块律动BlockBeats","avatar_url":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","sex":"male","job":null,"industry":null,"birthday":"2018-01-31 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147489084,"created_at":"2018-11-21 01:10:36","updated_at":"2021-05-21 14:49:18","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5203188,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":1221,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202504/22102033/1iq3ujtrzbe3cz9n"],"template_title":"KOL：我如何通过预测市场套利赚到10万美元"},"stat_belong":"","title":"KOL：我如何通过预测市场套利赚到10万美元","title_mobile":null,"catch_title":"","summary":"加密市场持续低迷，边际买家在哪里？\n","cover":"https://piccdn.0daily.com/202504/22102033/1iq3ujtrzbe3cz9n","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147512995,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-04-22 18:20:48","published_at":"2025-04-22 21:00:00","updated_at":"2025-04-22 21:00:04","created_at":"2025-04-22 18:18:15","pin":0,"pushed_at":null,"keywords":[{"name":"KOL"},{"name":"："},{"name":"我"},{"name":"如何"},{"name":"通过"},{"name":"预测"},{"name":"市场"},{"name":"套利"},{"name":"赚到"},{"name":"10"},{"name":"万美元"}],"secondary_tag1":"[{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147512995,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Foresight News","title":"新锐作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18918342550","wechat":null,"crm_email":null,"realname":null,"nickname":"Foresight News","avatar_url":"https://piccdn.0daily.com/202204/28/cf367efb2e5a0da46dd14c9e01057b4c.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"Web 3.0 &amp; 区块链时代全球资讯前沿站，一起「遇见」未来。","sex":"male","job":"其他","industry":"互联网","birthday":"2022-02-02 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2022-02-28 15:22:00","updated_at":"2022-04-28 14:08:55","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5202721,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":12076,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202504/02075706/rwur06n99j8kafea"],"template_title":" 对话Robinhood CEO：想把SpaceX的股权代币化，打造「口袋私人银行」"},"stat_belong":"","title":" 对话Robinhood CEO：想把SpaceX的股权代币化，打造「口袋私人银行」","title_mobile":null,"catch_title":"","summary":"“我们的目标是为所有客户提供与高净值个人相同的访问权限、机会和策略。”\n","cover":"https://piccdn.0daily.com/202504/02075706/rwur06n99j8kafea","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147492518,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-04-02 18:17:11","published_at":"2025-04-02 22:00:00","updated_at":"2025-04-02 22:00:03","created_at":"2025-04-02 15:53:49","pin":0,"pushed_at":null,"keywords":[{"name":"对话"},{"name":"Robinhood"},{"name":"CEO"},{"name":"："},{"name":"想"},{"name":"把"},{"name":"SpaceX"},{"name":"的"},{"name":"股权"},{"name":"代币"},{"name":"化"},{"name":"，"},{"name":"打造"},{"name":"「"},{"name":"口袋"},{"name":"私人"},{"name":"银行"},{"name":"」"}],"secondary_tag1":"[{\"id\":\"264\",\"name\":\"Robinhood\",\"slug\":\"60de867439a69\",\"is_post_show\":\"1\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"Robinhood\",\"slug\":\"60de867439a69\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147492518,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"深潮TechFlow","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15510191370","wechat":null,"crm_email":null,"realname":null,"nickname":"深潮TechFlow","avatar_url":"https://piccdn.0daily.com/202005/07/f9e02135774aec88bdeeb8bcfc8c7f96.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"深潮TechFlow是区块链行业原创深度媒体","sex":"male","job":null,"industry":"金融","birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147489084,"created_at":"2020-05-07 16:56:30","updated_at":"2020-09-03 11:40:26","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5202232,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":3515,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202503/11075342/8bv41oa1fub0f1lq"],"template_title":"5亿美元投资比特币储备，德州领先建造加密乌托邦？"},"stat_belong":"","title":"5亿美元投资比特币储备，德州领先建造加密乌托邦？","title_mobile":null,"catch_title":"","summary":"德州法案只是开始，“西部淘金精神”即将改写美国国家储备规则。","cover":"https://piccdn.0daily.com/202503/11075342/8bv41oa1fub0f1lq","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"5\\u4ebf\\u7f8e\\u5143\\u6295\\u8d44\\u6bd4\\u7279\\u5e01\\u50a8\\u5907\\uff0c\\u5fb7\\u5dde\\u9886\\u5148\\u5efa\\u9020\\u52a0\\u5bc6\\u4e4c\\u6258\\u90a6\\uff1f\",\"android_content\":\"\\u5fb7\\u5dde\\u6cd5\\u6848\\u53ea\\u662f\\u5f00\\u59cb\\uff0c\\u201c\\u897f\\u90e8\\u6dd8\\u91d1\\u7cbe\\u795e\\u201d\\u5373\\u5c06\\u6539\\u5199\\u7f8e\\u56fd\\u56fd\\u5bb6\\u50a8\\u5907\\u89c4\\u5219\\u3002\",\"ios_title\":\"5\\u4ebf\\u7f8e\\u5143\\u6295\\u8d44\\u6bd4\\u7279\\u5e01\\u50a8\\u5907\\uff0c\\u5fb7\\u5dde\\u9886\\u5148\\u5efa\\u9020\\u52a0\\u5bc6\\u4e4c\\u6258\\u90a6\\uff1f\",\"ios_content\":\"\\u5fb7\\u5dde\\u6cd5\\u6848\\u53ea\\u662f\\u5f00\\u59cb\\uff0c\\u201c\\u897f\\u90e8\\u6dd8\\u91d1\\u7cbe\\u795e\\u201d\\u5373\\u5c06\\u6539\\u5199\\u7f8e\\u56fd\\u56fd\\u5bb6\\u50a8\\u5907\\u89c4\\u5219\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-03-11 18:31:00\"}","user_id":2147675170,"user_id_edited":2147675170,"user_id_created":2147675170,"user_id_tagged":0,"edited_at":"2025-03-22 11:35:50","published_at":"2025-03-11 18:30:49","updated_at":"2025-03-22 11:35:51","created_at":"2025-03-11 14:06:17","pin":0,"pushed_at":"2025-03-11 18:31:00","keywords":[{"name":"5"},{"name":"亿美元"},{"name":"投资"},{"name":"比特"},{"name":"币"},{"name":"储备"},{"name":"，"},{"name":"德州"},{"name":"领先"},{"name":"建造"},{"name":"加密"},{"name":"乌托邦"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"24\",\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\",\"is_post_show\":\"0\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"\\u6295\\u8d44\",\"slug\":\"5cce545fc0fc2\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147675170,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Ethanzhang","title":"资深编辑","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15661301269","wechat":null,"crm_email":null,"realname":null,"nickname":"Ethanzhang","avatar_url":"https://piccdn.0daily.com/202503/03/ae32c9dd17f0e2d2ba1e95a49fe77d53.jpeg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"痴迷技术｜连续创业者｜X：@ethanzhang_web3","sex":"male","job":"创业者","industry":"金融","birthday":"2001-07-29 04:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2025-03-03 11:06:06","updated_at":"2025-03-22 11:38:29","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5201065,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":1049,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202501/10072930/sb49qtbnxr4262s9"],"template_title":"灾难变赌局？Polymarket因「加州野火预测市场」再惹争议"},"stat_belong":"","title":"灾难变赌局？Polymarket因「加州野火预测市场」再惹争议","title_mobile":null,"catch_title":"","summary":"如果你真的受到野火影响，还是依赖积极报道事件的新闻机构而非加密预测网站更靠谱些。\n","cover":"https://piccdn.0daily.com/202501/10072930/sb49qtbnxr4262s9","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147486423,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-01-10 15:30:10","published_at":"2025-01-10 15:30:11","updated_at":"2025-01-10 15:30:11","created_at":"2025-01-10 15:26:57","pin":0,"pushed_at":null,"keywords":[{"name":"灾难"},{"name":"变"},{"name":"赌局"},{"name":"？"},{"name":"Polymarket"},{"name":"因"},{"name":"「"},{"name":"加州"},{"name":"野火"},{"name":"预测"},{"name":"市场"},{"name":"」"},{"name":"再"},{"name":"惹"},{"name":"争议"}],"secondary_tag1":"[{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147486423,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"区块律动BlockBeats","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"17611305985","wechat":null,"crm_email":null,"realname":null,"nickname":"区块律动BlockBeats","avatar_url":"https://piccdn.0daily.com/201812/06/2373fb6fb149bf8ecba328b7a216daab.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"关注区块链、数字加密行业，首选媒体—律动BlockBeats","sex":"male","job":null,"industry":null,"birthday":"2018-01-31 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147489084,"created_at":"2018-11-21 01:10:36","updated_at":"2021-05-21 14:49:18","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5201054,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":7117,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202501/10023612/8t9nd47ja6tqd4vd"],"template_title":"预测市场的信任危机：当「真相引擎」开始说谎，如何构建更可靠的预测系统？"},"stat_belong":"","title":"预测市场的信任危机：当「真相引擎」开始说谎，如何构建更可靠的预测系统？","title_mobile":null,"catch_title":"","summary":"预测市场正在被赋予更高的定位，它们被视为“真相引擎”。\n","cover":"https://piccdn.0daily.com/202501/10023612/8t9nd47ja6tqd4vd","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":null,"user_id":2147492518,"user_id_edited":2147501183,"user_id_created":2147501183,"user_id_tagged":0,"edited_at":"2025-01-10 10:36:18","published_at":"2025-01-10 10:36:18","updated_at":"2025-01-10 10:36:18","created_at":"2025-01-10 10:31:04","pin":0,"pushed_at":null,"keywords":[{"name":"预测"},{"name":"市场"},{"name":"的"},{"name":"信任危机"},{"name":"："},{"name":"当"},{"name":"「"},{"name":"真相"},{"name":"引擎"},{"name":"」"},{"name":"开始"},{"name":"说谎"},{"name":"，"},{"name":"如何"},{"name":"构建"},{"name":"更"},{"name":"可靠"},{"name":"的"},{"name":"预测"},{"name":"系统"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147492518,"institution_id":57,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"深潮TechFlow","title":"特邀作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15510191370","wechat":null,"crm_email":null,"realname":null,"nickname":"深潮TechFlow","avatar_url":"https://piccdn.0daily.com/202005/07/f9e02135774aec88bdeeb8bcfc8c7f96.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"深潮TechFlow是区块链行业原创深度媒体","sex":"male","job":null,"industry":"金融","birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":6,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147489084,"created_at":"2020-05-07 16:56:30","updated_at":"2020-09-03 11:40:26","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5200973,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":0,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202501/07040243/8bvglze0ouhk5kb5"],"template_title":"Arthur Hayes更新预测：市场将于三月末见顶"},"stat_belong":"","title":"Arthur Hayes更新预测：市场将于三月末见顶","title_mobile":null,"catch_title":"","summary":"Arthur旗下基金已上调风险倾向，现已先行建仓DeSci概念。","cover":"https://piccdn.0daily.com/202501/07040243/8bvglze0ouhk5kb5","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"Arthur Hayes\\u66f4\\u65b0\\u9884\\u6d4b\\uff1a\\u5e02\\u573a\\u5c06\\u4e8e\\u4e09\\u6708\\u672b\\u89c1\\u9876\",\"android_content\":\"Arthur\\u65d7\\u4e0b\\u57fa\\u91d1\\u5df2\\u4e0a\\u8c03\\u98ce\\u9669\\u503e\\u5411\\uff0c\\u73b0\\u5df2\\u5148\\u884c\\u5efa\\u4ed3DeSci\\u6982\\u5ff5\\u3002\",\"ios_title\":\"Arthur Hayes\\u66f4\\u65b0\\u9884\\u6d4b\\uff1a\\u5e02\\u573a\\u5c06\\u4e8e\\u4e09\\u6708\\u672b\\u89c1\\u9876\",\"ios_content\":\"Arthur\\u65d7\\u4e0b\\u57fa\\u91d1\\u5df2\\u4e0a\\u8c03\\u98ce\\u9669\\u503e\\u5411\\uff0c\\u73b0\\u5df2\\u5148\\u884c\\u5efa\\u4ed3DeSci\\u6982\\u5ff5\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2025-01-07 13:38:00\"}","user_id":2147486555,"user_id_edited":2147501183,"user_id_created":2147486555,"user_id_tagged":0,"edited_at":"2025-01-07 12:23:37","published_at":"2025-01-07 13:38:17","updated_at":"2025-01-07 13:41:33","created_at":"2025-01-07 09:42:35","pin":0,"pushed_at":"2025-01-07 13:38:00","keywords":[{"name":"Arthur"},{"name":"Hayes"},{"name":"更新"},{"name":"预测"},{"name":"："},{"name":"市场"},{"name":"将"},{"name":"于"},{"name":"三月末"},{"name":"见"},{"name":"顶"}],"secondary_tag1":"[{\"id\":\"19\",\"name\":\"\\u91d1\\u878d\",\"slug\":\"5cce5347bb17e\",\"is_post_show\":\"0\"},{\"id\":\"27\",\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\",\"is_post_show\":\"0\"},{\"id\":\"54\",\"name\":\"\\u8d27\\u5e01\",\"slug\":\"5dd376d748fca\",\"is_post_show\":\"0\"},{\"id\":\"447\",\"name\":\"DeSci\",\"slug\":\"62f1d2ebee58c\",\"is_post_show\":\"1\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"\\u91d1\\u878d\",\"slug\":\"5cce5347bb17e\"},{\"name\":\"\\u653f\\u7b56\",\"slug\":\"5d06643e6e833\"},{\"name\":\"\\u8d27\\u5e01\",\"slug\":\"5dd376d748fca\"},{\"name\":\"DeSci\",\"slug\":\"62f1d2ebee58c\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147486555,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"Azuma","title":"资深作者","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18202718386","wechat":null,"crm_email":null,"realname":null,"nickname":"Azuma","avatar_url":"https://piccdn.0daily.com/202202/18/190fe3858d8368b57a2d4953e1d86541.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"个人微信@z18202718386。","sex":"male","job":"其他","industry":"传媒","birthday":"1994-05-26 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":1,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2018-11-30 19:21:25","updated_at":"2023-06-07 16:54:25","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5200793,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":6605,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202412/28162815/gaz6j2k6wt3peyig"],"template_title":"redphone：25个25年预言和23个最看好的币"},"stat_belong":"","title":"redphone：25个25年预言和23个最看好的币","title_mobile":null,"catch_title":"","summary":"新程待启，希望你抓住机遇。","cover":"https://piccdn.0daily.com/202412/28162815/gaz6j2k6wt3peyig","cover_mobile":null,"source_type":"translation","source_urls":"[\"https://x.com/redphonecrypto/status/1872771031359766628\"]","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"redphone\\uff1a25\\u4e2a25\\u5e74\\u9884\\u8a00\\u548c23\\u4e2a\\u6700\\u770b\\u597d\\u7684\\u5e01\",\"android_content\":\"\\u65b0\\u7a0b\\u5f85\\u542f\\uff0c\\u5e0c\\u671b\\u4f60\\u6293\\u4f4f\\u673a\\u9047\\u3002\",\"ios_title\":\"redphone\\uff1a25\\u4e2a25\\u5e74\\u9884\\u8a00\\u548c23\\u4e2a\\u6700\\u770b\\u597d\\u7684\\u5e01\",\"ios_content\":\"\\u65b0\\u7a0b\\u5f85\\u542f\\uff0c\\u5e0c\\u671b\\u4f60\\u6293\\u4f4f\\u673a\\u9047\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2024-12-29 11:20:00\"}","user_id":2147668722,"user_id_edited":2147668722,"user_id_created":2147668722,"user_id_tagged":0,"edited_at":"2024-12-29 12:47:32","published_at":"2024-12-29 11:19:38","updated_at":"2024-12-29 12:47:33","created_at":"2024-12-29 00:22:29","pin":0,"pushed_at":"2024-12-29 11:20:00","keywords":[{"name":"redphone"},{"name":"："},{"name":"25"},{"name":"个"},{"name":"25"},{"name":"年"},{"name":"预言"},{"name":"和"},{"name":"23"},{"name":"个"},{"name":"最"},{"name":"看好"},{"name":"的"},{"name":"币"}],"secondary_tag1":"[{\"id\":\"7\",\"name\":\"BTC\",\"slug\":\"5c949aef62a92\",\"is_post_show\":\"1\"},{\"id\":\"76\",\"name\":\"NFT\",\"slug\":\"5e09865df1337\",\"is_post_show\":\"1\"},{\"id\":\"187\",\"name\":\"Solana\",\"slug\":\"6008f9cebb6a9\",\"is_post_show\":\"1\"},{\"id\":\"461\",\"name\":\"\\u6280\\u672f\",\"slug\":\"6385ab18329bf\",\"is_post_show\":\"1\"},{\"id\":\"488\",\"name\":\"Meme\",\"slug\":\"63bb92950b2f4\",\"is_post_show\":\"1\"},{\"id\":\"493\",\"name\":\"AI\",\"slug\":\"63cf4144a723f\",\"is_post_show\":\"1\"},{\"id\":\"495\",\"name\":\"RWA\",\"slug\":\"63d4f3eb97731\",\"is_post_show\":\"1\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"BTC\",\"slug\":\"5c949aef62a92\"},{\"name\":\"NFT\",\"slug\":\"5e09865df1337\"},{\"name\":\"Solana\",\"slug\":\"6008f9cebb6a9\"},{\"name\":\"\\u6280\\u672f\",\"slug\":\"6385ab18329bf\"},{\"name\":\"Meme\",\"slug\":\"63bb92950b2f4\"},{\"name\":\"AI\",\"slug\":\"63cf4144a723f\"},{\"name\":\"RWA\",\"slug\":\"63d4f3eb97731\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147668722,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"CryptoLeo","title":"资深编辑","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"15010406130","wechat":null,"crm_email":null,"realname":null,"nickname":"CryptoLeo","avatar_url":"https://piccdn.0daily.com/202407/15/51d36f6b7c1fd959d3210d2a7061f2b2.jpg","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"永远看好BTC生态！X/微信 @LeoAndCrypto","sex":"male","job":null,"industry":null,"birthday":"1920-01-01 00:00:00","tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]","role_id":4,"comment_forbidden":0,"last_login_at":null,"last_login_ip":null,"login_count":null,"authentication_token":null,"refresh_token":null,"token_expires_at":null,"version":null,"is_banned":0,"is_push_outside":null,"antispam_state":null,"antispam_task_id":null,"antispam_result":null,"user_id_edited_old":0,"user_id_edited":2147503370,"created_at":"2024-07-15 11:39:38","updated_at":"2025-03-18 23:44:45","is_author":1,"is_video_author":0,"unsubscribe":0}},{"id":5199899,"project_id":1,"monographic_id":null,"column_id":220,"is_tovc":0,"goods_id":0,"domain_id":0,"is_free":0,"related_company_id":0,"company_id":0,"related_company_type":"domestic","related_company_name":"","total_words":994,"close_comment":0,"has_audio":0,"state":"published","entity_flag":null,"recommend_info":{"feed_ids":[220,280],"direct":true},"template_info":{"template_type":"small_image","template_cover":["https://piccdn.0daily.com/202411/20051329/7swnkxnx7w3o9cu3"],"template_title":"Vitalik铸造的预测市场NFT：有何用例与权益？协议价值如何评估？"},"stat_belong":"","title":"Vitalik铸造的预测市场NFT：有何用例与权益？协议价值如何评估？","title_mobile":null,"catch_title":"","summary":"NFT将是代币空投凭证；代币换算总市值达2500万美元，仅有治理权利。","cover":"https://piccdn.0daily.com/202411/20051329/7swnkxnx7w3o9cu3","cover_mobile":null,"source_type":"original","source_urls":"","image_source":"","related_post_ids":"","extraction_tags":"","extra":"{\"android_title\":\"Vitalik\\u94f8\\u9020\\u7684\\u9884\\u6d4b\\u5e02\\u573aNFT\\uff1a\\u6709\\u4f55\\u7528\\u4f8b\\u4e0e\\u6743\\u76ca\\uff1f\\u534f\\u8bae\\u4ef7\\u503c\\u5982\\u4f55\\u8bc4\\u4f30\\uff1f\",\"android_content\":\"NFT\\u5c06\\u662f\\u4ee3\\u5e01\\u7a7a\\u6295\\u51ed\\u8bc1\\uff1b\\u4ee3\\u5e01\\u6362\\u7b97\\u603b\\u5e02\\u503c\\u8fbe2500\\u4e07\\u7f8e\\u5143\\uff0c\\u4ec5\\u6709\\u6cbb\\u7406\\u6743\\u5229\\u3002\",\"ios_title\":\"Vitalik\\u94f8\\u9020\\u7684\\u9884\\u6d4b\\u5e02\\u573aNFT\\uff1a\\u6709\\u4f55\\u7528\\u4f8b\\u4e0e\\u6743\\u76ca\\uff1f\\u534f\\u8bae\\u4ef7\\u503c\\u5982\\u4f55\\u8bc4\\u4f30\\uff1f\",\"ios_content\":\"NFT\\u5c06\\u662f\\u4ee3\\u5e01\\u7a7a\\u6295\\u51ed\\u8bc1\\uff1b\\u4ee3\\u5e01\\u6362\\u7b97\\u603b\\u5e02\\u503c\\u8fbe2500\\u4e07\\u7f8e\\u5143\\uff0c\\u4ec5\\u6709\\u6cbb\\u7406\\u6743\\u5229\\u3002\",\"is_pushed\":1,\"push_type\":\"all\",\"sound\":\"\",\"expire_time\":\"4h\",\"pushed_at\":\"2024-11-20 13:21:00\"}","user_id":2147526842,"user_id_edited":476606870,"user_id_created":2147526842,"user_id_tagged":0,"edited_at":"2024-11-20 13:21:40","published_at":"2024-11-20 13:21:41","updated_at":"2024-11-20 13:24:33","created_at":"2024-11-20 12:49:29","pin":0,"pushed_at":"2024-11-20 13:21:00","keywords":[{"name":"Vitalik"},{"name":"铸造"},{"name":"的"},{"name":"预测"},{"name":"市场"},{"name":"NFT"},{"name":"："},{"name":"有"},{"name":"何用"},{"name":"例"},{"name":"与"},{"name":"权益"},{"name":"？"},{"name":"协议"},{"name":"价值"},{"name":"如何"},{"name":"评估"},{"name":"？"}],"secondary_tag1":"[{\"id\":\"76\",\"name\":\"NFT\",\"slug\":\"5e09865df1337\",\"is_post_show\":\"1\"},{\"id\":\"96\",\"name\":\"Vitalik\",\"slug\":\"5ec3830a7efe9\",\"is_post_show\":\"1\"},{\"id\":\"530\",\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\",\"is_post_show\":\"1\"}]","is_filter":0,"spider_data_id":0,"secondary_tag":"[{\"name\":\"NFT\",\"slug\":\"5e09865df1337\"},{\"name\":\"Vitalik\",\"slug\":\"5ec3830a7efe9\"},{\"name\":\"\\u9884\\u6d4b\\u5e02\\u573a\",\"slug\":\"66a3463cc2800\"}]","_type":"post","user":{"user_id_old":0,"id":2147526842,"institution_id":0,"old_id":0,"unionid_wechat":null,"weixin_info":null,"unionid_weibo":null,"unionid_qq":null,"name":"南枳","title":"资深编辑","department_belong":null,"email":null,"bp_recieve_email":null,"phone":"18916329585","wechat":null,"crm_email":null,"realname":null,"nickname":"南枳","avatar_url":"https://piccdn.0daily.com/202306/30/5ea68b7531a37ab1e45583c48db36ae2.png","tovc_avatar_url":null,"qr_code_url":null,"slug":null,"introduction":"TA还在犹豫如何开场","sex":null,"job":null,"industry":null,"birthday":null,"tovc_brief_intro":null,"tovc_intro":null,"tovc_title":null,"tovc_level":null,"projects":"[1]</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[聊聊比特币 Core 交易中继争议以及为何要支持它]]></title>
         <id>https://www.techflowpost.com/article/detail_26170.html</id>
         <link href="https://www.techflowpost.com/article/detail_26170.html"/>
@@ -2830,28 +1540,6 @@ Bybit
 相反，这些公司…]]></summary>
         <author>
             <name>Arca</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[24小时反转！马斯克刚递橄榄枝，特朗普宣判“关系终结”]]></title>
-        <id>https://www.odaily.news/post/5204208</id>
-        <link href="https://www.odaily.news/post/5204208"/>
-        <updated>2025-06-09T06:29:30.000Z</updated>
-        <summary type="html"><![CDATA[原创｜Odaily星球日报（@OdailyChina）
-作者｜Wenser（@wenser 2010 ）
-
-6 月 6 日，在公开骂战的第二天，特朗普与马斯克分别向外界释放了“和解信号”——前者称与马斯克沟通进展顺利，且已经安排通话；后者则在投资大佬比尔·阿克曼锐评二者“合则两利、分则两伤”的推文下做出正面回应，称其是对的。
-而就在所有人以为“特马组合”能够通过对话挽回关系之时，事情再次出现反转。北京时间 6 月 8 日，特朗普表示，若马斯克资助反对共和党预算案的民主党候选人，将面临“非常严重的后果，会为此付出代价”。此外，他补充说，已无意愿修复二者关系，“我认为这段关系已经结束了”。
-一个是权倾天下的美国总统，一个是财富亿万的全球首富，鉴于二者敏感且重要的身份，二者之间的关系不仅仅影响着加密市场，还牵动着全球经济的局势。Odaily星球日报将于本文对“特马斗”近日进展予以简要梳理，供读者参考。
-特马斗前情回顾：因利而聚，因利而斗
-
-关于特朗普与马斯克之间的公开反目，前情提要详见我们此前发布的《马斯克、特朗普分分合合，金融市场和我先遭不住了》一文。
-总结而言，二者的纷争焦点在于特朗普推动的《Big Beautiful Bill》（Odaily 注：中文直译为《大而美法案》）法案将影响马斯克名下特斯拉公司的“碳排放利润”，这对于因政府补贴与碳排放积分才获利颇丰的特斯拉无疑是不可接受的。
-不仅如此，特朗普此前还曾否决马斯克盟友 Jared Isaacman 担任 NASA 局长、拒绝采用 Starlink 方案，以及拒绝其“特别雇员”身份延任，堪称“美国版的狡兔死、走狗烹”。
-史上最贵的“分手”：特斯拉市值单日缩水超 1500 亿美元
-此前，因二人公开反目甚至隔空互怼，特斯拉单日跌超 14% ，市值缩水 1530 亿美元，创历史最大单日跌幅。马斯克因持有约 12.8% 的特斯拉…]]></summary>
-        <author>
-            <name>Wenser</name>
         </author>
     </entry>
     <entry>
